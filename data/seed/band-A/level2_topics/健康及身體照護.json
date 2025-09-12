@@ -1,0 +1,211 @@
+[
+  {
+    "id": "A2-0320",
+    "trad": "腿",
+    "pinyin": "tuĭ",
+    "pos": "N",
+    "gloss_en": "",
+    "band": "A",
+    "level": 2,
+    "topic": "健康及身體照護",
+    "tags": []
+  },
+  {
+    "id": "A2-0321",
+    "trad": "背",
+    "pinyin": "bèi",
+    "pos": "N",
+    "gloss_en": "",
+    "band": "A",
+    "level": 2,
+    "topic": "健康及身體照護",
+    "tags": []
+  },
+  {
+    "id": "A2-0322",
+    "trad": "脖(子)",
+    "pinyin": "bó(zi)",
+    "pos": "N",
+    "gloss_en": "",
+    "band": "A",
+    "level": 2,
+    "topic": "健康及身體照護",
+    "tags": []
+  },
+  {
+    "id": "A2-0323",
+    "trad": "汗",
+    "pinyin": "hàn",
+    "pos": "N",
+    "gloss_en": "",
+    "band": "A",
+    "level": 2,
+    "topic": "健康及身體照護",
+    "tags": []
+  },
+  {
+    "id": "A2-0324",
+    "trad": "臉色",
+    "pinyin": "liănsè",
+    "pos": "N",
+    "gloss_en": "",
+    "band": "A",
+    "level": 2,
+    "topic": "健康及身體照護",
+    "tags": []
+  },
+  {
+    "id": "A2-0325",
+    "trad": "救護車",
+    "pinyin": "jiùhùchē",
+    "pos": "N",
+    "gloss_en": "",
+    "band": "A",
+    "level": 2,
+    "topic": "健康及身體照護",
+    "tags": []
+  },
+  {
+    "id": "A2-0326",
+    "trad": "咳嗽",
+    "pinyin": "késòu",
+    "pos": "Vi",
+    "gloss_en": "",
+    "band": "A",
+    "level": 2,
+    "topic": "健康及身體照護",
+    "tags": []
+  },
+  {
+    "id": "A2-0327",
+    "trad": "發燒",
+    "pinyin": "fāshāo",
+    "pos": "Vp-sep",
+    "gloss_en": "",
+    "band": "A",
+    "level": 2,
+    "topic": "健康及身體照護",
+    "tags": []
+  },
+  {
+    "id": "A2-0328",
+    "trad": "頭痛",
+    "pinyin": "tóutòng",
+    "pos": "Vs",
+    "gloss_en": "",
+    "band": "A",
+    "level": 2,
+    "topic": "健康及身體照護",
+    "tags": []
+  },
+  {
+    "id": "A2-0329",
+    "trad": "疼",
+    "pinyin": "téng",
+    "pos": "Vs",
+    "gloss_en": "",
+    "band": "A",
+    "level": 2,
+    "topic": "健康及身體照護",
+    "tags": []
+  },
+  {
+    "id": "A2-0330",
+    "trad": "保險",
+    "pinyin": "băoxiăn",
+    "pos": "N",
+    "gloss_en": "",
+    "band": "A",
+    "level": 2,
+    "topic": "健康及身體照護",
+    "tags": []
+  },
+  {
+    "id": "A2-0331",
+    "trad": "掛號",
+    "pinyin": "guàhào",
+    "pos": "V-sep",
+    "gloss_en": "",
+    "band": "A",
+    "level": 2,
+    "topic": "健康及身體照護",
+    "tags": []
+  },
+  {
+    "id": "A2-0332",
+    "trad": "牙刷",
+    "pinyin": "yáshuā",
+    "pos": "N",
+    "gloss_en": "",
+    "band": "A",
+    "level": 2,
+    "topic": "健康及身體照護",
+    "tags": []
+  },
+  {
+    "id": "A2-0333",
+    "trad": "藥房",
+    "pinyin": "yàofáng",
+    "pos": "N",
+    "gloss_en": "",
+    "band": "A",
+    "level": 2,
+    "topic": "健康及身體照護",
+    "tags": []
+  },
+  {
+    "id": "A2-0334",
+    "trad": "救命",
+    "pinyin": "jiùmìng",
+    "pos": "V-sep",
+    "gloss_en": "",
+    "band": "A",
+    "level": 2,
+    "topic": "健康及身體照護",
+    "tags": []
+  },
+  {
+    "id": "A2-0335",
+    "trad": "影響",
+    "pinyin": "yĭngxiăng",
+    "pos": "N / V",
+    "gloss_en": "",
+    "band": "A",
+    "level": 2,
+    "topic": "健康及身體照護",
+    "tags": []
+  },
+  {
+    "id": "A2-0336",
+    "trad": "感覺",
+    "pinyin": "gănjué",
+    "pos": "N / Vst",
+    "gloss_en": "",
+    "band": "A",
+    "level": 2,
+    "topic": "健康及身體照護",
+    "tags": []
+  },
+  {
+    "id": "A2-0337",
+    "trad": "精神",
+    "pinyin": "jīngshén",
+    "pos": "N",
+    "gloss_en": "",
+    "band": "A",
+    "level": 2,
+    "topic": "健康及身體照護",
+    "tags": []
+  },
+  {
+    "id": "A2-0338",
+    "trad": "正常",
+    "pinyin": "zhèngcháng",
+    "pos": "Vs",
+    "gloss_en": "",
+    "band": "A",
+    "level": 2,
+    "topic": "健康及身體照護",
+    "tags": []
+  }
+]

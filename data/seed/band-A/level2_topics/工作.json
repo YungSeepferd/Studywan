@@ -1,0 +1,189 @@
+[
+  {
+    "id": "A2-0057",
+    "trad": "經理",
+    "pinyin": "jīnglĭ",
+    "pos": "N",
+    "gloss_en": "",
+    "band": "A",
+    "level": 2,
+    "topic": "工作",
+    "tags": []
+  },
+  {
+    "id": "A2-0058",
+    "trad": "教書",
+    "pinyin": "jiāoshū",
+    "pos": "V-sep",
+    "gloss_en": "",
+    "band": "A",
+    "level": 2,
+    "topic": "工作",
+    "tags": []
+  },
+  {
+    "id": "A2-0059",
+    "trad": "開會",
+    "pinyin": "kāihuì",
+    "pos": "V-sep",
+    "gloss_en": "",
+    "band": "A",
+    "level": 2,
+    "topic": "工作",
+    "tags": []
+  },
+  {
+    "id": "A2-0060",
+    "trad": "加班",
+    "pinyin": "jiābān",
+    "pos": "V-sep",
+    "gloss_en": "",
+    "band": "A",
+    "level": 2,
+    "topic": "工作",
+    "tags": []
+  },
+  {
+    "id": "A2-0061",
+    "trad": "危險",
+    "pinyin": "wéixiăn",
+    "pos": "Vs",
+    "gloss_en": "",
+    "band": "A",
+    "level": 2,
+    "topic": "工作",
+    "tags": []
+  },
+  {
+    "id": "A2-0062",
+    "trad": "安全",
+    "pinyin": "ānquán",
+    "pos": "Vs / N",
+    "gloss_en": "",
+    "band": "A",
+    "level": 2,
+    "topic": "工作",
+    "tags": []
+  },
+  {
+    "id": "A2-0063",
+    "trad": "成功",
+    "pinyin": "chénggōng",
+    "pos": "Vs",
+    "gloss_en": "",
+    "band": "A",
+    "level": 2,
+    "topic": "工作",
+    "tags": []
+  },
+  {
+    "id": "A2-0064",
+    "trad": "報告",
+    "pinyin": "bàogào",
+    "pos": "V / N",
+    "gloss_en": "",
+    "band": "A",
+    "level": 2,
+    "topic": "工作",
+    "tags": []
+  },
+  {
+    "id": "A2-0065",
+    "trad": "資料",
+    "pinyin": "zīliào",
+    "pos": "N",
+    "gloss_en": "",
+    "band": "A",
+    "level": 2,
+    "topic": "工作",
+    "tags": []
+  },
+  {
+    "id": "A2-0066",
+    "trad": "管理",
+    "pinyin": "guănlĭ",
+    "pos": "V",
+    "gloss_en": "",
+    "band": "A",
+    "level": 2,
+    "topic": "工作",
+    "tags": []
+  },
+  {
+    "id": "A2-0067",
+    "trad": "做法/作法",
+    "pinyin": "zuòfă",
+    "pos": "N",
+    "gloss_en": "",
+    "band": "A",
+    "level": 2,
+    "topic": "工作",
+    "tags": []
+  },
+  {
+    "id": "A2-0068",
+    "trad": "看法",
+    "pinyin": "kànfă",
+    "pos": "N",
+    "gloss_en": "",
+    "band": "A",
+    "level": 2,
+    "topic": "工作",
+    "tags": []
+  },
+  {
+    "id": "A2-0069",
+    "trad": "辦",
+    "pinyin": "bàn",
+    "pos": "V",
+    "gloss_en": "",
+    "band": "A",
+    "level": 2,
+    "topic": "工作",
+    "tags": []
+  },
+  {
+    "id": "A2-0070",
+    "trad": "打工",
+    "pinyin": "dăgōng",
+    "pos": "V-sep",
+    "gloss_en": "",
+    "band": "A",
+    "level": 2,
+    "topic": "工作",
+    "tags": []
+  },
+  {
+    "id": "A2-0071",
+    "trad": "選",
+    "pinyin": "xuăn",
+    "pos": "V",
+    "gloss_en": "",
+    "band": "A",
+    "level": 2,
+    "topic": "工作",
+    "tags": []
+  },
+  {
+    "id": "A2-0072",
+    "trad": "嚴重",
+    "pinyin": "yánzhòng",
+    "pos": "Vs",
+    "gloss_en": "",
+    "band": "A",
+    "level": 2,
+    "topic": "工作",
+    "tags": []
+  },
+  {
+    "id": "A2-0073",
+    "trad": "正式",
+    "pinyin": "zhèngshì",
+    "pos": "Vs",
+    "gloss_en": "",
+    "band": "A",
+    "level": 2,
+    "topic": "工作",
+    "tags": []
+  }
+]

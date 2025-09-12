@@ -1,0 +1,178 @@
+[
+  {
+    "id": "A2-0183",
+    "trad": "發生",
+    "pinyin": "fāshēng",
+    "pos": "Vpt",
+    "gloss_en": "",
+    "band": "A",
+    "level": 2,
+    "topic": "日常生活",
+    "tags": []
+  },
+  {
+    "id": "A2-0184",
+    "trad": "照顧",
+    "pinyin": "zhàogù",
+    "pos": "V",
+    "gloss_en": "",
+    "band": "A",
+    "level": 2,
+    "topic": "日常生活",
+    "tags": []
+  },
+  {
+    "id": "A2-0185",
+    "trad": "生活",
+    "pinyin": "shēnghuó",
+    "pos": "N",
+    "gloss_en": "",
+    "band": "A",
+    "level": 2,
+    "topic": "日常生活",
+    "tags": []
+  },
+  {
+    "id": "A2-0186",
+    "trad": "日記",
+    "pinyin": "rìjì",
+    "pos": "N",
+    "gloss_en": "",
+    "band": "A",
+    "level": 2,
+    "topic": "日常生活",
+    "tags": []
+  },
+  {
+    "id": "A2-0187",
+    "trad": "流",
+    "pinyin": "liú",
+    "pos": "V",
+    "gloss_en": "",
+    "band": "A",
+    "level": 2,
+    "topic": "日常生活",
+    "tags": []
+  },
+  {
+    "id": "A2-0188",
+    "trad": "流汗",
+    "pinyin": "liúhàn",
+    "pos": "V-sep",
+    "gloss_en": "",
+    "band": "A",
+    "level": 2,
+    "topic": "日常生活",
+    "tags": []
+  },
+  {
+    "id": "A2-0189",
+    "trad": "夢",
+    "pinyin": "mèng",
+    "pos": "N",
+    "gloss_en": "",
+    "band": "A",
+    "level": 2,
+    "topic": "日常生活",
+    "tags": []
+  },
+  {
+    "id": "A2-0190",
+    "trad": "枕頭(˙ㄊㄡ)",
+    "pinyin": "zhěntou",
+    "pos": "N",
+    "gloss_en": "",
+    "band": "A",
+    "level": 2,
+    "topic": "日常生活",
+    "tags": []
+  },
+  {
+    "id": "A2-0191",
+    "trad": "鬧鐘",
+    "pinyin": "nàozhōng",
+    "pos": "N",
+    "gloss_en": "",
+    "band": "A",
+    "level": 2,
+    "topic": "日常生活",
+    "tags": []
+  },
+  {
+    "id": "A2-0192",
+    "trad": "拖鞋",
+    "pinyin": "tuōxié",
+    "pos": "N",
+    "gloss_en": "",
+    "band": "A",
+    "level": 2,
+    "topic": "日常生活",
+    "tags": []
+  },
+  {
+    "id": "A2-0193",
+    "trad": "毛巾",
+    "pinyin": "máojīn",
+    "pos": "N",
+    "gloss_en": "",
+    "band": "A",
+    "level": 2,
+    "topic": "日常生活",
+    "tags": []
+  },
+  {
+    "id": "A2-0194",
+    "trad": "刷(子) / 刷",
+    "pinyin": "shuā(zi)/shuā",
+    "pos": "N / V",
+    "gloss_en": "",
+    "band": "A",
+    "level": 2,
+    "topic": "日常生活",
+    "tags": []
+  },
+  {
+    "id": "A2-0195",
+    "trad": "肥皂",
+    "pinyin": "féizào",
+    "pos": "N",
+    "gloss_en": "",
+    "band": "A",
+    "level": 2,
+    "topic": "日常生活",
+    "tags": []
+  },
+  {
+    "id": "A2-0196",
+    "trad": "牙膏",
+    "pinyin": "yágāo",
+    "pos": "N",
+    "gloss_en": "",
+    "band": "A",
+    "level": 2,
+    "topic": "日常生活",
+    "tags": []
+  },
+  {
+    "id": "A2-0197",
+    "trad": "衛生紙",
+    "pinyin": "wèishēngzhĭ",
+    "pos": "N",
+    "gloss_en": "",
+    "band": "A",
+    "level": 2,
+    "topic": "日常生活",
+    "tags": []
+  },
+  {
+    "id": "A2-0198",
+    "trad": "籃(子)",
+    "pinyin": "lán(zi)",
+    "pos": "N",
+    "gloss_en": "",
+    "band": "A",
+    "level": 2,
+    "topic": "日常生活",
+    "tags": []
+  }
+]

@@ -31,3 +31,17 @@ go.work.sum
 # Editor/IDE (uncomment if desired)
 # .idea/
 # .vscode/
+
+# Ingestion intermediates and generated content
+data/raw/
+data/staging/
+content/grammar/
+
+# macOS
+.DS_Store
+
+# Node projects
+node_modules/
+apps/web/node_modules/
+dist/
+apps/web/dist/

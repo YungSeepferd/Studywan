@@ -1,0 +1,211 @@
+[
+  {
+    "id": "A1-0329",
+    "trad": "過",
+    "pinyin": "guò",
+    "pos": "V",
+    "gloss_en": "",
+    "band": "A",
+    "level": 1,
+    "topic": "其他",
+    "tags": []
+  },
+  {
+    "id": "A1-0330",
+    "trad": "但是/但",
+    "pinyin": "dànshì/dàn",
+    "pos": "Conj",
+    "gloss_en": "",
+    "band": "A",
+    "level": 1,
+    "topic": "其他",
+    "tags": []
+  },
+  {
+    "id": "A1-0331",
+    "trad": "或是",
+    "pinyin": "huòshì",
+    "pos": "Conj",
+    "gloss_en": "",
+    "band": "A",
+    "level": 1,
+    "topic": "其他",
+    "tags": []
+  },
+  {
+    "id": "A1-0332",
+    "trad": "要是",
+    "pinyin": "yàoshì",
+    "pos": "Conj",
+    "gloss_en": "",
+    "band": "A",
+    "level": 1,
+    "topic": "其他",
+    "tags": []
+  },
+  {
+    "id": "A1-0333",
+    "trad": "把",
+    "pinyin": "bă",
+    "pos": "Ptc",
+    "gloss_en": "",
+    "band": "A",
+    "level": 1,
+    "topic": "其他",
+    "tags": []
+  },
+  {
+    "id": "A1-0334",
+    "trad": "被",
+    "pinyin": "bèi",
+    "pos": "Ptc",
+    "gloss_en": "",
+    "band": "A",
+    "level": 1,
+    "topic": "其他",
+    "tags": []
+  },
+  {
+    "id": "A1-0335",
+    "trad": "讓",
+    "pinyin": "ràng",
+    "pos": "Ptc",
+    "gloss_en": "",
+    "band": "A",
+    "level": 1,
+    "topic": "其他",
+    "tags": []
+  },
+  {
+    "id": "A1-0336",
+    "trad": "雖然",
+    "pinyin": "suīrán",
+    "pos": "Conj",
+    "gloss_en": "",
+    "band": "A",
+    "level": 1,
+    "topic": "其他",
+    "tags": []
+  },
+  {
+    "id": "A1-0337",
+    "trad": "那麼",
+    "pinyin": "nàme",
+    "pos": "Adv",
+    "gloss_en": "",
+    "band": "A",
+    "level": 1,
+    "topic": "其他",
+    "tags": []
+  },
+  {
+    "id": "A1-0338",
+    "trad": "這麼",
+    "pinyin": "zhème",
+    "pos": "Adv",
+    "gloss_en": "",
+    "band": "A",
+    "level": 1,
+    "topic": "其他",
+    "tags": []
+  },
+  {
+    "id": "A1-0339",
+    "trad": "本來",
+    "pinyin": "běnlái",
+    "pos": "Adv",
+    "gloss_en": "",
+    "band": "A",
+    "level": 1,
+    "topic": "其他",
+    "tags": []
+  },
+  {
+    "id": "A1-0340",
+    "trad": "啦",
+    "pinyin": "la",
+    "pos": "Ptc",
+    "gloss_en": "",
+    "band": "A",
+    "level": 1,
+    "topic": "其他",
+    "tags": []
+  },
+  {
+    "id": "A1-0341",
+    "trad": "呀",
+    "pinyin": "yā",
+    "pos": "Ptc",
+    "gloss_en": "",
+    "band": "A",
+    "level": 1,
+    "topic": "其他",
+    "tags": []
+  },
+  {
+    "id": "A1-0342",
+    "trad": "以為",
+    "pinyin": "yĭwéi",
+    "pos": "V",
+    "gloss_en": "",
+    "band": "A",
+    "level": 1,
+    "topic": "其他",
+    "tags": []
+  },
+  {
+    "id": "A1-0343",
+    "trad": "有的",
+    "pinyin": "yŏude",
+    "pos": "Det",
+    "gloss_en": "",
+    "band": "A",
+    "level": 1,
+    "topic": "其他",
+    "tags": []
+  },
+  {
+    "id": "A1-0344",
+    "trad": "替",
+    "pinyin": "tì",
+    "pos": "Prep",
+    "gloss_en": "",
+    "band": "A",
+    "level": 1,
+    "topic": "其他",
+    "tags": []
+  },
+  {
+    "id": "A1-0345",
+    "trad": "一下(子)/一下子兒",
+    "pinyin": "yīxià(zi)/yīxiàzir",
+    "pos": "N",
+    "gloss_en": "",
+    "band": "A",
+    "level": 1,
+    "topic": "其他",
+    "tags": []
+  },
+  {
+    "id": "A1-0346",
+    "trad": "不過",
+    "pinyin": "bùguò",
+    "pos": "Adv / Conj",
+    "gloss_en": "",
+    "band": "A",
+    "level": 1,
+    "topic": "其他",
+    "tags": []
+  },
+  {
+    "id": "A1-0347",
+    "trad": "地",
+    "pinyin": "de",
+    "pos": "Ptc",
+    "gloss_en": "",
+    "band": "A",
+    "level": 1,
+    "topic": "其他",
+    "tags": []
+  }
+]

@@ -1,0 +1,11682 @@
+[
+  {
+    "id": "B3-0001",
+    "trad": "āi",
+    "pinyin": "Ptc",
+    "gloss_en": "",
+    "band": "B",
+    "level": 3,
+    "topic": "哎",
+    "tags": []
+  },
+  {
+    "id": "B3-0002",
+    "trad": "āi",
+    "pinyin": "Ptc",
+    "gloss_en": "",
+    "band": "B",
+    "level": 3,
+    "topic": "唉",
+    "tags": []
+  },
+  {
+    "id": "B3-0003",
+    "trad": "ài",
+    "pinyin": "N",
+    "gloss_en": "",
+    "band": "B",
+    "level": 3,
+    "topic": "愛",
+    "tags": []
+  },
+  {
+    "id": "B3-0004",
+    "trad": "àiqíng",
+    "pinyin": "N",
+    "gloss_en": "",
+    "band": "B",
+    "level": 3,
+    "topic": "愛情",
+    "tags": []
+  },
+  {
+    "id": "B3-0005",
+    "trad": "àixí",
+    "pinyin": "Vst",
+    "gloss_en": "",
+    "band": "B",
+    "level": 3,
+    "topic": "愛惜",
+    "tags": []
+  },
+  {
+    "id": "B3-0006",
+    "trad": "àixīn",
+    "pinyin": "N",
+    "gloss_en": "",
+    "band": "B",
+    "level": 3,
+    "topic": "愛心",
+    "tags": []
+  },
+  {
+    "id": "B3-0007",
+    "trad": "àn",
+    "pinyin": "Prep",
+    "gloss_en": "",
+    "band": "B",
+    "level": 3,
+    "topic": "按",
+    "tags": []
+  },
+  {
+    "id": "B3-0008",
+    "trad": "āndìng",
+    "pinyin": "Vs",
+    "gloss_en": "",
+    "band": "B",
+    "level": 3,
+    "topic": "安定",
+    "tags": []
+  },
+  {
+    "id": "B3-0009",
+    "trad": "ānjìng",
+    "pinyin": "Vs",
+    "gloss_en": "",
+    "band": "B",
+    "level": 3,
+    "topic": "安靜",
+    "tags": []
+  },
+  {
+    "id": "B3-0010",
+    "trad": "ānpái",
+    "pinyin": "N / V",
+    "gloss_en": "",
+    "band": "B",
+    "level": 3,
+    "topic": "安排",
+    "tags": []
+  },
+  {
+    "id": "B3-0011",
+    "trad": "ānxīn",
+    "pinyin": "Vs",
+    "gloss_en": "",
+    "band": "B",
+    "level": 3,
+    "topic": "安心",
+    "tags": []
+  },
+  {
+    "id": "B3-0012",
+    "trad": "ànzhào",
+    "pinyin": "Prep",
+    "gloss_en": "",
+    "band": "B",
+    "level": 3,
+    "topic": "按照",
+    "tags": []
+  },
+  {
+    "id": "B3-0013",
+    "trad": "bă",
+    "pinyin": "M",
+    "gloss_en": "",
+    "band": "B",
+    "level": 3,
+    "topic": "把",
+    "tags": []
+  },
+  {
+    "id": "B3-0014",
+    "trad": "bái",
+    "pinyin": "Vs",
+    "gloss_en": "",
+    "band": "B",
+    "level": 3,
+    "topic": "白",
+    "tags": []
+  },
+  {
+    "id": "B3-0015",
+    "trad": "bái/báibái",
+    "pinyin": "Adv",
+    "gloss_en": "",
+    "band": "B",
+    "level": 3,
+    "topic": "白/白白",
+    "tags": []
+  },
+  {
+    "id": "B3-0016",
+    "trad": "báicài",
+    "pinyin": "N",
+    "gloss_en": "",
+    "band": "B",
+    "level": 3,
+    "topic": "白菜",
+    "tags": []
+  },
+  {
+    "id": "B3-0017",
+    "trad": "băi",
+    "pinyin": "V",
+    "gloss_en": "",
+    "band": "B",
+    "level": 3,
+    "topic": "擺",
+    "tags": []
+  },
+  {
+    "id": "B3-0018",
+    "trad": "băngyàng",
+    "pinyin": "N",
+    "gloss_en": "",
+    "band": "B",
+    "level": 3,
+    "topic": "榜樣",
+    "tags": []
+  },
+  {
+    "id": "B3-0019",
+    "trad": "bānjī",
+    "pinyin": "N",
+    "gloss_en": "",
+    "band": "B",
+    "level": 3,
+    "topic": "班機",
+    "tags": []
+  },
+  {
+    "id": "B3-0020",
+    "trad": "bànlĭ",
+    "pinyin": "V",
+    "gloss_en": "",
+    "band": "B",
+    "level": 3,
+    "topic": "辦理",
+    "tags": []
+  },
+  {
+    "id": "B3-0021",
+    "trad": "bàntiān",
+    "pinyin": "N",
+    "gloss_en": "",
+    "band": "B",
+    "level": 3,
+    "topic": "半天",
+    "tags": []
+  },
+  {
+    "id": "B3-0022",
+    "trad": "bāo",
+    "pinyin": "V",
+    "gloss_en": "",
+    "band": "B",
+    "level": 3,
+    "topic": "包",
+    "tags": []
+  },
+  {
+    "id": "B3-0023",
+    "trad": "bāohán",
+    "pinyin": "Vst",
+    "gloss_en": "",
+    "band": "B",
+    "level": 3,
+    "topic": "包含",
+    "tags": []
+  },
+  {
+    "id": "B3-0024",
+    "trad": "băobèi",
+    "pinyin": "N",
+    "gloss_en": "",
+    "band": "B",
+    "level": 3,
+    "topic": "寶貝",
+    "tags": []
+  },
+  {
+    "id": "B3-0025",
+    "trad": "băoguì",
+    "pinyin": "Vs",
+    "gloss_en": "",
+    "band": "B",
+    "level": 3,
+    "topic": "寶貴",
+    "tags": []
+  },
+  {
+    "id": "B3-0026",
+    "trad": "băoshŏu",
+    "pinyin": "Vs",
+    "gloss_en": "",
+    "band": "B",
+    "level": 3,
+    "topic": "保守",
+    "tags": []
+  },
+  {
+    "id": "B3-0027",
+    "trad": "băoyăng",
+    "pinyin": "V",
+    "gloss_en": "",
+    "band": "B",
+    "level": 3,
+    "topic": "保養",
+    "tags": []
+  },
+  {
+    "id": "B3-0028",
+    "trad": "băozhèng",
+    "pinyin": "N / V",
+    "gloss_en": "",
+    "band": "B",
+    "level": 3,
+    "topic": "保證/証",
+    "tags": []
+  },
+  {
+    "id": "B3-0029",
+    "trad": "bào",
+    "pinyin": "V",
+    "gloss_en": "",
+    "band": "B",
+    "level": 3,
+    "topic": "抱",
+    "tags": []
+  },
+  {
+    "id": "B3-0030",
+    "trad": "bàoyuàn",
+    "pinyin": "V",
+    "gloss_en": "",
+    "band": "B",
+    "level": 3,
+    "topic": "抱怨",
+    "tags": []
+  },
+  {
+    "id": "B3-0031",
+    "trad": "bàomíng",
+    "pinyin": "V-sep",
+    "gloss_en": "",
+    "band": "B",
+    "level": 3,
+    "topic": "報名",
+    "tags": []
+  },
+  {
+    "id": "B3-0032",
+    "trad": "băwò",
+    "pinyin": "V",
+    "gloss_en": "",
+    "band": "B",
+    "level": 3,
+    "topic": "把握",
+    "tags": []
+  },
+  {
+    "id": "B3-0033",
+    "trad": "běifāng",
+    "pinyin": "N",
+    "gloss_en": "",
+    "band": "B",
+    "level": 3,
+    "topic": "北方",
+    "tags": []
+  },
+  {
+    "id": "B3-0034",
+    "trad": "bèidòng",
+    "pinyin": "Vs",
+    "gloss_en": "",
+    "band": "B",
+    "level": 3,
+    "topic": "被動",
+    "tags": []
+  },
+  {
+    "id": "B3-0035",
+    "trad": "bèihòu",
+    "pinyin": "N",
+    "gloss_en": "",
+    "band": "B",
+    "level": 3,
+    "topic": "背後",
+    "tags": []
+  },
+  {
+    "id": "B3-0036",
+    "trad": "bèijĭng",
+    "pinyin": "N",
+    "gloss_en": "",
+    "band": "B",
+    "level": 3,
+    "topic": "背景",
+    "tags": []
+  },
+  {
+    "id": "B3-0037",
+    "trad": "bèizi",
+    "pinyin": "N",
+    "gloss_en": "",
+    "band": "B",
+    "level": 3,
+    "topic": "輩子",
+    "tags": []
+  },
+  {
+    "id": "B3-0038",
+    "trad": "běn",
+    "pinyin": "Det",
+    "gloss_en": "",
+    "band": "B",
+    "level": 3,
+    "topic": "本",
+    "tags": []
+  },
+  {
+    "id": "B3-0039",
+    "trad": "běnrén",
+    "pinyin": "N",
+    "gloss_en": "",
+    "band": "B",
+    "level": 3,
+    "topic": "本人",
+    "tags": []
+  },
+  {
+    "id": "B3-0040",
+    "trad": "bī",
+    "pinyin": "V",
+    "gloss_en": "",
+    "band": "B",
+    "level": 3,
+    "topic": "逼",
+    "tags": []
+  },
+  {
+    "id": "B3-0041",
+    "trad": "bĭ",
+    "pinyin": "M",
+    "gloss_en": "",
+    "band": "B",
+    "level": 3,
+    "topic": "筆",
+    "tags": []
+  },
+  {
+    "id": "B3-0042",
+    "trad": "bĭ",
+    "pinyin": "V",
+    "gloss_en": "",
+    "band": "B",
+    "level": 3,
+    "topic": "比",
+    "tags": []
+  },
+  {
+    "id": "B3-0043",
+    "trad": "biānpào",
+    "pinyin": "N",
+    "gloss_en": "",
+    "band": "B",
+    "level": 3,
+    "topic": "鞭炮",
+    "tags": []
+  },
+  {
+    "id": "B3-0044",
+    "trad": "biàn",
+    "pinyin": "Vp",
+    "gloss_en": "",
+    "band": "B",
+    "level": 3,
+    "topic": "變",
+    "tags": []
+  },
+  {
+    "id": "B3-0045",
+    "trad": "biànchéng",
+    "pinyin": "Vpt",
+    "gloss_en": "",
+    "band": "B",
+    "level": 3,
+    "topic": "變成",
+    "tags": []
+  },
+  {
+    "id": "B3-0046",
+    "trad": "biàngēng",
+    "pinyin": "V",
+    "gloss_en": "",
+    "band": "B",
+    "level": 3,
+    "topic": "變更",
+    "tags": []
+  },
+  {
+    "id": "B3-0047",
+    "trad": "biànhuà",
+    "pinyin": "N / Vs",
+    "gloss_en": "",
+    "band": "B",
+    "level": 3,
+    "topic": "變化",
+    "tags": []
+  },
+  {
+    "id": "B3-0048",
+    "trad": "biàntiáo",
+    "pinyin": "N",
+    "gloss_en": "",
+    "band": "B",
+    "level": 3,
+    "topic": "便條",
+    "tags": []
+  },
+  {
+    "id": "B3-0049",
+    "trad": "biăodá",
+    "pinyin": "V",
+    "gloss_en": "",
+    "band": "B",
+    "level": 3,
+    "topic": "表達",
+    "tags": []
+  },
+  {
+    "id": "B3-0050",
+    "trad": "biăomiàn",
+    "pinyin": "N",
+    "gloss_en": "",
+    "band": "B",
+    "level": 3,
+    "topic": "表面",
+    "tags": []
+  },
+  {
+    "id": "B3-0051",
+    "trad": "biăoshì",
+    "pinyin": "V",
+    "gloss_en": "",
+    "band": "B",
+    "level": 3,
+    "topic": "表示",
+    "tags": []
+  },
+  {
+    "id": "B3-0052",
+    "trad": "biăoxiàn",
+    "pinyin": "N / V",
+    "gloss_en": "",
+    "band": "B",
+    "level": 3,
+    "topic": "表現",
+    "tags": []
+  },
+  {
+    "id": "B3-0053",
+    "trad": "biăoyăn",
+    "pinyin": "V / N",
+    "gloss_en": "",
+    "band": "B",
+    "level": 3,
+    "topic": "表演",
+    "tags": []
+  },
+  {
+    "id": "B3-0054",
+    "trad": "bìjìng",
+    "pinyin": "Adv",
+    "gloss_en": "",
+    "band": "B",
+    "level": 3,
+    "topic": "畢竟",
+    "tags": []
+  },
+  {
+    "id": "B3-0055",
+    "trad": "bìmiăn",
+    "pinyin": "V",
+    "gloss_en": "",
+    "band": "B",
+    "level": 3,
+    "topic": "避免",
+    "tags": []
+  },
+  {
+    "id": "B3-0056",
+    "trad": "bĭng",
+    "pinyin": "N",
+    "gloss_en": "",
+    "band": "B",
+    "level": 3,
+    "topic": "餅",
+    "tags": []
+  },
+  {
+    "id": "B3-0057",
+    "trad": "bìng",
+    "pinyin": "Vp",
+    "gloss_en": "",
+    "band": "B",
+    "level": 3,
+    "topic": "病",
+    "tags": []
+  },
+  {
+    "id": "B3-0058",
+    "trad": "bĭrú/bĭrúshuō",
+    "pinyin": "Prep",
+    "gloss_en": "",
+    "band": "B",
+    "level": 3,
+    "topic": "比如/比如說",
+    "tags": []
+  },
+  {
+    "id": "B3-0059",
+    "trad": "bìyào",
+    "pinyin": "Vs",
+    "gloss_en": "",
+    "band": "B",
+    "level": 3,
+    "topic": "必要",
+    "tags": []
+  },
+  {
+    "id": "B3-0060",
+    "trad": "bò",
+    "pinyin": "V",
+    "gloss_en": "",
+    "band": "B",
+    "level": 3,
+    "topic": "播",
+    "tags": []
+  },
+  {
+    "id": "B3-0061",
+    "trad": "bóshì",
+    "pinyin": "N",
+    "gloss_en": "",
+    "band": "B",
+    "level": 3,
+    "topic": "博士",
+    "tags": []
+  },
+  {
+    "id": "B3-0062",
+    "trad": "bówùguăn",
+    "pinyin": "N",
+    "gloss_en": "",
+    "band": "B",
+    "level": 3,
+    "topic": "博物館",
+    "tags": []
+  },
+  {
+    "id": "B3-0063",
+    "trad": "bù",
+    "pinyin": "N",
+    "gloss_en": "",
+    "band": "B",
+    "level": 3,
+    "topic": "布",
+    "tags": []
+  },
+  {
+    "id": "B3-0064",
+    "trad": "bùjiàn(le)",
+    "pinyin": "Vp",
+    "gloss_en": "",
+    "band": "B",
+    "level": 3,
+    "topic": "不見(了)",
+    "tags": []
+  },
+  {
+    "id": "B3-0065",
+    "trad": "bùdébù",
+    "pinyin": "Adv",
+    "gloss_en": "",
+    "band": "B",
+    "level": 3,
+    "topic": "不得不",
+    "tags": []
+  },
+  {
+    "id": "B3-0066",
+    "trad": "bùduàn",
+    "pinyin": "Adv / Vs",
+    "gloss_en": "",
+    "band": "B",
+    "level": 3,
+    "topic": "不斷",
+    "tags": []
+  },
+  {
+    "id": "B3-0067",
+    "trad": "bùlùn",
+    "pinyin": "Conj",
+    "gloss_en": "",
+    "band": "B",
+    "level": 3,
+    "topic": "不論",
+    "tags": []
+  },
+  {
+    "id": "B3-0068",
+    "trad": "bùmăn",
+    "pinyin": "Vs",
+    "gloss_en": "",
+    "band": "B",
+    "level": 3,
+    "topic": "不滿",
+    "tags": []
+  },
+  {
+    "id": "B3-0069",
+    "trad": "bùmén",
+    "pinyin": "N",
+    "gloss_en": "",
+    "band": "B",
+    "level": 3,
+    "topic": "部門",
+    "tags": []
+  },
+  {
+    "id": "B3-0070",
+    "trad": "bùrú",
+    "pinyin": "conj",
+    "gloss_en": "",
+    "band": "B",
+    "level": 3,
+    "topic": "不如",
+    "tags": []
+  },
+  {
+    "id": "B3-0071",
+    "trad": "bùshăo",
+    "pinyin": "Det / Vs",
+    "gloss_en": "",
+    "band": "B",
+    "level": 3,
+    "topic": "不少",
+    "tags": []
+  },
+  {
+    "id": "B3-0072",
+    "trad": "bùxìng",
+    "pinyin": "Vs",
+    "gloss_en": "",
+    "band": "B",
+    "level": 3,
+    "topic": "不幸",
+    "tags": []
+  },
+  {
+    "id": "B3-0073",
+    "trad": "bùyòngshuō",
+    "pinyin": "Conj",
+    "gloss_en": "",
+    "band": "B",
+    "level": 3,
+    "topic": "不用說",
+    "tags": []
+  },
+  {
+    "id": "B3-0074",
+    "trad": "bùzhì",
+    "pinyin": "V",
+    "gloss_en": "",
+    "band": "B",
+    "level": 3,
+    "topic": "布/佈置",
+    "tags": []
+  },
+  {
+    "id": "B3-0075",
+    "trad": "bùzú",
+    "pinyin": "Vs",
+    "gloss_en": "",
+    "band": "B",
+    "level": 3,
+    "topic": "不足",
+    "tags": []
+  },
+  {
+    "id": "B3-0076",
+    "trad": "cā",
+    "pinyin": "V",
+    "gloss_en": "",
+    "band": "B",
+    "level": 3,
+    "topic": "擦",
+    "tags": []
+  },
+  {
+    "id": "B3-0077",
+    "trad": "cāi",
+    "pinyin": "V",
+    "gloss_en": "",
+    "band": "B",
+    "level": 3,
+    "topic": "猜",
+    "tags": []
+  },
+  {
+    "id": "B3-0078",
+    "trad": "cáiliào",
+    "pinyin": "N",
+    "gloss_en": "",
+    "band": "B",
+    "level": 3,
+    "topic": "材料",
+    "tags": []
+  },
+  {
+    "id": "B3-0079",
+    "trad": "căiyòng",
+    "pinyin": "V",
+    "gloss_en": "",
+    "band": "B",
+    "level": 3,
+    "topic": "採用",
+    "tags": []
+  },
+  {
+    "id": "B3-0080",
+    "trad": "cān",
+    "pinyin": "M",
+    "gloss_en": "",
+    "band": "B",
+    "level": 3,
+    "topic": "餐",
+    "tags": []
+  },
+  {
+    "id": "B3-0081",
+    "trad": "cānkăo",
+    "pinyin": "V",
+    "gloss_en": "",
+    "band": "B",
+    "level": 3,
+    "topic": "參考",
+    "tags": []
+  },
+  {
+    "id": "B3-0082",
+    "trad": "căodì",
+    "pinyin": "N",
+    "gloss_en": "",
+    "band": "B",
+    "level": 3,
+    "topic": "草地",
+    "tags": []
+  },
+  {
+    "id": "B3-0083",
+    "trad": "căoyuán",
+    "pinyin": "N",
+    "gloss_en": "",
+    "band": "B",
+    "level": 3,
+    "topic": "草原",
+    "tags": []
+  },
+  {
+    "id": "B3-0084",
+    "trad": "céng",
+    "pinyin": "Adv",
+    "gloss_en": "",
+    "band": "B",
+    "level": 3,
+    "topic": "曾",
+    "tags": []
+  },
+  {
+    "id": "B3-0085",
+    "trad": "céngjīng",
+    "pinyin": "Adv",
+    "gloss_en": "",
+    "band": "B",
+    "level": 3,
+    "topic": "曾經",
+    "tags": []
+  },
+  {
+    "id": "B3-0086",
+    "trad": "chādiăn/chādiănr/chāyīdiănr",
+    "pinyin": "Adv",
+    "gloss_en": "",
+    "band": "B",
+    "level": 3,
+    "topic": "差點/差點兒/差一點兒",
+    "tags": []
+  },
+  {
+    "id": "B3-0087",
+    "trad": "chābié",
+    "pinyin": "N",
+    "gloss_en": "",
+    "band": "B",
+    "level": 3,
+    "topic": "差別",
+    "tags": []
+  },
+  {
+    "id": "B3-0088",
+    "trad": "chángshì",
+    "pinyin": "V",
+    "gloss_en": "",
+    "band": "B",
+    "level": 3,
+    "topic": "嘗試/嚐試",
+    "tags": []
+  },
+  {
+    "id": "B3-0089",
+    "trad": "chănpĭn",
+    "pinyin": "N",
+    "gloss_en": "",
+    "band": "B",
+    "level": 3,
+    "topic": "產品",
+    "tags": []
+  },
+  {
+    "id": "B3-0090",
+    "trad": "chănshēng",
+    "pinyin": "Vpt",
+    "gloss_en": "",
+    "band": "B",
+    "level": 3,
+    "topic": "產生",
+    "tags": []
+  },
+  {
+    "id": "B3-0091",
+    "trad": "chāoguò",
+    "pinyin": "Vpt",
+    "gloss_en": "",
+    "band": "B",
+    "level": 3,
+    "topic": "超過",
+    "tags": []
+  },
+  {
+    "id": "B3-0092",
+    "trad": "chāojí",
+    "pinyin": "Vs-attr",
+    "gloss_en": "",
+    "band": "B",
+    "level": 3,
+    "topic": "超級",
+    "tags": []
+  },
+  {
+    "id": "B3-0093",
+    "trad": "chăojià",
+    "pinyin": "V-sep",
+    "gloss_en": "",
+    "band": "B",
+    "level": 3,
+    "topic": "吵架",
+    "tags": []
+  },
+  {
+    "id": "B3-0094",
+    "trad": "chāyì",
+    "pinyin": "N",
+    "gloss_en": "",
+    "band": "B",
+    "level": 3,
+    "topic": "差異",
+    "tags": []
+  },
+  {
+    "id": "B3-0095",
+    "trad": "chēhuò",
+    "pinyin": "N",
+    "gloss_en": "",
+    "band": "B",
+    "level": 3,
+    "topic": "車禍",
+    "tags": []
+  },
+  {
+    "id": "B3-0096",
+    "trad": "chèn",
+    "pinyin": "Prep",
+    "gloss_en": "",
+    "band": "B",
+    "level": 3,
+    "topic": "趁",
+    "tags": []
+  },
+  {
+    "id": "B3-0097",
+    "trad": "chènshān",
+    "pinyin": "N",
+    "gloss_en": "",
+    "band": "B",
+    "level": 3,
+    "topic": "襯衫",
+    "tags": []
+  },
+  {
+    "id": "B3-0098",
+    "trad": "chéng",
+    "pinyin": "Vpt",
+    "gloss_en": "",
+    "band": "B",
+    "level": 3,
+    "topic": "成",
+    "tags": []
+  },
+  {
+    "id": "B3-0099",
+    "trad": "chéngguŏ",
+    "pinyin": "N",
+    "gloss_en": "",
+    "band": "B",
+    "level": 3,
+    "topic": "成果",
+    "tags": []
+  },
+  {
+    "id": "B3-0100",
+    "trad": "chéngjiù",
+    "pinyin": "N",
+    "gloss_en": "",
+    "band": "B",
+    "level": 3,
+    "topic": "成就",
+    "tags": []
+  },
+  {
+    "id": "B3-0101",
+    "trad": "chéngrèn",
+    "pinyin": "V",
+    "gloss_en": "",
+    "band": "B",
+    "level": 3,
+    "topic": "承認",
+    "tags": []
+  },
+  {
+    "id": "B3-0102",
+    "trad": "chéngshí",
+    "pinyin": "Vs",
+    "gloss_en": "",
+    "band": "B",
+    "level": 3,
+    "topic": "誠實",
+    "tags": []
+  },
+  {
+    "id": "B3-0103",
+    "trad": "chéngshóu",
+    "pinyin": "Vs",
+    "gloss_en": "",
+    "band": "B",
+    "level": 3,
+    "topic": "成熟",
+    "tags": []
+  },
+  {
+    "id": "B3-0104",
+    "trad": "chéngzhăng",
+    "pinyin": "Vs",
+    "gloss_en": "",
+    "band": "B",
+    "level": 3,
+    "topic": "成長",
+    "tags": []
+  },
+  {
+    "id": "B3-0105",
+    "trad": "chĭ",
+    "pinyin": "M",
+    "gloss_en": "",
+    "band": "B",
+    "level": 3,
+    "topic": "尺",
+    "tags": []
+  },
+  {
+    "id": "B3-0106",
+    "trad": "chīhēwánlè",
+    "pinyin": "Vi",
+    "gloss_en": "",
+    "band": "B",
+    "level": 3,
+    "topic": "吃喝玩樂",
+    "tags": []
+  },
+  {
+    "id": "B3-0107",
+    "trad": "chóng(zi)",
+    "pinyin": "N",
+    "gloss_en": "",
+    "band": "B",
+    "level": 3,
+    "topic": "蟲(子)",
+    "tags": []
+  },
+  {
+    "id": "B3-0108",
+    "trad": "chōngshí",
+    "pinyin": "Vs",
+    "gloss_en": "",
+    "band": "B",
+    "level": 3,
+    "topic": "充實",
+    "tags": []
+  },
+  {
+    "id": "B3-0109",
+    "trad": "chóngxīn",
+    "pinyin": "Adv",
+    "gloss_en": "",
+    "band": "B",
+    "level": 3,
+    "topic": "重新",
+    "tags": []
+  },
+  {
+    "id": "B3-0110",
+    "trad": "chŏu",
+    "pinyin": "Vs",
+    "gloss_en": "",
+    "band": "B",
+    "level": 3,
+    "topic": "醜",
+    "tags": []
+  },
+  {
+    "id": "B3-0111",
+    "trad": "chōu",
+    "pinyin": "V",
+    "gloss_en": "",
+    "band": "B",
+    "level": 3,
+    "topic": "抽",
+    "tags": []
+  },
+  {
+    "id": "B3-0112",
+    "trad": "chū",
+    "pinyin": "N",
+    "gloss_en": "",
+    "band": "B",
+    "level": 3,
+    "topic": "初",
+    "tags": []
+  },
+  {
+    "id": "B3-0113",
+    "trad": "chuàn",
+    "pinyin": "M",
+    "gloss_en": "",
+    "band": "B",
+    "level": 3,
+    "topic": "串",
+    "tags": []
+  },
+  {
+    "id": "B3-0114",
+    "trad": "chuàngzào",
+    "pinyin": "V",
+    "gloss_en": "",
+    "band": "B",
+    "level": 3,
+    "topic": "創造",
+    "tags": []
+  },
+  {
+    "id": "B3-0115",
+    "trad": "chūbăn",
+    "pinyin": "V",
+    "gloss_en": "",
+    "band": "B",
+    "level": 3,
+    "topic": "出版",
+    "tags": []
+  },
+  {
+    "id": "B3-0116",
+    "trad": "chūchāi",
+    "pinyin": "V-sep",
+    "gloss_en": "",
+    "band": "B",
+    "level": 3,
+    "topic": "出差",
+    "tags": []
+  },
+  {
+    "id": "B3-0117",
+    "trad": "chūfā",
+    "pinyin": "Vp",
+    "gloss_en": "",
+    "band": "B",
+    "level": 3,
+    "topic": "出發",
+    "tags": []
+  },
+  {
+    "id": "B3-0118",
+    "trad": "chūxiàn",
+    "pinyin": "Vp",
+    "gloss_en": "",
+    "band": "B",
+    "level": 3,
+    "topic": "出現",
+    "tags": []
+  },
+  {
+    "id": "B3-0119",
+    "trad": "chūzū",
+    "pinyin": "V",
+    "gloss_en": "",
+    "band": "B",
+    "level": 3,
+    "topic": "出租",
+    "tags": []
+  },
+  {
+    "id": "B3-0120",
+    "trad": "chŭlĭ",
+    "pinyin": "V",
+    "gloss_en": "",
+    "band": "B",
+    "level": 3,
+    "topic": "處理",
+    "tags": []
+  },
+  {
+    "id": "B3-0121",
+    "trad": "chúshī",
+    "pinyin": "N",
+    "gloss_en": "",
+    "band": "B",
+    "level": 3,
+    "topic": "廚師",
+    "tags": []
+  },
+  {
+    "id": "B3-0122",
+    "trad": "chuī",
+    "pinyin": "V",
+    "gloss_en": "",
+    "band": "B",
+    "level": 3,
+    "topic": "吹",
+    "tags": []
+  },
+  {
+    "id": "B3-0123",
+    "trad": "cĭ",
+    "pinyin": "Det",
+    "gloss_en": "",
+    "band": "B",
+    "level": 3,
+    "topic": "此",
+    "tags": []
+  },
+  {
+    "id": "B3-0124",
+    "trad": "cìjī",
+    "pinyin": "N / Vs",
+    "gloss_en": "",
+    "band": "B",
+    "level": 3,
+    "topic": "刺激",
+    "tags": []
+  },
+  {
+    "id": "B3-0125",
+    "trad": "cóngbù",
+    "pinyin": "Adv",
+    "gloss_en": "",
+    "band": "B",
+    "level": 3,
+    "topic": "從不",
+    "tags": []
+  },
+  {
+    "id": "B3-0126",
+    "trad": "cóngxiăo",
+    "pinyin": "Adv",
+    "gloss_en": "",
+    "band": "B",
+    "level": 3,
+    "topic": "從小",
+    "tags": []
+  },
+  {
+    "id": "B3-0127",
+    "trad": "cù",
+    "pinyin": "N",
+    "gloss_en": "",
+    "band": "B",
+    "level": 3,
+    "topic": "醋",
+    "tags": []
+  },
+  {
+    "id": "B3-0128",
+    "trad": "cùn",
+    "pinyin": "M",
+    "gloss_en": "",
+    "band": "B",
+    "level": 3,
+    "topic": "寸",
+    "tags": []
+  },
+  {
+    "id": "B3-0129",
+    "trad": "cúnzài",
+    "pinyin": "Vi",
+    "gloss_en": "",
+    "band": "B",
+    "level": 3,
+    "topic": "存在",
+    "tags": []
+  },
+  {
+    "id": "B3-0130",
+    "trad": "cuò",
+    "pinyin": "N",
+    "gloss_en": "",
+    "band": "B",
+    "level": 3,
+    "topic": "錯",
+    "tags": []
+  },
+  {
+    "id": "B3-0131",
+    "trad": "cuòwù",
+    "pinyin": "N",
+    "gloss_en": "",
+    "band": "B",
+    "level": 3,
+    "topic": "錯誤",
+    "tags": []
+  },
+  {
+    "id": "B3-0132",
+    "trad": "cuòzhé",
+    "pinyin": "N",
+    "gloss_en": "",
+    "band": "B",
+    "level": 3,
+    "topic": "挫折",
+    "tags": []
+  },
+  {
+    "id": "B3-0133",
+    "trad": "dáchéng",
+    "pinyin": "Vpt",
+    "gloss_en": "",
+    "band": "B",
+    "level": 3,
+    "topic": "達成",
+    "tags": []
+  },
+  {
+    "id": "B3-0134",
+    "trad": "dăjià",
+    "pinyin": "V-sep",
+    "gloss_en": "",
+    "band": "B",
+    "level": 3,
+    "topic": "打架",
+    "tags": []
+  },
+  {
+    "id": "B3-0135",
+    "trad": "dàduōshù",
+    "pinyin": "Det",
+    "gloss_en": "",
+    "band": "B",
+    "level": 3,
+    "topic": "大多數",
+    "tags": []
+  },
+  {
+    "id": "B3-0136",
+    "trad": "dàfāng",
+    "pinyin": "Vs",
+    "gloss_en": "",
+    "band": "B",
+    "level": 3,
+    "topic": "大方",
+    "tags": []
+  },
+  {
+    "id": "B3-0137",
+    "trad": "dàhuì",
+    "pinyin": "N",
+    "gloss_en": "",
+    "band": "B",
+    "level": 3,
+    "topic": "大會",
+    "tags": []
+  },
+  {
+    "id": "B3-0138",
+    "trad": "dàibiăo",
+    "pinyin": "N / V",
+    "gloss_en": "",
+    "band": "B",
+    "level": 3,
+    "topic": "代表",
+    "tags": []
+  },
+  {
+    "id": "B3-0139",
+    "trad": "dàitì",
+    "pinyin": "V",
+    "gloss_en": "",
+    "band": "B",
+    "level": 3,
+    "topic": "代替",
+    "tags": []
+  },
+  {
+    "id": "B3-0140",
+    "trad": "dàilĭng",
+    "pinyin": "V",
+    "gloss_en": "",
+    "band": "B",
+    "level": 3,
+    "topic": "帶領",
+    "tags": []
+  },
+  {
+    "id": "B3-0141",
+    "trad": "dānchún",
+    "pinyin": "Vs",
+    "gloss_en": "",
+    "band": "B",
+    "level": 3,
+    "topic": "單純",
+    "tags": []
+  },
+  {
+    "id": "B3-0142",
+    "trad": "dàn",
+    "pinyin": "Vs",
+    "gloss_en": "",
+    "band": "B",
+    "level": 3,
+    "topic": "淡",
+    "tags": []
+  },
+  {
+    "id": "B3-0143",
+    "trad": "dāngchăng",
+    "pinyin": "Adv",
+    "gloss_en": "",
+    "band": "B",
+    "level": 3,
+    "topic": "當場",
+    "tags": []
+  },
+  {
+    "id": "B3-0144",
+    "trad": "dāngdì",
+    "pinyin": "N",
+    "gloss_en": "",
+    "band": "B",
+    "level": 3,
+    "topic": "當地",
+    "tags": []
+  },
+  {
+    "id": "B3-0145",
+    "trad": "dāngmiàn",
+    "pinyin": "Adv",
+    "gloss_en": "",
+    "band": "B",
+    "level": 3,
+    "topic": "當面",
+    "tags": []
+  },
+  {
+    "id": "B3-0146",
+    "trad": "dāngnián",
+    "pinyin": "N",
+    "gloss_en": "",
+    "band": "B",
+    "level": 3,
+    "topic": "當年",
+    "tags": []
+  },
+  {
+    "id": "B3-0147",
+    "trad": "dàngtiān",
+    "pinyin": "N",
+    "gloss_en": "",
+    "band": "B",
+    "level": 3,
+    "topic": "當天",
+    "tags": []
+  },
+  {
+    "id": "B3-0148",
+    "trad": "dàngzuò",
+    "pinyin": "Vst",
+    "gloss_en": "",
+    "band": "B",
+    "level": 3,
+    "topic": "當作/當做",
+    "tags": []
+  },
+  {
+    "id": "B3-0149",
+    "trad": "dānrèn",
+    "pinyin": "V",
+    "gloss_en": "",
+    "band": "B",
+    "level": 3,
+    "topic": "擔任",
+    "tags": []
+  },
+  {
+    "id": "B3-0150",
+    "trad": "dānshēn",
+    "pinyin": "Vs",
+    "gloss_en": "",
+    "band": "B",
+    "level": 3,
+    "topic": "單身",
+    "tags": []
+  },
+  {
+    "id": "B3-0151",
+    "trad": "dăo",
+    "pinyin": "N",
+    "gloss_en": "",
+    "band": "B",
+    "level": 3,
+    "topic": "島",
+    "tags": []
+  },
+  {
+    "id": "B3-0152",
+    "trad": "dăo",
+    "pinyin": "V",
+    "gloss_en": "",
+    "band": "B",
+    "level": 3,
+    "topic": "倒",
+    "tags": []
+  },
+  {
+    "id": "B3-0153",
+    "trad": "dăoyăn",
+    "pinyin": "N",
+    "gloss_en": "",
+    "band": "B",
+    "level": 3,
+    "topic": "導演",
+    "tags": []
+  },
+  {
+    "id": "B3-0154",
+    "trad": "dào",
+    "pinyin": "Conj / Prep",
+    "gloss_en": "",
+    "band": "B",
+    "level": 3,
+    "topic": "到",
+    "tags": []
+  },
+  {
+    "id": "B3-0155",
+    "trad": "dào",
+    "pinyin": "Adv",
+    "gloss_en": "",
+    "band": "B",
+    "level": 3,
+    "topic": "倒",
+    "tags": []
+  },
+  {
+    "id": "B3-0156",
+    "trad": "dàodĭ",
+    "pinyin": "Adv / Vs-pred",
+    "gloss_en": "",
+    "band": "B",
+    "level": 3,
+    "topic": "到底",
+    "tags": []
+  },
+  {
+    "id": "B3-0157",
+    "trad": "dàoshì",
+    "pinyin": "Adv",
+    "gloss_en": "",
+    "band": "B",
+    "level": 3,
+    "topic": "倒是",
+    "tags": []
+  },
+  {
+    "id": "B3-0158",
+    "trad": "dàodé",
+    "pinyin": "N",
+    "gloss_en": "",
+    "band": "B",
+    "level": 3,
+    "topic": "道德",
+    "tags": []
+  },
+  {
+    "id": "B3-0159",
+    "trad": "Dàojiào",
+    "pinyin": "N",
+    "gloss_en": "",
+    "band": "B",
+    "level": 3,
+    "topic": "道教",
+    "tags": []
+  },
+  {
+    "id": "B3-0160",
+    "trad": "dàolĭ",
+    "pinyin": "N",
+    "gloss_en": "",
+    "band": "B",
+    "level": 3,
+    "topic": "道理",
+    "tags": []
+  },
+  {
+    "id": "B3-0161",
+    "trad": "dàoqiàn",
+    "pinyin": "V-sep",
+    "gloss_en": "",
+    "band": "B",
+    "level": 3,
+    "topic": "道歉",
+    "tags": []
+  },
+  {
+    "id": "B3-0162",
+    "trad": "dāyìng",
+    "pinyin": "V",
+    "gloss_en": "",
+    "band": "B",
+    "level": 3,
+    "topic": "答應",
+    "tags": []
+  },
+  {
+    "id": "B3-0163",
+    "trad": "dăsăo",
+    "pinyin": "V",
+    "gloss_en": "",
+    "band": "B",
+    "level": 3,
+    "topic": "打掃",
+    "tags": []
+  },
+  {
+    "id": "B3-0164",
+    "trad": "dătīng",
+    "pinyin": "V",
+    "gloss_en": "",
+    "band": "B",
+    "level": 3,
+    "topic": "打聽",
+    "tags": []
+  },
+  {
+    "id": "B3-0165",
+    "trad": "dàxiăo",
+    "pinyin": "N",
+    "gloss_en": "",
+    "band": "B",
+    "level": 3,
+    "topic": "大小",
+    "tags": []
+  },
+  {
+    "id": "B3-0166",
+    "trad": "dàyuē",
+    "pinyin": "Adv",
+    "gloss_en": "",
+    "band": "B",
+    "level": 3,
+    "topic": "大約",
+    "tags": []
+  },
+  {
+    "id": "B3-0167",
+    "trad": "dăzhàng",
+    "pinyin": "V-sep",
+    "gloss_en": "",
+    "band": "B",
+    "level": 3,
+    "topic": "打仗",
+    "tags": []
+  },
+  {
+    "id": "B3-0168",
+    "trad": "dé",
+    "pinyin": "Vaux",
+    "gloss_en": "",
+    "band": "B",
+    "level": 3,
+    "topic": "得",
+    "tags": []
+  },
+  {
+    "id": "B3-0169",
+    "trad": "déyì",
+    "pinyin": "Vs",
+    "gloss_en": "",
+    "band": "B",
+    "level": 3,
+    "topic": "得意",
+    "tags": []
+  },
+  {
+    "id": "B3-0170",
+    "trad": "děngdài",
+    "pinyin": "V",
+    "gloss_en": "",
+    "band": "B",
+    "level": 3,
+    "topic": "等待",
+    "tags": []
+  },
+  {
+    "id": "B3-0171",
+    "trad": "dēngguāng",
+    "pinyin": "N",
+    "gloss_en": "",
+    "band": "B",
+    "level": 3,
+    "topic": "燈光",
+    "tags": []
+  },
+  {
+    "id": "B3-0172",
+    "trad": "dírén",
+    "pinyin": "N",
+    "gloss_en": "",
+    "band": "B",
+    "level": 3,
+    "topic": "敵人",
+    "tags": []
+  },
+  {
+    "id": "B3-0173",
+    "trad": "dĭdá",
+    "pinyin": "V",
+    "gloss_en": "",
+    "band": "B",
+    "level": 3,
+    "topic": "抵達",
+    "tags": []
+  },
+  {
+    "id": "B3-0174",
+    "trad": "dìbăn",
+    "pinyin": "N",
+    "gloss_en": "",
+    "band": "B",
+    "level": 3,
+    "topic": "地板",
+    "tags": []
+  },
+  {
+    "id": "B3-0175",
+    "trad": "dìdài",
+    "pinyin": "N",
+    "gloss_en": "",
+    "band": "B",
+    "level": 3,
+    "topic": "地帶",
+    "tags": []
+  },
+  {
+    "id": "B3-0176",
+    "trad": "dìlĭ",
+    "pinyin": "N",
+    "gloss_en": "",
+    "band": "B",
+    "level": 3,
+    "topic": "地理",
+    "tags": []
+  },
+  {
+    "id": "B3-0177",
+    "trad": "dìqiú",
+    "pinyin": "N",
+    "gloss_en": "",
+    "band": "B",
+    "level": 3,
+    "topic": "地球",
+    "tags": []
+  },
+  {
+    "id": "B3-0178",
+    "trad": "dìqū",
+    "pinyin": "N",
+    "gloss_en": "",
+    "band": "B",
+    "level": 3,
+    "topic": "地區",
+    "tags": []
+  },
+  {
+    "id": "B3-0179",
+    "trad": "dìtān",
+    "pinyin": "N",
+    "gloss_en": "",
+    "band": "B",
+    "level": 3,
+    "topic": "地攤",
+    "tags": []
+  },
+  {
+    "id": "B3-0180",
+    "trad": "dìwèi",
+    "pinyin": "N",
+    "gloss_en": "",
+    "band": "B",
+    "level": 3,
+    "topic": "地位",
+    "tags": []
+  },
+  {
+    "id": "B3-0181",
+    "trad": "dìxià",
+    "pinyin": "N",
+    "gloss_en": "",
+    "band": "B",
+    "level": 3,
+    "topic": "地下",
+    "tags": []
+  },
+  {
+    "id": "B3-0182",
+    "trad": "dìxíng",
+    "pinyin": "N",
+    "gloss_en": "",
+    "band": "B",
+    "level": 3,
+    "topic": "地形",
+    "tags": []
+  },
+  {
+    "id": "B3-0183",
+    "trad": "diăn",
+    "pinyin": "M / N / V",
+    "gloss_en": "",
+    "band": "B",
+    "level": 3,
+    "topic": "點",
+    "tags": []
+  },
+  {
+    "id": "B3-0184",
+    "trad": "diànchē",
+    "pinyin": "N",
+    "gloss_en": "",
+    "band": "B",
+    "level": 3,
+    "topic": "電車",
+    "tags": []
+  },
+  {
+    "id": "B3-0185",
+    "trad": "diànchí",
+    "pinyin": "N",
+    "gloss_en": "",
+    "band": "B",
+    "level": 3,
+    "topic": "電池",
+    "tags": []
+  },
+  {
+    "id": "B3-0186",
+    "trad": "diàndēng",
+    "pinyin": "N",
+    "gloss_en": "",
+    "band": "B",
+    "level": 3,
+    "topic": "電燈",
+    "tags": []
+  },
+  {
+    "id": "B3-0187",
+    "trad": "diàochá",
+    "pinyin": "V",
+    "gloss_en": "",
+    "band": "B",
+    "level": 3,
+    "topic": "調查",
+    "tags": []
+  },
+  {
+    "id": "B3-0188",
+    "trad": "dōngběi",
+    "pinyin": "N",
+    "gloss_en": "",
+    "band": "B",
+    "level": 3,
+    "topic": "東北",
+    "tags": []
+  },
+  {
+    "id": "B3-0189",
+    "trad": "dōngnán",
+    "pinyin": "N",
+    "gloss_en": "",
+    "band": "B",
+    "level": 3,
+    "topic": "東南",
+    "tags": []
+  },
+  {
+    "id": "B3-0190",
+    "trad": "dŏngshì",
+    "pinyin": "Vs",
+    "gloss_en": "",
+    "band": "B",
+    "level": 3,
+    "topic": "懂事",
+    "tags": []
+  },
+  {
+    "id": "B3-0191",
+    "trad": "dòngwùyuán",
+    "pinyin": "N",
+    "gloss_en": "",
+    "band": "B",
+    "level": 3,
+    "topic": "動物園",
+    "tags": []
+  },
+  {
+    "id": "B3-0192",
+    "trad": "dòu",
+    "pinyin": "V",
+    "gloss_en": "",
+    "band": "B",
+    "level": 3,
+    "topic": "逗",
+    "tags": []
+  },
+  {
+    "id": "B3-0193",
+    "trad": "dūshì",
+    "pinyin": "N",
+    "gloss_en": "",
+    "band": "B",
+    "level": 3,
+    "topic": "都市",
+    "tags": []
+  },
+  {
+    "id": "B3-0194",
+    "trad": "dúpĭn",
+    "pinyin": "N",
+    "gloss_en": "",
+    "band": "B",
+    "level": 3,
+    "topic": "毒品",
+    "tags": []
+  },
+  {
+    "id": "B3-0195",
+    "trad": "dútè",
+    "pinyin": "Vs",
+    "gloss_en": "",
+    "band": "B",
+    "level": 3,
+    "topic": "獨特",
+    "tags": []
+  },
+  {
+    "id": "B3-0196",
+    "trad": "dúzhě",
+    "pinyin": "N",
+    "gloss_en": "",
+    "band": "B",
+    "level": 3,
+    "topic": "讀者",
+    "tags": []
+  },
+  {
+    "id": "B3-0197",
+    "trad": "duàn",
+    "pinyin": "M",
+    "gloss_en": "",
+    "band": "B",
+    "level": 3,
+    "topic": "段",
+    "tags": []
+  },
+  {
+    "id": "B3-0198",
+    "trad": "duī",
+    "pinyin": "M",
+    "gloss_en": "",
+    "band": "B",
+    "level": 3,
+    "topic": "堆",
+    "tags": []
+  },
+  {
+    "id": "B3-0199",
+    "trad": "duì",
+    "pinyin": "M / Prep / V",
+    "gloss_en": "",
+    "band": "B",
+    "level": 3,
+    "topic": "對",
+    "tags": []
+  },
+  {
+    "id": "B3-0200",
+    "trad": "duìfāng",
+    "pinyin": "N",
+    "gloss_en": "",
+    "band": "B",
+    "level": 3,
+    "topic": "對方",
+    "tags": []
+  },
+  {
+    "id": "B3-0201",
+    "trad": "duìhuà",
+    "pinyin": "N",
+    "gloss_en": "",
+    "band": "B",
+    "level": 3,
+    "topic": "對話",
+    "tags": []
+  },
+  {
+    "id": "B3-0202",
+    "trad": "duìxiàng",
+    "pinyin": "N",
+    "gloss_en": "",
+    "band": "B",
+    "level": 3,
+    "topic": "對象",
+    "tags": []
+  },
+  {
+    "id": "B3-0203",
+    "trad": "dùn",
+    "pinyin": "M",
+    "gloss_en": "",
+    "band": "B",
+    "level": 3,
+    "topic": "頓",
+    "tags": []
+  },
+  {
+    "id": "B3-0204",
+    "trad": "duōduoshăoshăo",
+    "pinyin": "Adv",
+    "gloss_en": "",
+    "band": "B",
+    "level": 3,
+    "topic": "多多(˙ㄉㄨㄛ)少少",
+    "tags": []
+  },
+  {
+    "id": "B3-0205",
+    "trad": "en",
+    "pinyin": "Ptc",
+    "gloss_en": "",
+    "band": "B",
+    "level": 3,
+    "topic": "嗯(˙ㄣ)",
+    "tags": []
+  },
+  {
+    "id": "B3-0206",
+    "trad": "ér",
+    "pinyin": "Conj",
+    "gloss_en": "",
+    "band": "B",
+    "level": 3,
+    "topic": "而",
+    "tags": []
+  },
+  {
+    "id": "B3-0207",
+    "trad": "értóng",
+    "pinyin": "N",
+    "gloss_en": "",
+    "band": "B",
+    "level": 3,
+    "topic": "兒童",
+    "tags": []
+  },
+  {
+    "id": "B3-0208",
+    "trad": "fā",
+    "pinyin": "V",
+    "gloss_en": "",
+    "band": "B",
+    "level": 3,
+    "topic": "發",
+    "tags": []
+  },
+  {
+    "id": "B3-0209",
+    "trad": "fābiăo",
+    "pinyin": "V",
+    "gloss_en": "",
+    "band": "B",
+    "level": 3,
+    "topic": "發表",
+    "tags": []
+  },
+  {
+    "id": "B3-0210",
+    "trad": "fācái",
+    "pinyin": "Vp-sep",
+    "gloss_en": "",
+    "band": "B",
+    "level": 3,
+    "topic": "發財",
+    "tags": []
+  },
+  {
+    "id": "B3-0211",
+    "trad": "fāchū",
+    "pinyin": "Vpt",
+    "gloss_en": "",
+    "band": "B",
+    "level": 3,
+    "topic": "發出",
+    "tags": []
+  },
+  {
+    "id": "B3-0212",
+    "trad": "fādá",
+    "pinyin": "Vs",
+    "gloss_en": "",
+    "band": "B",
+    "level": 3,
+    "topic": "發達",
+    "tags": []
+  },
+  {
+    "id": "B3-0213",
+    "trad": "fāhuī",
+    "pinyin": "V",
+    "gloss_en": "",
+    "band": "B",
+    "level": 3,
+    "topic": "發揮",
+    "tags": []
+  },
+  {
+    "id": "B3-0214",
+    "trad": "fājué",
+    "pinyin": "Vpt",
+    "gloss_en": "",
+    "band": "B",
+    "level": 3,
+    "topic": "發覺",
+    "tags": []
+  },
+  {
+    "id": "B3-0215",
+    "trad": "fāmíng",
+    "pinyin": "N / Vpt",
+    "gloss_en": "",
+    "band": "B",
+    "level": 3,
+    "topic": "發明",
+    "tags": []
+  },
+  {
+    "id": "B3-0216",
+    "trad": "fàn",
+    "pinyin": "Vst",
+    "gloss_en": "",
+    "band": "B",
+    "level": 3,
+    "topic": "犯",
+    "tags": []
+  },
+  {
+    "id": "B3-0217",
+    "trad": "fănér",
+    "pinyin": "Conj",
+    "gloss_en": "",
+    "band": "B",
+    "level": 3,
+    "topic": "反而",
+    "tags": []
+  },
+  {
+    "id": "B3-0218",
+    "trad": "fāngshì",
+    "pinyin": "N",
+    "gloss_en": "",
+    "band": "B",
+    "level": 3,
+    "topic": "方式",
+    "tags": []
+  },
+  {
+    "id": "B3-0219",
+    "trad": "fángkè",
+    "pinyin": "N",
+    "gloss_en": "",
+    "band": "B",
+    "level": 3,
+    "topic": "房客",
+    "tags": []
+  },
+  {
+    "id": "B3-0220",
+    "trad": "făngwèn",
+    "pinyin": "V",
+    "gloss_en": "",
+    "band": "B",
+    "level": 3,
+    "topic": "訪問/訪",
+    "tags": []
+  },
+  {
+    "id": "B3-0221",
+    "trad": "fánnăo",
+    "pinyin": "Vs",
+    "gloss_en": "",
+    "band": "B",
+    "level": 3,
+    "topic": "煩惱",
+    "tags": []
+  },
+  {
+    "id": "B3-0222",
+    "trad": "fànwéi",
+    "pinyin": "N",
+    "gloss_en": "",
+    "band": "B",
+    "level": 3,
+    "topic": "範圍",
+    "tags": []
+  },
+  {
+    "id": "B3-0223",
+    "trad": "fānyì/fān/yì",
+    "pinyin": "V",
+    "gloss_en": "",
+    "band": "B",
+    "level": 3,
+    "topic": "翻譯/翻/譯",
+    "tags": []
+  },
+  {
+    "id": "B3-0224",
+    "trad": "fănyìng",
+    "pinyin": "N",
+    "gloss_en": "",
+    "band": "B",
+    "level": 3,
+    "topic": "反應",
+    "tags": []
+  },
+  {
+    "id": "B3-0225",
+    "trad": "fāpiào",
+    "pinyin": "N",
+    "gloss_en": "",
+    "band": "B",
+    "level": 3,
+    "topic": "發票",
+    "tags": []
+  },
+  {
+    "id": "B3-0226",
+    "trad": "fāpíqì",
+    "pinyin": "Vi",
+    "gloss_en": "",
+    "band": "B",
+    "level": 3,
+    "topic": "發脾氣",
+    "tags": []
+  },
+  {
+    "id": "B3-0227",
+    "trad": "fēi",
+    "pinyin": "Adv / Vst",
+    "gloss_en": "",
+    "band": "B",
+    "level": 3,
+    "topic": "非",
+    "tags": []
+  },
+  {
+    "id": "B3-0228",
+    "trad": "fèiyòng",
+    "pinyin": "N",
+    "gloss_en": "",
+    "band": "B",
+    "level": 3,
+    "topic": "費用",
+    "tags": []
+  },
+  {
+    "id": "B3-0229",
+    "trad": "fēngfù",
+    "pinyin": "Vs",
+    "gloss_en": "",
+    "band": "B",
+    "level": 3,
+    "topic": "豐富",
+    "tags": []
+  },
+  {
+    "id": "B3-0230",
+    "trad": "fēnggé",
+    "pinyin": "N",
+    "gloss_en": "",
+    "band": "B",
+    "level": 3,
+    "topic": "風格",
+    "tags": []
+  },
+  {
+    "id": "B3-0231",
+    "trad": "fēngsú",
+    "pinyin": "N",
+    "gloss_en": "",
+    "band": "B",
+    "level": 3,
+    "topic": "風俗",
+    "tags": []
+  },
+  {
+    "id": "B3-0232",
+    "trad": "fēnkāi",
+    "pinyin": "Vp",
+    "gloss_en": "",
+    "band": "B",
+    "level": 3,
+    "topic": "分開",
+    "tags": []
+  },
+  {
+    "id": "B3-0233",
+    "trad": "Fójiào",
+    "pinyin": "N",
+    "gloss_en": "",
+    "band": "B",
+    "level": 3,
+    "topic": "佛教",
+    "tags": []
+  },
+  {
+    "id": "B3-0234",
+    "trad": "fŏuzé",
+    "pinyin": "Conj",
+    "gloss_en": "",
+    "band": "B",
+    "level": 3,
+    "topic": "否則",
+    "tags": []
+  },
+  {
+    "id": "B3-0235",
+    "trad": "fūfù",
+    "pinyin": "N",
+    "gloss_en": "",
+    "band": "B",
+    "level": 3,
+    "topic": "夫婦",
+    "tags": []
+  },
+  {
+    "id": "B3-0236",
+    "trad": "fúhé",
+    "pinyin": "Vst",
+    "gloss_en": "",
+    "band": "B",
+    "level": 3,
+    "topic": "符合",
+    "tags": []
+  },
+  {
+    "id": "B3-0237",
+    "trad": "fúlì",
+    "pinyin": "N",
+    "gloss_en": "",
+    "band": "B",
+    "level": 3,
+    "topic": "福利",
+    "tags": []
+  },
+  {
+    "id": "B3-0238",
+    "trad": "fúzhuāng",
+    "pinyin": "N",
+    "gloss_en": "",
+    "band": "B",
+    "level": 3,
+    "topic": "服裝",
+    "tags": []
+  },
+  {
+    "id": "B3-0239",
+    "trad": "fŭbài",
+    "pinyin": "Vs",
+    "gloss_en": "",
+    "band": "B",
+    "level": 3,
+    "topic": "腐敗",
+    "tags": []
+  },
+  {
+    "id": "B3-0240",
+    "trad": "fùchū",
+    "pinyin": "Vpt",
+    "gloss_en": "",
+    "band": "B",
+    "level": 3,
+    "topic": "付出",
+    "tags": []
+  },
+  {
+    "id": "B3-0241",
+    "trad": "fùdān",
+    "pinyin": "N / V",
+    "gloss_en": "",
+    "band": "B",
+    "level": 3,
+    "topic": "負擔",
+    "tags": []
+  },
+  {
+    "id": "B3-0242",
+    "trad": "fùxí",
+    "pinyin": "V",
+    "gloss_en": "",
+    "band": "B",
+    "level": 3,
+    "topic": "複習",
+    "tags": []
+  },
+  {
+    "id": "B3-0243",
+    "trad": "fùzé",
+    "pinyin": "Vs",
+    "gloss_en": "",
+    "band": "B",
+    "level": 3,
+    "topic": "負責",
+    "tags": []
+  },
+  {
+    "id": "B3-0244",
+    "trad": "gāi",
+    "pinyin": "Vaux",
+    "gloss_en": "",
+    "band": "B",
+    "level": 3,
+    "topic": "該",
+    "tags": []
+  },
+  {
+    "id": "B3-0245",
+    "trad": "găibiàn",
+    "pinyin": "N / V",
+    "gloss_en": "",
+    "band": "B",
+    "level": 3,
+    "topic": "改變",
+    "tags": []
+  },
+  {
+    "id": "B3-0246",
+    "trad": "găijìn",
+    "pinyin": "V",
+    "gloss_en": "",
+    "band": "B",
+    "level": 3,
+    "topic": "改進",
+    "tags": []
+  },
+  {
+    "id": "B3-0247",
+    "trad": "găishàn",
+    "pinyin": "V",
+    "gloss_en": "",
+    "band": "B",
+    "level": 3,
+    "topic": "改善",
+    "tags": []
+  },
+  {
+    "id": "B3-0248",
+    "trad": "găitiān",
+    "pinyin": "Adv",
+    "gloss_en": "",
+    "band": "B",
+    "level": 3,
+    "topic": "改天",
+    "tags": []
+  },
+  {
+    "id": "B3-0249",
+    "trad": "gài",
+    "pinyin": "V",
+    "gloss_en": "",
+    "band": "B",
+    "level": 3,
+    "topic": "蓋",
+    "tags": []
+  },
+  {
+    "id": "B3-0250",
+    "trad": "gàiniàn",
+    "pinyin": "N",
+    "gloss_en": "",
+    "band": "B",
+    "level": 3,
+    "topic": "概念",
+    "tags": []
+  },
+  {
+    "id": "B3-0251",
+    "trad": "găn",
+    "pinyin": "V",
+    "gloss_en": "",
+    "band": "B",
+    "level": 3,
+    "topic": "趕",
+    "tags": []
+  },
+  {
+    "id": "B3-0252",
+    "trad": "gănshàng",
+    "pinyin": "Vpt",
+    "gloss_en": "",
+    "band": "B",
+    "level": 3,
+    "topic": "趕上",
+    "tags": []
+  },
+  {
+    "id": "B3-0253",
+    "trad": "găndòng",
+    "pinyin": "Vs",
+    "gloss_en": "",
+    "band": "B",
+    "level": 3,
+    "topic": "感動",
+    "tags": []
+  },
+  {
+    "id": "B3-0254",
+    "trad": "gănxiăng",
+    "pinyin": "N",
+    "gloss_en": "",
+    "band": "B",
+    "level": 3,
+    "topic": "感想",
+    "tags": []
+  },
+  {
+    "id": "B3-0255",
+    "trad": "gănxiè",
+    "pinyin": "Vst",
+    "gloss_en": "",
+    "band": "B",
+    "level": 3,
+    "topic": "感謝",
+    "tags": []
+  },
+  {
+    "id": "B3-0256",
+    "trad": "gănxìngqù",
+    "pinyin": "Vs",
+    "gloss_en": "",
+    "band": "B",
+    "level": 3,
+    "topic": "感興趣",
+    "tags": []
+  },
+  {
+    "id": "B3-0257",
+    "trad": "gāngqín",
+    "pinyin": "N",
+    "gloss_en": "",
+    "band": "B",
+    "level": 3,
+    "topic": "鋼琴",
+    "tags": []
+  },
+  {
+    "id": "B3-0258",
+    "trad": "gāosù",
+    "pinyin": "Vs-attr",
+    "gloss_en": "",
+    "band": "B",
+    "level": 3,
+    "topic": "高速",
+    "tags": []
+  },
+  {
+    "id": "B3-0259",
+    "trad": "găo",
+    "pinyin": "V",
+    "gloss_en": "",
+    "band": "B",
+    "level": 3,
+    "topic": "搞",
+    "tags": []
+  },
+  {
+    "id": "B3-0260",
+    "trad": "ge",
+    "pinyin": "Ptc",
+    "gloss_en": "",
+    "band": "B",
+    "level": 3,
+    "topic": "個",
+    "tags": []
+  },
+  {
+    "id": "B3-0261",
+    "trad": "gēqŭ",
+    "pinyin": "N",
+    "gloss_en": "",
+    "band": "B",
+    "level": 3,
+    "topic": "歌曲",
+    "tags": []
+  },
+  {
+    "id": "B3-0262",
+    "trad": "gēxīng",
+    "pinyin": "N",
+    "gloss_en": "",
+    "band": "B",
+    "level": 3,
+    "topic": "歌星",
+    "tags": []
+  },
+  {
+    "id": "B3-0263",
+    "trad": "gébì",
+    "pinyin": "N",
+    "gloss_en": "",
+    "band": "B",
+    "level": 3,
+    "topic": "隔壁",
+    "tags": []
+  },
+  {
+    "id": "B3-0264",
+    "trad": "gèrén",
+    "pinyin": "N",
+    "gloss_en": "",
+    "band": "B",
+    "level": 3,
+    "topic": "個人",
+    "tags": []
+  },
+  {
+    "id": "B3-0265",
+    "trad": "gèzi/gèr",
+    "pinyin": "N",
+    "gloss_en": "",
+    "band": "B",
+    "level": 3,
+    "topic": "個子/個兒",
+    "tags": []
+  },
+  {
+    "id": "B3-0266",
+    "trad": "gěi",
+    "pinyin": "Prep",
+    "gloss_en": "",
+    "band": "B",
+    "level": 3,
+    "topic": "給",
+    "tags": []
+  },
+  {
+    "id": "B3-0267",
+    "trad": "gémìng",
+    "pinyin": "Vi",
+    "gloss_en": "",
+    "band": "B",
+    "level": 3,
+    "topic": "革命",
+    "tags": []
+  },
+  {
+    "id": "B3-0268",
+    "trad": "gēn",
+    "pinyin": "Prep / V",
+    "gloss_en": "",
+    "band": "B",
+    "level": 3,
+    "topic": "跟",
+    "tags": []
+  },
+  {
+    "id": "B3-0269",
+    "trad": "gēn",
+    "pinyin": "M / V",
+    "gloss_en": "",
+    "band": "B",
+    "level": 3,
+    "topic": "根",
+    "tags": []
+  },
+  {
+    "id": "B3-0270",
+    "trad": "gēnjù/jù",
+    "pinyin": "Prep",
+    "gloss_en": "",
+    "band": "B",
+    "level": 3,
+    "topic": "根據/據",
+    "tags": []
+  },
+  {
+    "id": "B3-0271",
+    "trad": "gèngjiā",
+    "pinyin": "Adv",
+    "gloss_en": "",
+    "band": "B",
+    "level": 3,
+    "topic": "更加",
+    "tags": []
+  },
+  {
+    "id": "B3-0272",
+    "trad": "gèshìgèyàng",
+    "pinyin": "Vs-attr",
+    "gloss_en": "",
+    "band": "B",
+    "level": 3,
+    "topic": "各式各樣",
+    "tags": []
+  },
+  {
+    "id": "B3-0273",
+    "trad": "gèwèi",
+    "pinyin": "N",
+    "gloss_en": "",
+    "band": "B",
+    "level": 3,
+    "topic": "各位",
+    "tags": []
+  },
+  {
+    "id": "B3-0274",
+    "trad": "gōngchăng",
+    "pinyin": "N",
+    "gloss_en": "",
+    "band": "B",
+    "level": 3,
+    "topic": "工廠",
+    "tags": []
+  },
+  {
+    "id": "B3-0275",
+    "trad": "gōngchĭ",
+    "pinyin": "M",
+    "gloss_en": "",
+    "band": "B",
+    "level": 3,
+    "topic": "公尺",
+    "tags": []
+  },
+  {
+    "id": "B3-0276",
+    "trad": "gōngfēn",
+    "pinyin": "M",
+    "gloss_en": "",
+    "band": "B",
+    "level": 3,
+    "topic": "公分",
+    "tags": []
+  },
+  {
+    "id": "B3-0277",
+    "trad": "gōngfu",
+    "pinyin": "N",
+    "gloss_en": "",
+    "band": "B",
+    "level": 3,
+    "topic": "功夫",
+    "tags": []
+  },
+  {
+    "id": "B3-0278",
+    "trad": "gōnggòng",
+    "pinyin": "Vs-attr",
+    "gloss_en": "",
+    "band": "B",
+    "level": 3,
+    "topic": "公共",
+    "tags": []
+  },
+  {
+    "id": "B3-0279",
+    "trad": "gōngjīn",
+    "pinyin": "M",
+    "gloss_en": "",
+    "band": "B",
+    "level": 3,
+    "topic": "公斤",
+    "tags": []
+  },
+  {
+    "id": "B3-0280",
+    "trad": "gōngjù",
+    "pinyin": "N",
+    "gloss_en": "",
+    "band": "B",
+    "level": 3,
+    "topic": "工具",
+    "tags": []
+  },
+  {
+    "id": "B3-0281",
+    "trad": "gōngkè",
+    "pinyin": "M",
+    "gloss_en": "",
+    "band": "B",
+    "level": 3,
+    "topic": "公克",
+    "tags": []
+  },
+  {
+    "id": "B3-0282",
+    "trad": "gōnglĭ",
+    "pinyin": "M",
+    "gloss_en": "",
+    "band": "B",
+    "level": 3,
+    "topic": "公里",
+    "tags": []
+  },
+  {
+    "id": "B3-0283",
+    "trad": "gōngnéng",
+    "pinyin": "N",
+    "gloss_en": "",
+    "band": "B",
+    "level": 3,
+    "topic": "功能",
+    "tags": []
+  },
+  {
+    "id": "B3-0284",
+    "trad": "gōngxĭ",
+    "pinyin": "V",
+    "gloss_en": "",
+    "band": "B",
+    "level": 3,
+    "topic": "恭喜",
+    "tags": []
+  },
+  {
+    "id": "B3-0285",
+    "trad": "gōngyè",
+    "pinyin": "N",
+    "gloss_en": "",
+    "band": "B",
+    "level": 3,
+    "topic": "工業",
+    "tags": []
+  },
+  {
+    "id": "B3-0286",
+    "trad": "gōngyù",
+    "pinyin": "N",
+    "gloss_en": "",
+    "band": "B",
+    "level": 3,
+    "topic": "公寓",
+    "tags": []
+  },
+  {
+    "id": "B3-0287",
+    "trad": "gōngzuò",
+    "pinyin": "Vi",
+    "gloss_en": "",
+    "band": "B",
+    "level": 3,
+    "topic": "工作",
+    "tags": []
+  },
+  {
+    "id": "B3-0288",
+    "trad": "gòngtóng",
+    "pinyin": "Vs-attr",
+    "gloss_en": "",
+    "band": "B",
+    "level": 3,
+    "topic": "共同",
+    "tags": []
+  },
+  {
+    "id": "B3-0289",
+    "trad": "gòngxiàn",
+    "pinyin": "N / V",
+    "gloss_en": "",
+    "band": "B",
+    "level": 3,
+    "topic": "貢獻",
+    "tags": []
+  },
+  {
+    "id": "B3-0290",
+    "trad": "gōutōng",
+    "pinyin": "V",
+    "gloss_en": "",
+    "band": "B",
+    "level": 3,
+    "topic": "溝通",
+    "tags": []
+  },
+  {
+    "id": "B3-0291",
+    "trad": "gòu",
+    "pinyin": "Adv",
+    "gloss_en": "",
+    "band": "B",
+    "level": 3,
+    "topic": "夠",
+    "tags": []
+  },
+  {
+    "id": "B3-0292",
+    "trad": "gòumăi",
+    "pinyin": "V",
+    "gloss_en": "",
+    "band": "B",
+    "level": 3,
+    "topic": "購買",
+    "tags": []
+  },
+  {
+    "id": "B3-0293",
+    "trad": "gūniang",
+    "pinyin": "N",
+    "gloss_en": "",
+    "band": "B",
+    "level": 3,
+    "topic": "姑娘（˙ㄋㄧㄤ）",
+    "tags": []
+  },
+  {
+    "id": "B3-0294",
+    "trad": "gŭ",
+    "pinyin": "Vs-attr",
+    "gloss_en": "",
+    "band": "B",
+    "level": 3,
+    "topic": "古",
+    "tags": []
+  },
+  {
+    "id": "B3-0295",
+    "trad": "gŭdài",
+    "pinyin": "N",
+    "gloss_en": "",
+    "band": "B",
+    "level": 3,
+    "topic": "古代",
+    "tags": []
+  },
+  {
+    "id": "B3-0296",
+    "trad": "gŭjī",
+    "pinyin": "N",
+    "gloss_en": "",
+    "band": "B",
+    "level": 3,
+    "topic": "古蹟/跡",
+    "tags": []
+  },
+  {
+    "id": "B3-0297",
+    "trad": "gŭlăo",
+    "pinyin": "Vs",
+    "gloss_en": "",
+    "band": "B",
+    "level": 3,
+    "topic": "古老",
+    "tags": []
+  },
+  {
+    "id": "B3-0298",
+    "trad": "gù",
+    "pinyin": "V",
+    "gloss_en": "",
+    "band": "B",
+    "level": 3,
+    "topic": "顧",
+    "tags": []
+  },
+  {
+    "id": "B3-0299",
+    "trad": "gùkè",
+    "pinyin": "N",
+    "gloss_en": "",
+    "band": "B",
+    "level": 3,
+    "topic": "顧客",
+    "tags": []
+  },
+  {
+    "id": "B3-0300",
+    "trad": "gùyì",
+    "pinyin": "Vs",
+    "gloss_en": "",
+    "band": "B",
+    "level": 3,
+    "topic": "故意",
+    "tags": []
+  },
+  {
+    "id": "B3-0301",
+    "trad": "guā",
+    "pinyin": "V",
+    "gloss_en": "",
+    "band": "B",
+    "level": 3,
+    "topic": "刮",
+    "tags": []
+  },
+  {
+    "id": "B3-0302",
+    "trad": "guāi",
+    "pinyin": "Vs",
+    "gloss_en": "",
+    "band": "B",
+    "level": 3,
+    "topic": "乖",
+    "tags": []
+  },
+  {
+    "id": "B3-0303",
+    "trad": "guài",
+    "pinyin": "V / Vs",
+    "gloss_en": "",
+    "band": "B",
+    "level": 3,
+    "topic": "怪",
+    "tags": []
+  },
+  {
+    "id": "B3-0304",
+    "trad": "guān",
+    "pinyin": "Vp",
+    "gloss_en": "",
+    "band": "B",
+    "level": 3,
+    "topic": "關",
+    "tags": []
+  },
+  {
+    "id": "B3-0305",
+    "trad": "guānchá",
+    "pinyin": "V",
+    "gloss_en": "",
+    "band": "B",
+    "level": 3,
+    "topic": "觀察",
+    "tags": []
+  },
+  {
+    "id": "B3-0306",
+    "trad": "guāndiăn",
+    "pinyin": "N",
+    "gloss_en": "",
+    "band": "B",
+    "level": 3,
+    "topic": "觀點",
+    "tags": []
+  },
+  {
+    "id": "B3-0307",
+    "trad": "guăn",
+    "pinyin": "V",
+    "gloss_en": "",
+    "band": "B",
+    "level": 3,
+    "topic": "管",
+    "tags": []
+  },
+  {
+    "id": "B3-0308",
+    "trad": "guăngbò",
+    "pinyin": "N / Vi",
+    "gloss_en": "",
+    "band": "B",
+    "level": 3,
+    "topic": "廣播",
+    "tags": []
+  },
+  {
+    "id": "B3-0309",
+    "trad": "guăngchăng",
+    "pinyin": "N",
+    "gloss_en": "",
+    "band": "B",
+    "level": 3,
+    "topic": "廣場",
+    "tags": []
+  },
+  {
+    "id": "B3-0310",
+    "trad": "guănggào",
+    "pinyin": "N",
+    "gloss_en": "",
+    "band": "B",
+    "level": 3,
+    "topic": "廣告",
+    "tags": []
+  },
+  {
+    "id": "B3-0311",
+    "trad": "guānniàn",
+    "pinyin": "N",
+    "gloss_en": "",
+    "band": "B",
+    "level": 3,
+    "topic": "觀念",
+    "tags": []
+  },
+  {
+    "id": "B3-0312",
+    "trad": "guānzhòng",
+    "pinyin": "N",
+    "gloss_en": "",
+    "band": "B",
+    "level": 3,
+    "topic": "觀眾",
+    "tags": []
+  },
+  {
+    "id": "B3-0313",
+    "trad": "guījŭ",
+    "pinyin": "N",
+    "gloss_en": "",
+    "band": "B",
+    "level": 3,
+    "topic": "規矩",
+    "tags": []
+  },
+  {
+    "id": "B3-0314",
+    "trad": "guīmó",
+    "pinyin": "N",
+    "gloss_en": "",
+    "band": "B",
+    "level": 3,
+    "topic": "規模",
+    "tags": []
+  },
+  {
+    "id": "B3-0315",
+    "trad": "guĭ",
+    "pinyin": "N",
+    "gloss_en": "",
+    "band": "B",
+    "level": 3,
+    "topic": "鬼",
+    "tags": []
+  },
+  {
+    "id": "B3-0316",
+    "trad": "guónèi",
+    "pinyin": "N",
+    "gloss_en": "",
+    "band": "B",
+    "level": 3,
+    "topic": "國內",
+    "tags": []
+  },
+  {
+    "id": "B3-0317",
+    "trad": "guówài",
+    "pinyin": "N",
+    "gloss_en": "",
+    "band": "B",
+    "level": 3,
+    "topic": "國外",
+    "tags": []
+  },
+  {
+    "id": "B3-0318",
+    "trad": "guówáng",
+    "pinyin": "N",
+    "gloss_en": "",
+    "band": "B",
+    "level": 3,
+    "topic": "國王",
+    "tags": []
+  },
+  {
+    "id": "B3-0319",
+    "trad": "guóyŭ",
+    "pinyin": "N",
+    "gloss_en": "",
+    "band": "B",
+    "level": 3,
+    "topic": "國語",
+    "tags": []
+  },
+  {
+    "id": "B3-0320",
+    "trad": "guòqù",
+    "pinyin": "N / Vi",
+    "gloss_en": "",
+    "band": "B",
+    "level": 3,
+    "topic": "過去",
+    "tags": []
+  },
+  {
+    "id": "B3-0321",
+    "trad": "guòrìzi",
+    "pinyin": "Vi",
+    "gloss_en": "",
+    "band": "B",
+    "level": 3,
+    "topic": "過日子",
+    "tags": []
+  },
+  {
+    "id": "B3-0322",
+    "trad": "hāi",
+    "pinyin": "Ptc",
+    "gloss_en": "",
+    "band": "B",
+    "level": 3,
+    "topic": "嗨",
+    "tags": []
+  },
+  {
+    "id": "B3-0323",
+    "trad": "háishì",
+    "pinyin": "Adv",
+    "gloss_en": "",
+    "band": "B",
+    "level": 3,
+    "topic": "還是",
+    "tags": []
+  },
+  {
+    "id": "B3-0324",
+    "trad": "háiyào",
+    "pinyin": "Adv",
+    "gloss_en": "",
+    "band": "B",
+    "level": 3,
+    "topic": "還要",
+    "tags": []
+  },
+  {
+    "id": "B3-0325",
+    "trad": "hăibào",
+    "pinyin": "N",
+    "gloss_en": "",
+    "band": "B",
+    "level": 3,
+    "topic": "海報",
+    "tags": []
+  },
+  {
+    "id": "B3-0326",
+    "trad": "hăitān",
+    "pinyin": "N",
+    "gloss_en": "",
+    "band": "B",
+    "level": 3,
+    "topic": "海灘",
+    "tags": []
+  },
+  {
+    "id": "B3-0327",
+    "trad": "hăiyáng",
+    "pinyin": "N",
+    "gloss_en": "",
+    "band": "B",
+    "level": 3,
+    "topic": "海洋",
+    "tags": []
+  },
+  {
+    "id": "B3-0328",
+    "trad": "hài",
+    "pinyin": "V",
+    "gloss_en": "",
+    "band": "B",
+    "level": 3,
+    "topic": "害",
+    "tags": []
+  },
+  {
+    "id": "B3-0329",
+    "trad": "hángkōng",
+    "pinyin": "N",
+    "gloss_en": "",
+    "band": "B",
+    "level": 3,
+    "topic": "航空",
+    "tags": []
+  },
+  {
+    "id": "B3-0330",
+    "trad": "hànyŭ",
+    "pinyin": "N",
+    "gloss_en": "",
+    "band": "B",
+    "level": 3,
+    "topic": "漢語",
+    "tags": []
+  },
+  {
+    "id": "B3-0331",
+    "trad": "hào",
+    "pinyin": "Vs",
+    "gloss_en": "",
+    "band": "B",
+    "level": 3,
+    "topic": "好",
+    "tags": []
+  },
+  {
+    "id": "B3-0332",
+    "trad": "hăohăo/hăohăor",
+    "pinyin": "Adv",
+    "gloss_en": "",
+    "band": "B",
+    "level": 3,
+    "topic": "好好/好好兒",
+    "tags": []
+  },
+  {
+    "id": "B3-0333",
+    "trad": "hăole",
+    "pinyin": "Ptc",
+    "gloss_en": "",
+    "band": "B",
+    "level": 3,
+    "topic": "好了",
+    "tags": []
+  },
+  {
+    "id": "B3-0334",
+    "trad": "hé",
+    "pinyin": "Prep",
+    "gloss_en": "",
+    "band": "B",
+    "level": 3,
+    "topic": "和",
+    "tags": []
+  },
+  {
+    "id": "B3-0335",
+    "trad": "hé",
+    "pinyin": "Adv",
+    "gloss_en": "",
+    "band": "B",
+    "level": 3,
+    "topic": "合",
+    "tags": []
+  },
+  {
+    "id": "B3-0336",
+    "trad": "héchàng",
+    "pinyin": "V",
+    "gloss_en": "",
+    "band": "B",
+    "level": 3,
+    "topic": "合唱",
+    "tags": []
+  },
+  {
+    "id": "B3-0337",
+    "trad": "hēi",
+    "pinyin": "Vs",
+    "gloss_en": "",
+    "band": "B",
+    "level": 3,
+    "topic": "黑",
+    "tags": []
+  },
+  {
+    "id": "B3-0338",
+    "trad": "hèn",
+    "pinyin": "Vst",
+    "gloss_en": "",
+    "band": "B",
+    "level": 3,
+    "topic": "恨",
+    "tags": []
+  },
+  {
+    "id": "B3-0339",
+    "trad": "hènbùde",
+    "pinyin": "Vst",
+    "gloss_en": "",
+    "band": "B",
+    "level": 3,
+    "topic": "恨不得",
+    "tags": []
+  },
+  {
+    "id": "B3-0340",
+    "trad": "hóng",
+    "pinyin": "Vs",
+    "gloss_en": "",
+    "band": "B",
+    "level": 3,
+    "topic": "紅",
+    "tags": []
+  },
+  {
+    "id": "B3-0341",
+    "trad": "hóngbāo",
+    "pinyin": "N",
+    "gloss_en": "",
+    "band": "B",
+    "level": 3,
+    "topic": "紅包",
+    "tags": []
+  },
+  {
+    "id": "B3-0342",
+    "trad": "hóngdòu",
+    "pinyin": "N",
+    "gloss_en": "",
+    "band": "B",
+    "level": 3,
+    "topic": "紅豆",
+    "tags": []
+  },
+  {
+    "id": "B3-0343",
+    "trad": "hónglǜdēng",
+    "pinyin": "N",
+    "gloss_en": "",
+    "band": "B",
+    "level": 3,
+    "topic": "紅綠燈",
+    "tags": []
+  },
+  {
+    "id": "B3-0344",
+    "trad": "hòu",
+    "pinyin": "Vs",
+    "gloss_en": "",
+    "band": "B",
+    "level": 3,
+    "topic": "厚",
+    "tags": []
+  },
+  {
+    "id": "B3-0345",
+    "trad": "hòu",
+    "pinyin": "Det / N",
+    "gloss_en": "",
+    "band": "B",
+    "level": 3,
+    "topic": "後",
+    "tags": []
+  },
+  {
+    "id": "B3-0346",
+    "trad": "hūrán/hū",
+    "pinyin": "Adv",
+    "gloss_en": "",
+    "band": "B",
+    "level": 3,
+    "topic": "忽然/忽",
+    "tags": []
+  },
+  {
+    "id": "B3-0347",
+    "trad": "hútú",
+    "pinyin": "Vs",
+    "gloss_en": "",
+    "band": "B",
+    "level": 3,
+    "topic": "糊塗",
+    "tags": []
+  },
+  {
+    "id": "B3-0348",
+    "trad": "hùxiāng",
+    "pinyin": "Adv",
+    "gloss_en": "",
+    "band": "B",
+    "level": 3,
+    "topic": "互相",
+    "tags": []
+  },
+  {
+    "id": "B3-0349",
+    "trad": "hùzhào",
+    "pinyin": "N",
+    "gloss_en": "",
+    "band": "B",
+    "level": 3,
+    "topic": "護照",
+    "tags": []
+  },
+  {
+    "id": "B3-0350",
+    "trad": "huáng",
+    "pinyin": "Vs",
+    "gloss_en": "",
+    "band": "B",
+    "level": 3,
+    "topic": "黃",
+    "tags": []
+  },
+  {
+    "id": "B3-0351",
+    "trad": "huāxīn",
+    "pinyin": "Vs",
+    "gloss_en": "",
+    "band": "B",
+    "level": 3,
+    "topic": "花心",
+    "tags": []
+  },
+  {
+    "id": "B3-0352",
+    "trad": "huāyuán",
+    "pinyin": "N",
+    "gloss_en": "",
+    "band": "B",
+    "level": 3,
+    "topic": "花園",
+    "tags": []
+  },
+  {
+    "id": "B3-0353",
+    "trad": "huáxuě",
+    "pinyin": "V-sep",
+    "gloss_en": "",
+    "band": "B",
+    "level": 3,
+    "topic": "滑雪",
+    "tags": []
+  },
+  {
+    "id": "B3-0354",
+    "trad": "huàtí",
+    "pinyin": "N",
+    "gloss_en": "",
+    "band": "B",
+    "level": 3,
+    "topic": "話題",
+    "tags": []
+  },
+  {
+    "id": "B3-0355",
+    "trad": "huàzhuāngpĭn",
+    "pinyin": "N",
+    "gloss_en": "",
+    "band": "B",
+    "level": 3,
+    "topic": "化妝品",
+    "tags": []
+  },
+  {
+    "id": "B3-0356",
+    "trad": "huīfù",
+    "pinyin": "Vpt",
+    "gloss_en": "",
+    "band": "B",
+    "level": 3,
+    "topic": "恢復",
+    "tags": []
+  },
+  {
+    "id": "B3-0357",
+    "trad": "huí",
+    "pinyin": "M",
+    "gloss_en": "",
+    "band": "B",
+    "level": 3,
+    "topic": "回",
+    "tags": []
+  },
+  {
+    "id": "B3-0358",
+    "trad": "huíxiăng",
+    "pinyin": "V",
+    "gloss_en": "",
+    "band": "B",
+    "level": 3,
+    "topic": "回想",
+    "tags": []
+  },
+  {
+    "id": "B3-0359",
+    "trad": "huì",
+    "pinyin": "N",
+    "gloss_en": "",
+    "band": "B",
+    "level": 3,
+    "topic": "會",
+    "tags": []
+  },
+  {
+    "id": "B3-0360",
+    "trad": "huìchăng",
+    "pinyin": "N",
+    "gloss_en": "",
+    "band": "B",
+    "level": 3,
+    "topic": "會場",
+    "tags": []
+  },
+  {
+    "id": "B3-0361",
+    "trad": "huìhuà",
+    "pinyin": "N",
+    "gloss_en": "",
+    "band": "B",
+    "level": 3,
+    "topic": "會話",
+    "tags": []
+  },
+  {
+    "id": "B3-0362",
+    "trad": "huìyì",
+    "pinyin": "N",
+    "gloss_en": "",
+    "band": "B",
+    "level": 3,
+    "topic": "會議",
+    "tags": []
+  },
+  {
+    "id": "B3-0363",
+    "trad": "hūnlĭ",
+    "pinyin": "N",
+    "gloss_en": "",
+    "band": "B",
+    "level": 3,
+    "topic": "婚禮",
+    "tags": []
+  },
+  {
+    "id": "B3-0364",
+    "trad": "hūnyīn",
+    "pinyin": "N",
+    "gloss_en": "",
+    "band": "B",
+    "level": 3,
+    "topic": "婚姻",
+    "tags": []
+  },
+  {
+    "id": "B3-0365",
+    "trad": "hùnluàn",
+    "pinyin": "Vs",
+    "gloss_en": "",
+    "band": "B",
+    "level": 3,
+    "topic": "混亂",
+    "tags": []
+  },
+  {
+    "id": "B3-0366",
+    "trad": "huó",
+    "pinyin": "Vs-attr",
+    "gloss_en": "",
+    "band": "B",
+    "level": 3,
+    "topic": "活",
+    "tags": []
+  },
+  {
+    "id": "B3-0367",
+    "trad": "huódòng",
+    "pinyin": "Vi",
+    "gloss_en": "",
+    "band": "B",
+    "level": 3,
+    "topic": "活動",
+    "tags": []
+  },
+  {
+    "id": "B3-0368",
+    "trad": "huòxŭ",
+    "pinyin": "Adv",
+    "gloss_en": "",
+    "band": "B",
+    "level": 3,
+    "topic": "或許",
+    "tags": []
+  },
+  {
+    "id": "B3-0369",
+    "trad": "jīběn",
+    "pinyin": "N / Vs",
+    "gloss_en": "",
+    "band": "B",
+    "level": 3,
+    "topic": "基本",
+    "tags": []
+  },
+  {
+    "id": "B3-0370",
+    "trad": "jīchŭ",
+    "pinyin": "N",
+    "gloss_en": "",
+    "band": "B",
+    "level": 3,
+    "topic": "基礎",
+    "tags": []
+  },
+  {
+    "id": "B3-0371",
+    "trad": "jīdòng",
+    "pinyin": "Vs",
+    "gloss_en": "",
+    "band": "B",
+    "level": 3,
+    "topic": "激動",
+    "tags": []
+  },
+  {
+    "id": "B3-0372",
+    "trad": "Jīdūjiào",
+    "pinyin": "N",
+    "gloss_en": "",
+    "band": "B",
+    "level": 3,
+    "topic": "基督教",
+    "tags": []
+  },
+  {
+    "id": "B3-0373",
+    "trad": "jījí",
+    "pinyin": "Vs",
+    "gloss_en": "",
+    "band": "B",
+    "level": 3,
+    "topic": "積極",
+    "tags": []
+  },
+  {
+    "id": "B3-0374",
+    "trad": "jīliè",
+    "pinyin": "Vs",
+    "gloss_en": "",
+    "band": "B",
+    "level": 3,
+    "topic": "激烈",
+    "tags": []
+  },
+  {
+    "id": "B3-0375",
+    "trad": "jīqì",
+    "pinyin": "N",
+    "gloss_en": "",
+    "band": "B",
+    "level": 3,
+    "topic": "機器",
+    "tags": []
+  },
+  {
+    "id": "B3-0376",
+    "trad": "jí",
+    "pinyin": "Conj",
+    "gloss_en": "",
+    "band": "B",
+    "level": 3,
+    "topic": "及",
+    "tags": []
+  },
+  {
+    "id": "B3-0377",
+    "trad": "jíshí",
+    "pinyin": "Adv",
+    "gloss_en": "",
+    "band": "B",
+    "level": 3,
+    "topic": "及時",
+    "tags": []
+  },
+  {
+    "id": "B3-0378",
+    "trad": "jĭ",
+    "pinyin": "V / Vs",
+    "gloss_en": "",
+    "band": "B",
+    "level": 3,
+    "topic": "擠",
+    "tags": []
+  },
+  {
+    "id": "B3-0379",
+    "trad": "jì",
+    "pinyin": "Vst / V",
+    "gloss_en": "",
+    "band": "B",
+    "level": 3,
+    "topic": "記",
+    "tags": []
+  },
+  {
+    "id": "B3-0380",
+    "trad": "jìlù",
+    "pinyin": "N / V",
+    "gloss_en": "",
+    "band": "B",
+    "level": 3,
+    "topic": "記錄",
+    "tags": []
+  },
+  {
+    "id": "B3-0381",
+    "trad": "jìniàn",
+    "pinyin": "N / Vst",
+    "gloss_en": "",
+    "band": "B",
+    "level": 3,
+    "topic": "紀念",
+    "tags": []
+  },
+  {
+    "id": "B3-0382",
+    "trad": "jìqiăo",
+    "pinyin": "N",
+    "gloss_en": "",
+    "band": "B",
+    "level": 3,
+    "topic": "技巧",
+    "tags": []
+  },
+  {
+    "id": "B3-0383",
+    "trad": "jìxù",
+    "pinyin": "V",
+    "gloss_en": "",
+    "band": "B",
+    "level": 3,
+    "topic": "繼續",
+    "tags": []
+  },
+  {
+    "id": "B3-0384",
+    "trad": "jìyì",
+    "pinyin": "N",
+    "gloss_en": "",
+    "band": "B",
+    "level": 3,
+    "topic": "記憶",
+    "tags": []
+  },
+  {
+    "id": "B3-0385",
+    "trad": "jìzhě",
+    "pinyin": "N",
+    "gloss_en": "",
+    "band": "B",
+    "level": 3,
+    "topic": "記者",
+    "tags": []
+  },
+  {
+    "id": "B3-0386",
+    "trad": "jiā",
+    "pinyin": "M",
+    "gloss_en": "",
+    "band": "B",
+    "level": 3,
+    "topic": "家",
+    "tags": []
+  },
+  {
+    "id": "B3-0387",
+    "trad": "jiă",
+    "pinyin": "Vs",
+    "gloss_en": "",
+    "band": "B",
+    "level": 3,
+    "topic": "假",
+    "tags": []
+  },
+  {
+    "id": "B3-0388",
+    "trad": "jià",
+    "pinyin": "M",
+    "gloss_en": "",
+    "band": "B",
+    "level": 3,
+    "topic": "架",
+    "tags": []
+  },
+  {
+    "id": "B3-0389",
+    "trad": "jiàgé",
+    "pinyin": "N",
+    "gloss_en": "",
+    "band": "B",
+    "level": 3,
+    "topic": "價格",
+    "tags": []
+  },
+  {
+    "id": "B3-0390",
+    "trad": "jiān",
+    "pinyin": "N",
+    "gloss_en": "",
+    "band": "B",
+    "level": 3,
+    "topic": "肩",
+    "tags": []
+  },
+  {
+    "id": "B3-0391",
+    "trad": "jiānbăng",
+    "pinyin": "N",
+    "gloss_en": "",
+    "band": "B",
+    "level": 3,
+    "topic": "肩膀",
+    "tags": []
+  },
+  {
+    "id": "B3-0392",
+    "trad": "jiānchí",
+    "pinyin": "Vs",
+    "gloss_en": "",
+    "band": "B",
+    "level": 3,
+    "topic": "堅持",
+    "tags": []
+  },
+  {
+    "id": "B3-0393",
+    "trad": "jiăn",
+    "pinyin": "V",
+    "gloss_en": "",
+    "band": "B",
+    "level": 3,
+    "topic": "剪",
+    "tags": []
+  },
+  {
+    "id": "B3-0394",
+    "trad": "jiănchá",
+    "pinyin": "V",
+    "gloss_en": "",
+    "band": "B",
+    "level": 3,
+    "topic": "檢查",
+    "tags": []
+  },
+  {
+    "id": "B3-0395",
+    "trad": "jiānglái",
+    "pinyin": "N",
+    "gloss_en": "",
+    "band": "B",
+    "level": 3,
+    "topic": "將來",
+    "tags": []
+  },
+  {
+    "id": "B3-0396",
+    "trad": "jiăngxuéjīn",
+    "pinyin": "N",
+    "gloss_en": "",
+    "band": "B",
+    "level": 3,
+    "topic": "獎學金",
+    "tags": []
+  },
+  {
+    "id": "B3-0397",
+    "trad": "jiàngdī",
+    "pinyin": "Vpt",
+    "gloss_en": "",
+    "band": "B",
+    "level": 3,
+    "topic": "降低",
+    "tags": []
+  },
+  {
+    "id": "B3-0398",
+    "trad": "jiănghuà",
+    "pinyin": "V-sep",
+    "gloss_en": "",
+    "band": "B",
+    "level": 3,
+    "topic": "講話",
+    "tags": []
+  },
+  {
+    "id": "B3-0399",
+    "trad": "jiăngjià",
+    "pinyin": "Vi",
+    "gloss_en": "",
+    "band": "B",
+    "level": 3,
+    "topic": "講價",
+    "tags": []
+  },
+  {
+    "id": "B3-0400",
+    "trad": "jiăngjiù",
+    "pinyin": "Vs",
+    "gloss_en": "",
+    "band": "B",
+    "level": 3,
+    "topic": "講究",
+    "tags": []
+  },
+  {
+    "id": "B3-0401",
+    "trad": "jiàngyóu",
+    "pinyin": "N",
+    "gloss_en": "",
+    "band": "B",
+    "level": 3,
+    "topic": "醬油",
+    "tags": []
+  },
+  {
+    "id": "B3-0402",
+    "trad": "jiānqiáng",
+    "pinyin": "Vs",
+    "gloss_en": "",
+    "band": "B",
+    "level": 3,
+    "topic": "堅強",
+    "tags": []
+  },
+  {
+    "id": "B3-0403",
+    "trad": "jiănqīng",
+    "pinyin": "Vpt",
+    "gloss_en": "",
+    "band": "B",
+    "level": 3,
+    "topic": "減輕",
+    "tags": []
+  },
+  {
+    "id": "B3-0404",
+    "trad": "jiănshăo",
+    "pinyin": "Vpt",
+    "gloss_en": "",
+    "band": "B",
+    "level": 3,
+    "topic": "減少",
+    "tags": []
+  },
+  {
+    "id": "B3-0405",
+    "trad": "jiănzhí",
+    "pinyin": "Adv",
+    "gloss_en": "",
+    "band": "B",
+    "level": 3,
+    "topic": "簡直",
+    "tags": []
+  },
+  {
+    "id": "B3-0406",
+    "trad": "jiànlì",
+    "pinyin": "V",
+    "gloss_en": "",
+    "band": "B",
+    "level": 3,
+    "topic": "建立",
+    "tags": []
+  },
+  {
+    "id": "B3-0407",
+    "trad": "jiànshè",
+    "pinyin": "N / V",
+    "gloss_en": "",
+    "band": "B",
+    "level": 3,
+    "topic": "建設",
+    "tags": []
+  },
+  {
+    "id": "B3-0408",
+    "trad": "jiāoào",
+    "pinyin": "Vs",
+    "gloss_en": "",
+    "band": "B",
+    "level": 3,
+    "topic": "驕傲",
+    "tags": []
+  },
+  {
+    "id": "B3-0409",
+    "trad": "jiāoliú",
+    "pinyin": "Vi",
+    "gloss_en": "",
+    "band": "B",
+    "level": 3,
+    "topic": "交流",
+    "tags": []
+  },
+  {
+    "id": "B3-0410",
+    "trad": "jiāoqū",
+    "pinyin": "N",
+    "gloss_en": "",
+    "band": "B",
+    "level": 3,
+    "topic": "郊區",
+    "tags": []
+  },
+  {
+    "id": "B3-0411",
+    "trad": "jiāoyŏu",
+    "pinyin": "Vi",
+    "gloss_en": "",
+    "band": "B",
+    "level": 3,
+    "topic": "交友",
+    "tags": []
+  },
+  {
+    "id": "B3-0412",
+    "trad": "jiăodù",
+    "pinyin": "N",
+    "gloss_en": "",
+    "band": "B",
+    "level": 3,
+    "topic": "角度",
+    "tags": []
+  },
+  {
+    "id": "B3-0413",
+    "trad": "jiào",
+    "pinyin": "Vst",
+    "gloss_en": "",
+    "band": "B",
+    "level": 3,
+    "topic": "教",
+    "tags": []
+  },
+  {
+    "id": "B3-0414",
+    "trad": "jiàocái",
+    "pinyin": "N",
+    "gloss_en": "",
+    "band": "B",
+    "level": 3,
+    "topic": "教材",
+    "tags": []
+  },
+  {
+    "id": "B3-0415",
+    "trad": "jiàodăo",
+    "pinyin": "V",
+    "gloss_en": "",
+    "band": "B",
+    "level": 3,
+    "topic": "教導",
+    "tags": []
+  },
+  {
+    "id": "B3-0416",
+    "trad": "jiàofă",
+    "pinyin": "N",
+    "gloss_en": "",
+    "band": "B",
+    "level": 3,
+    "topic": "教法",
+    "tags": []
+  },
+  {
+    "id": "B3-0417",
+    "trad": "jiàoliàn",
+    "pinyin": "N",
+    "gloss_en": "",
+    "band": "B",
+    "level": 3,
+    "topic": "教練",
+    "tags": []
+  },
+  {
+    "id": "B3-0418",
+    "trad": "jiàoshī",
+    "pinyin": "N",
+    "gloss_en": "",
+    "band": "B",
+    "level": 3,
+    "topic": "教師",
+    "tags": []
+  },
+  {
+    "id": "B3-0419",
+    "trad": "jiàotáng",
+    "pinyin": "N",
+    "gloss_en": "",
+    "band": "B",
+    "level": 3,
+    "topic": "教堂",
+    "tags": []
+  },
+  {
+    "id": "B3-0420",
+    "trad": "jiàoxùn",
+    "pinyin": "N",
+    "gloss_en": "",
+    "band": "B",
+    "level": 3,
+    "topic": "教訓",
+    "tags": []
+  },
+  {
+    "id": "B3-0421",
+    "trad": "jiāqiáng",
+    "pinyin": "V",
+    "gloss_en": "",
+    "band": "B",
+    "level": 3,
+    "topic": "加強",
+    "tags": []
+  },
+  {
+    "id": "B3-0422",
+    "trad": "jiārù",
+    "pinyin": "Vpt",
+    "gloss_en": "",
+    "band": "B",
+    "level": 3,
+    "topic": "加入",
+    "tags": []
+  },
+  {
+    "id": "B3-0423",
+    "trad": "jiāxiāng",
+    "pinyin": "N",
+    "gloss_en": "",
+    "band": "B",
+    "level": 3,
+    "topic": "家鄉",
+    "tags": []
+  },
+  {
+    "id": "B3-0424",
+    "trad": "jiāzhăng",
+    "pinyin": "N",
+    "gloss_en": "",
+    "band": "B",
+    "level": 3,
+    "topic": "家長",
+    "tags": []
+  },
+  {
+    "id": "B3-0425",
+    "trad": "jiărú",
+    "pinyin": "Conj",
+    "gloss_en": "",
+    "band": "B",
+    "level": 3,
+    "topic": "假如",
+    "tags": []
+  },
+  {
+    "id": "B3-0426",
+    "trad": "jiăzhuāng",
+    "pinyin": "V",
+    "gloss_en": "",
+    "band": "B",
+    "level": 3,
+    "topic": "假裝",
+    "tags": []
+  },
+  {
+    "id": "B3-0427",
+    "trad": "jiàqián",
+    "pinyin": "N",
+    "gloss_en": "",
+    "band": "B",
+    "level": 3,
+    "topic": "價錢",
+    "tags": []
+  },
+  {
+    "id": "B3-0428",
+    "trad": "jiàzhí",
+    "pinyin": "N",
+    "gloss_en": "",
+    "band": "B",
+    "level": 3,
+    "topic": "價值",
+    "tags": []
+  },
+  {
+    "id": "B3-0429",
+    "trad": "jiēchù",
+    "pinyin": "V",
+    "gloss_en": "",
+    "band": "B",
+    "level": 3,
+    "topic": "接觸",
+    "tags": []
+  },
+  {
+    "id": "B3-0430",
+    "trad": "jiēshòu",
+    "pinyin": "V",
+    "gloss_en": "",
+    "band": "B",
+    "level": 3,
+    "topic": "接受",
+    "tags": []
+  },
+  {
+    "id": "B3-0431",
+    "trad": "jié",
+    "pinyin": "V",
+    "gloss_en": "",
+    "band": "B",
+    "level": 3,
+    "topic": "結",
+    "tags": []
+  },
+  {
+    "id": "B3-0432",
+    "trad": "jié",
+    "pinyin": "M",
+    "gloss_en": "",
+    "band": "B",
+    "level": 3,
+    "topic": "節",
+    "tags": []
+  },
+  {
+    "id": "B3-0433",
+    "trad": "jiémù",
+    "pinyin": "N",
+    "gloss_en": "",
+    "band": "B",
+    "level": 3,
+    "topic": "節目",
+    "tags": []
+  },
+  {
+    "id": "B3-0434",
+    "trad": "jiéjú",
+    "pinyin": "N",
+    "gloss_en": "",
+    "band": "B",
+    "level": 3,
+    "topic": "結局",
+    "tags": []
+  },
+  {
+    "id": "B3-0435",
+    "trad": "jiějué",
+    "pinyin": "V",
+    "gloss_en": "",
+    "band": "B",
+    "level": 3,
+    "topic": "解決",
+    "tags": []
+  },
+  {
+    "id": "B3-0436",
+    "trad": "jiěmèi",
+    "pinyin": "N",
+    "gloss_en": "",
+    "band": "B",
+    "level": 3,
+    "topic": "姊妹",
+    "tags": []
+  },
+  {
+    "id": "B3-0437",
+    "trad": "jiěshì",
+    "pinyin": "V / N",
+    "gloss_en": "",
+    "band": "B",
+    "level": 3,
+    "topic": "解釋",
+    "tags": []
+  },
+  {
+    "id": "B3-0438",
+    "trad": "jīn",
+    "pinyin": "M",
+    "gloss_en": "",
+    "band": "B",
+    "level": 3,
+    "topic": "斤",
+    "tags": []
+  },
+  {
+    "id": "B3-0439",
+    "trad": "jīn(zi)",
+    "pinyin": "N",
+    "gloss_en": "",
+    "band": "B",
+    "level": 3,
+    "topic": "金(子)",
+    "tags": []
+  },
+  {
+    "id": "B3-0440",
+    "trad": "jĭn",
+    "pinyin": "Vs",
+    "gloss_en": "",
+    "band": "B",
+    "level": 3,
+    "topic": "緊",
+    "tags": []
+  },
+  {
+    "id": "B3-0441",
+    "trad": "jĭn",
+    "pinyin": "Adv",
+    "gloss_en": "",
+    "band": "B",
+    "level": 3,
+    "topic": "僅",
+    "tags": []
+  },
+  {
+    "id": "B3-0442",
+    "trad": "jĭnjĭn",
+    "pinyin": "Adv",
+    "gloss_en": "",
+    "band": "B",
+    "level": 3,
+    "topic": "僅僅",
+    "tags": []
+  },
+  {
+    "id": "B3-0443",
+    "trad": "jìn",
+    "pinyin": "V",
+    "gloss_en": "",
+    "band": "B",
+    "level": 3,
+    "topic": "盡",
+    "tags": []
+  },
+  {
+    "id": "B3-0444",
+    "trad": "jìn",
+    "pinyin": "V",
+    "gloss_en": "",
+    "band": "B",
+    "level": 3,
+    "topic": "進",
+    "tags": []
+  },
+  {
+    "id": "B3-0445",
+    "trad": "jīng",
+    "pinyin": "V",
+    "gloss_en": "",
+    "band": "B",
+    "level": 3,
+    "topic": "經",
+    "tags": []
+  },
+  {
+    "id": "B3-0446",
+    "trad": "jīngfèi",
+    "pinyin": "N",
+    "gloss_en": "",
+    "band": "B",
+    "level": 3,
+    "topic": "經費",
+    "tags": []
+  },
+  {
+    "id": "B3-0447",
+    "trad": "jīngguò",
+    "pinyin": "N / Prep",
+    "gloss_en": "",
+    "band": "B",
+    "level": 3,
+    "topic": "經過",
+    "tags": []
+  },
+  {
+    "id": "B3-0448",
+    "trad": "jīngyà",
+    "pinyin": "Vs",
+    "gloss_en": "",
+    "band": "B",
+    "level": 3,
+    "topic": "驚訝",
+    "tags": []
+  },
+  {
+    "id": "B3-0449",
+    "trad": "jīngyàn",
+    "pinyin": "Vpt",
+    "gloss_en": "",
+    "band": "B",
+    "level": 3,
+    "topic": "經驗",
+    "tags": []
+  },
+  {
+    "id": "B3-0450",
+    "trad": "jĭngchá",
+    "pinyin": "N",
+    "gloss_en": "",
+    "band": "B",
+    "level": 3,
+    "topic": "警察",
+    "tags": []
+  },
+  {
+    "id": "B3-0451",
+    "trad": "jĭnguăn",
+    "pinyin": "Conj",
+    "gloss_en": "",
+    "band": "B",
+    "level": 3,
+    "topic": "儘管",
+    "tags": []
+  },
+  {
+    "id": "B3-0452",
+    "trad": "jìnxíng",
+    "pinyin": "V",
+    "gloss_en": "",
+    "band": "B",
+    "level": 3,
+    "topic": "進行",
+    "tags": []
+  },
+  {
+    "id": "B3-0453",
+    "trad": "jìnyībù",
+    "pinyin": "Adv",
+    "gloss_en": "",
+    "band": "B",
+    "level": 3,
+    "topic": "進一步",
+    "tags": []
+  },
+  {
+    "id": "B3-0454",
+    "trad": "jiŭbā",
+    "pinyin": "N",
+    "gloss_en": "",
+    "band": "B",
+    "level": 3,
+    "topic": "酒吧",
+    "tags": []
+  },
+  {
+    "id": "B3-0455",
+    "trad": "jiù",
+    "pinyin": "V",
+    "gloss_en": "",
+    "band": "B",
+    "level": 3,
+    "topic": "救",
+    "tags": []
+  },
+  {
+    "id": "B3-0456",
+    "trad": "jiù",
+    "pinyin": "Prep",
+    "gloss_en": "",
+    "band": "B",
+    "level": 3,
+    "topic": "就",
+    "tags": []
+  },
+  {
+    "id": "B3-0457",
+    "trad": "jiùshì",
+    "pinyin": "Conj",
+    "gloss_en": "",
+    "band": "B",
+    "level": 3,
+    "topic": "就是",
+    "tags": []
+  },
+  {
+    "id": "B3-0458",
+    "trad": "jiùsuàn",
+    "pinyin": "Conj",
+    "gloss_en": "",
+    "band": "B",
+    "level": 3,
+    "topic": "就算",
+    "tags": []
+  },
+  {
+    "id": "B3-0459",
+    "trad": "jiùjiu",
+    "pinyin": "N",
+    "gloss_en": "",
+    "band": "B",
+    "level": 3,
+    "topic": "舅舅(˙ㄐㄧㄡ) /舅",
+    "tags": []
+  },
+  {
+    "id": "B3-0460",
+    "trad": "jiùmā",
+    "pinyin": "N",
+    "gloss_en": "",
+    "band": "B",
+    "level": 3,
+    "topic": "舅媽",
+    "tags": []
+  },
+  {
+    "id": "B3-0461",
+    "trad": "jūzhù",
+    "pinyin": "Vi",
+    "gloss_en": "",
+    "band": "B",
+    "level": 3,
+    "topic": "居住",
+    "tags": []
+  },
+  {
+    "id": "B3-0462",
+    "trad": "jŭ",
+    "pinyin": "V",
+    "gloss_en": "",
+    "band": "B",
+    "level": 3,
+    "topic": "舉",
+    "tags": []
+  },
+  {
+    "id": "B3-0463",
+    "trad": "jŭbàn",
+    "pinyin": "V",
+    "gloss_en": "",
+    "band": "B",
+    "level": 3,
+    "topic": "舉辦",
+    "tags": []
+  },
+  {
+    "id": "B3-0464",
+    "trad": "jŭshŏu",
+    "pinyin": "V-sep",
+    "gloss_en": "",
+    "band": "B",
+    "level": 3,
+    "topic": "舉手",
+    "tags": []
+  },
+  {
+    "id": "B3-0465",
+    "trad": "jŭxíng",
+    "pinyin": "V",
+    "gloss_en": "",
+    "band": "B",
+    "level": 3,
+    "topic": "舉行",
+    "tags": []
+  },
+  {
+    "id": "B3-0466",
+    "trad": "jù",
+    "pinyin": "Vi",
+    "gloss_en": "",
+    "band": "B",
+    "level": 3,
+    "topic": "聚",
+    "tags": []
+  },
+  {
+    "id": "B3-0467",
+    "trad": "jù",
+    "pinyin": "Prep",
+    "gloss_en": "",
+    "band": "B",
+    "level": 3,
+    "topic": "距",
+    "tags": []
+  },
+  {
+    "id": "B3-0468",
+    "trad": "jùjué",
+    "pinyin": "V",
+    "gloss_en": "",
+    "band": "B",
+    "level": 3,
+    "topic": "拒絕",
+    "tags": []
+  },
+  {
+    "id": "B3-0469",
+    "trad": "jùlí",
+    "pinyin": "N",
+    "gloss_en": "",
+    "band": "B",
+    "level": 3,
+    "topic": "距離",
+    "tags": []
+  },
+  {
+    "id": "B3-0470",
+    "trad": "jùběn",
+    "pinyin": "N",
+    "gloss_en": "",
+    "band": "B",
+    "level": 3,
+    "topic": "劇本",
+    "tags": []
+  },
+  {
+    "id": "B3-0471",
+    "trad": "jùqíng",
+    "pinyin": "N",
+    "gloss_en": "",
+    "band": "B",
+    "level": 3,
+    "topic": "劇情",
+    "tags": []
+  },
+  {
+    "id": "B3-0472",
+    "trad": "jùyŏu",
+    "pinyin": "Vst",
+    "gloss_en": "",
+    "band": "B",
+    "level": 3,
+    "topic": "具有",
+    "tags": []
+  },
+  {
+    "id": "B3-0473",
+    "trad": "juéduì",
+    "pinyin": "Adv",
+    "gloss_en": "",
+    "band": "B",
+    "level": 3,
+    "topic": "絕對",
+    "tags": []
+  },
+  {
+    "id": "B3-0474",
+    "trad": "juésè",
+    "pinyin": "N",
+    "gloss_en": "",
+    "band": "B",
+    "level": 3,
+    "topic": "角色",
+    "tags": []
+  },
+  {
+    "id": "B3-0475",
+    "trad": "jūnduì",
+    "pinyin": "N",
+    "gloss_en": "",
+    "band": "B",
+    "level": 3,
+    "topic": "軍隊",
+    "tags": []
+  },
+  {
+    "id": "B3-0476",
+    "trad": "jūnrén",
+    "pinyin": "N",
+    "gloss_en": "",
+    "band": "B",
+    "level": 3,
+    "topic": "軍人",
+    "tags": []
+  },
+  {
+    "id": "B3-0477",
+    "trad": "kăchē",
+    "pinyin": "N",
+    "gloss_en": "",
+    "band": "B",
+    "level": 3,
+    "topic": "卡車",
+    "tags": []
+  },
+  {
+    "id": "B3-0478",
+    "trad": "kāifàng",
+    "pinyin": "V",
+    "gloss_en": "",
+    "band": "B",
+    "level": 3,
+    "topic": "開放",
+    "tags": []
+  },
+  {
+    "id": "B3-0479",
+    "trad": "kāihuā",
+    "pinyin": "Vp-sep",
+    "gloss_en": "",
+    "band": "B",
+    "level": 3,
+    "topic": "開花",
+    "tags": []
+  },
+  {
+    "id": "B3-0480",
+    "trad": "kāilăng",
+    "pinyin": "Vs",
+    "gloss_en": "",
+    "band": "B",
+    "level": 3,
+    "topic": "開朗",
+    "tags": []
+  },
+  {
+    "id": "B3-0481",
+    "trad": "kāishĭ",
+    "pinyin": "N",
+    "gloss_en": "",
+    "band": "B",
+    "level": 3,
+    "topic": "開始",
+    "tags": []
+  },
+  {
+    "id": "B3-0482",
+    "trad": "kànbùqĭ",
+    "pinyin": "Vst",
+    "gloss_en": "",
+    "band": "B",
+    "level": 3,
+    "topic": "看不起",
+    "tags": []
+  },
+  {
+    "id": "B3-0483",
+    "trad": "kē",
+    "pinyin": "M",
+    "gloss_en": "",
+    "band": "B",
+    "level": 3,
+    "topic": "棵",
+    "tags": []
+  },
+  {
+    "id": "B3-0484",
+    "trad": "kē",
+    "pinyin": "M",
+    "gloss_en": "",
+    "band": "B",
+    "level": 3,
+    "topic": "科",
+    "tags": []
+  },
+  {
+    "id": "B3-0485",
+    "trad": "kējì",
+    "pinyin": "N",
+    "gloss_en": "",
+    "band": "B",
+    "level": 3,
+    "topic": "科技",
+    "tags": []
+  },
+  {
+    "id": "B3-0486",
+    "trad": "kēxué",
+    "pinyin": "Vs / N",
+    "gloss_en": "",
+    "band": "B",
+    "level": 3,
+    "topic": "科學",
+    "tags": []
+  },
+  {
+    "id": "B3-0487",
+    "trad": "kě",
+    "pinyin": "Adv / Vaux",
+    "gloss_en": "",
+    "band": "B",
+    "level": 3,
+    "topic": "可",
+    "tags": []
+  },
+  {
+    "id": "B3-0488",
+    "trad": "kěkào",
+    "pinyin": "Vs",
+    "gloss_en": "",
+    "band": "B",
+    "level": 3,
+    "topic": "可靠",
+    "tags": []
+  },
+  {
+    "id": "B3-0489",
+    "trad": "kělián",
+    "pinyin": "Vs",
+    "gloss_en": "",
+    "band": "B",
+    "level": 3,
+    "topic": "可憐",
+    "tags": []
+  },
+  {
+    "id": "B3-0490",
+    "trad": "kěwàng",
+    "pinyin": "Vst",
+    "gloss_en": "",
+    "band": "B",
+    "level": 3,
+    "topic": "渴望",
+    "tags": []
+  },
+  {
+    "id": "B3-0491",
+    "trad": "kěwù",
+    "pinyin": "Vs",
+    "gloss_en": "",
+    "band": "B",
+    "level": 3,
+    "topic": "可惡",
+    "tags": []
+  },
+  {
+    "id": "B3-0492",
+    "trad": "kěyĭ",
+    "pinyin": "Vaux",
+    "gloss_en": "",
+    "band": "B",
+    "level": 3,
+    "topic": "可以",
+    "tags": []
+  },
+  {
+    "id": "B3-0493",
+    "trad": "kè",
+    "pinyin": "M / V",
+    "gloss_en": "",
+    "band": "B",
+    "level": 3,
+    "topic": "刻",
+    "tags": []
+  },
+  {
+    "id": "B3-0494",
+    "trad": "kè",
+    "pinyin": "M",
+    "gloss_en": "",
+    "band": "B",
+    "level": 3,
+    "topic": "克",
+    "tags": []
+  },
+  {
+    "id": "B3-0495",
+    "trad": "kèchéng",
+    "pinyin": "N",
+    "gloss_en": "",
+    "band": "B",
+    "level": 3,
+    "topic": "課程",
+    "tags": []
+  },
+  {
+    "id": "B3-0496",
+    "trad": "kètáng",
+    "pinyin": "N",
+    "gloss_en": "",
+    "band": "B",
+    "level": 3,
+    "topic": "課堂",
+    "tags": []
+  },
+  {
+    "id": "B3-0497",
+    "trad": "kèwén",
+    "pinyin": "N",
+    "gloss_en": "",
+    "band": "B",
+    "level": 3,
+    "topic": "課文",
+    "tags": []
+  },
+  {
+    "id": "B3-0498",
+    "trad": "kèfú",
+    "pinyin": "Vpt",
+    "gloss_en": "",
+    "band": "B",
+    "level": 3,
+    "topic": "克服",
+    "tags": []
+  },
+  {
+    "id": "B3-0499",
+    "trad": "kěn",
+    "pinyin": "Vaux",
+    "gloss_en": "",
+    "band": "B",
+    "level": 3,
+    "topic": "肯",
+    "tags": []
+  },
+  {
+    "id": "B3-0500",
+    "trad": "kěndìng",
+    "pinyin": "Vs",
+    "gloss_en": "",
+    "band": "B",
+    "level": 3,
+    "topic": "肯定",
+    "tags": []
+  },
+  {
+    "id": "B3-0501",
+    "trad": "kōngjiān",
+    "pinyin": "N",
+    "gloss_en": "",
+    "band": "B",
+    "level": 3,
+    "topic": "空間",
+    "tags": []
+  },
+  {
+    "id": "B3-0502",
+    "trad": "kōngjūn",
+    "pinyin": "N",
+    "gloss_en": "",
+    "band": "B",
+    "level": 3,
+    "topic": "空軍",
+    "tags": []
+  },
+  {
+    "id": "B3-0503",
+    "trad": "kŏngpà",
+    "pinyin": "Adv",
+    "gloss_en": "",
+    "band": "B",
+    "level": 3,
+    "topic": "恐怕",
+    "tags": []
+  },
+  {
+    "id": "B3-0504",
+    "trad": "kŏu",
+    "pinyin": "N",
+    "gloss_en": "",
+    "band": "B",
+    "level": 3,
+    "topic": "口",
+    "tags": []
+  },
+  {
+    "id": "B3-0505",
+    "trad": "kŏuwèi",
+    "pinyin": "N",
+    "gloss_en": "",
+    "band": "B",
+    "level": 3,
+    "topic": "口味",
+    "tags": []
+  },
+  {
+    "id": "B3-0506",
+    "trad": "kuài",
+    "pinyin": "Adv",
+    "gloss_en": "",
+    "band": "B",
+    "level": 3,
+    "topic": "快",
+    "tags": []
+  },
+  {
+    "id": "B3-0507",
+    "trad": "kuān",
+    "pinyin": "Vs",
+    "gloss_en": "",
+    "band": "B",
+    "level": 3,
+    "topic": "寬",
+    "tags": []
+  },
+  {
+    "id": "B3-0508",
+    "trad": "kuàngqiě",
+    "pinyin": "Conj",
+    "gloss_en": "",
+    "band": "B",
+    "level": 3,
+    "topic": "況且",
+    "tags": []
+  },
+  {
+    "id": "B3-0509",
+    "trad": "kuāzhāng",
+    "pinyin": "Vs",
+    "gloss_en": "",
+    "band": "B",
+    "level": 3,
+    "topic": "誇張",
+    "tags": []
+  },
+  {
+    "id": "B3-0510",
+    "trad": "kuòdà",
+    "pinyin": "V",
+    "gloss_en": "",
+    "band": "B",
+    "level": 3,
+    "topic": "擴大",
+    "tags": []
+  },
+  {
+    "id": "B3-0511",
+    "trad": "lādùzi",
+    "pinyin": "V-sep",
+    "gloss_en": "",
+    "band": "B",
+    "level": 3,
+    "topic": "拉肚子",
+    "tags": []
+  },
+  {
+    "id": "B3-0512",
+    "trad": "lái",
+    "pinyin": "Adv / Ptc",
+    "gloss_en": "",
+    "band": "B",
+    "level": 3,
+    "topic": "來",
+    "tags": []
+  },
+  {
+    "id": "B3-0513",
+    "trad": "láibùjí",
+    "pinyin": "Vs",
+    "gloss_en": "",
+    "band": "B",
+    "level": 3,
+    "topic": "來不及",
+    "tags": []
+  },
+  {
+    "id": "B3-0514",
+    "trad": "láidejí",
+    "pinyin": "Vs",
+    "gloss_en": "",
+    "band": "B",
+    "level": 3,
+    "topic": "來得及",
+    "tags": []
+  },
+  {
+    "id": "B3-0515",
+    "trad": "lán",
+    "pinyin": "Vs",
+    "gloss_en": "",
+    "band": "B",
+    "level": 3,
+    "topic": "藍",
+    "tags": []
+  },
+  {
+    "id": "B3-0516",
+    "trad": "làngmàn",
+    "pinyin": "Vs",
+    "gloss_en": "",
+    "band": "B",
+    "level": 3,
+    "topic": "浪漫",
+    "tags": []
+  },
+  {
+    "id": "B3-0517",
+    "trad": "lăogōng",
+    "pinyin": "N",
+    "gloss_en": "",
+    "band": "B",
+    "level": 3,
+    "topic": "老公",
+    "tags": []
+  },
+  {
+    "id": "B3-0518",
+    "trad": "lăohŭ/hŭ",
+    "pinyin": "N",
+    "gloss_en": "",
+    "band": "B",
+    "level": 3,
+    "topic": "老虎/虎",
+    "tags": []
+  },
+  {
+    "id": "B3-0519",
+    "trad": "lăopó",
+    "pinyin": "N",
+    "gloss_en": "",
+    "band": "B",
+    "level": 3,
+    "topic": "老婆",
+    "tags": []
+  },
+  {
+    "id": "B3-0520",
+    "trad": "lăoshí",
+    "pinyin": "Vs",
+    "gloss_en": "",
+    "band": "B",
+    "level": 3,
+    "topic": "老實",
+    "tags": []
+  },
+  {
+    "id": "B3-0521",
+    "trad": "lăoshì",
+    "pinyin": "Adv",
+    "gloss_en": "",
+    "band": "B",
+    "level": 3,
+    "topic": "老是",
+    "tags": []
+  },
+  {
+    "id": "B3-0522",
+    "trad": "lè",
+    "pinyin": "Vs",
+    "gloss_en": "",
+    "band": "B",
+    "level": 3,
+    "topic": "樂",
+    "tags": []
+  },
+  {
+    "id": "B3-0523",
+    "trad": "lèguān",
+    "pinyin": "Vs",
+    "gloss_en": "",
+    "band": "B",
+    "level": 3,
+    "topic": "樂觀",
+    "tags": []
+  },
+  {
+    "id": "B3-0524",
+    "trad": "lèqù",
+    "pinyin": "N",
+    "gloss_en": "",
+    "band": "B",
+    "level": 3,
+    "topic": "樂趣",
+    "tags": []
+  },
+  {
+    "id": "B3-0525",
+    "trad": "lèi",
+    "pinyin": "N",
+    "gloss_en": "",
+    "band": "B",
+    "level": 3,
+    "topic": "淚",
+    "tags": []
+  },
+  {
+    "id": "B3-0526",
+    "trad": "lěngdàn",
+    "pinyin": "Vs",
+    "gloss_en": "",
+    "band": "B",
+    "level": 3,
+    "topic": "冷淡",
+    "tags": []
+  },
+  {
+    "id": "B3-0527",
+    "trad": "lì",
+    "pinyin": "N",
+    "gloss_en": "",
+    "band": "B",
+    "level": 3,
+    "topic": "力",
+    "tags": []
+  },
+  {
+    "id": "B3-0528",
+    "trad": "lĭ",
+    "pinyin": "M",
+    "gloss_en": "",
+    "band": "B",
+    "level": 3,
+    "topic": "里",
+    "tags": []
+  },
+  {
+    "id": "B3-0529",
+    "trad": "liàn",
+    "pinyin": "V",
+    "gloss_en": "",
+    "band": "B",
+    "level": 3,
+    "topic": "練",
+    "tags": []
+  },
+  {
+    "id": "B3-0530",
+    "trad": "liànài",
+    "pinyin": "Vp",
+    "gloss_en": "",
+    "band": "B",
+    "level": 3,
+    "topic": "戀愛",
+    "tags": []
+  },
+  {
+    "id": "B3-0531",
+    "trad": "liàng",
+    "pinyin": "Vs",
+    "gloss_en": "",
+    "band": "B",
+    "level": 3,
+    "topic": "亮",
+    "tags": []
+  },
+  {
+    "id": "B3-0532",
+    "trad": "liánghăo",
+    "pinyin": "Vs",
+    "gloss_en": "",
+    "band": "B",
+    "level": 3,
+    "topic": "良好",
+    "tags": []
+  },
+  {
+    "id": "B3-0533",
+    "trad": "liánluò",
+    "pinyin": "V",
+    "gloss_en": "",
+    "band": "B",
+    "level": 3,
+    "topic": "連絡/聯絡",
+    "tags": []
+  },
+  {
+    "id": "B3-0534",
+    "trad": "liánxùjù",
+    "pinyin": "N",
+    "gloss_en": "",
+    "band": "B",
+    "level": 3,
+    "topic": "連續劇",
+    "tags": []
+  },
+  {
+    "id": "B3-0535",
+    "trad": "liăobùqĭ",
+    "pinyin": "Vs",
+    "gloss_en": "",
+    "band": "B",
+    "level": 3,
+    "topic": "了不起",
+    "tags": []
+  },
+  {
+    "id": "B3-0536",
+    "trad": "líhūn",
+    "pinyin": "Vp-sep",
+    "gloss_en": "",
+    "band": "B",
+    "level": 3,
+    "topic": "離婚",
+    "tags": []
+  },
+  {
+    "id": "B3-0537",
+    "trad": "lĭbiān",
+    "pinyin": "N",
+    "gloss_en": "",
+    "band": "B",
+    "level": 3,
+    "topic": "裡邊",
+    "tags": []
+  },
+  {
+    "id": "B3-0538",
+    "trad": "lìhài",
+    "pinyin": "Vs",
+    "gloss_en": "",
+    "band": "B",
+    "level": 3,
+    "topic": "厲害",
+    "tags": []
+  },
+  {
+    "id": "B3-0539",
+    "trad": "lĭjiě",
+    "pinyin": "Vst",
+    "gloss_en": "",
+    "band": "B",
+    "level": 3,
+    "topic": "理解",
+    "tags": []
+  },
+  {
+    "id": "B3-0540",
+    "trad": "lĭlùn",
+    "pinyin": "N",
+    "gloss_en": "",
+    "band": "B",
+    "level": 3,
+    "topic": "理論",
+    "tags": []
+  },
+  {
+    "id": "B3-0541",
+    "trad": "lĭtáng",
+    "pinyin": "N",
+    "gloss_en": "",
+    "band": "B",
+    "level": 3,
+    "topic": "禮堂",
+    "tags": []
+  },
+  {
+    "id": "B3-0542",
+    "trad": "lìliàng",
+    "pinyin": "N",
+    "gloss_en": "",
+    "band": "B",
+    "level": 3,
+    "topic": "力量",
+    "tags": []
+  },
+  {
+    "id": "B3-0543",
+    "trad": "lĭng",
+    "pinyin": "V",
+    "gloss_en": "",
+    "band": "B",
+    "level": 3,
+    "topic": "領",
+    "tags": []
+  },
+  {
+    "id": "B3-0544",
+    "trad": "lĭngdăo",
+    "pinyin": "V",
+    "gloss_en": "",
+    "band": "B",
+    "level": 3,
+    "topic": "領導",
+    "tags": []
+  },
+  {
+    "id": "B3-0545",
+    "trad": "línghún",
+    "pinyin": "N",
+    "gloss_en": "",
+    "band": "B",
+    "level": 3,
+    "topic": "靈魂",
+    "tags": []
+  },
+  {
+    "id": "B3-0546",
+    "trad": "lĭngyù",
+    "pinyin": "N",
+    "gloss_en": "",
+    "band": "B",
+    "level": 3,
+    "topic": "領域",
+    "tags": []
+  },
+  {
+    "id": "B3-0547",
+    "trad": "lìng",
+    "pinyin": "Vst",
+    "gloss_en": "",
+    "band": "B",
+    "level": 3,
+    "topic": "令",
+    "tags": []
+  },
+  {
+    "id": "B3-0548",
+    "trad": "liú​yán",
+    "pinyin": "Vi",
+    "gloss_en": "",
+    "band": "B",
+    "level": 3,
+    "topic": "留言",
+    "tags": []
+  },
+  {
+    "id": "B3-0549",
+    "trad": "liúxiě",
+    "pinyin": "V-sep",
+    "gloss_en": "",
+    "band": "B",
+    "level": 3,
+    "topic": "流血",
+    "tags": []
+  },
+  {
+    "id": "B3-0550",
+    "trad": "liúxué",
+    "pinyin": "Vi",
+    "gloss_en": "",
+    "band": "B",
+    "level": 3,
+    "topic": "留學",
+    "tags": []
+  },
+  {
+    "id": "B3-0551",
+    "trad": "liúxuéshēng",
+    "pinyin": "N",
+    "gloss_en": "",
+    "band": "B",
+    "level": 3,
+    "topic": "留學生",
+    "tags": []
+  },
+  {
+    "id": "B3-0552",
+    "trad": "lĭxiăng",
+    "pinyin": "N / Vs",
+    "gloss_en": "",
+    "band": "B",
+    "level": 3,
+    "topic": "理想",
+    "tags": []
+  },
+  {
+    "id": "B3-0553",
+    "trad": "lìyì",
+    "pinyin": "N",
+    "gloss_en": "",
+    "band": "B",
+    "level": 3,
+    "topic": "利益",
+    "tags": []
+  },
+  {
+    "id": "B3-0554",
+    "trad": "lǚkè",
+    "pinyin": "N",
+    "gloss_en": "",
+    "band": "B",
+    "level": 3,
+    "topic": "旅客",
+    "tags": []
+  },
+  {
+    "id": "B3-0555",
+    "trad": "lǚyóu",
+    "pinyin": "Vi / N",
+    "gloss_en": "",
+    "band": "B",
+    "level": 3,
+    "topic": "旅遊",
+    "tags": []
+  },
+  {
+    "id": "B3-0556",
+    "trad": "lǜ",
+    "pinyin": "Vs",
+    "gloss_en": "",
+    "band": "B",
+    "level": 3,
+    "topic": "綠",
+    "tags": []
+  },
+  {
+    "id": "B3-0557",
+    "trad": "lǜshī",
+    "pinyin": "N",
+    "gloss_en": "",
+    "band": "B",
+    "level": 3,
+    "topic": "律師",
+    "tags": []
+  },
+  {
+    "id": "B3-0558",
+    "trad": "lù",
+    "pinyin": "V",
+    "gloss_en": "",
+    "band": "B",
+    "level": 3,
+    "topic": "錄",
+    "tags": []
+  },
+  {
+    "id": "B3-0559",
+    "trad": "lùqŭ",
+    "pinyin": "V",
+    "gloss_en": "",
+    "band": "B",
+    "level": 3,
+    "topic": "錄取",
+    "tags": []
+  },
+  {
+    "id": "B3-0560",
+    "trad": "lùyīn",
+    "pinyin": "V-sep",
+    "gloss_en": "",
+    "band": "B",
+    "level": 3,
+    "topic": "錄音",
+    "tags": []
+  },
+  {
+    "id": "B3-0561",
+    "trad": "lùyíng",
+    "pinyin": "V-sep",
+    "gloss_en": "",
+    "band": "B",
+    "level": 3,
+    "topic": "露營",
+    "tags": []
+  },
+  {
+    "id": "B3-0562",
+    "trad": "lóng",
+    "pinyin": "N",
+    "gloss_en": "",
+    "band": "B",
+    "level": 3,
+    "topic": "龍",
+    "tags": []
+  },
+  {
+    "id": "B3-0563",
+    "trad": "lúntāi",
+    "pinyin": "N",
+    "gloss_en": "",
+    "band": "B",
+    "level": 3,
+    "topic": "輪胎",
+    "tags": []
+  },
+  {
+    "id": "B3-0564",
+    "trad": "ma",
+    "pinyin": "Ptc",
+    "gloss_en": "",
+    "band": "B",
+    "level": 3,
+    "topic": "嘛",
+    "tags": []
+  },
+  {
+    "id": "B3-0565",
+    "trad": "máfán",
+    "pinyin": "Vs",
+    "gloss_en": "",
+    "band": "B",
+    "level": 3,
+    "topic": "麻煩",
+    "tags": []
+  },
+  {
+    "id": "B3-0566",
+    "trad": "mà",
+    "pinyin": "V",
+    "gloss_en": "",
+    "band": "B",
+    "level": 3,
+    "topic": "罵",
+    "tags": []
+  },
+  {
+    "id": "B3-0567",
+    "trad": "măn",
+    "pinyin": "Det / Vs",
+    "gloss_en": "",
+    "band": "B",
+    "level": 3,
+    "topic": "滿",
+    "tags": []
+  },
+  {
+    "id": "B3-0568",
+    "trad": "mănyì",
+    "pinyin": "Vst",
+    "gloss_en": "",
+    "band": "B",
+    "level": 3,
+    "topic": "滿意",
+    "tags": []
+  },
+  {
+    "id": "B3-0569",
+    "trad": "mănzú",
+    "pinyin": "Vs",
+    "gloss_en": "",
+    "band": "B",
+    "level": 3,
+    "topic": "滿足",
+    "tags": []
+  },
+  {
+    "id": "B3-0570",
+    "trad": "mànyòng",
+    "pinyin": "Vi",
+    "gloss_en": "",
+    "band": "B",
+    "level": 3,
+    "topic": "慢用",
+    "tags": []
+  },
+  {
+    "id": "B3-0571",
+    "trad": "máo",
+    "pinyin": "N",
+    "gloss_en": "",
+    "band": "B",
+    "level": 3,
+    "topic": "毛",
+    "tags": []
+  },
+  {
+    "id": "B3-0572",
+    "trad": "máobĭ",
+    "pinyin": "N",
+    "gloss_en": "",
+    "band": "B",
+    "level": 3,
+    "topic": "毛筆",
+    "tags": []
+  },
+  {
+    "id": "B3-0573",
+    "trad": "máobìng",
+    "pinyin": "N",
+    "gloss_en": "",
+    "band": "B",
+    "level": 3,
+    "topic": "毛病",
+    "tags": []
+  },
+  {
+    "id": "B3-0574",
+    "trad": "màoyì",
+    "pinyin": "N",
+    "gloss_en": "",
+    "band": "B",
+    "level": 3,
+    "topic": "貿易",
+    "tags": []
+  },
+  {
+    "id": "B3-0575",
+    "trad": "mătŏng",
+    "pinyin": "N",
+    "gloss_en": "",
+    "band": "B",
+    "level": 3,
+    "topic": "馬桶",
+    "tags": []
+  },
+  {
+    "id": "B3-0576",
+    "trad": "mătou",
+    "pinyin": "N",
+    "gloss_en": "",
+    "band": "B",
+    "level": 3,
+    "topic": "碼頭",
+    "tags": []
+  },
+  {
+    "id": "B3-0577",
+    "trad": "măyĭ",
+    "pinyin": "N",
+    "gloss_en": "",
+    "band": "B",
+    "level": 3,
+    "topic": "螞蟻",
+    "tags": []
+  },
+  {
+    "id": "B3-0578",
+    "trad": "méi",
+    "pinyin": "Ptc / Vp",
+    "gloss_en": "",
+    "band": "B",
+    "level": 3,
+    "topic": "沒",
+    "tags": []
+  },
+  {
+    "id": "B3-0579",
+    "trad": "měi",
+    "pinyin": "Adv",
+    "gloss_en": "",
+    "band": "B",
+    "level": 3,
+    "topic": "每",
+    "tags": []
+  },
+  {
+    "id": "B3-0580",
+    "trad": "méiguī",
+    "pinyin": "N",
+    "gloss_en": "",
+    "band": "B",
+    "level": 3,
+    "topic": "玫瑰",
+    "tags": []
+  },
+  {
+    "id": "B3-0581",
+    "trad": "měihăo",
+    "pinyin": "Vs",
+    "gloss_en": "",
+    "band": "B",
+    "level": 3,
+    "topic": "美好",
+    "tags": []
+  },
+  {
+    "id": "B3-0582",
+    "trad": "méishénme",
+    "pinyin": "Vs",
+    "gloss_en": "",
+    "band": "B",
+    "level": 3,
+    "topic": "沒什麼",
+    "tags": []
+  },
+  {
+    "id": "B3-0583",
+    "trad": "mén",
+    "pinyin": "M",
+    "gloss_en": "",
+    "band": "B",
+    "level": 3,
+    "topic": "門",
+    "tags": []
+  },
+  {
+    "id": "B3-0584",
+    "trad": "mírén",
+    "pinyin": "Vs",
+    "gloss_en": "",
+    "band": "B",
+    "level": 3,
+    "topic": "迷人",
+    "tags": []
+  },
+  {
+    "id": "B3-0585",
+    "trad": "mìqiè",
+    "pinyin": "Vs",
+    "gloss_en": "",
+    "band": "B",
+    "level": 3,
+    "topic": "密切",
+    "tags": []
+  },
+  {
+    "id": "B3-0586",
+    "trad": "miàn",
+    "pinyin": "M / N",
+    "gloss_en": "",
+    "band": "B",
+    "level": 3,
+    "topic": "面",
+    "tags": []
+  },
+  {
+    "id": "B3-0587",
+    "trad": "miănfèi",
+    "pinyin": "Vs",
+    "gloss_en": "",
+    "band": "B",
+    "level": 3,
+    "topic": "免費",
+    "tags": []
+  },
+  {
+    "id": "B3-0588",
+    "trad": "miànjī",
+    "pinyin": "N",
+    "gloss_en": "",
+    "band": "B",
+    "level": 3,
+    "topic": "面積",
+    "tags": []
+  },
+  {
+    "id": "B3-0589",
+    "trad": "miànqián",
+    "pinyin": "N",
+    "gloss_en": "",
+    "band": "B",
+    "level": 3,
+    "topic": "面前",
+    "tags": []
+  },
+  {
+    "id": "B3-0590",
+    "trad": "miàntiáo",
+    "pinyin": "N",
+    "gloss_en": "",
+    "band": "B",
+    "level": 3,
+    "topic": "麵條",
+    "tags": []
+  },
+  {
+    "id": "B3-0591",
+    "trad": "miăo",
+    "pinyin": "M",
+    "gloss_en": "",
+    "band": "B",
+    "level": 3,
+    "topic": "秒",
+    "tags": []
+  },
+  {
+    "id": "B3-0592",
+    "trad": "miáoxiě",
+    "pinyin": "V",
+    "gloss_en": "",
+    "band": "B",
+    "level": 3,
+    "topic": "描寫",
+    "tags": []
+  },
+  {
+    "id": "B3-0593",
+    "trad": "miào",
+    "pinyin": "N",
+    "gloss_en": "",
+    "band": "B",
+    "level": 3,
+    "topic": "廟",
+    "tags": []
+  },
+  {
+    "id": "B3-0594",
+    "trad": "mĭfàn",
+    "pinyin": "N",
+    "gloss_en": "",
+    "band": "B",
+    "level": 3,
+    "topic": "米飯",
+    "tags": []
+  },
+  {
+    "id": "B3-0595",
+    "trad": "mĭfěn",
+    "pinyin": "N",
+    "gloss_en": "",
+    "band": "B",
+    "level": 3,
+    "topic": "米粉",
+    "tags": []
+  },
+  {
+    "id": "B3-0596",
+    "trad": "mílù",
+    "pinyin": "Vp-sep",
+    "gloss_en": "",
+    "band": "B",
+    "level": 3,
+    "topic": "迷路",
+    "tags": []
+  },
+  {
+    "id": "B3-0597",
+    "trad": "mìmì",
+    "pinyin": "N",
+    "gloss_en": "",
+    "band": "B",
+    "level": 3,
+    "topic": "秘密/祕密",
+    "tags": []
+  },
+  {
+    "id": "B3-0598",
+    "trad": "míngbái",
+    "pinyin": "Vpt",
+    "gloss_en": "",
+    "band": "B",
+    "level": 3,
+    "topic": "明白",
+    "tags": []
+  },
+  {
+    "id": "B3-0599",
+    "trad": "míngcí",
+    "pinyin": "N",
+    "gloss_en": "",
+    "band": "B",
+    "level": 3,
+    "topic": "名詞",
+    "tags": []
+  },
+  {
+    "id": "B3-0600",
+    "trad": "mínguó",
+    "pinyin": "N",
+    "gloss_en": "",
+    "band": "B",
+    "level": 3,
+    "topic": "民國",
+    "tags": []
+  },
+  {
+    "id": "B3-0601",
+    "trad": "míngxiăn",
+    "pinyin": "Vs",
+    "gloss_en": "",
+    "band": "B",
+    "level": 3,
+    "topic": "明顯",
+    "tags": []
+  },
+  {
+    "id": "B3-0602",
+    "trad": "míngxīng",
+    "pinyin": "N",
+    "gloss_en": "",
+    "band": "B",
+    "level": 3,
+    "topic": "明星",
+    "tags": []
+  },
+  {
+    "id": "B3-0603",
+    "trad": "mìng",
+    "pinyin": "N",
+    "gloss_en": "",
+    "band": "B",
+    "level": 3,
+    "topic": "命",
+    "tags": []
+  },
+  {
+    "id": "B3-0604",
+    "trad": "mínzú",
+    "pinyin": "N",
+    "gloss_en": "",
+    "band": "B",
+    "level": 3,
+    "topic": "民族",
+    "tags": []
+  },
+  {
+    "id": "B3-0605",
+    "trad": "mòshēng",
+    "pinyin": "Vs",
+    "gloss_en": "",
+    "band": "B",
+    "level": 3,
+    "topic": "陌生",
+    "tags": []
+  },
+  {
+    "id": "B3-0606",
+    "trad": "mō",
+    "pinyin": "V",
+    "gloss_en": "",
+    "band": "B",
+    "level": 3,
+    "topic": "摸",
+    "tags": []
+  },
+  {
+    "id": "B3-0607",
+    "trad": "mŏu",
+    "pinyin": "Det",
+    "gloss_en": "",
+    "band": "B",
+    "level": 3,
+    "topic": "某",
+    "tags": []
+  },
+  {
+    "id": "B3-0608",
+    "trad": "mù",
+    "pinyin": "N",
+    "gloss_en": "",
+    "band": "B",
+    "level": 3,
+    "topic": "木",
+    "tags": []
+  },
+  {
+    "id": "B3-0609",
+    "trad": "mùqián",
+    "pinyin": "N",
+    "gloss_en": "",
+    "band": "B",
+    "level": 3,
+    "topic": "目前",
+    "tags": []
+  },
+  {
+    "id": "B3-0610",
+    "trad": "mùtou",
+    "pinyin": "N",
+    "gloss_en": "",
+    "band": "B",
+    "level": 3,
+    "topic": "木頭",
+    "tags": []
+  },
+  {
+    "id": "B3-0611",
+    "trad": "nà",
+    "pinyin": "Conj",
+    "gloss_en": "",
+    "band": "B",
+    "level": 3,
+    "topic": "那",
+    "tags": []
+  },
+  {
+    "id": "B3-0612",
+    "trad": "nàme",
+    "pinyin": "Conj",
+    "gloss_en": "",
+    "band": "B",
+    "level": 3,
+    "topic": "那麼",
+    "tags": []
+  },
+  {
+    "id": "B3-0613",
+    "trad": "năi",
+    "pinyin": "N",
+    "gloss_en": "",
+    "band": "B",
+    "level": 3,
+    "topic": "奶",
+    "tags": []
+  },
+  {
+    "id": "B3-0614",
+    "trad": "nàixīn",
+    "pinyin": "N",
+    "gloss_en": "",
+    "band": "B",
+    "level": 3,
+    "topic": "耐心",
+    "tags": []
+  },
+  {
+    "id": "B3-0615",
+    "trad": "nánfāng",
+    "pinyin": "N",
+    "gloss_en": "",
+    "band": "B",
+    "level": 3,
+    "topic": "南方",
+    "tags": []
+  },
+  {
+    "id": "B3-0616",
+    "trad": "nánguài",
+    "pinyin": "Adv",
+    "gloss_en": "",
+    "band": "B",
+    "level": 3,
+    "topic": "難怪",
+    "tags": []
+  },
+  {
+    "id": "B3-0617",
+    "trad": "nánkàn",
+    "pinyin": "Vs",
+    "gloss_en": "",
+    "band": "B",
+    "level": 3,
+    "topic": "難看",
+    "tags": []
+  },
+  {
+    "id": "B3-0618",
+    "trad": "năo",
+    "pinyin": "N",
+    "gloss_en": "",
+    "band": "B",
+    "level": 3,
+    "topic": "腦",
+    "tags": []
+  },
+  {
+    "id": "B3-0619",
+    "trad": "năo(zi)",
+    "pinyin": "N",
+    "gloss_en": "",
+    "band": "B",
+    "level": 3,
+    "topic": "腦(子)",
+    "tags": []
+  },
+  {
+    "id": "B3-0620",
+    "trad": "náshŏu",
+    "pinyin": "Vs",
+    "gloss_en": "",
+    "band": "B",
+    "level": 3,
+    "topic": "拿手",
+    "tags": []
+  },
+  {
+    "id": "B3-0621",
+    "trad": "năxiē",
+    "pinyin": "Det",
+    "gloss_en": "",
+    "band": "B",
+    "level": 3,
+    "topic": "哪些",
+    "tags": []
+  },
+  {
+    "id": "B3-0622",
+    "trad": "nèiróng",
+    "pinyin": "N",
+    "gloss_en": "",
+    "band": "B",
+    "level": 3,
+    "topic": "內容",
+    "tags": []
+  },
+  {
+    "id": "B3-0623",
+    "trad": "nénggòu",
+    "pinyin": "Vaux",
+    "gloss_en": "",
+    "band": "B",
+    "level": 3,
+    "topic": "能夠",
+    "tags": []
+  },
+  {
+    "id": "B3-0624",
+    "trad": "nián",
+    "pinyin": "N",
+    "gloss_en": "",
+    "band": "B",
+    "level": 3,
+    "topic": "年",
+    "tags": []
+  },
+  {
+    "id": "B3-0625",
+    "trad": "niándài",
+    "pinyin": "N",
+    "gloss_en": "",
+    "band": "B",
+    "level": 3,
+    "topic": "年代",
+    "tags": []
+  },
+  {
+    "id": "B3-0626",
+    "trad": "niánlíng",
+    "pinyin": "N",
+    "gloss_en": "",
+    "band": "B",
+    "level": 3,
+    "topic": "年齡",
+    "tags": []
+  },
+  {
+    "id": "B3-0627",
+    "trad": "niánnián",
+    "pinyin": "Adv",
+    "gloss_en": "",
+    "band": "B",
+    "level": 3,
+    "topic": "年年",
+    "tags": []
+  },
+  {
+    "id": "B3-0628",
+    "trad": "niúzăikù",
+    "pinyin": "N",
+    "gloss_en": "",
+    "band": "B",
+    "level": 3,
+    "topic": "牛仔褲",
+    "tags": []
+  },
+  {
+    "id": "B3-0629",
+    "trad": "nóngyè",
+    "pinyin": "N",
+    "gloss_en": "",
+    "band": "B",
+    "level": 3,
+    "topic": "農業",
+    "tags": []
+  },
+  {
+    "id": "B3-0630",
+    "trad": "nǚshì",
+    "pinyin": "N",
+    "gloss_en": "",
+    "band": "B",
+    "level": 3,
+    "topic": "女士",
+    "tags": []
+  },
+  {
+    "id": "B3-0631",
+    "trad": "ō",
+    "pinyin": "Ptc",
+    "gloss_en": "",
+    "band": "B",
+    "level": 3,
+    "topic": "喔",
+    "tags": []
+  },
+  {
+    "id": "B3-0632",
+    "trad": "ó",
+    "pinyin": "Ptc",
+    "gloss_en": "",
+    "band": "B",
+    "level": 3,
+    "topic": "哦",
+    "tags": []
+  },
+  {
+    "id": "B3-0633",
+    "trad": "pái",
+    "pinyin": "V",
+    "gloss_en": "",
+    "band": "B",
+    "level": 3,
+    "topic": "排",
+    "tags": []
+  },
+  {
+    "id": "B3-0634",
+    "trad": "pái(zi)",
+    "pinyin": "N",
+    "gloss_en": "",
+    "band": "B",
+    "level": 3,
+    "topic": "牌(子)",
+    "tags": []
+  },
+  {
+    "id": "B3-0635",
+    "trad": "pànwàng",
+    "pinyin": "Vst",
+    "gloss_en": "",
+    "band": "B",
+    "level": 3,
+    "topic": "盼望",
+    "tags": []
+  },
+  {
+    "id": "B3-0636",
+    "trad": "péiyăng",
+    "pinyin": "V",
+    "gloss_en": "",
+    "band": "B",
+    "level": 3,
+    "topic": "培養",
+    "tags": []
+  },
+  {
+    "id": "B3-0637",
+    "trad": "pèi",
+    "pinyin": "V",
+    "gloss_en": "",
+    "band": "B",
+    "level": 3,
+    "topic": "配",
+    "tags": []
+  },
+  {
+    "id": "B3-0638",
+    "trad": "pèihé",
+    "pinyin": "V",
+    "gloss_en": "",
+    "band": "B",
+    "level": 3,
+    "topic": "配合",
+    "tags": []
+  },
+  {
+    "id": "B3-0639",
+    "trad": "pèng",
+    "pinyin": "V",
+    "gloss_en": "",
+    "band": "B",
+    "level": 3,
+    "topic": "碰",
+    "tags": []
+  },
+  {
+    "id": "B3-0640",
+    "trad": "pèngdào",
+    "pinyin": "Vpt",
+    "gloss_en": "",
+    "band": "B",
+    "level": 3,
+    "topic": "碰到",
+    "tags": []
+  },
+  {
+    "id": "B3-0641",
+    "trad": "pèngshàng",
+    "pinyin": "Vpt",
+    "gloss_en": "",
+    "band": "B",
+    "level": 3,
+    "topic": "碰上",
+    "tags": []
+  },
+  {
+    "id": "B3-0642",
+    "trad": "pīpíng",
+    "pinyin": "V",
+    "gloss_en": "",
+    "band": "B",
+    "level": 3,
+    "topic": "批評",
+    "tags": []
+  },
+  {
+    "id": "B3-0643",
+    "trad": "pí",
+    "pinyin": "N",
+    "gloss_en": "",
+    "band": "B",
+    "level": 3,
+    "topic": "皮",
+    "tags": []
+  },
+  {
+    "id": "B3-0644",
+    "trad": "pídài",
+    "pinyin": "N",
+    "gloss_en": "",
+    "band": "B",
+    "level": 3,
+    "topic": "皮帶",
+    "tags": []
+  },
+  {
+    "id": "B3-0645",
+    "trad": "pífū",
+    "pinyin": "N",
+    "gloss_en": "",
+    "band": "B",
+    "level": 3,
+    "topic": "皮膚",
+    "tags": []
+  },
+  {
+    "id": "B3-0646",
+    "trad": "piān",
+    "pinyin": "M",
+    "gloss_en": "",
+    "band": "B",
+    "level": 3,
+    "topic": "篇",
+    "tags": []
+  },
+  {
+    "id": "B3-0647",
+    "trad": "piànzi",
+    "pinyin": "N",
+    "gloss_en": "",
+    "band": "B",
+    "level": 3,
+    "topic": "騙子",
+    "tags": []
+  },
+  {
+    "id": "B3-0648",
+    "trad": "píng",
+    "pinyin": "M",
+    "gloss_en": "",
+    "band": "B",
+    "level": 3,
+    "topic": "坪",
+    "tags": []
+  },
+  {
+    "id": "B3-0649",
+    "trad": "píng",
+    "pinyin": "Vs",
+    "gloss_en": "",
+    "band": "B",
+    "level": 3,
+    "topic": "平",
+    "tags": []
+  },
+  {
+    "id": "B3-0650",
+    "trad": "píngān",
+    "pinyin": "Vs",
+    "gloss_en": "",
+    "band": "B",
+    "level": 3,
+    "topic": "平安",
+    "tags": []
+  },
+  {
+    "id": "B3-0651",
+    "trad": "píngděng",
+    "pinyin": "Vs",
+    "gloss_en": "",
+    "band": "B",
+    "level": 3,
+    "topic": "平等",
+    "tags": []
+  },
+  {
+    "id": "B3-0652",
+    "trad": "píngshí",
+    "pinyin": "N",
+    "gloss_en": "",
+    "band": "B",
+    "level": 3,
+    "topic": "平時",
+    "tags": []
+  },
+  {
+    "id": "B3-0653",
+    "trad": "píngyuán",
+    "pinyin": "N",
+    "gloss_en": "",
+    "band": "B",
+    "level": 3,
+    "topic": "平原",
+    "tags": []
+  },
+  {
+    "id": "B3-0654",
+    "trad": "pĭnzhí",
+    "pinyin": "N",
+    "gloss_en": "",
+    "band": "B",
+    "level": 3,
+    "topic": "品質",
+    "tags": []
+  },
+  {
+    "id": "B3-0655",
+    "trad": "pòhuài",
+    "pinyin": "V",
+    "gloss_en": "",
+    "band": "B",
+    "level": 3,
+    "topic": "破壞",
+    "tags": []
+  },
+  {
+    "id": "B3-0656",
+    "trad": "pŭbiàn",
+    "pinyin": "Vs",
+    "gloss_en": "",
+    "band": "B",
+    "level": 3,
+    "topic": "普遍",
+    "tags": []
+  },
+  {
+    "id": "B3-0657",
+    "trad": "qí",
+    "pinyin": "M",
+    "gloss_en": "",
+    "band": "B",
+    "level": 3,
+    "topic": "期",
+    "tags": []
+  },
+  {
+    "id": "B3-0658",
+    "trad": "qĭ",
+    "pinyin": "N / V",
+    "gloss_en": "",
+    "band": "B",
+    "level": 3,
+    "topic": "起",
+    "tags": []
+  },
+  {
+    "id": "B3-0659",
+    "trad": "qì",
+    "pinyin": "N / Det",
+    "gloss_en": "",
+    "band": "B",
+    "level": 3,
+    "topic": "氣",
+    "tags": []
+  },
+  {
+    "id": "B3-0660",
+    "trad": "qiānbĭ",
+    "pinyin": "N",
+    "gloss_en": "",
+    "band": "B",
+    "level": 3,
+    "topic": "鉛筆",
+    "tags": []
+  },
+  {
+    "id": "B3-0661",
+    "trad": "qiānmíng",
+    "pinyin": "V-sep",
+    "gloss_en": "",
+    "band": "B",
+    "level": 3,
+    "topic": "簽名",
+    "tags": []
+  },
+  {
+    "id": "B3-0662",
+    "trad": "qiānxū",
+    "pinyin": "Vs",
+    "gloss_en": "",
+    "band": "B",
+    "level": 3,
+    "topic": "謙虛",
+    "tags": []
+  },
+  {
+    "id": "B3-0663",
+    "trad": "qián",
+    "pinyin": "N / Det",
+    "gloss_en": "",
+    "band": "B",
+    "level": 3,
+    "topic": "前",
+    "tags": []
+  },
+  {
+    "id": "B3-0664",
+    "trad": "qiángdào",
+    "pinyin": "N",
+    "gloss_en": "",
+    "band": "B",
+    "level": 3,
+    "topic": "強盜",
+    "tags": []
+  },
+  {
+    "id": "B3-0665",
+    "trad": "qiángdiào",
+    "pinyin": "V",
+    "gloss_en": "",
+    "band": "B",
+    "level": 3,
+    "topic": "強調",
+    "tags": []
+  },
+  {
+    "id": "B3-0666",
+    "trad": "qiăng",
+    "pinyin": "V",
+    "gloss_en": "",
+    "band": "B",
+    "level": 3,
+    "topic": "搶",
+    "tags": []
+  },
+  {
+    "id": "B3-0667",
+    "trad": "qiáo",
+    "pinyin": "N",
+    "gloss_en": "",
+    "band": "B",
+    "level": 3,
+    "topic": "橋",
+    "tags": []
+  },
+  {
+    "id": "B3-0668",
+    "trad": "qīfù",
+    "pinyin": "V",
+    "gloss_en": "",
+    "band": "B",
+    "level": 3,
+    "topic": "欺負",
+    "tags": []
+  },
+  {
+    "id": "B3-0669",
+    "trad": "qícì",
+    "pinyin": "Conj",
+    "gloss_en": "",
+    "band": "B",
+    "level": 3,
+    "topic": "其次",
+    "tags": []
+  },
+  {
+    "id": "B3-0670",
+    "trad": "qíjiān",
+    "pinyin": "N",
+    "gloss_en": "",
+    "band": "B",
+    "level": 3,
+    "topic": "期間",
+    "tags": []
+  },
+  {
+    "id": "B3-0671",
+    "trad": "qĭfēi",
+    "pinyin": "Vp",
+    "gloss_en": "",
+    "band": "B",
+    "level": 3,
+    "topic": "起飛",
+    "tags": []
+  },
+  {
+    "id": "B3-0672",
+    "trad": "qĭlái",
+    "pinyin": "Ptc",
+    "gloss_en": "",
+    "band": "B",
+    "level": 3,
+    "topic": "起來",
+    "tags": []
+  },
+  {
+    "id": "B3-0673",
+    "trad": "qīn",
+    "pinyin": "V",
+    "gloss_en": "",
+    "band": "B",
+    "level": 3,
+    "topic": "親",
+    "tags": []
+  },
+  {
+    "id": "B3-0674",
+    "trad": "qīnqiè",
+    "pinyin": "Vs",
+    "gloss_en": "",
+    "band": "B",
+    "level": 3,
+    "topic": "親切",
+    "tags": []
+  },
+  {
+    "id": "B3-0675",
+    "trad": "qīnshŏu",
+    "pinyin": "Adv",
+    "gloss_en": "",
+    "band": "B",
+    "level": 3,
+    "topic": "親手",
+    "tags": []
+  },
+  {
+    "id": "B3-0676",
+    "trad": "qīnyăn",
+    "pinyin": "Adv",
+    "gloss_en": "",
+    "band": "B",
+    "level": 3,
+    "topic": "親眼",
+    "tags": []
+  },
+  {
+    "id": "B3-0677",
+    "trad": "qīnzì",
+    "pinyin": "Adv",
+    "gloss_en": "",
+    "band": "B",
+    "level": 3,
+    "topic": "親自",
+    "tags": []
+  },
+  {
+    "id": "B3-0678",
+    "trad": "qīng",
+    "pinyin": "Vs-pred",
+    "gloss_en": "",
+    "band": "B",
+    "level": 3,
+    "topic": "清",
+    "tags": []
+  },
+  {
+    "id": "B3-0679",
+    "trad": "qīngnián",
+    "pinyin": "N",
+    "gloss_en": "",
+    "band": "B",
+    "level": 3,
+    "topic": "青年",
+    "tags": []
+  },
+  {
+    "id": "B3-0680",
+    "trad": "qīngshàonián",
+    "pinyin": "N",
+    "gloss_en": "",
+    "band": "B",
+    "level": 3,
+    "topic": "青少年",
+    "tags": []
+  },
+  {
+    "id": "B3-0681",
+    "trad": "qíng",
+    "pinyin": "Vs-pred",
+    "gloss_en": "",
+    "band": "B",
+    "level": 3,
+    "topic": "晴",
+    "tags": []
+  },
+  {
+    "id": "B3-0682",
+    "trad": "qíng",
+    "pinyin": "N",
+    "gloss_en": "",
+    "band": "B",
+    "level": 3,
+    "topic": "情",
+    "tags": []
+  },
+  {
+    "id": "B3-0683",
+    "trad": "qĭngjià",
+    "pinyin": "N",
+    "gloss_en": "",
+    "band": "B",
+    "level": 3,
+    "topic": "情況",
+    "tags": []
+  },
+  {
+    "id": "B3-0684",
+    "trad": "qíngrén",
+    "pinyin": "N",
+    "gloss_en": "",
+    "band": "B",
+    "level": 3,
+    "topic": "情人",
+    "tags": []
+  },
+  {
+    "id": "B3-0685",
+    "trad": "qĭngjià",
+    "pinyin": "V",
+    "gloss_en": "",
+    "band": "B",
+    "level": 3,
+    "topic": "請假",
+    "tags": []
+  },
+  {
+    "id": "B3-0686",
+    "trad": "qĭngjiào",
+    "pinyin": "V",
+    "gloss_en": "",
+    "band": "B",
+    "level": 3,
+    "topic": "請教",
+    "tags": []
+  },
+  {
+    "id": "B3-0687",
+    "trad": "qĭngqiú",
+    "pinyin": "V",
+    "gloss_en": "",
+    "band": "B",
+    "level": 3,
+    "topic": "請求",
+    "tags": []
+  },
+  {
+    "id": "B3-0688",
+    "trad": "qìngzhù",
+    "pinyin": "V",
+    "gloss_en": "",
+    "band": "B",
+    "level": 3,
+    "topic": "慶祝",
+    "tags": []
+  },
+  {
+    "id": "B3-0689",
+    "trad": "qióng",
+    "pinyin": "Vs",
+    "gloss_en": "",
+    "band": "B",
+    "level": 3,
+    "topic": "窮",
+    "tags": []
+  },
+  {
+    "id": "B3-0690",
+    "trad": "qiú",
+    "pinyin": "V",
+    "gloss_en": "",
+    "band": "B",
+    "level": 3,
+    "topic": "求",
+    "tags": []
+  },
+  {
+    "id": "B3-0691",
+    "trad": "qiúchăng",
+    "pinyin": "N",
+    "gloss_en": "",
+    "band": "B",
+    "level": 3,
+    "topic": "球場",
+    "tags": []
+  },
+  {
+    "id": "B3-0692",
+    "trad": "qiúsài",
+    "pinyin": "N",
+    "gloss_en": "",
+    "band": "B",
+    "level": 3,
+    "topic": "球賽",
+    "tags": []
+  },
+  {
+    "id": "B3-0693",
+    "trad": "qiúyuán",
+    "pinyin": "N",
+    "gloss_en": "",
+    "band": "B",
+    "level": 3,
+    "topic": "球員",
+    "tags": []
+  },
+  {
+    "id": "B3-0694",
+    "trad": "qìwēn",
+    "pinyin": "N",
+    "gloss_en": "",
+    "band": "B",
+    "level": 3,
+    "topic": "氣溫",
+    "tags": []
+  },
+  {
+    "id": "B3-0695",
+    "trad": "qìyè",
+    "pinyin": "N",
+    "gloss_en": "",
+    "band": "B",
+    "level": 3,
+    "topic": "企業",
+    "tags": []
+  },
+  {
+    "id": "B3-0696",
+    "trad": "qù",
+    "pinyin": "Adv / Ptc",
+    "gloss_en": "",
+    "band": "B",
+    "level": 3,
+    "topic": "去",
+    "tags": []
+  },
+  {
+    "id": "B3-0697",
+    "trad": "qùshì",
+    "pinyin": "Vp",
+    "gloss_en": "",
+    "band": "B",
+    "level": 3,
+    "topic": "去世",
+    "tags": []
+  },
+  {
+    "id": "B3-0698",
+    "trad": "quán",
+    "pinyin": "Det",
+    "gloss_en": "",
+    "band": "B",
+    "level": 3,
+    "topic": "全",
+    "tags": []
+  },
+  {
+    "id": "B3-0699",
+    "trad": "quánqiú",
+    "pinyin": "N",
+    "gloss_en": "",
+    "band": "B",
+    "level": 3,
+    "topic": "全球",
+    "tags": []
+  },
+  {
+    "id": "B3-0700",
+    "trad": "quánshēn",
+    "pinyin": "N",
+    "gloss_en": "",
+    "band": "B",
+    "level": 3,
+    "topic": "全身",
+    "tags": []
+  },
+  {
+    "id": "B3-0701",
+    "trad": "qŭdài",
+    "pinyin": "V",
+    "gloss_en": "",
+    "band": "B",
+    "level": 3,
+    "topic": "取代",
+    "tags": []
+  },
+  {
+    "id": "B3-0702",
+    "trad": "quēdiăn",
+    "pinyin": "N",
+    "gloss_en": "",
+    "band": "B",
+    "level": 3,
+    "topic": "缺點",
+    "tags": []
+  },
+  {
+    "id": "B3-0703",
+    "trad": "què",
+    "pinyin": "Adv",
+    "gloss_en": "",
+    "band": "B",
+    "level": 3,
+    "topic": "卻",
+    "tags": []
+  },
+  {
+    "id": "B3-0704",
+    "trad": "quèdìng",
+    "pinyin": "Vs",
+    "gloss_en": "",
+    "band": "B",
+    "level": 3,
+    "topic": "確定",
+    "tags": []
+  },
+  {
+    "id": "B3-0705",
+    "trad": "quèrèn",
+    "pinyin": "V",
+    "gloss_en": "",
+    "band": "B",
+    "level": 3,
+    "topic": "確認",
+    "tags": []
+  },
+  {
+    "id": "B3-0706",
+    "trad": "ràng",
+    "pinyin": "V",
+    "gloss_en": "",
+    "band": "B",
+    "level": 3,
+    "topic": "讓",
+    "tags": []
+  },
+  {
+    "id": "B3-0707",
+    "trad": "rěn",
+    "pinyin": "Vs",
+    "gloss_en": "",
+    "band": "B",
+    "level": 3,
+    "topic": "忍",
+    "tags": []
+  },
+  {
+    "id": "B3-0708",
+    "trad": "rèn",
+    "pinyin": "V",
+    "gloss_en": "",
+    "band": "B",
+    "level": 3,
+    "topic": "認",
+    "tags": []
+  },
+  {
+    "id": "B3-0709",
+    "trad": "rènde",
+    "pinyin": "Vst",
+    "gloss_en": "",
+    "band": "B",
+    "level": 3,
+    "topic": "認得",
+    "tags": []
+  },
+  {
+    "id": "B3-0710",
+    "trad": "rēng",
+    "pinyin": "Vpt",
+    "gloss_en": "",
+    "band": "B",
+    "level": 3,
+    "topic": "扔",
+    "tags": []
+  },
+  {
+    "id": "B3-0711",
+    "trad": "réng",
+    "pinyin": "Adv",
+    "gloss_en": "",
+    "band": "B",
+    "level": 3,
+    "topic": "仍",
+    "tags": []
+  },
+  {
+    "id": "B3-0712",
+    "trad": "réngrán",
+    "pinyin": "Adv",
+    "gloss_en": "",
+    "band": "B",
+    "level": 3,
+    "topic": "仍然",
+    "tags": []
+  },
+  {
+    "id": "B3-0713",
+    "trad": "rénjiā",
+    "pinyin": "N",
+    "gloss_en": "",
+    "band": "B",
+    "level": 3,
+    "topic": "人家",
+    "tags": []
+  },
+  {
+    "id": "B3-0714",
+    "trad": "rénjiān",
+    "pinyin": "N",
+    "gloss_en": "",
+    "band": "B",
+    "level": 3,
+    "topic": "人間",
+    "tags": []
+  },
+  {
+    "id": "B3-0715",
+    "trad": "rénkŏu",
+    "pinyin": "N",
+    "gloss_en": "",
+    "band": "B",
+    "level": 3,
+    "topic": "人口",
+    "tags": []
+  },
+  {
+    "id": "B3-0716",
+    "trad": "rénlèi",
+    "pinyin": "N",
+    "gloss_en": "",
+    "band": "B",
+    "level": 3,
+    "topic": "人類",
+    "tags": []
+  },
+  {
+    "id": "B3-0717",
+    "trad": "rénmen",
+    "pinyin": "N",
+    "gloss_en": "",
+    "band": "B",
+    "level": 3,
+    "topic": "人們",
+    "tags": []
+  },
+  {
+    "id": "B3-0718",
+    "trad": "rénmín",
+    "pinyin": "N",
+    "gloss_en": "",
+    "band": "B",
+    "level": 3,
+    "topic": "人民",
+    "tags": []
+  },
+  {
+    "id": "B3-0719",
+    "trad": "rénrén",
+    "pinyin": "N",
+    "gloss_en": "",
+    "band": "B",
+    "level": 3,
+    "topic": "人人",
+    "tags": []
+  },
+  {
+    "id": "B3-0720",
+    "trad": "rénshù",
+    "pinyin": "N",
+    "gloss_en": "",
+    "band": "B",
+    "level": 3,
+    "topic": "人數",
+    "tags": []
+  },
+  {
+    "id": "B3-0721",
+    "trad": "rénwù",
+    "pinyin": "N",
+    "gloss_en": "",
+    "band": "B",
+    "level": 3,
+    "topic": "人物",
+    "tags": []
+  },
+  {
+    "id": "B3-0722",
+    "trad": "rěnnài",
+    "pinyin": "Vst",
+    "gloss_en": "",
+    "band": "B",
+    "level": 3,
+    "topic": "忍耐",
+    "tags": []
+  },
+  {
+    "id": "B3-0723",
+    "trad": "rènwù",
+    "pinyin": "N",
+    "gloss_en": "",
+    "band": "B",
+    "level": 3,
+    "topic": "任務",
+    "tags": []
+  },
+  {
+    "id": "B3-0724",
+    "trad": "rèshuĭ",
+    "pinyin": "N",
+    "gloss_en": "",
+    "band": "B",
+    "level": 3,
+    "topic": "熱水",
+    "tags": []
+  },
+  {
+    "id": "B3-0725",
+    "trad": "rìchū",
+    "pinyin": "Vi",
+    "gloss_en": "",
+    "band": "B",
+    "level": 3,
+    "topic": "日出",
+    "tags": []
+  },
+  {
+    "id": "B3-0726",
+    "trad": "rìqí",
+    "pinyin": "N",
+    "gloss_en": "",
+    "band": "B",
+    "level": 3,
+    "topic": "日期",
+    "tags": []
+  },
+  {
+    "id": "B3-0727",
+    "trad": "rú",
+    "pinyin": "Conj / Prep",
+    "gloss_en": "",
+    "band": "B",
+    "level": 3,
+    "topic": "如",
+    "tags": []
+  },
+  {
+    "id": "B3-0728",
+    "trad": "rúcĭ",
+    "pinyin": "Vs",
+    "gloss_en": "",
+    "band": "B",
+    "level": 3,
+    "topic": "如此",
+    "tags": []
+  },
+  {
+    "id": "B3-0729",
+    "trad": "rúxià",
+    "pinyin": "Vs",
+    "gloss_en": "",
+    "band": "B",
+    "level": 3,
+    "topic": "如下",
+    "tags": []
+  },
+  {
+    "id": "B3-0730",
+    "trad": "rúyì",
+    "pinyin": "Vs",
+    "gloss_en": "",
+    "band": "B",
+    "level": 3,
+    "topic": "如意",
+    "tags": []
+  },
+  {
+    "id": "B3-0731",
+    "trad": "ruò",
+    "pinyin": "Vs",
+    "gloss_en": "",
+    "band": "B",
+    "level": 3,
+    "topic": "弱",
+    "tags": []
+  },
+  {
+    "id": "B3-0732",
+    "trad": "sēnlín",
+    "pinyin": "N",
+    "gloss_en": "",
+    "band": "B",
+    "level": 3,
+    "topic": "森林",
+    "tags": []
+  },
+  {
+    "id": "B3-0733",
+    "trad": "shīliàn",
+    "pinyin": "Vp",
+    "gloss_en": "",
+    "band": "B",
+    "level": 3,
+    "topic": "失戀",
+    "tags": []
+  },
+  {
+    "id": "B3-0734",
+    "trad": "shīqù",
+    "pinyin": "Vpt",
+    "gloss_en": "",
+    "band": "B",
+    "level": 3,
+    "topic": "失去",
+    "tags": []
+  },
+  {
+    "id": "B3-0735",
+    "trad": "shī(zi)",
+    "pinyin": "N",
+    "gloss_en": "",
+    "band": "B",
+    "level": 3,
+    "topic": "獅(子)",
+    "tags": []
+  },
+  {
+    "id": "B3-0736",
+    "trad": "shídài",
+    "pinyin": "N",
+    "gloss_en": "",
+    "band": "B",
+    "level": 3,
+    "topic": "時代",
+    "tags": []
+  },
+  {
+    "id": "B3-0737",
+    "trad": "shífēn",
+    "pinyin": "Adv",
+    "gloss_en": "",
+    "band": "B",
+    "level": 3,
+    "topic": "十分",
+    "tags": []
+  },
+  {
+    "id": "B3-0738",
+    "trad": "shíhuà",
+    "pinyin": "N",
+    "gloss_en": "",
+    "band": "B",
+    "level": 3,
+    "topic": "實話",
+    "tags": []
+  },
+  {
+    "id": "B3-0739",
+    "trad": "shíjì",
+    "pinyin": "Vs",
+    "gloss_en": "",
+    "band": "B",
+    "level": 3,
+    "topic": "實際",
+    "tags": []
+  },
+  {
+    "id": "B3-0740",
+    "trad": "shíkè",
+    "pinyin": "N",
+    "gloss_en": "",
+    "band": "B",
+    "level": 3,
+    "topic": "時刻",
+    "tags": []
+  },
+  {
+    "id": "B3-0741",
+    "trad": "shílì",
+    "pinyin": "N",
+    "gloss_en": "",
+    "band": "B",
+    "level": 3,
+    "topic": "實力",
+    "tags": []
+  },
+  {
+    "id": "B3-0742",
+    "trad": "shítou/shí",
+    "pinyin": "N",
+    "gloss_en": "",
+    "band": "B",
+    "level": 3,
+    "topic": "石頭(˙ㄊㄡ) /石",
+    "tags": []
+  },
+  {
+    "id": "B3-0743",
+    "trad": "shíxíng",
+    "pinyin": "V",
+    "gloss_en": "",
+    "band": "B",
+    "level": 3,
+    "topic": "實行",
+    "tags": []
+  },
+  {
+    "id": "B3-0744",
+    "trad": "shíyóu",
+    "pinyin": "N",
+    "gloss_en": "",
+    "band": "B",
+    "level": 3,
+    "topic": "石油",
+    "tags": []
+  },
+  {
+    "id": "B3-0745",
+    "trad": "shízài",
+    "pinyin": "Vs",
+    "gloss_en": "",
+    "band": "B",
+    "level": 3,
+    "topic": "實在",
+    "tags": []
+  },
+  {
+    "id": "B3-0746",
+    "trad": "shĭde",
+    "pinyin": "Vst",
+    "gloss_en": "",
+    "band": "B",
+    "level": 3,
+    "topic": "使得",
+    "tags": []
+  },
+  {
+    "id": "B3-0747",
+    "trad": "shĭyòng",
+    "pinyin": "V",
+    "gloss_en": "",
+    "band": "B",
+    "level": 3,
+    "topic": "使用",
+    "tags": []
+  },
+  {
+    "id": "B3-0748",
+    "trad": "shìyè",
+    "pinyin": "N",
+    "gloss_en": "",
+    "band": "B",
+    "level": 3,
+    "topic": "事業",
+    "tags": []
+  },
+  {
+    "id": "B3-0749",
+    "trad": "shìshí",
+    "pinyin": "N",
+    "gloss_en": "",
+    "band": "B",
+    "level": 3,
+    "topic": "事實",
+    "tags": []
+  },
+  {
+    "id": "B3-0750",
+    "trad": "shìyìng",
+    "pinyin": "Vst",
+    "gloss_en": "",
+    "band": "B",
+    "level": 3,
+    "topic": "適應",
+    "tags": []
+  },
+  {
+    "id": "B3-0751",
+    "trad": "shìzhăng",
+    "pinyin": "N",
+    "gloss_en": "",
+    "band": "B",
+    "level": 3,
+    "topic": "市長",
+    "tags": []
+  },
+  {
+    "id": "B3-0752",
+    "trad": "shā",
+    "pinyin": "V",
+    "gloss_en": "",
+    "band": "B",
+    "level": 3,
+    "topic": "殺",
+    "tags": []
+  },
+  {
+    "id": "B3-0753",
+    "trad": "shài",
+    "pinyin": "V",
+    "gloss_en": "",
+    "band": "B",
+    "level": 3,
+    "topic": "晒",
+    "tags": []
+  },
+  {
+    "id": "B3-0754",
+    "trad": "shānghài",
+    "pinyin": "V",
+    "gloss_en": "",
+    "band": "B",
+    "level": 3,
+    "topic": "傷害",
+    "tags": []
+  },
+  {
+    "id": "B3-0755",
+    "trad": "shāngpĭn",
+    "pinyin": "N",
+    "gloss_en": "",
+    "band": "B",
+    "level": 3,
+    "topic": "商品",
+    "tags": []
+  },
+  {
+    "id": "B3-0756",
+    "trad": "shāngyè",
+    "pinyin": "N",
+    "gloss_en": "",
+    "band": "B",
+    "level": 3,
+    "topic": "商業",
+    "tags": []
+  },
+  {
+    "id": "B3-0757",
+    "trad": "shàng",
+    "pinyin": "Det",
+    "gloss_en": "",
+    "band": "B",
+    "level": 3,
+    "topic": "上",
+    "tags": []
+  },
+  {
+    "id": "B3-0758",
+    "trad": "shàngdàng",
+    "pinyin": "Vp",
+    "gloss_en": "",
+    "band": "B",
+    "level": 3,
+    "topic": "上當",
+    "tags": []
+  },
+  {
+    "id": "B3-0759",
+    "trad": "shàngdì",
+    "pinyin": "N",
+    "gloss_en": "",
+    "band": "B",
+    "level": 3,
+    "topic": "上帝",
+    "tags": []
+  },
+  {
+    "id": "B3-0760",
+    "trad": "shàngjiē",
+    "pinyin": "Vi",
+    "gloss_en": "",
+    "band": "B",
+    "level": 3,
+    "topic": "上街",
+    "tags": []
+  },
+  {
+    "id": "B3-0761",
+    "trad": "shānqū",
+    "pinyin": "N",
+    "gloss_en": "",
+    "band": "B",
+    "level": 3,
+    "topic": "山區",
+    "tags": []
+  },
+  {
+    "id": "B3-0762",
+    "trad": "shāo",
+    "pinyin": "V",
+    "gloss_en": "",
+    "band": "B",
+    "level": 3,
+    "topic": "燒",
+    "tags": []
+  },
+  {
+    "id": "B3-0763",
+    "trad": "shăo",
+    "pinyin": "Adv",
+    "gloss_en": "",
+    "band": "B",
+    "level": 3,
+    "topic": "少",
+    "tags": []
+  },
+  {
+    "id": "B3-0764",
+    "trad": "shé",
+    "pinyin": "N",
+    "gloss_en": "",
+    "band": "B",
+    "level": 3,
+    "topic": "蛇",
+    "tags": []
+  },
+  {
+    "id": "B3-0765",
+    "trad": "shèbèi",
+    "pinyin": "N",
+    "gloss_en": "",
+    "band": "B",
+    "level": 3,
+    "topic": "設備",
+    "tags": []
+  },
+  {
+    "id": "B3-0766",
+    "trad": "shèjì",
+    "pinyin": "N / V",
+    "gloss_en": "",
+    "band": "B",
+    "level": 3,
+    "topic": "設計",
+    "tags": []
+  },
+  {
+    "id": "B3-0767",
+    "trad": "shēng",
+    "pinyin": "V",
+    "gloss_en": "",
+    "band": "B",
+    "level": 3,
+    "topic": "升",
+    "tags": []
+  },
+  {
+    "id": "B3-0768",
+    "trad": "shēng",
+    "pinyin": "M",
+    "gloss_en": "",
+    "band": "B",
+    "level": 3,
+    "topic": "聲",
+    "tags": []
+  },
+  {
+    "id": "B3-0769",
+    "trad": "shēng",
+    "pinyin": "V",
+    "gloss_en": "",
+    "band": "B",
+    "level": 3,
+    "topic": "生",
+    "tags": []
+  },
+  {
+    "id": "B3-0770",
+    "trad": "shēngchăn",
+    "pinyin": "V",
+    "gloss_en": "",
+    "band": "B",
+    "level": 3,
+    "topic": "生產",
+    "tags": []
+  },
+  {
+    "id": "B3-0771",
+    "trad": "shēngdiào",
+    "pinyin": "N",
+    "gloss_en": "",
+    "band": "B",
+    "level": 3,
+    "topic": "聲調",
+    "tags": []
+  },
+  {
+    "id": "B3-0772",
+    "trad": "shēngdòng",
+    "pinyin": "Vs",
+    "gloss_en": "",
+    "band": "B",
+    "level": 3,
+    "topic": "生動",
+    "tags": []
+  },
+  {
+    "id": "B3-0773",
+    "trad": "shēnghuó",
+    "pinyin": "Vi",
+    "gloss_en": "",
+    "band": "B",
+    "level": 3,
+    "topic": "生活",
+    "tags": []
+  },
+  {
+    "id": "B3-0774",
+    "trad": "shēngmìng",
+    "pinyin": "N",
+    "gloss_en": "",
+    "band": "B",
+    "level": 3,
+    "topic": "生命",
+    "tags": []
+  },
+  {
+    "id": "B3-0775",
+    "trad": "shēngzì",
+    "pinyin": "N",
+    "gloss_en": "",
+    "band": "B",
+    "level": 3,
+    "topic": "生字",
+    "tags": []
+  },
+  {
+    "id": "B3-0776",
+    "trad": "shēnrù",
+    "pinyin": "Vs",
+    "gloss_en": "",
+    "band": "B",
+    "level": 3,
+    "topic": "深入",
+    "tags": []
+  },
+  {
+    "id": "B3-0777",
+    "trad": "shēnshàng",
+    "pinyin": "N",
+    "gloss_en": "",
+    "band": "B",
+    "level": 3,
+    "topic": "身上",
+    "tags": []
+  },
+  {
+    "id": "B3-0778",
+    "trad": "shěng",
+    "pinyin": "Vst",
+    "gloss_en": "",
+    "band": "B",
+    "level": 3,
+    "topic": "省",
+    "tags": []
+  },
+  {
+    "id": "B3-0779",
+    "trad": "shěngqián",
+    "pinyin": "Vs-sep",
+    "gloss_en": "",
+    "band": "B",
+    "level": 3,
+    "topic": "省錢",
+    "tags": []
+  },
+  {
+    "id": "B3-0780",
+    "trad": "shèng",
+    "pinyin": "Vst",
+    "gloss_en": "",
+    "band": "B",
+    "level": 3,
+    "topic": "剩",
+    "tags": []
+  },
+  {
+    "id": "B3-0781",
+    "trad": "shèngxià",
+    "pinyin": "Vpt",
+    "gloss_en": "",
+    "band": "B",
+    "level": 3,
+    "topic": "剩下",
+    "tags": []
+  },
+  {
+    "id": "B3-0782",
+    "trad": "shènzhì",
+    "pinyin": "Adv",
+    "gloss_en": "",
+    "band": "B",
+    "level": 3,
+    "topic": "甚至",
+    "tags": []
+  },
+  {
+    "id": "B3-0783",
+    "trad": "shōuhuò",
+    "pinyin": "N",
+    "gloss_en": "",
+    "band": "B",
+    "level": 3,
+    "topic": "收穫",
+    "tags": []
+  },
+  {
+    "id": "B3-0784",
+    "trad": "shōuyīnjī",
+    "pinyin": "N",
+    "gloss_en": "",
+    "band": "B",
+    "level": 3,
+    "topic": "收音機",
+    "tags": []
+  },
+  {
+    "id": "B3-0785",
+    "trad": "shoúxī",
+    "pinyin": "Vst",
+    "gloss_en": "",
+    "band": "B",
+    "level": 3,
+    "topic": "熟悉",
+    "tags": []
+  },
+  {
+    "id": "B3-0786",
+    "trad": "shŏuxù",
+    "pinyin": "N",
+    "gloss_en": "",
+    "band": "B",
+    "level": 3,
+    "topic": "手續",
+    "tags": []
+  },
+  {
+    "id": "B3-0787",
+    "trad": "shŏu",
+    "pinyin": "M",
+    "gloss_en": "",
+    "band": "B",
+    "level": 3,
+    "topic": "首",
+    "tags": []
+  },
+  {
+    "id": "B3-0788",
+    "trad": "shòudeliao",
+    "pinyin": "Vst",
+    "gloss_en": "",
+    "band": "B",
+    "level": 3,
+    "topic": "受得了",
+    "tags": []
+  },
+  {
+    "id": "B3-0789",
+    "trad": "shòushāng",
+    "pinyin": "Vp-sep",
+    "gloss_en": "",
+    "band": "B",
+    "level": 3,
+    "topic": "受傷",
+    "tags": []
+  },
+  {
+    "id": "B3-0790",
+    "trad": "shū",
+    "pinyin": "Vp",
+    "gloss_en": "",
+    "band": "B",
+    "level": 3,
+    "topic": "輸",
+    "tags": []
+  },
+  {
+    "id": "B3-0791",
+    "trad": "shūcài",
+    "pinyin": "N",
+    "gloss_en": "",
+    "band": "B",
+    "level": 3,
+    "topic": "蔬菜",
+    "tags": []
+  },
+  {
+    "id": "B3-0792",
+    "trad": "shūshì",
+    "pinyin": "Vs",
+    "gloss_en": "",
+    "band": "B",
+    "level": 3,
+    "topic": "舒適",
+    "tags": []
+  },
+  {
+    "id": "B3-0793",
+    "trad": "shŭ",
+    "pinyin": "V",
+    "gloss_en": "",
+    "band": "B",
+    "level": 3,
+    "topic": "數",
+    "tags": []
+  },
+  {
+    "id": "B3-0794",
+    "trad": "shùzì",
+    "pinyin": "N",
+    "gloss_en": "",
+    "band": "B",
+    "level": 3,
+    "topic": "數字",
+    "tags": []
+  },
+  {
+    "id": "B3-0795",
+    "trad": "shuāng",
+    "pinyin": "Vs-attr",
+    "gloss_en": "",
+    "band": "B",
+    "level": 3,
+    "topic": "雙",
+    "tags": []
+  },
+  {
+    "id": "B3-0796",
+    "trad": "shuāyá",
+    "pinyin": "V-sep",
+    "gloss_en": "",
+    "band": "B",
+    "level": 3,
+    "topic": "刷牙",
+    "tags": []
+  },
+  {
+    "id": "B3-0797",
+    "trad": "shuĭjiăo",
+    "pinyin": "N",
+    "gloss_en": "",
+    "band": "B",
+    "level": 3,
+    "topic": "水餃",
+    "tags": []
+  },
+  {
+    "id": "B3-0798",
+    "trad": "shuĭpíng",
+    "pinyin": "N",
+    "gloss_en": "",
+    "band": "B",
+    "level": 3,
+    "topic": "水平",
+    "tags": []
+  },
+  {
+    "id": "B3-0799",
+    "trad": "shuìzháo",
+    "pinyin": "Vp",
+    "gloss_en": "",
+    "band": "B",
+    "level": 3,
+    "topic": "睡著",
+    "tags": []
+  },
+  {
+    "id": "B3-0800",
+    "trad": "shuĭzhŭn",
+    "pinyin": "N",
+    "gloss_en": "",
+    "band": "B",
+    "level": 3,
+    "topic": "水準",
+    "tags": []
+  },
+  {
+    "id": "B3-0801",
+    "trad": "shùmù",
+    "pinyin": "N",
+    "gloss_en": "",
+    "band": "B",
+    "level": 3,
+    "topic": "樹木",
+    "tags": []
+  },
+  {
+    "id": "B3-0802",
+    "trad": "shùnbiàn",
+    "pinyin": "Adv",
+    "gloss_en": "",
+    "band": "B",
+    "level": 3,
+    "topic": "順便",
+    "tags": []
+  },
+  {
+    "id": "B3-0803",
+    "trad": "shùnlì",
+    "pinyin": "Vs",
+    "gloss_en": "",
+    "band": "B",
+    "level": 3,
+    "topic": "順利",
+    "tags": []
+  },
+  {
+    "id": "B3-0804",
+    "trad": "shuōfă",
+    "pinyin": "N",
+    "gloss_en": "",
+    "band": "B",
+    "level": 3,
+    "topic": "說法",
+    "tags": []
+  },
+  {
+    "id": "B3-0805",
+    "trad": "shuōmíng",
+    "pinyin": "N / V",
+    "gloss_en": "",
+    "band": "B",
+    "level": 3,
+    "topic": "說明",
+    "tags": []
+  },
+  {
+    "id": "B3-0806",
+    "trad": "shuōqĭlái",
+    "pinyin": "Adv",
+    "gloss_en": "",
+    "band": "B",
+    "level": 3,
+    "topic": "說起來",
+    "tags": []
+  },
+  {
+    "id": "B3-0807",
+    "trad": "sīkăo",
+    "pinyin": "V",
+    "gloss_en": "",
+    "band": "B",
+    "level": 3,
+    "topic": "思考",
+    "tags": []
+  },
+  {
+    "id": "B3-0808",
+    "trad": "sīxiăng",
+    "pinyin": "N",
+    "gloss_en": "",
+    "band": "B",
+    "level": 3,
+    "topic": "思想",
+    "tags": []
+  },
+  {
+    "id": "B3-0809",
+    "trad": "sìhū/sì",
+    "pinyin": "Adv",
+    "gloss_en": "",
+    "band": "B",
+    "level": 3,
+    "topic": "似乎/似",
+    "tags": []
+  },
+  {
+    "id": "B3-0810",
+    "trad": "sìmiào",
+    "pinyin": "N",
+    "gloss_en": "",
+    "band": "B",
+    "level": 3,
+    "topic": "寺廟",
+    "tags": []
+  },
+  {
+    "id": "B3-0811",
+    "trad": "suànle",
+    "pinyin": "Vs",
+    "gloss_en": "",
+    "band": "B",
+    "level": 3,
+    "topic": "算了",
+    "tags": []
+  },
+  {
+    "id": "B3-0812",
+    "trad": "suíbiàn",
+    "pinyin": "Vs",
+    "gloss_en": "",
+    "band": "B",
+    "level": 3,
+    "topic": "隨便",
+    "tags": []
+  },
+  {
+    "id": "B3-0813",
+    "trad": "suíshí",
+    "pinyin": "Adv",
+    "gloss_en": "",
+    "band": "B",
+    "level": 3,
+    "topic": "隨時",
+    "tags": []
+  },
+  {
+    "id": "B3-0814",
+    "trad": "suŏ",
+    "pinyin": "M / Ptc",
+    "gloss_en": "",
+    "band": "B",
+    "level": 3,
+    "topic": "所",
+    "tags": []
+  },
+  {
+    "id": "B3-0815",
+    "trad": "suŏwèi",
+    "pinyin": "Vs-attr",
+    "gloss_en": "",
+    "band": "B",
+    "level": 3,
+    "topic": "所謂",
+    "tags": []
+  },
+  {
+    "id": "B3-0816",
+    "trad": "tái",
+    "pinyin": "V",
+    "gloss_en": "",
+    "band": "B",
+    "level": 3,
+    "topic": "抬",
+    "tags": []
+  },
+  {
+    "id": "B3-0817",
+    "trad": "tàidù",
+    "pinyin": "N",
+    "gloss_en": "",
+    "band": "B",
+    "level": 3,
+    "topic": "態度",
+    "tags": []
+  },
+  {
+    "id": "B3-0818",
+    "trad": "táng",
+    "pinyin": "N / M",
+    "gloss_en": "",
+    "band": "B",
+    "level": 3,
+    "topic": "堂",
+    "tags": []
+  },
+  {
+    "id": "B3-0819",
+    "trad": "tăng",
+    "pinyin": "V",
+    "gloss_en": "",
+    "band": "B",
+    "level": 3,
+    "topic": "躺",
+    "tags": []
+  },
+  {
+    "id": "B3-0820",
+    "trad": "tánhuà",
+    "pinyin": "V-sep",
+    "gloss_en": "",
+    "band": "B",
+    "level": 3,
+    "topic": "談話",
+    "tags": []
+  },
+  {
+    "id": "B3-0821",
+    "trad": "tăoyàn",
+    "pinyin": "Vst",
+    "gloss_en": "",
+    "band": "B",
+    "level": 3,
+    "topic": "討厭",
+    "tags": []
+  },
+  {
+    "id": "B3-0822",
+    "trad": "tèdì",
+    "pinyin": "Adv",
+    "gloss_en": "",
+    "band": "B",
+    "level": 3,
+    "topic": "特地",
+    "tags": []
+  },
+  {
+    "id": "B3-0823",
+    "trad": "tèsè",
+    "pinyin": "N",
+    "gloss_en": "",
+    "band": "B",
+    "level": 3,
+    "topic": "特色",
+    "tags": []
+  },
+  {
+    "id": "B3-0824",
+    "trad": "tèshū",
+    "pinyin": "Vs",
+    "gloss_en": "",
+    "band": "B",
+    "level": 3,
+    "topic": "特殊",
+    "tags": []
+  },
+  {
+    "id": "B3-0825",
+    "trad": "tián",
+    "pinyin": "N",
+    "gloss_en": "",
+    "band": "B",
+    "level": 3,
+    "topic": "田",
+    "tags": []
+  },
+  {
+    "id": "B3-0826",
+    "trad": "tián",
+    "pinyin": "V",
+    "gloss_en": "",
+    "band": "B",
+    "level": 3,
+    "topic": "填",
+    "tags": []
+  },
+  {
+    "id": "B3-0827",
+    "trad": "tiāntáng",
+    "pinyin": "N",
+    "gloss_en": "",
+    "band": "B",
+    "level": 3,
+    "topic": "天堂",
+    "tags": []
+  },
+  {
+    "id": "B3-0828",
+    "trad": "tiāntiān",
+    "pinyin": "Adv",
+    "gloss_en": "",
+    "band": "B",
+    "level": 3,
+    "topic": "天天",
+    "tags": []
+  },
+  {
+    "id": "B3-0829",
+    "trad": "tiānxià",
+    "pinyin": "N",
+    "gloss_en": "",
+    "band": "B",
+    "level": 3,
+    "topic": "天下",
+    "tags": []
+  },
+  {
+    "id": "B3-0830",
+    "trad": "tiáojiàn",
+    "pinyin": "N",
+    "gloss_en": "",
+    "band": "B",
+    "level": 3,
+    "topic": "條件",
+    "tags": []
+  },
+  {
+    "id": "B3-0831",
+    "trad": "tiăozhàn",
+    "pinyin": "V",
+    "gloss_en": "",
+    "band": "B",
+    "level": 3,
+    "topic": "挑戰",
+    "tags": []
+  },
+  {
+    "id": "B3-0832",
+    "trad": "tícái",
+    "pinyin": "N",
+    "gloss_en": "",
+    "band": "B",
+    "level": 3,
+    "topic": "題材",
+    "tags": []
+  },
+  {
+    "id": "B3-0833",
+    "trad": "tídào",
+    "pinyin": "Vpt",
+    "gloss_en": "",
+    "band": "B",
+    "level": 3,
+    "topic": "提到",
+    "tags": []
+  },
+  {
+    "id": "B3-0834",
+    "trad": "tígāo",
+    "pinyin": "V",
+    "gloss_en": "",
+    "band": "B",
+    "level": 3,
+    "topic": "提高",
+    "tags": []
+  },
+  {
+    "id": "B3-0835",
+    "trad": "tígōng",
+    "pinyin": "V",
+    "gloss_en": "",
+    "band": "B",
+    "level": 3,
+    "topic": "提供",
+    "tags": []
+  },
+  {
+    "id": "B3-0836",
+    "trad": "tĭhuì",
+    "pinyin": "Vst",
+    "gloss_en": "",
+    "band": "B",
+    "level": 3,
+    "topic": "體會",
+    "tags": []
+  },
+  {
+    "id": "B3-0837",
+    "trad": "tĭlì",
+    "pinyin": "N",
+    "gloss_en": "",
+    "band": "B",
+    "level": 3,
+    "topic": "體力",
+    "tags": []
+  },
+  {
+    "id": "B3-0838",
+    "trad": "tĭtiē",
+    "pinyin": "Vst",
+    "gloss_en": "",
+    "band": "B",
+    "level": 3,
+    "topic": "體貼",
+    "tags": []
+  },
+  {
+    "id": "B3-0839",
+    "trad": "tĭzhòng",
+    "pinyin": "N",
+    "gloss_en": "",
+    "band": "B",
+    "level": 3,
+    "topic": "體重",
+    "tags": []
+  },
+  {
+    "id": "B3-0840",
+    "trad": "tiē",
+    "pinyin": "V",
+    "gloss_en": "",
+    "band": "B",
+    "level": 3,
+    "topic": "貼",
+    "tags": []
+  },
+  {
+    "id": "B3-0841",
+    "trad": "tiě",
+    "pinyin": "N",
+    "gloss_en": "",
+    "band": "B",
+    "level": 3,
+    "topic": "鐵",
+    "tags": []
+  },
+  {
+    "id": "B3-0842",
+    "trad": "tiělù",
+    "pinyin": "N",
+    "gloss_en": "",
+    "band": "B",
+    "level": 3,
+    "topic": "鐵路",
+    "tags": []
+  },
+  {
+    "id": "B3-0843",
+    "trad": "tīnglì",
+    "pinyin": "N",
+    "gloss_en": "",
+    "band": "B",
+    "level": 3,
+    "topic": "聽力",
+    "tags": []
+  },
+  {
+    "id": "B3-0844",
+    "trad": "tīngqĭlái",
+    "pinyin": "Adv",
+    "gloss_en": "",
+    "band": "B",
+    "level": 3,
+    "topic": "聽起來",
+    "tags": []
+  },
+  {
+    "id": "B3-0845",
+    "trad": "tīngzhòng",
+    "pinyin": "N",
+    "gloss_en": "",
+    "band": "B",
+    "level": 3,
+    "topic": "聽眾",
+    "tags": []
+  },
+  {
+    "id": "B3-0846",
+    "trad": "tĭng",
+    "pinyin": "Adv",
+    "gloss_en": "",
+    "band": "B",
+    "level": 3,
+    "topic": "挺",
+    "tags": []
+  },
+  {
+    "id": "B3-0847",
+    "trad": "tōng",
+    "pinyin": "Vs-pred",
+    "gloss_en": "",
+    "band": "B",
+    "level": 3,
+    "topic": "通",
+    "tags": []
+  },
+  {
+    "id": "B3-0848",
+    "trad": "tōngguò",
+    "pinyin": "Vpt",
+    "gloss_en": "",
+    "band": "B",
+    "level": 3,
+    "topic": "通過",
+    "tags": []
+  },
+  {
+    "id": "B3-0849",
+    "trad": "tōngzhī",
+    "pinyin": "V / N",
+    "gloss_en": "",
+    "band": "B",
+    "level": 3,
+    "topic": "通知",
+    "tags": []
+  },
+  {
+    "id": "B3-0850",
+    "trad": "tóng",
+    "pinyin": "Det / Prep",
+    "gloss_en": "",
+    "band": "B",
+    "level": 3,
+    "topic": "同",
+    "tags": []
+  },
+  {
+    "id": "B3-0851",
+    "trad": "tóngqíng",
+    "pinyin": "Vst",
+    "gloss_en": "",
+    "band": "B",
+    "level": 3,
+    "topic": "同情",
+    "tags": []
+  },
+  {
+    "id": "B3-0852",
+    "trad": "tóngshì",
+    "pinyin": "N",
+    "gloss_en": "",
+    "band": "B",
+    "level": 3,
+    "topic": "同事",
+    "tags": []
+  },
+  {
+    "id": "B3-0853",
+    "trad": "tòngkŭ",
+    "pinyin": "Vs",
+    "gloss_en": "",
+    "band": "B",
+    "level": 3,
+    "topic": "痛苦",
+    "tags": []
+  },
+  {
+    "id": "B3-0854",
+    "trad": "tóu",
+    "pinyin": "Det",
+    "gloss_en": "",
+    "band": "B",
+    "level": 3,
+    "topic": "頭",
+    "tags": []
+  },
+  {
+    "id": "B3-0855",
+    "trad": "tóu",
+    "pinyin": "V",
+    "gloss_en": "",
+    "band": "B",
+    "level": 3,
+    "topic": "投",
+    "tags": []
+  },
+  {
+    "id": "B3-0856",
+    "trad": "tóuzī",
+    "pinyin": "V",
+    "gloss_en": "",
+    "band": "B",
+    "level": 3,
+    "topic": "投資",
+    "tags": []
+  },
+  {
+    "id": "B3-0857",
+    "trad": "tŭ",
+    "pinyin": "N",
+    "gloss_en": "",
+    "band": "B",
+    "level": 3,
+    "topic": "土",
+    "tags": []
+  },
+  {
+    "id": "B3-0858",
+    "trad": "tuántĭ",
+    "pinyin": "N",
+    "gloss_en": "",
+    "band": "B",
+    "level": 3,
+    "topic": "團體",
+    "tags": []
+  },
+  {
+    "id": "B3-0859",
+    "trad": "tuányuán",
+    "pinyin": "Vs",
+    "gloss_en": "",
+    "band": "B",
+    "level": 3,
+    "topic": "團圓",
+    "tags": []
+  },
+  {
+    "id": "B3-0860",
+    "trad": "tŭdì",
+    "pinyin": "N",
+    "gloss_en": "",
+    "band": "B",
+    "level": 3,
+    "topic": "土地",
+    "tags": []
+  },
+  {
+    "id": "B3-0861",
+    "trad": "tuī",
+    "pinyin": "V",
+    "gloss_en": "",
+    "band": "B",
+    "level": 3,
+    "topic": "推",
+    "tags": []
+  },
+  {
+    "id": "B3-0862",
+    "trad": "tuījiàn",
+    "pinyin": "V",
+    "gloss_en": "",
+    "band": "B",
+    "level": 3,
+    "topic": "推薦",
+    "tags": []
+  },
+  {
+    "id": "B3-0863",
+    "trad": "tuīxiāo",
+    "pinyin": "V",
+    "gloss_en": "",
+    "band": "B",
+    "level": 3,
+    "topic": "推銷",
+    "tags": []
+  },
+  {
+    "id": "B3-0864",
+    "trad": "tuìbù",
+    "pinyin": "Vp",
+    "gloss_en": "",
+    "band": "B",
+    "level": 3,
+    "topic": "退步",
+    "tags": []
+  },
+  {
+    "id": "B3-0865",
+    "trad": "tuìxiū",
+    "pinyin": "Vp",
+    "gloss_en": "",
+    "band": "B",
+    "level": 3,
+    "topic": "退休",
+    "tags": []
+  },
+  {
+    "id": "B3-0866",
+    "trad": "túrán",
+    "pinyin": "Adv",
+    "gloss_en": "",
+    "band": "B",
+    "level": 3,
+    "topic": "突然",
+    "tags": []
+  },
+  {
+    "id": "B3-0867",
+    "trad": "tù(zi)",
+    "pinyin": "N",
+    "gloss_en": "",
+    "band": "B",
+    "level": 3,
+    "topic": "兔(子)",
+    "tags": []
+  },
+  {
+    "id": "B3-0868",
+    "trad": "wàibiān",
+    "pinyin": "N",
+    "gloss_en": "",
+    "band": "B",
+    "level": 3,
+    "topic": "外邊",
+    "tags": []
+  },
+  {
+    "id": "B3-0869",
+    "trad": "wàiwén",
+    "pinyin": "N",
+    "gloss_en": "",
+    "band": "B",
+    "level": 3,
+    "topic": "外文",
+    "tags": []
+  },
+  {
+    "id": "B3-0870",
+    "trad": "wàiyŭ",
+    "pinyin": "N",
+    "gloss_en": "",
+    "band": "B",
+    "level": 3,
+    "topic": "外語",
+    "tags": []
+  },
+  {
+    "id": "B3-0871",
+    "trad": "wàizŭfù",
+    "pinyin": "N",
+    "gloss_en": "",
+    "band": "B",
+    "level": 3,
+    "topic": "外祖父",
+    "tags": []
+  },
+  {
+    "id": "B3-0872",
+    "trad": "wàizŭmŭ",
+    "pinyin": "N",
+    "gloss_en": "",
+    "band": "B",
+    "level": 3,
+    "topic": "外祖母",
+    "tags": []
+  },
+  {
+    "id": "B3-0873",
+    "trad": "wánchéng",
+    "pinyin": "Vpt",
+    "gloss_en": "",
+    "band": "B",
+    "level": 3,
+    "topic": "完成",
+    "tags": []
+  },
+  {
+    "id": "B3-0874",
+    "trad": "wánjù",
+    "pinyin": "N",
+    "gloss_en": "",
+    "band": "B",
+    "level": 3,
+    "topic": "玩具",
+    "tags": []
+  },
+  {
+    "id": "B3-0875",
+    "trad": "wăn",
+    "pinyin": "Vs",
+    "gloss_en": "",
+    "band": "B",
+    "level": 3,
+    "topic": "晚",
+    "tags": []
+  },
+  {
+    "id": "B3-0876",
+    "trad": "wànyī",
+    "pinyin": "Adv",
+    "gloss_en": "",
+    "band": "B",
+    "level": 3,
+    "topic": "萬一",
+    "tags": []
+  },
+  {
+    "id": "B3-0877",
+    "trad": "wăng",
+    "pinyin": "N",
+    "gloss_en": "",
+    "band": "B",
+    "level": 3,
+    "topic": "網",
+    "tags": []
+  },
+  {
+    "id": "B3-0878",
+    "trad": "wăngwăng",
+    "pinyin": "Adv",
+    "gloss_en": "",
+    "band": "B",
+    "level": 3,
+    "topic": "往往",
+    "tags": []
+  },
+  {
+    "id": "B3-0879",
+    "trad": "wáwa",
+    "pinyin": "N",
+    "gloss_en": "",
+    "band": "B",
+    "level": 3,
+    "topic": "娃娃(˙ㄨㄚ)",
+    "tags": []
+  },
+  {
+    "id": "B3-0880",
+    "trad": "wéichí",
+    "pinyin": "V",
+    "gloss_en": "",
+    "band": "B",
+    "level": 3,
+    "topic": "維持",
+    "tags": []
+  },
+  {
+    "id": "B3-0881",
+    "trad": "wéixiào",
+    "pinyin": "Vi",
+    "gloss_en": "",
+    "band": "B",
+    "level": 3,
+    "topic": "微笑",
+    "tags": []
+  },
+  {
+    "id": "B3-0882",
+    "trad": "wěidà",
+    "pinyin": "Vs",
+    "gloss_en": "",
+    "band": "B",
+    "level": 3,
+    "topic": "偉大",
+    "tags": []
+  },
+  {
+    "id": "B3-0883",
+    "trad": "wèi",
+    "pinyin": "Prep",
+    "gloss_en": "",
+    "band": "B",
+    "level": 3,
+    "topic": "為",
+    "tags": []
+  },
+  {
+    "id": "B3-0884",
+    "trad": "wèilái",
+    "pinyin": "N",
+    "gloss_en": "",
+    "band": "B",
+    "level": 3,
+    "topic": "未來",
+    "tags": []
+  },
+  {
+    "id": "B3-0885",
+    "trad": "wèizhì",
+    "pinyin": "N",
+    "gloss_en": "",
+    "band": "B",
+    "level": 3,
+    "topic": "位置",
+    "tags": []
+  },
+  {
+    "id": "B3-0886",
+    "trad": "wēndù",
+    "pinyin": "N",
+    "gloss_en": "",
+    "band": "B",
+    "level": 3,
+    "topic": "溫度",
+    "tags": []
+  },
+  {
+    "id": "B3-0887",
+    "trad": "wēnnuăn",
+    "pinyin": "Vs",
+    "gloss_en": "",
+    "band": "B",
+    "level": 3,
+    "topic": "溫暖",
+    "tags": []
+  },
+  {
+    "id": "B3-0888",
+    "trad": "wēnróu",
+    "pinyin": "Vs",
+    "gloss_en": "",
+    "band": "B",
+    "level": 3,
+    "topic": "溫柔",
+    "tags": []
+  },
+  {
+    "id": "B3-0889",
+    "trad": "wénjiàn",
+    "pinyin": "N",
+    "gloss_en": "",
+    "band": "B",
+    "level": 3,
+    "topic": "文件",
+    "tags": []
+  },
+  {
+    "id": "B3-0890",
+    "trad": "wénxué",
+    "pinyin": "N",
+    "gloss_en": "",
+    "band": "B",
+    "level": 3,
+    "topic": "文學",
+    "tags": []
+  },
+  {
+    "id": "B3-0891",
+    "trad": "wénzhāng/wén",
+    "pinyin": "N",
+    "gloss_en": "",
+    "band": "B",
+    "level": 3,
+    "topic": "文章/文",
+    "tags": []
+  },
+  {
+    "id": "B3-0892",
+    "trad": "wénzì",
+    "pinyin": "N",
+    "gloss_en": "",
+    "band": "B",
+    "level": 3,
+    "topic": "文字",
+    "tags": []
+  },
+  {
+    "id": "B3-0893",
+    "trad": "wěndìng",
+    "pinyin": "Vs",
+    "gloss_en": "",
+    "band": "B",
+    "level": 3,
+    "topic": "穩定",
+    "tags": []
+  },
+  {
+    "id": "B3-0894",
+    "trad": "wènhăo",
+    "pinyin": "Vi",
+    "gloss_en": "",
+    "band": "B",
+    "level": 3,
+    "topic": "問好",
+    "tags": []
+  },
+  {
+    "id": "B3-0895",
+    "trad": "wènhòu",
+    "pinyin": "V",
+    "gloss_en": "",
+    "band": "B",
+    "level": 3,
+    "topic": "問候",
+    "tags": []
+  },
+  {
+    "id": "B3-0896",
+    "trad": "wòshŏu",
+    "pinyin": "V-sep",
+    "gloss_en": "",
+    "band": "B",
+    "level": 3,
+    "topic": "握手",
+    "tags": []
+  },
+  {
+    "id": "B3-0897",
+    "trad": "wú",
+    "pinyin": "Vs-attr",
+    "gloss_en": "",
+    "band": "B",
+    "level": 3,
+    "topic": "無",
+    "tags": []
+  },
+  {
+    "id": "B3-0898",
+    "trad": "wúfă",
+    "pinyin": "Adv",
+    "gloss_en": "",
+    "band": "B",
+    "level": 3,
+    "topic": "無法",
+    "tags": []
+  },
+  {
+    "id": "B3-0899",
+    "trad": "wúlùnrúhé",
+    "pinyin": "Conj",
+    "gloss_en": "",
+    "band": "B",
+    "level": 3,
+    "topic": "無論如何",
+    "tags": []
+  },
+  {
+    "id": "B3-0900",
+    "trad": "wúqióng",
+    "pinyin": "Vs",
+    "gloss_en": "",
+    "band": "B",
+    "level": 3,
+    "topic": "無窮",
+    "tags": []
+  },
+  {
+    "id": "B3-0901",
+    "trad": "wúsuŏwèi",
+    "pinyin": "Vs",
+    "gloss_en": "",
+    "band": "B",
+    "level": 3,
+    "topic": "無所謂",
+    "tags": []
+  },
+  {
+    "id": "B3-0902",
+    "trad": "wùhuì",
+    "pinyin": "N",
+    "gloss_en": "",
+    "band": "B",
+    "level": 3,
+    "topic": "誤會",
+    "tags": []
+  },
+  {
+    "id": "B3-0903",
+    "trad": "wùjià",
+    "pinyin": "N",
+    "gloss_en": "",
+    "band": "B",
+    "level": 3,
+    "topic": "物價",
+    "tags": []
+  },
+  {
+    "id": "B3-0904",
+    "trad": "xīběi",
+    "pinyin": "N",
+    "gloss_en": "",
+    "band": "B",
+    "level": 3,
+    "topic": "西北",
+    "tags": []
+  },
+  {
+    "id": "B3-0905",
+    "trad": "xīcān",
+    "pinyin": "N",
+    "gloss_en": "",
+    "band": "B",
+    "level": 3,
+    "topic": "西餐",
+    "tags": []
+  },
+  {
+    "id": "B3-0906",
+    "trad": "xīfāng",
+    "pinyin": "N",
+    "gloss_en": "",
+    "band": "B",
+    "level": 3,
+    "topic": "西方",
+    "tags": []
+  },
+  {
+    "id": "B3-0907",
+    "trad": "xīnán",
+    "pinyin": "N",
+    "gloss_en": "",
+    "band": "B",
+    "level": 3,
+    "topic": "西南",
+    "tags": []
+  },
+  {
+    "id": "B3-0908",
+    "trad": "xīdú",
+    "pinyin": "V-sep",
+    "gloss_en": "",
+    "band": "B",
+    "level": 3,
+    "topic": "吸毒",
+    "tags": []
+  },
+  {
+    "id": "B3-0909",
+    "trad": "xīshēng",
+    "pinyin": "Vpt",
+    "gloss_en": "",
+    "band": "B",
+    "level": 3,
+    "topic": "犧牲",
+    "tags": []
+  },
+  {
+    "id": "B3-0910",
+    "trad": "xīshōu",
+    "pinyin": "V",
+    "gloss_en": "",
+    "band": "B",
+    "level": 3,
+    "topic": "吸收",
+    "tags": []
+  },
+  {
+    "id": "B3-0911",
+    "trad": "xīwàng",
+    "pinyin": "N",
+    "gloss_en": "",
+    "band": "B",
+    "level": 3,
+    "topic": "希望",
+    "tags": []
+  },
+  {
+    "id": "B3-0912",
+    "trad": "xīyĭn",
+    "pinyin": "Vst",
+    "gloss_en": "",
+    "band": "B",
+    "level": 3,
+    "topic": "吸引",
+    "tags": []
+  },
+  {
+    "id": "B3-0913",
+    "trad": "xĭài",
+    "pinyin": "Vst",
+    "gloss_en": "",
+    "band": "B",
+    "level": 3,
+    "topic": "喜愛",
+    "tags": []
+  },
+  {
+    "id": "B3-0914",
+    "trad": "xì",
+    "pinyin": "Vs",
+    "gloss_en": "",
+    "band": "B",
+    "level": 3,
+    "topic": "細",
+    "tags": []
+  },
+  {
+    "id": "B3-0915",
+    "trad": "xìxīn",
+    "pinyin": "Vs",
+    "gloss_en": "",
+    "band": "B",
+    "level": 3,
+    "topic": "細心",
+    "tags": []
+  },
+  {
+    "id": "B3-0916",
+    "trad": "xì",
+    "pinyin": "N",
+    "gloss_en": "",
+    "band": "B",
+    "level": 3,
+    "topic": "戲",
+    "tags": []
+  },
+  {
+    "id": "B3-0917",
+    "trad": "xìjù",
+    "pinyin": "N",
+    "gloss_en": "",
+    "band": "B",
+    "level": 3,
+    "topic": "戲劇",
+    "tags": []
+  },
+  {
+    "id": "B3-0918",
+    "trad": "xìtŏng",
+    "pinyin": "N",
+    "gloss_en": "",
+    "band": "B",
+    "level": 3,
+    "topic": "系統",
+    "tags": []
+  },
+  {
+    "id": "B3-0919",
+    "trad": "xià",
+    "pinyin": "Det / M",
+    "gloss_en": "",
+    "band": "B",
+    "level": 3,
+    "topic": "下",
+    "tags": []
+  },
+  {
+    "id": "B3-0920",
+    "trad": "xià",
+    "pinyin": "Vs-pred",
+    "gloss_en": "",
+    "band": "B",
+    "level": 3,
+    "topic": "嚇",
+    "tags": []
+  },
+  {
+    "id": "B3-0921",
+    "trad": "xiàlái",
+    "pinyin": "Ptc",
+    "gloss_en": "",
+    "band": "B",
+    "level": 3,
+    "topic": "下來",
+    "tags": []
+  },
+  {
+    "id": "B3-0922",
+    "trad": "xiàn",
+    "pinyin": "N",
+    "gloss_en": "",
+    "band": "B",
+    "level": 3,
+    "topic": "線",
+    "tags": []
+  },
+  {
+    "id": "B3-0923",
+    "trad": "xiāngduì",
+    "pinyin": "Vs-attr",
+    "gloss_en": "",
+    "band": "B",
+    "level": 3,
+    "topic": "相對",
+    "tags": []
+  },
+  {
+    "id": "B3-0924",
+    "trad": "xiāngfăn",
+    "pinyin": "Vs",
+    "gloss_en": "",
+    "band": "B",
+    "level": 3,
+    "topic": "相反",
+    "tags": []
+  },
+  {
+    "id": "B3-0925",
+    "trad": "xiāngguān",
+    "pinyin": "Vs",
+    "gloss_en": "",
+    "band": "B",
+    "level": 3,
+    "topic": "相關",
+    "tags": []
+  },
+  {
+    "id": "B3-0926",
+    "trad": "xiāngshuĭ",
+    "pinyin": "N",
+    "gloss_en": "",
+    "band": "B",
+    "level": 3,
+    "topic": "香水",
+    "tags": []
+  },
+  {
+    "id": "B3-0927",
+    "trad": "xiāngtóng",
+    "pinyin": "Vs",
+    "gloss_en": "",
+    "band": "B",
+    "level": 3,
+    "topic": "相同",
+    "tags": []
+  },
+  {
+    "id": "B3-0928",
+    "trad": "xiángxì",
+    "pinyin": "Vs",
+    "gloss_en": "",
+    "band": "B",
+    "level": 3,
+    "topic": "詳細",
+    "tags": []
+  },
+  {
+    "id": "B3-0929",
+    "trad": "xiăng",
+    "pinyin": "Vp",
+    "gloss_en": "",
+    "band": "B",
+    "level": 3,
+    "topic": "響",
+    "tags": []
+  },
+  {
+    "id": "B3-0930",
+    "trad": "xiăngdào",
+    "pinyin": "Vpt",
+    "gloss_en": "",
+    "band": "B",
+    "level": 3,
+    "topic": "想到",
+    "tags": []
+  },
+  {
+    "id": "B3-0931",
+    "trad": "xiăngxiàng",
+    "pinyin": "N / Vst",
+    "gloss_en": "",
+    "band": "B",
+    "level": 3,
+    "topic": "想像",
+    "tags": []
+  },
+  {
+    "id": "B3-0932",
+    "trad": "xiàng",
+    "pinyin": "M",
+    "gloss_en": "",
+    "band": "B",
+    "level": 3,
+    "topic": "項",
+    "tags": []
+  },
+  {
+    "id": "B3-0933",
+    "trad": "xiàngshēng",
+    "pinyin": "N",
+    "gloss_en": "",
+    "band": "B",
+    "level": 3,
+    "topic": "相聲",
+    "tags": []
+  },
+  {
+    "id": "B3-0934",
+    "trad": "xiàn",
+    "pinyin": "Vst",
+    "gloss_en": "",
+    "band": "B",
+    "level": 3,
+    "topic": "限",
+    "tags": []
+  },
+  {
+    "id": "B3-0935",
+    "trad": "xiànshí",
+    "pinyin": "N / Vs",
+    "gloss_en": "",
+    "band": "B",
+    "level": 3,
+    "topic": "現實",
+    "tags": []
+  },
+  {
+    "id": "B3-0936",
+    "trad": "xiànxiàng",
+    "pinyin": "N",
+    "gloss_en": "",
+    "band": "B",
+    "level": 3,
+    "topic": "現象",
+    "tags": []
+  },
+  {
+    "id": "B3-0937",
+    "trad": "xiànzhì",
+    "pinyin": "N",
+    "gloss_en": "",
+    "band": "B",
+    "level": 3,
+    "topic": "限制",
+    "tags": []
+  },
+  {
+    "id": "B3-0938",
+    "trad": "xiăoshuō",
+    "pinyin": "N",
+    "gloss_en": "",
+    "band": "B",
+    "level": 3,
+    "topic": "小說",
+    "tags": []
+  },
+  {
+    "id": "B3-0939",
+    "trad": "xiăotōu",
+    "pinyin": "N",
+    "gloss_en": "",
+    "band": "B",
+    "level": 3,
+    "topic": "小偷",
+    "tags": []
+  },
+  {
+    "id": "B3-0940",
+    "trad": "xiăozŭ",
+    "pinyin": "N",
+    "gloss_en": "",
+    "band": "B",
+    "level": 3,
+    "topic": "小組",
+    "tags": []
+  },
+  {
+    "id": "B3-0941",
+    "trad": "xiàoguŏ",
+    "pinyin": "N",
+    "gloss_en": "",
+    "band": "B",
+    "level": 3,
+    "topic": "效果",
+    "tags": []
+  },
+  {
+    "id": "B3-0942",
+    "trad": "xiàohuà",
+    "pinyin": "N",
+    "gloss_en": "",
+    "band": "B",
+    "level": 3,
+    "topic": "笑話",
+    "tags": []
+  },
+  {
+    "id": "B3-0943",
+    "trad": "xiàoshùn",
+    "pinyin": "Vs / Vst",
+    "gloss_en": "",
+    "band": "B",
+    "level": 3,
+    "topic": "孝順",
+    "tags": []
+  },
+  {
+    "id": "B3-0944",
+    "trad": "xiàozhăng",
+    "pinyin": "N",
+    "gloss_en": "",
+    "band": "B",
+    "level": 3,
+    "topic": "校長",
+    "tags": []
+  },
+  {
+    "id": "B3-0945",
+    "trad": "xiàyītiào",
+    "pinyin": "Vp",
+    "gloss_en": "",
+    "band": "B",
+    "level": 3,
+    "topic": "嚇一跳",
+    "tags": []
+  },
+  {
+    "id": "B3-0946",
+    "trad": "xiézhù",
+    "pinyin": "V",
+    "gloss_en": "",
+    "band": "B",
+    "level": 3,
+    "topic": "協助",
+    "tags": []
+  },
+  {
+    "id": "B3-0947",
+    "trad": "xiě",
+    "pinyin": "N",
+    "gloss_en": "",
+    "band": "B",
+    "level": 3,
+    "topic": "血",
+    "tags": []
+  },
+  {
+    "id": "B3-0948",
+    "trad": "xiè",
+    "pinyin": "V",
+    "gloss_en": "",
+    "band": "B",
+    "level": 3,
+    "topic": "謝",
+    "tags": []
+  },
+  {
+    "id": "B3-0949",
+    "trad": "xīndé",
+    "pinyin": "N",
+    "gloss_en": "",
+    "band": "B",
+    "level": 3,
+    "topic": "心得",
+    "tags": []
+  },
+  {
+    "id": "B3-0950",
+    "trad": "xīnlĭ",
+    "pinyin": "N",
+    "gloss_en": "",
+    "band": "B",
+    "level": 3,
+    "topic": "心理",
+    "tags": []
+  },
+  {
+    "id": "B3-0951",
+    "trad": "xīnyì",
+    "pinyin": "N",
+    "gloss_en": "",
+    "band": "B",
+    "level": 3,
+    "topic": "心意",
+    "tags": []
+  },
+  {
+    "id": "B3-0952",
+    "trad": "xīnshăng",
+    "pinyin": "Vst",
+    "gloss_en": "",
+    "band": "B",
+    "level": 3,
+    "topic": "欣賞",
+    "tags": []
+  },
+  {
+    "id": "B3-0953",
+    "trad": "xīnshēng",
+    "pinyin": "N",
+    "gloss_en": "",
+    "band": "B",
+    "level": 3,
+    "topic": "新生",
+    "tags": []
+  },
+  {
+    "id": "B3-0954",
+    "trad": "xìn",
+    "pinyin": "Vst",
+    "gloss_en": "",
+    "band": "B",
+    "level": 3,
+    "topic": "信",
+    "tags": []
+  },
+  {
+    "id": "B3-0955",
+    "trad": "xìnxīn",
+    "pinyin": "N",
+    "gloss_en": "",
+    "band": "B",
+    "level": 3,
+    "topic": "信心",
+    "tags": []
+  },
+  {
+    "id": "B3-0956",
+    "trad": "xīngfèn",
+    "pinyin": "Vs",
+    "gloss_en": "",
+    "band": "B",
+    "level": 3,
+    "topic": "興奮",
+    "tags": []
+  },
+  {
+    "id": "B3-0957",
+    "trad": "xíngdòng",
+    "pinyin": "N",
+    "gloss_en": "",
+    "band": "B",
+    "level": 3,
+    "topic": "行動",
+    "tags": []
+  },
+  {
+    "id": "B3-0958",
+    "trad": "xíngróng",
+    "pinyin": "V",
+    "gloss_en": "",
+    "band": "B",
+    "level": 3,
+    "topic": "形容",
+    "tags": []
+  },
+  {
+    "id": "B3-0959",
+    "trad": "xíngwéi",
+    "pinyin": "N",
+    "gloss_en": "",
+    "band": "B",
+    "level": 3,
+    "topic": "行為",
+    "tags": []
+  },
+  {
+    "id": "B3-0960",
+    "trad": "xĭng",
+    "pinyin": "Vp",
+    "gloss_en": "",
+    "band": "B",
+    "level": 3,
+    "topic": "醒",
+    "tags": []
+  },
+  {
+    "id": "B3-0961",
+    "trad": "xĭnglái",
+    "pinyin": "Vp",
+    "gloss_en": "",
+    "band": "B",
+    "level": 3,
+    "topic": "醒來",
+    "tags": []
+  },
+  {
+    "id": "B3-0962",
+    "trad": "xìng",
+    "pinyin": "N",
+    "gloss_en": "",
+    "band": "B",
+    "level": 3,
+    "topic": "姓",
+    "tags": []
+  },
+  {
+    "id": "B3-0963",
+    "trad": "xìngbié",
+    "pinyin": "N",
+    "gloss_en": "",
+    "band": "B",
+    "level": 3,
+    "topic": "性別",
+    "tags": []
+  },
+  {
+    "id": "B3-0964",
+    "trad": "xìnggé",
+    "pinyin": "N",
+    "gloss_en": "",
+    "band": "B",
+    "level": 3,
+    "topic": "性格",
+    "tags": []
+  },
+  {
+    "id": "B3-0965",
+    "trad": "xìnghăo",
+    "pinyin": "Adv",
+    "gloss_en": "",
+    "band": "B",
+    "level": 3,
+    "topic": "幸好",
+    "tags": []
+  },
+  {
+    "id": "B3-0966",
+    "trad": "xìngkuī",
+    "pinyin": "Adv",
+    "gloss_en": "",
+    "band": "B",
+    "level": 3,
+    "topic": "幸虧",
+    "tags": []
+  },
+  {
+    "id": "B3-0967",
+    "trad": "xìngyùn",
+    "pinyin": "Vs",
+    "gloss_en": "",
+    "band": "B",
+    "level": 3,
+    "topic": "幸運",
+    "tags": []
+  },
+  {
+    "id": "B3-0968",
+    "trad": "xiōng",
+    "pinyin": "Vs",
+    "gloss_en": "",
+    "band": "B",
+    "level": 3,
+    "topic": "兇/凶",
+    "tags": []
+  },
+  {
+    "id": "B3-0969",
+    "trad": "xióngmāo",
+    "pinyin": "N",
+    "gloss_en": "",
+    "band": "B",
+    "level": 3,
+    "topic": "熊貓",
+    "tags": []
+  },
+  {
+    "id": "B3-0970",
+    "trad": "xiū",
+    "pinyin": "V",
+    "gloss_en": "",
+    "band": "B",
+    "level": 3,
+    "topic": "修",
+    "tags": []
+  },
+  {
+    "id": "B3-0971",
+    "trad": "xiūgăi",
+    "pinyin": "V",
+    "gloss_en": "",
+    "band": "B",
+    "level": 3,
+    "topic": "修改",
+    "tags": []
+  },
+  {
+    "id": "B3-0972",
+    "trad": "xiūlĭ",
+    "pinyin": "V",
+    "gloss_en": "",
+    "band": "B",
+    "level": 3,
+    "topic": "修理",
+    "tags": []
+  },
+  {
+    "id": "B3-0973",
+    "trad": "xūqiú",
+    "pinyin": "N",
+    "gloss_en": "",
+    "band": "B",
+    "level": 3,
+    "topic": "需求",
+    "tags": []
+  },
+  {
+    "id": "B3-0974",
+    "trad": "xūyào",
+    "pinyin": "N",
+    "gloss_en": "",
+    "band": "B",
+    "level": 3,
+    "topic": "需要",
+    "tags": []
+  },
+  {
+    "id": "B3-0975",
+    "trad": "xuănjŭ",
+    "pinyin": "N",
+    "gloss_en": "",
+    "band": "B",
+    "level": 3,
+    "topic": "選舉",
+    "tags": []
+  },
+  {
+    "id": "B3-0976",
+    "trad": "xuéfèi",
+    "pinyin": "N",
+    "gloss_en": "",
+    "band": "B",
+    "level": 3,
+    "topic": "學費",
+    "tags": []
+  },
+  {
+    "id": "B3-0977",
+    "trad": "xuéhuì",
+    "pinyin": "Vpt",
+    "gloss_en": "",
+    "band": "B",
+    "level": 3,
+    "topic": "學會",
+    "tags": []
+  },
+  {
+    "id": "B3-0978",
+    "trad": "xuéwèn",
+    "pinyin": "N",
+    "gloss_en": "",
+    "band": "B",
+    "level": 3,
+    "topic": "學問",
+    "tags": []
+  },
+  {
+    "id": "B3-0979",
+    "trad": "xúnzhăo",
+    "pinyin": "V",
+    "gloss_en": "",
+    "band": "B",
+    "level": 3,
+    "topic": "尋找",
+    "tags": []
+  },
+  {
+    "id": "B3-0980",
+    "trad": "xùnliàn",
+    "pinyin": "V",
+    "gloss_en": "",
+    "band": "B",
+    "level": 3,
+    "topic": "訓練",
+    "tags": []
+  },
+  {
+    "id": "B3-0981",
+    "trad": "yājīn",
+    "pinyin": "N",
+    "gloss_en": "",
+    "band": "B",
+    "level": 3,
+    "topic": "押金",
+    "tags": []
+  },
+  {
+    "id": "B3-0982",
+    "trad": "yā(zi)",
+    "pinyin": "N",
+    "gloss_en": "",
+    "band": "B",
+    "level": 3,
+    "topic": "鴨(子)",
+    "tags": []
+  },
+  {
+    "id": "B3-0983",
+    "trad": "yá",
+    "pinyin": "N",
+    "gloss_en": "",
+    "band": "B",
+    "level": 3,
+    "topic": "牙",
+    "tags": []
+  },
+  {
+    "id": "B3-0984",
+    "trad": "yáchĭ",
+    "pinyin": "N",
+    "gloss_en": "",
+    "band": "B",
+    "level": 3,
+    "topic": "牙齒",
+    "tags": []
+  },
+  {
+    "id": "B3-0985",
+    "trad": "yăn",
+    "pinyin": "V",
+    "gloss_en": "",
+    "band": "B",
+    "level": 3,
+    "topic": "演",
+    "tags": []
+  },
+  {
+    "id": "B3-0986",
+    "trad": "yănchū",
+    "pinyin": "V",
+    "gloss_en": "",
+    "band": "B",
+    "level": 3,
+    "topic": "演出",
+    "tags": []
+  },
+  {
+    "id": "B3-0987",
+    "trad": "yáng",
+    "pinyin": "N",
+    "gloss_en": "",
+    "band": "B",
+    "level": 3,
+    "topic": "羊",
+    "tags": []
+  },
+  {
+    "id": "B3-0988",
+    "trad": "yángguāng",
+    "pinyin": "N",
+    "gloss_en": "",
+    "band": "B",
+    "level": 3,
+    "topic": "陽光",
+    "tags": []
+  },
+  {
+    "id": "B3-0989",
+    "trad": "yăng",
+    "pinyin": "V",
+    "gloss_en": "",
+    "band": "B",
+    "level": 3,
+    "topic": "養",
+    "tags": []
+  },
+  {
+    "id": "B3-0990",
+    "trad": "yàngyàng",
+    "pinyin": "Det",
+    "gloss_en": "",
+    "band": "B",
+    "level": 3,
+    "topic": "樣樣",
+    "tags": []
+  },
+  {
+    "id": "B3-0991",
+    "trad": "yānhuŏ",
+    "pinyin": "N",
+    "gloss_en": "",
+    "band": "B",
+    "level": 3,
+    "topic": "煙火",
+    "tags": []
+  },
+  {
+    "id": "B3-0992",
+    "trad": "yănguāng",
+    "pinyin": "N",
+    "gloss_en": "",
+    "band": "B",
+    "level": 3,
+    "topic": "眼光",
+    "tags": []
+  },
+  {
+    "id": "B3-0993",
+    "trad": "yănjiăng",
+    "pinyin": "Vi",
+    "gloss_en": "",
+    "band": "B",
+    "level": 3,
+    "topic": "演講",
+    "tags": []
+  },
+  {
+    "id": "B3-0994",
+    "trad": "yănlèi",
+    "pinyin": "N",
+    "gloss_en": "",
+    "band": "B",
+    "level": 3,
+    "topic": "眼淚",
+    "tags": []
+  },
+  {
+    "id": "B3-0995",
+    "trad": "yănyuán",
+    "pinyin": "N",
+    "gloss_en": "",
+    "band": "B",
+    "level": 3,
+    "topic": "演員",
+    "tags": []
+  },
+  {
+    "id": "B3-0996",
+    "trad": "yāoqĭng",
+    "pinyin": "V",
+    "gloss_en": "",
+    "band": "B",
+    "level": 3,
+    "topic": "邀請",
+    "tags": []
+  },
+  {
+    "id": "B3-0997",
+    "trad": "yăo",
+    "pinyin": "V",
+    "gloss_en": "",
+    "band": "B",
+    "level": 3,
+    "topic": "咬",
+    "tags": []
+  },
+  {
+    "id": "B3-0998",
+    "trad": "yào",
+    "pinyin": "Vst",
+    "gloss_en": "",
+    "band": "B",
+    "level": 3,
+    "topic": "要",
+    "tags": []
+  },
+  {
+    "id": "B3-0999",
+    "trad": "yàobùrán",
+    "pinyin": "Conj",
+    "gloss_en": "",
+    "band": "B",
+    "level": 3,
+    "topic": "要不然",
+    "tags": []
+  },
+  {
+    "id": "B3-1000",
+    "trad": "yàobúshì",
+    "pinyin": "Conj",
+    "gloss_en": "",
+    "band": "B",
+    "level": 3,
+    "topic": "要不是",
+    "tags": []
+  },
+  {
+    "id": "B3-1001",
+    "trad": "yàojĭn",
+    "pinyin": "Vs",
+    "gloss_en": "",
+    "band": "B",
+    "level": 3,
+    "topic": "要緊",
+    "tags": []
+  },
+  {
+    "id": "B3-1002",
+    "trad": "yè",
+    "pinyin": "M",
+    "gloss_en": "",
+    "band": "B",
+    "level": 3,
+    "topic": "頁",
+    "tags": []
+  },
+  {
+    "id": "B3-1003",
+    "trad": "yèlĭ/lĭ",
+    "pinyin": "N",
+    "gloss_en": "",
+    "band": "B",
+    "level": 3,
+    "topic": "夜裡/裏",
+    "tags": []
+  },
+  {
+    "id": "B3-1004",
+    "trad": "yīdiăn/yīdiănr",
+    "pinyin": "Adv",
+    "gloss_en": "",
+    "band": "B",
+    "level": 3,
+    "topic": "一點/一點兒",
+    "tags": []
+  },
+  {
+    "id": "B3-1005",
+    "trad": "yīfāngmiàn",
+    "pinyin": "Conj",
+    "gloss_en": "",
+    "band": "B",
+    "level": 3,
+    "topic": "一方面",
+    "tags": []
+  },
+  {
+    "id": "B3-1006",
+    "trad": "yīguì",
+    "pinyin": "N",
+    "gloss_en": "",
+    "band": "B",
+    "level": 3,
+    "topic": "衣櫃",
+    "tags": []
+  },
+  {
+    "id": "B3-1007",
+    "trad": "yīkào",
+    "pinyin": "V",
+    "gloss_en": "",
+    "band": "B",
+    "level": 3,
+    "topic": "依靠",
+    "tags": []
+  },
+  {
+    "id": "B3-1008",
+    "trad": "yīlián",
+    "pinyin": "Adv",
+    "gloss_en": "",
+    "band": "B",
+    "level": 3,
+    "topic": "一連",
+    "tags": []
+  },
+  {
+    "id": "B3-1009",
+    "trad": "yīshēng",
+    "pinyin": "N",
+    "gloss_en": "",
+    "band": "B",
+    "level": 3,
+    "topic": "一生",
+    "tags": []
+  },
+  {
+    "id": "B3-1010",
+    "trad": "yīshí",
+    "pinyin": "N",
+    "gloss_en": "",
+    "band": "B",
+    "level": 3,
+    "topic": "一時",
+    "tags": []
+  },
+  {
+    "id": "B3-1011",
+    "trad": "yītóng",
+    "pinyin": "Adv",
+    "gloss_en": "",
+    "band": "B",
+    "level": 3,
+    "topic": "一同",
+    "tags": []
+  },
+  {
+    "id": "B3-1012",
+    "trad": "yīxiàng",
+    "pinyin": "Adv",
+    "gloss_en": "",
+    "band": "B",
+    "level": 3,
+    "topic": "一向",
+    "tags": []
+  },
+  {
+    "id": "B3-1013",
+    "trad": "yīyàng",
+    "pinyin": "N",
+    "gloss_en": "",
+    "band": "B",
+    "level": 3,
+    "topic": "一樣",
+    "tags": []
+  },
+  {
+    "id": "B3-1014",
+    "trad": "yĭ",
+    "pinyin": "Prep",
+    "gloss_en": "",
+    "band": "B",
+    "level": 3,
+    "topic": "以",
+    "tags": []
+  },
+  {
+    "id": "B3-1015",
+    "trad": "yĭjí",
+    "pinyin": "Conj",
+    "gloss_en": "",
+    "band": "B",
+    "level": 3,
+    "topic": "以及",
+    "tags": []
+  },
+  {
+    "id": "B3-1016",
+    "trad": "yĭlái",
+    "pinyin": "N",
+    "gloss_en": "",
+    "band": "B",
+    "level": 3,
+    "topic": "以來",
+    "tags": []
+  },
+  {
+    "id": "B3-1017",
+    "trad": "yĭmiăn",
+    "pinyin": "Conj",
+    "gloss_en": "",
+    "band": "B",
+    "level": 3,
+    "topic": "以免",
+    "tags": []
+  },
+  {
+    "id": "B3-1018",
+    "trad": "yìshù",
+    "pinyin": "N",
+    "gloss_en": "",
+    "band": "B",
+    "level": 3,
+    "topic": "藝術",
+    "tags": []
+  },
+  {
+    "id": "B3-1019",
+    "trad": "yìwài",
+    "pinyin": "N",
+    "gloss_en": "",
+    "band": "B",
+    "level": 3,
+    "topic": "意外",
+    "tags": []
+  },
+  {
+    "id": "B3-1020",
+    "trad": "yìyì",
+    "pinyin": "N",
+    "gloss_en": "",
+    "band": "B",
+    "level": 3,
+    "topic": "意義",
+    "tags": []
+  },
+  {
+    "id": "B3-1021",
+    "trad": "yīn",
+    "pinyin": "Vs",
+    "gloss_en": "",
+    "band": "B",
+    "level": 3,
+    "topic": "陰",
+    "tags": []
+  },
+  {
+    "id": "B3-1022",
+    "trad": "yīncĭ",
+    "pinyin": "Conj",
+    "gloss_en": "",
+    "band": "B",
+    "level": 3,
+    "topic": "因此",
+    "tags": []
+  },
+  {
+    "id": "B3-1023",
+    "trad": "yīnxiăng",
+    "pinyin": "N",
+    "gloss_en": "",
+    "band": "B",
+    "level": 3,
+    "topic": "音響",
+    "tags": []
+  },
+  {
+    "id": "B3-1024",
+    "trad": "yĭnqĭ",
+    "pinyin": "V",
+    "gloss_en": "",
+    "band": "B",
+    "level": 3,
+    "topic": "引起",
+    "tags": []
+  },
+  {
+    "id": "B3-1025",
+    "trad": "yīngjùn",
+    "pinyin": "Vs",
+    "gloss_en": "",
+    "band": "B",
+    "level": 3,
+    "topic": "英俊",
+    "tags": []
+  },
+  {
+    "id": "B3-1026",
+    "trad": "yíng",
+    "pinyin": "Vp",
+    "gloss_en": "",
+    "band": "B",
+    "level": 3,
+    "topic": "贏",
+    "tags": []
+  },
+  {
+    "id": "B3-1027",
+    "trad": "yíngyăng",
+    "pinyin": "N",
+    "gloss_en": "",
+    "band": "B",
+    "level": 3,
+    "topic": "營養",
+    "tags": []
+  },
+  {
+    "id": "B3-1028",
+    "trad": "yĭngpiàn",
+    "pinyin": "N",
+    "gloss_en": "",
+    "band": "B",
+    "level": 3,
+    "topic": "影片",
+    "tags": []
+  },
+  {
+    "id": "B3-1029",
+    "trad": "yŏnggăn",
+    "pinyin": "Vs",
+    "gloss_en": "",
+    "band": "B",
+    "level": 3,
+    "topic": "勇敢",
+    "tags": []
+  },
+  {
+    "id": "B3-1030",
+    "trad": "yŏngyŏu",
+    "pinyin": "Vst",
+    "gloss_en": "",
+    "band": "B",
+    "level": 3,
+    "topic": "擁有",
+    "tags": []
+  },
+  {
+    "id": "B3-1031",
+    "trad": "yŏngyuăn",
+    "pinyin": "Adv",
+    "gloss_en": "",
+    "band": "B",
+    "level": 3,
+    "topic": "永遠",
+    "tags": []
+  },
+  {
+    "id": "B3-1032",
+    "trad": "yòng",
+    "pinyin": "Prep",
+    "gloss_en": "",
+    "band": "B",
+    "level": 3,
+    "topic": "用",
+    "tags": []
+  },
+  {
+    "id": "B3-1033",
+    "trad": "yòngfă",
+    "pinyin": "N",
+    "gloss_en": "",
+    "band": "B",
+    "level": 3,
+    "topic": "用法",
+    "tags": []
+  },
+  {
+    "id": "B3-1034",
+    "trad": "yòngpĭn",
+    "pinyin": "N",
+    "gloss_en": "",
+    "band": "B",
+    "level": 3,
+    "topic": "用品",
+    "tags": []
+  },
+  {
+    "id": "B3-1035",
+    "trad": "yōudiăn",
+    "pinyin": "N",
+    "gloss_en": "",
+    "band": "B",
+    "level": 3,
+    "topic": "優點",
+    "tags": []
+  },
+  {
+    "id": "B3-1036",
+    "trad": "yōumò",
+    "pinyin": "Vs",
+    "gloss_en": "",
+    "band": "B",
+    "level": 3,
+    "topic": "幽默",
+    "tags": []
+  },
+  {
+    "id": "B3-1037",
+    "trad": "yōuxiù",
+    "pinyin": "Vs",
+    "gloss_en": "",
+    "band": "B",
+    "level": 3,
+    "topic": "優秀",
+    "tags": []
+  },
+  {
+    "id": "B3-1038",
+    "trad": "yóukè",
+    "pinyin": "N",
+    "gloss_en": "",
+    "band": "B",
+    "level": 3,
+    "topic": "遊客",
+    "tags": []
+  },
+  {
+    "id": "B3-1039",
+    "trad": "yóuyú",
+    "pinyin": "Conj",
+    "gloss_en": "",
+    "band": "B",
+    "level": 3,
+    "topic": "由於",
+    "tags": []
+  },
+  {
+    "id": "B3-1040",
+    "trad": "yŏuxiào",
+    "pinyin": "Vs",
+    "gloss_en": "",
+    "band": "B",
+    "level": 3,
+    "topic": "有效",
+    "tags": []
+  },
+  {
+    "id": "B3-1041",
+    "trad": "yŏuyì",
+    "pinyin": "N",
+    "gloss_en": "",
+    "band": "B",
+    "level": 3,
+    "topic": "友誼",
+    "tags": []
+  },
+  {
+    "id": "B3-1042",
+    "trad": "yúkuài",
+    "pinyin": "Vs",
+    "gloss_en": "",
+    "band": "B",
+    "level": 3,
+    "topic": "愉快",
+    "tags": []
+  },
+  {
+    "id": "B3-1043",
+    "trad": "yúshì",
+    "pinyin": "Conj",
+    "gloss_en": "",
+    "band": "B",
+    "level": 3,
+    "topic": "於是",
+    "tags": []
+  },
+  {
+    "id": "B3-1044",
+    "trad": "yŭ",
+    "pinyin": "Ptc",
+    "gloss_en": "",
+    "band": "B",
+    "level": 3,
+    "topic": "噢",
+    "tags": []
+  },
+  {
+    "id": "B3-1045",
+    "trad": "yŭ",
+    "pinyin": "Conj / Prep",
+    "gloss_en": "",
+    "band": "B",
+    "level": 3,
+    "topic": "與",
+    "tags": []
+  },
+  {
+    "id": "B3-1046",
+    "trad": "yù",
+    "pinyin": "N",
+    "gloss_en": "",
+    "band": "B",
+    "level": 3,
+    "topic": "玉",
+    "tags": []
+  },
+  {
+    "id": "B3-1047",
+    "trad": "yùmĭ",
+    "pinyin": "N",
+    "gloss_en": "",
+    "band": "B",
+    "level": 3,
+    "topic": "玉米",
+    "tags": []
+  },
+  {
+    "id": "B3-1048",
+    "trad": "yùbèi",
+    "pinyin": "V",
+    "gloss_en": "",
+    "band": "B",
+    "level": 3,
+    "topic": "預備",
+    "tags": []
+  },
+  {
+    "id": "B3-1049",
+    "trad": "yùdào",
+    "pinyin": "Vpt",
+    "gloss_en": "",
+    "band": "B",
+    "level": 3,
+    "topic": "遇到",
+    "tags": []
+  },
+  {
+    "id": "B3-1050",
+    "trad": "yùxí",
+    "pinyin": "V",
+    "gloss_en": "",
+    "band": "B",
+    "level": 3,
+    "topic": "預習",
+    "tags": []
+  },
+  {
+    "id": "B3-1051",
+    "trad": "yuán",
+    "pinyin": "N",
+    "gloss_en": "",
+    "band": "B",
+    "level": 3,
+    "topic": "圓",
+    "tags": []
+  },
+  {
+    "id": "B3-1052",
+    "trad": "yuángōng",
+    "pinyin": "N",
+    "gloss_en": "",
+    "band": "B",
+    "level": 3,
+    "topic": "員工",
+    "tags": []
+  },
+  {
+    "id": "B3-1053",
+    "trad": "yuánliàng",
+    "pinyin": "Vst",
+    "gloss_en": "",
+    "band": "B",
+    "level": 3,
+    "topic": "原諒",
+    "tags": []
+  },
+  {
+    "id": "B3-1054",
+    "trad": "yuànwàng",
+    "pinyin": "N",
+    "gloss_en": "",
+    "band": "B",
+    "level": 3,
+    "topic": "願望",
+    "tags": []
+  },
+  {
+    "id": "B3-1055",
+    "trad": "yuē",
+    "pinyin": "Adv",
+    "gloss_en": "",
+    "band": "B",
+    "level": 3,
+    "topic": "約",
+    "tags": []
+  },
+  {
+    "id": "B3-1056",
+    "trad": "yuèbĭng",
+    "pinyin": "N",
+    "gloss_en": "",
+    "band": "B",
+    "level": 3,
+    "topic": "月餅",
+    "tags": []
+  },
+  {
+    "id": "B3-1057",
+    "trad": "yuèdú",
+    "pinyin": "V",
+    "gloss_en": "",
+    "band": "B",
+    "level": 3,
+    "topic": "閱讀",
+    "tags": []
+  },
+  {
+    "id": "B3-1058",
+    "trad": "yuètuán",
+    "pinyin": "N",
+    "gloss_en": "",
+    "band": "B",
+    "level": 3,
+    "topic": "樂團",
+    "tags": []
+  },
+  {
+    "id": "B3-1059",
+    "trad": "yún",
+    "pinyin": "N",
+    "gloss_en": "",
+    "band": "B",
+    "level": 3,
+    "topic": "雲",
+    "tags": []
+  },
+  {
+    "id": "B3-1060",
+    "trad": "yùnqì",
+    "pinyin": "N",
+    "gloss_en": "",
+    "band": "B",
+    "level": 3,
+    "topic": "運氣",
+    "tags": []
+  },
+  {
+    "id": "B3-1061",
+    "trad": "zài",
+    "pinyin": "Vst",
+    "gloss_en": "",
+    "band": "B",
+    "level": 3,
+    "topic": "在",
+    "tags": []
+  },
+  {
+    "id": "B3-1062",
+    "trad": "zàiyì",
+    "pinyin": "Vst",
+    "gloss_en": "",
+    "band": "B",
+    "level": 3,
+    "topic": "在意",
+    "tags": []
+  },
+  {
+    "id": "B3-1063",
+    "trad": "zàiyú",
+    "pinyin": "Vst",
+    "gloss_en": "",
+    "band": "B",
+    "level": 3,
+    "topic": "在於",
+    "tags": []
+  },
+  {
+    "id": "B3-1064",
+    "trad": "zăo",
+    "pinyin": "Adv",
+    "gloss_en": "",
+    "band": "B",
+    "level": 3,
+    "topic": "早",
+    "tags": []
+  },
+  {
+    "id": "B3-1065",
+    "trad": "zăorì",
+    "pinyin": "Adv",
+    "gloss_en": "",
+    "band": "B",
+    "level": 3,
+    "topic": "早日",
+    "tags": []
+  },
+  {
+    "id": "B3-1066",
+    "trad": "zăowăn",
+    "pinyin": "N",
+    "gloss_en": "",
+    "band": "B",
+    "level": 3,
+    "topic": "早晚",
+    "tags": []
+  },
+  {
+    "id": "B3-1067",
+    "trad": "zàochéng",
+    "pinyin": "Vpt",
+    "gloss_en": "",
+    "band": "B",
+    "level": 3,
+    "topic": "造成",
+    "tags": []
+  },
+  {
+    "id": "B3-1068",
+    "trad": "zàoyīn",
+    "pinyin": "N",
+    "gloss_en": "",
+    "band": "B",
+    "level": 3,
+    "topic": "噪音",
+    "tags": []
+  },
+  {
+    "id": "B3-1069",
+    "trad": "zēngjiā/zēng",
+    "pinyin": "Vpt",
+    "gloss_en": "",
+    "band": "B",
+    "level": 3,
+    "topic": "增加/增",
+    "tags": []
+  },
+  {
+    "id": "B3-1070",
+    "trad": "zérèn",
+    "pinyin": "N",
+    "gloss_en": "",
+    "band": "B",
+    "level": 3,
+    "topic": "責任",
+    "tags": []
+  },
+  {
+    "id": "B3-1071",
+    "trad": "zhī",
+    "pinyin": "Vst",
+    "gloss_en": "",
+    "band": "B",
+    "level": 3,
+    "topic": "知",
+    "tags": []
+  },
+  {
+    "id": "B3-1072",
+    "trad": "zhīhòu",
+    "pinyin": "N",
+    "gloss_en": "",
+    "band": "B",
+    "level": 3,
+    "topic": "之後",
+    "tags": []
+  },
+  {
+    "id": "B3-1073",
+    "trad": "zhījiān",
+    "pinyin": "N",
+    "gloss_en": "",
+    "band": "B",
+    "level": 3,
+    "topic": "之間",
+    "tags": []
+  },
+  {
+    "id": "B3-1074",
+    "trad": "zhīqián",
+    "pinyin": "N",
+    "gloss_en": "",
+    "band": "B",
+    "level": 3,
+    "topic": "之前",
+    "tags": []
+  },
+  {
+    "id": "B3-1075",
+    "trad": "zhí",
+    "pinyin": "Vs",
+    "gloss_en": "",
+    "band": "B",
+    "level": 3,
+    "topic": "直",
+    "tags": []
+  },
+  {
+    "id": "B3-1076",
+    "trad": "zhídào",
+    "pinyin": "Prep",
+    "gloss_en": "",
+    "band": "B",
+    "level": 3,
+    "topic": "直到",
+    "tags": []
+  },
+  {
+    "id": "B3-1077",
+    "trad": "zhíde",
+    "pinyin": "Vst",
+    "gloss_en": "",
+    "band": "B",
+    "level": 3,
+    "topic": "值得",
+    "tags": []
+  },
+  {
+    "id": "B3-1078",
+    "trad": "zhímíndì",
+    "pinyin": "N",
+    "gloss_en": "",
+    "band": "B",
+    "level": 3,
+    "topic": "殖民地",
+    "tags": []
+  },
+  {
+    "id": "B3-1079",
+    "trad": "zhíwù",
+    "pinyin": "N",
+    "gloss_en": "",
+    "band": "B",
+    "level": 3,
+    "topic": "植物",
+    "tags": []
+  },
+  {
+    "id": "B3-1080",
+    "trad": "zhíyè",
+    "pinyin": "N",
+    "gloss_en": "",
+    "band": "B",
+    "level": 3,
+    "topic": "職業",
+    "tags": []
+  },
+  {
+    "id": "B3-1081",
+    "trad": "zhíyuán",
+    "pinyin": "N",
+    "gloss_en": "",
+    "band": "B",
+    "level": 3,
+    "topic": "職員",
+    "tags": []
+  },
+  {
+    "id": "B3-1082",
+    "trad": "zhĭ",
+    "pinyin": "V",
+    "gloss_en": "",
+    "band": "B",
+    "level": 3,
+    "topic": "指",
+    "tags": []
+  },
+  {
+    "id": "B3-1083",
+    "trad": "zhĭshì",
+    "pinyin": "Conj",
+    "gloss_en": "",
+    "band": "B",
+    "level": 3,
+    "topic": "只是",
+    "tags": []
+  },
+  {
+    "id": "B3-1084",
+    "trad": "zhĭyŏu",
+    "pinyin": "Adv / Conj",
+    "gloss_en": "",
+    "band": "B",
+    "level": 3,
+    "topic": "只有",
+    "tags": []
+  },
+  {
+    "id": "B3-1085",
+    "trad": "zhìdù",
+    "pinyin": "N",
+    "gloss_en": "",
+    "band": "B",
+    "level": 3,
+    "topic": "制度",
+    "tags": []
+  },
+  {
+    "id": "B3-1086",
+    "trad": "zhìhuì",
+    "pinyin": "N",
+    "gloss_en": "",
+    "band": "B",
+    "level": 3,
+    "topic": "智慧",
+    "tags": []
+  },
+  {
+    "id": "B3-1087",
+    "trad": "zhìshăo",
+    "pinyin": "Adv",
+    "gloss_en": "",
+    "band": "B",
+    "level": 3,
+    "topic": "至少",
+    "tags": []
+  },
+  {
+    "id": "B3-1088",
+    "trad": "zhìyú",
+    "pinyin": "Prep",
+    "gloss_en": "",
+    "band": "B",
+    "level": 3,
+    "topic": "至於",
+    "tags": []
+  },
+  {
+    "id": "B3-1089",
+    "trad": "zhāi",
+    "pinyin": "V",
+    "gloss_en": "",
+    "band": "B",
+    "level": 3,
+    "topic": "摘",
+    "tags": []
+  },
+  {
+    "id": "B3-1090",
+    "trad": "zhàn",
+    "pinyin": "N",
+    "gloss_en": "",
+    "band": "B",
+    "level": 3,
+    "topic": "站",
+    "tags": []
+  },
+  {
+    "id": "B3-1091",
+    "trad": "zhànshí",
+    "pinyin": "Adv",
+    "gloss_en": "",
+    "band": "B",
+    "level": 3,
+    "topic": "暫時",
+    "tags": []
+  },
+  {
+    "id": "B3-1092",
+    "trad": "zhànzhēng",
+    "pinyin": "N",
+    "gloss_en": "",
+    "band": "B",
+    "level": 3,
+    "topic": "戰爭",
+    "tags": []
+  },
+  {
+    "id": "B3-1093",
+    "trad": "zhăngwò",
+    "pinyin": "V",
+    "gloss_en": "",
+    "band": "B",
+    "level": 3,
+    "topic": "掌握",
+    "tags": []
+  },
+  {
+    "id": "B3-1094",
+    "trad": "zhàngài",
+    "pinyin": "N",
+    "gloss_en": "",
+    "band": "B",
+    "level": 3,
+    "topic": "障礙",
+    "tags": []
+  },
+  {
+    "id": "B3-1095",
+    "trad": "zhāojí",
+    "pinyin": "Vs",
+    "gloss_en": "",
+    "band": "B",
+    "level": 3,
+    "topic": "著(ㄓㄠ)急",
+    "tags": []
+  },
+  {
+    "id": "B3-1096",
+    "trad": "zhāodài",
+    "pinyin": "V",
+    "gloss_en": "",
+    "band": "B",
+    "level": 3,
+    "topic": "招待",
+    "tags": []
+  },
+  {
+    "id": "B3-1097",
+    "trad": "zhāopái",
+    "pinyin": "N",
+    "gloss_en": "",
+    "band": "B",
+    "level": 3,
+    "topic": "招牌",
+    "tags": []
+  },
+  {
+    "id": "B3-1098",
+    "trad": "zhăoqián",
+    "pinyin": "V-sep",
+    "gloss_en": "",
+    "band": "B",
+    "level": 3,
+    "topic": "找錢",
+    "tags": []
+  },
+  {
+    "id": "B3-1099",
+    "trad": "zhào",
+    "pinyin": "V / Prep",
+    "gloss_en": "",
+    "band": "B",
+    "level": 3,
+    "topic": "照",
+    "tags": []
+  },
+  {
+    "id": "B3-1100",
+    "trad": "zhà",
+    "pinyin": "V",
+    "gloss_en": "",
+    "band": "B",
+    "level": 3,
+    "topic": "炸",
+    "tags": []
+  },
+  {
+    "id": "B3-1101",
+    "trad": "zhēnguì",
+    "pinyin": "Vs",
+    "gloss_en": "",
+    "band": "B",
+    "level": 3,
+    "topic": "珍貴",
+    "tags": []
+  },
+  {
+    "id": "B3-1102",
+    "trad": "zhēnlĭ",
+    "pinyin": "N",
+    "gloss_en": "",
+    "band": "B",
+    "level": 3,
+    "topic": "真理",
+    "tags": []
+  },
+  {
+    "id": "B3-1103",
+    "trad": "zhēnshí",
+    "pinyin": "Vs",
+    "gloss_en": "",
+    "band": "B",
+    "level": 3,
+    "topic": "真實",
+    "tags": []
+  },
+  {
+    "id": "B3-1104",
+    "trad": "zhēnshì",
+    "pinyin": "Adv",
+    "gloss_en": "",
+    "band": "B",
+    "level": 3,
+    "topic": "真是",
+    "tags": []
+  },
+  {
+    "id": "B3-1105",
+    "trad": "zhēnxīn",
+    "pinyin": "Vs",
+    "gloss_en": "",
+    "band": "B",
+    "level": 3,
+    "topic": "真心",
+    "tags": []
+  },
+  {
+    "id": "B3-1106",
+    "trad": "zhēnzhèng",
+    "pinyin": "Adv / Vs-attr",
+    "gloss_en": "",
+    "band": "B",
+    "level": 3,
+    "topic": "真正",
+    "tags": []
+  },
+  {
+    "id": "B3-1107",
+    "trad": "zhěnglĭ",
+    "pinyin": "V",
+    "gloss_en": "",
+    "band": "B",
+    "level": 3,
+    "topic": "整理",
+    "tags": []
+  },
+  {
+    "id": "B3-1108",
+    "trad": "zhěngqí",
+    "pinyin": "Vs",
+    "gloss_en": "",
+    "band": "B",
+    "level": 3,
+    "topic": "整齊",
+    "tags": []
+  },
+  {
+    "id": "B3-1109",
+    "trad": "zhèngmíng",
+    "pinyin": "V",
+    "gloss_en": "",
+    "band": "B",
+    "level": 3,
+    "topic": "證明",
+    "tags": []
+  },
+  {
+    "id": "B3-1110",
+    "trad": "zhèngquè",
+    "pinyin": "Vs",
+    "gloss_en": "",
+    "band": "B",
+    "level": 3,
+    "topic": "正確",
+    "tags": []
+  },
+  {
+    "id": "B3-1111",
+    "trad": "zhèngshū",
+    "pinyin": "N",
+    "gloss_en": "",
+    "band": "B",
+    "level": 3,
+    "topic": "證書",
+    "tags": []
+  },
+  {
+    "id": "B3-1112",
+    "trad": "zhèngzhì",
+    "pinyin": "N",
+    "gloss_en": "",
+    "band": "B",
+    "level": 3,
+    "topic": "政治",
+    "tags": []
+  },
+  {
+    "id": "B3-1113",
+    "trad": "zhéxué",
+    "pinyin": "N",
+    "gloss_en": "",
+    "band": "B",
+    "level": 3,
+    "topic": "哲學",
+    "tags": []
+  },
+  {
+    "id": "B3-1114",
+    "trad": "zhèyàngzi",
+    "pinyin": "Vs / Adv",
+    "gloss_en": "",
+    "band": "B",
+    "level": 3,
+    "topic": "這樣子",
+    "tags": []
+  },
+  {
+    "id": "B3-1115",
+    "trad": "zhōngbù",
+    "pinyin": "N",
+    "gloss_en": "",
+    "band": "B",
+    "level": 3,
+    "topic": "中部",
+    "tags": []
+  },
+  {
+    "id": "B3-1116",
+    "trad": "zhōngcān",
+    "pinyin": "N",
+    "gloss_en": "",
+    "band": "B",
+    "level": 3,
+    "topic": "中餐",
+    "tags": []
+  },
+  {
+    "id": "B3-1117",
+    "trad": "zhōngyú",
+    "pinyin": "Adv",
+    "gloss_en": "",
+    "band": "B",
+    "level": 3,
+    "topic": "終於",
+    "tags": []
+  },
+  {
+    "id": "B3-1118",
+    "trad": "zhòng",
+    "pinyin": "V",
+    "gloss_en": "",
+    "band": "B",
+    "level": 3,
+    "topic": "種",
+    "tags": []
+  },
+  {
+    "id": "B3-1119",
+    "trad": "zhòngdiăn",
+    "pinyin": "N",
+    "gloss_en": "",
+    "band": "B",
+    "level": 3,
+    "topic": "重點",
+    "tags": []
+  },
+  {
+    "id": "B3-1120",
+    "trad": "zhòngshì",
+    "pinyin": "Vst",
+    "gloss_en": "",
+    "band": "B",
+    "level": 3,
+    "topic": "重視",
+    "tags": []
+  },
+  {
+    "id": "B3-1121",
+    "trad": "zhōuwéi",
+    "pinyin": "N",
+    "gloss_en": "",
+    "band": "B",
+    "level": 3,
+    "topic": "周圍",
+    "tags": []
+  },
+  {
+    "id": "B3-1122",
+    "trad": "zhŭ",
+    "pinyin": "V",
+    "gloss_en": "",
+    "band": "B",
+    "level": 3,
+    "topic": "煮",
+    "tags": []
+  },
+  {
+    "id": "B3-1123",
+    "trad": "zhŭdòng",
+    "pinyin": "Vs",
+    "gloss_en": "",
+    "band": "B",
+    "level": 3,
+    "topic": "主動",
+    "tags": []
+  },
+  {
+    "id": "B3-1124",
+    "trad": "zhŭfù",
+    "pinyin": "N",
+    "gloss_en": "",
+    "band": "B",
+    "level": 3,
+    "topic": "主婦",
+    "tags": []
+  },
+  {
+    "id": "B3-1125",
+    "trad": "zhŭguăn",
+    "pinyin": "N",
+    "gloss_en": "",
+    "band": "B",
+    "level": 3,
+    "topic": "主管",
+    "tags": []
+  },
+  {
+    "id": "B3-1126",
+    "trad": "zhŭrèn",
+    "pinyin": "N",
+    "gloss_en": "",
+    "band": "B",
+    "level": 3,
+    "topic": "主任",
+    "tags": []
+  },
+  {
+    "id": "B3-1127",
+    "trad": "zhŭtí",
+    "pinyin": "N",
+    "gloss_en": "",
+    "band": "B",
+    "level": 3,
+    "topic": "主題",
+    "tags": []
+  },
+  {
+    "id": "B3-1128",
+    "trad": "zhŭyào",
+    "pinyin": "Adv / Vs-attr",
+    "gloss_en": "",
+    "band": "B",
+    "level": 3,
+    "topic": "主要",
+    "tags": []
+  },
+  {
+    "id": "B3-1129",
+    "trad": "zhŭyì",
+    "pinyin": "N",
+    "gloss_en": "",
+    "band": "B",
+    "level": 3,
+    "topic": "主意",
+    "tags": []
+  },
+  {
+    "id": "B3-1130",
+    "trad": "zhù",
+    "pinyin": "V",
+    "gloss_en": "",
+    "band": "B",
+    "level": 3,
+    "topic": "助",
+    "tags": []
+  },
+  {
+    "id": "B3-1131",
+    "trad": "zhùfú",
+    "pinyin": "N / V",
+    "gloss_en": "",
+    "band": "B",
+    "level": 3,
+    "topic": "祝福",
+    "tags": []
+  },
+  {
+    "id": "B3-1132",
+    "trad": "zhùlĭ",
+    "pinyin": "N",
+    "gloss_en": "",
+    "band": "B",
+    "level": 3,
+    "topic": "助理",
+    "tags": []
+  },
+  {
+    "id": "B3-1133",
+    "trad": "zhùmíng",
+    "pinyin": "Vs",
+    "gloss_en": "",
+    "band": "B",
+    "level": 3,
+    "topic": "著名",
+    "tags": []
+  },
+  {
+    "id": "B3-1134",
+    "trad": "zhuàngtài",
+    "pinyin": "N",
+    "gloss_en": "",
+    "band": "B",
+    "level": 3,
+    "topic": "狀態",
+    "tags": []
+  },
+  {
+    "id": "B3-1135",
+    "trad": "zhuānxīn",
+    "pinyin": "Vs",
+    "gloss_en": "",
+    "band": "B",
+    "level": 3,
+    "topic": "專心",
+    "tags": []
+  },
+  {
+    "id": "B3-1136",
+    "trad": "zhuānyè",
+    "pinyin": "Vs-attr",
+    "gloss_en": "",
+    "band": "B",
+    "level": 3,
+    "topic": "專業",
+    "tags": []
+  },
+  {
+    "id": "B3-1137",
+    "trad": "zhuīqiú",
+    "pinyin": "V",
+    "gloss_en": "",
+    "band": "B",
+    "level": 3,
+    "topic": "追求",
+    "tags": []
+  },
+  {
+    "id": "B3-1138",
+    "trad": "zhŭnshí",
+    "pinyin": "Vs",
+    "gloss_en": "",
+    "band": "B",
+    "level": 3,
+    "topic": "準時",
+    "tags": []
+  },
+  {
+    "id": "B3-1139",
+    "trad": "zhuó",
+    "pinyin": "V",
+    "gloss_en": "",
+    "band": "B",
+    "level": 3,
+    "topic": "著",
+    "tags": []
+  },
+  {
+    "id": "B3-1140",
+    "trad": "zīyuán",
+    "pinyin": "N",
+    "gloss_en": "",
+    "band": "B",
+    "level": 3,
+    "topic": "資源",
+    "tags": []
+  },
+  {
+    "id": "B3-1141",
+    "trad": "zĭxì",
+    "pinyin": "Vs",
+    "gloss_en": "",
+    "band": "B",
+    "level": 3,
+    "topic": "仔細",
+    "tags": []
+  },
+  {
+    "id": "B3-1142",
+    "trad": "zìcóng",
+    "pinyin": "Prep",
+    "gloss_en": "",
+    "band": "B",
+    "level": 3,
+    "topic": "自從",
+    "tags": []
+  },
+  {
+    "id": "B3-1143",
+    "trad": "zìdòng",
+    "pinyin": "Vs",
+    "gloss_en": "",
+    "band": "B",
+    "level": 3,
+    "topic": "自動",
+    "tags": []
+  },
+  {
+    "id": "B3-1144",
+    "trad": "zìshā",
+    "pinyin": "Vi",
+    "gloss_en": "",
+    "band": "B",
+    "level": 3,
+    "topic": "自殺",
+    "tags": []
+  },
+  {
+    "id": "B3-1145",
+    "trad": "zìxìn",
+    "pinyin": "N",
+    "gloss_en": "",
+    "band": "B",
+    "level": 3,
+    "topic": "自信",
+    "tags": []
+  },
+  {
+    "id": "B3-1146",
+    "trad": "zìzài",
+    "pinyin": "Vs",
+    "gloss_en": "",
+    "band": "B",
+    "level": 3,
+    "topic": "自在",
+    "tags": []
+  },
+  {
+    "id": "B3-1147",
+    "trad": "zōngjiào",
+    "pinyin": "N",
+    "gloss_en": "",
+    "band": "B",
+    "level": 3,
+    "topic": "宗教",
+    "tags": []
+  },
+  {
+    "id": "B3-1148",
+    "trad": "zŏngéryánzhī",
+    "pinyin": "Conj",
+    "gloss_en": "",
+    "band": "B",
+    "level": 3,
+    "topic": "總而言之",
+    "tags": []
+  },
+  {
+    "id": "B3-1149",
+    "trad": "zŏngsuàn",
+    "pinyin": "Adv",
+    "gloss_en": "",
+    "band": "B",
+    "level": 3,
+    "topic": "總算",
+    "tags": []
+  },
+  {
+    "id": "B3-1150",
+    "trad": "zŏngtŏng",
+    "pinyin": "N",
+    "gloss_en": "",
+    "band": "B",
+    "level": 3,
+    "topic": "總統",
+    "tags": []
+  },
+  {
+    "id": "B3-1151",
+    "trad": "zŏngzhī",
+    "pinyin": "Conj",
+    "gloss_en": "",
+    "band": "B",
+    "level": 3,
+    "topic": "總之",
+    "tags": []
+  },
+  {
+    "id": "B3-1152",
+    "trad": "zŏuzŏu",
+    "pinyin": "Vi",
+    "gloss_en": "",
+    "band": "B",
+    "level": 3,
+    "topic": "走走",
+    "tags": []
+  },
+  {
+    "id": "B3-1153",
+    "trad": "zŭ",
+    "pinyin": "M",
+    "gloss_en": "",
+    "band": "B",
+    "level": 3,
+    "topic": "組",
+    "tags": []
+  },
+  {
+    "id": "B3-1154",
+    "trad": "zŭfù",
+    "pinyin": "N",
+    "gloss_en": "",
+    "band": "B",
+    "level": 3,
+    "topic": "祖父",
+    "tags": []
+  },
+  {
+    "id": "B3-1155",
+    "trad": "zŭmŭ",
+    "pinyin": "N",
+    "gloss_en": "",
+    "band": "B",
+    "level": 3,
+    "topic": "祖母",
+    "tags": []
+  },
+  {
+    "id": "B3-1156",
+    "trad": "zŭxiān",
+    "pinyin": "N",
+    "gloss_en": "",
+    "band": "B",
+    "level": 3,
+    "topic": "祖先",
+    "tags": []
+  },
+  {
+    "id": "B3-1157",
+    "trad": "zuì",
+    "pinyin": "Vp",
+    "gloss_en": "",
+    "band": "B",
+    "level": 3,
+    "topic": "醉",
+    "tags": []
+  },
+  {
+    "id": "B3-1158",
+    "trad": "zuìchū",
+    "pinyin": "N",
+    "gloss_en": "",
+    "band": "B",
+    "level": 3,
+    "topic": "最初",
+    "tags": []
+  },
+  {
+    "id": "B3-1159",
+    "trad": "zuìduō",
+    "pinyin": "Adv",
+    "gloss_en": "",
+    "band": "B",
+    "level": 3,
+    "topic": "最多",
+    "tags": []
+  },
+  {
+    "id": "B3-1160",
+    "trad": "zuìhòu",
+    "pinyin": "N",
+    "gloss_en": "",
+    "band": "B",
+    "level": 3,
+    "topic": "最後",
+    "tags": []
+  },
+  {
+    "id": "B3-1161",
+    "trad": "zuìjiā",
+    "pinyin": "Vs-attr",
+    "gloss_en": "",
+    "band": "B",
+    "level": 3,
+    "topic": "最佳",
+    "tags": []
+  },
+  {
+    "id": "B3-1162",
+    "trad": "zūnjìng",
+    "pinyin": "Vst",
+    "gloss_en": "",
+    "band": "B",
+    "level": 3,
+    "topic": "尊敬",
+    "tags": []
+  },
+  {
+    "id": "B3-1163",
+    "trad": "zuò",
+    "pinyin": "V",
+    "gloss_en": "",
+    "band": "B",
+    "level": 3,
+    "topic": "作",
+    "tags": []
+  },
+  {
+    "id": "B3-1164",
+    "trad": "zuòmèng",
+    "pinyin": "V-sep",
+    "gloss_en": "",
+    "band": "B",
+    "level": 3,
+    "topic": "做夢/作夢",
+    "tags": []
+  },
+  {
+    "id": "B3-1165",
+    "trad": "zuòpĭn",
+    "pinyin": "N",
+    "gloss_en": "",
+    "band": "B",
+    "level": 3,
+    "topic": "作品",
+    "tags": []
+  },
+  {
+    "id": "B3-1166",
+    "trad": "zuòrén",
+    "pinyin": "Vi",
+    "gloss_en": "",
+    "band": "B",
+    "level": 3,
+    "topic": "做人",
+    "tags": []
+  },
+  {
+    "id": "B3-1167",
+    "trad": "zuòshì",
+    "pinyin": "Vi",
+    "gloss_en": "",
+    "band": "B",
+    "level": 3,
+    "topic": "做事",
+    "tags": []
+  },
+  {
+    "id": "B3-1168",
+    "trad": "zuòzhě",
+    "pinyin": "N",
+    "gloss_en": "",
+    "band": "B",
+    "level": 3,
+    "topic": "作者",
+    "tags": []
+  }
+]
