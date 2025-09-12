@@ -1,0 +1,40 @@
+name: CI
+
+on:
+  push:
+    branches: [ main, master ]
+  pull_request:
+    branches: [ main, master ]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: 20
+          cache: 'npm'
+          cache-dependency-path: apps/web/package-lock.json
+
+      - name: Install dependencies (apps/web)
+        working-directory: apps/web
+        run: npm ci
+
+      - name: Typecheck
+        working-directory: apps/web
+        run: npm run typecheck
+
+      - name: Lint
+        working-directory: apps/web
+        run: npm run lint
+
+      - name: Data validation (basic deck check)
+        run: node tools/ingest/validate_deck.js --in data/seed/band-A/level1.json
+
+      - name: Schema validation (cards + stories)
+        working-directory: apps/web
+        run: npm run validate:data

@@ -10,7 +10,9 @@ function pickN<T>(arr: T[], n: number): T[] {
   const a = [...arr]
   for (let i = a.length - 1; i > 0; i--) {
     const j = Math.floor(Math.random() * (i + 1))
-    ;[a[i], a[j]] = [a[j], a[i]]
+    const tmp = a[i]!
+    a[i] = a[j]!
+    a[j] = tmp
   }
   return a.slice(0, n)
 }
@@ -78,4 +80,3 @@ export function QuickTest(props: {
     </div>
   )
 }
-

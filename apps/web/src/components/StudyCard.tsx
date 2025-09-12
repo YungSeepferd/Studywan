@@ -20,7 +20,7 @@ export function StudyCard(props: {
     ;(async () => {
       // Script conversion
       if (prefs.scriptMode === 'trad') setHanzi(card.trad)
-      else if (card.simp) setHanzi(card.simp)
+      else if (card.simp) setHanzi(card.simp || card.trad)
       else setHanzi(await toSimp(card.trad))
       // Pronunciation
       const p = await getPronunciation(card, prefs)
@@ -45,14 +45,14 @@ export function StudyCard(props: {
       </div>
       {showStroke && (
         <div style={{ marginTop: 8 }}>
-          <HanziStroke char={hanzi[0] || card.trad[0]} />
+          <HanziStroke char={hanzi.charAt(0) || card.trad.charAt(0)} />
         </div>
       )}
       <div style={{ marginTop: 16, display: 'flex', gap: 8, flexWrap: 'wrap' }}>
-        <button onClick={() => props.onGrade(0)}>Again</button>
-        <button onClick={() => props.onGrade(3)}>Hard</button>
-        <button onClick={() => props.onGrade(4)}>Good</button>
-        <button onClick={() => props.onGrade(5)}>Easy</button>
+        <button aria-label="Again (1)" onClick={() => props.onGrade(0)}>Again</button>
+        <button aria-label="Hard (2)" onClick={() => props.onGrade(3)}>Hard</button>
+        <button aria-label="Good (3)" onClick={() => props.onGrade(4)}>Good</button>
+        <button aria-label="Easy (4)" onClick={() => props.onGrade(5)}>Easy</button>
       </div>
     </div>
   )

@@ -1,0 +1,9 @@
+[
+  { "id": "A1", "title": "Band A1 (Level 1)", "band": "A", "level": 1, "path": "data/band-A/level1.json" },
+  { "id": "A2", "title": "Band A2 (Level 2)", "band": "A", "level": 2, "path": "data/band-A/level2.json" },
+  { "id": "A1: 個人資料", "title": "A1 Topic: 個人資料", "band": "A", "level": 1, "topic": "個人資料", "path": "data/band-A/level1_topics/個人資料.json" },
+  { "id": "A1a", "title": "A1 Program: A1a", "band": "A", "level": 1, "path": "data/band-A/a1_program/a1a.json" },
+  { "id": "A1b", "title": "A1 Program: A1b", "band": "A", "level": 1, "path": "data/band-A/a1_program/a1b.json" },
+  { "id": "A1c", "title": "A1 Program: A1c", "band": "A", "level": 1, "path": "data/band-A/a1_program/a1c.json" }
+]
+

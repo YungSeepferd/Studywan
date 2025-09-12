@@ -1,23 +1,21 @@
 import { useEffect, useState } from 'react'
 
-type DeckOption = { label: string; path: string }
+type DeckMeta = { id: string; title: string; band: 'A'|'B'|'C'; level: number; path: string; topic?: string }
 
-const builtins: DeckOption[] = [
-  { label: 'A1 (Level 1)', path: 'data/band-A/level1.json' },
-  { label: 'A2 (Level 2)', path: 'data/band-A/level2.json' },
-  { label: 'A1 Program: A1a', path: 'data/band-A/a1_program/a1a.json' },
-  { label: 'A1 Topic: 個人資料', path: 'data/band-A/level1_topics/個人資料.json' },
-]
-
-export function DeckPicker(props: {
-  onPick: (deckPath: string) => void
-}) {
+export function DeckPicker(props: { onPick: (deckPath: string) => void }) {
   const [custom, setCustom] = useState('')
-  const [options, setOptions] = useState<DeckOption[]>(builtins)
+  const [options, setOptions] = useState<DeckMeta[] | null>(null)
+  const [error, setError] = useState<string | null>(null)
 
   useEffect(() => {
-    // Could later fetch a manifest; for now, use builtins
-    setOptions(builtins)
+    const url = new URL('data/decks/manifest.json', (import.meta as any).env.BASE_URL).toString()
+    fetch(url)
+      .then(r => {
+        if (!r.ok) throw new Error(`HTTP ${r.status}`)
+        return r.json()
+      })
+      .then((list: DeckMeta[]) => setOptions(list))
+      .catch(() => setOptions([]))
   }, [])
 
   function pick(path: string) {
@@ -32,8 +30,12 @@ export function DeckPicker(props: {
   return (
     <div style={{ display: 'grid', gap: 8 }}>
       <div style={{ fontWeight: 600 }}>Choose a deck</div>
-      {options.map((o) => (
-        <button key={o.path} onClick={() => pick(o.path)}>{o.label}</button>
+      {options === null && <div>Loading deck list…</div>}
+      {options && options.length === 0 && (
+        <div style={{ color: '#666' }}>No deck manifest found; enter a custom path.</div>
+      )}
+      {options && options.map((o) => (
+        <button key={o.path} onClick={() => pick(o.path)}>{o.title}</button>
       ))}
       <div style={{ display: 'flex', gap: 8 }}>
         <input
@@ -47,7 +49,7 @@ export function DeckPicker(props: {
       <div style={{ color: '#666', fontSize: 12 }}>
         Note: Ensure the file exists under apps/web/public/… or adjust vite base.
       </div>
+      {error && <div style={{ color: '#c00' }}>{error}</div>}
     </div>
   )
 }
-

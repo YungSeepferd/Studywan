@@ -22,7 +22,7 @@ export function StoryViewer(props: { storyPath: string; prefs: Prefs; onClose: (
   const [err, setErr] = useState<string | null>(null)
   const script = props.prefs.scriptMode
   const [selected, setSelected] = useState<string | null>(null)
-  const [selectedInfo, setSelectedInfo] = useState<{ text: string; pron: string; gloss?: string } | null>(null)
+  const [selectedInfo, setSelectedInfo] = useState<{ text: string; pron: string; gloss?: string | undefined } | null>(null)
 
   useEffect(() => {
     const url = new URL(props.storyPath, (import.meta as any).env.BASE_URL).toString()

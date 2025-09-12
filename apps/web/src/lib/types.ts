@@ -21,7 +21,7 @@ export type SrsState = {
   interval: number // in days
   reps: number
   due: number // timestamp (ms)
+  lapses?: number
 }
 
 export type SrsMap = Record<string, SrsState>
-

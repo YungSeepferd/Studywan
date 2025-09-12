@@ -9,8 +9,7 @@ export function HanziStroke(props: { char: string }) {
     let mounted = true
     ;(async () => {
       try {
-        // @ts-ignore
-        const HanziWriter = (await import('hanzi-writer')).default
+        const HanziWriter: any = (await import('hanzi-writer')).default as any
         if (!mounted || !ref.current) return
         writer = HanziWriter.create(ref.current, props.char, {
           width: 200,
@@ -35,4 +34,3 @@ export function HanziStroke(props: { char: string }) {
     </div>
   )
 }
-

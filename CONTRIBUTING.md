@@ -39,8 +39,40 @@ Once the technical architecture is finalized, this section will include:
 4. Submit a pull request
 
 ## Development Environment
+### Web app (Vite + React)
+```
+cd apps/web
+npm install
+npm run dev
+```
 
-Details about the development environment setup will be provided once the technical architecture is finalized.
+### Build & preview
+```
+npm run build
+npm run preview
+```
+
+### Typecheck, lint, format
+```
+npm run typecheck
+npm run lint
+npm run format
+```
+
+### Data workflows
+- Generate A/B decks from official XLSX: `make xlsx-all`
+- Topic/packs/A1 program splits: `make split-a1-topics`, `make pack-a1`, `make a1-program`
+- Dictionary enrichment (optional): `make merge-a1-cedict` or `make merge-a1-cedict-moe`
+- Publish stories to web: `make web-copy-stories`
+- Copy deck manifest to web: `make web-copy-decks`
+
+### Data validation
+```
+cd apps/web
+npm run validate:data
+```
+
+Note: A data validator will be added under `npm run validate:data` (see Task 2 in NextSteps).
 
 ## Communication
 

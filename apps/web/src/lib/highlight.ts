@@ -4,7 +4,7 @@ export type Segment = { text: string; highlight: boolean }
 export function highlightText(text: string, targets: string[]): Segment[] {
   const segs: Segment[] = []
   if (!text) return segs
-  const tset = [...new Set(targets.filter(Boolean))].sort((a, b) => b.length - a.length) // longest first
+  const tset = [...new Set(targets.filter(Boolean) as string[])].sort((a, b) => b.length - a.length) // longest first
   let i = 0
   while (i < text.length) {
     let matched = ''
@@ -16,7 +16,7 @@ export function highlightText(text: string, targets: string[]): Segment[] {
       pushSeg(segs, matched, true)
       i += matched.length
     } else {
-      pushSeg(segs, text[i], false)
+      pushSeg(segs, text.charAt(i), false)
       i += 1
     }
   }
@@ -28,4 +28,3 @@ function pushSeg(segs: Segment[], text: string, highlight: boolean) {
   if (last && last.highlight === highlight) last.text += text
   else segs.push({ text, highlight })
 }
-

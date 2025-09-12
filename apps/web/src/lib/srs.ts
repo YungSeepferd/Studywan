@@ -3,7 +3,7 @@ import type { SrsState } from './types'
 export type Grade = 0 | 3 | 4 | 5 // Again=0, Hard=3, Good=4, Easy=5
 
 export function initialState(now = Date.now()): SrsState {
-  return { ef: 2.5, interval: 0, reps: 0, due: now }
+  return { ef: 2.5, interval: 0, reps: 0, due: now, lapses: 0 }
 }
 
 export function isDue(state: SrsState, now = Date.now()): boolean {
@@ -23,6 +23,8 @@ export function schedule(prev: SrsState, grade: Grade, now = Date.now()): SrsSta
   if (grade < 3) {
     reps = 0
     interval = 1
+    const lapses = (prev.lapses ?? 0) + 1
+    return { ef: prev.ef, interval, reps, due: addDays(now, interval), lapses }
   } else {
     if (reps === 0) interval = 1
     else if (reps === 1) interval = 6
@@ -35,6 +37,5 @@ export function schedule(prev: SrsState, grade: Grade, now = Date.now()): SrsSta
     reps = reps + 1
   }
 
-  return { ef, interval, reps, due: addDays(now, interval) }
+  return { ef, interval, reps, due: addDays(now, interval), lapses: prev.lapses ?? 0 }
 }
-

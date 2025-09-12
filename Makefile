@@ -140,3 +140,8 @@ story-precompute-sample:
 .PHONY: web-copy-stories
 web-copy-stories:
 	@node tools/stories/build_story.js --manifest data/stories/manifest.json --indir data/stories --outdir apps/web/public/stories || (echo 'opencc-js not installed; copying as-is'; mkdir -p apps/web/public/stories; cp -f data/stories/*.json apps/web/public/stories/; cp -f data/stories/manifest.json apps/web/public/stories/manifest.json)
+
+.PHONY: web-copy-decks
+web-copy-decks:
+	@mkdir -p apps/web/public/data/decks
+	@cp -f data/decks/manifest.json apps/web/public/data/decks/manifest.json

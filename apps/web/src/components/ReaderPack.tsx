@@ -1,14 +1,18 @@
 import { useEffect, useMemo, useState } from 'react'
 import type { Card, Prefs } from '../lib/types'
+import { highlightText, type Segment } from '../lib/highlight'
+import { getPronunciation } from '../lib/romanization'
 
-type StoryMeta = { id: string; title: string; band: 'A'|'B'|'C'; level: number; path: string; vocabRefs?: string[] }
+type StoryMeta = { id: string; title: string; band: 'A'|'B'|'C'; level: number; topic?: string; path: string; vocabRefs?: string[] }
 type Story = { id: string; title: string; band: 'A'|'B'|'C'; level: number; body: string; bodySimp?: string; vocabRefs: string[]; audioUrl?: string }
 
 function pickN<T>(arr: T[], n: number): T[] {
   const a = [...arr]
   for (let i = a.length - 1; i > 0; i--) {
     const j = Math.floor(Math.random() * (i + 1))
-    ;[a[i], a[j]] = [a[j], a[i]]
+    const tmp = a[i]!
+    a[i] = a[j]!
+    a[j] = tmp
   }
   return a.slice(0, n)
 }
@@ -20,6 +24,7 @@ export function ReaderPack(props: {
   onDone: (score: number, total: number) => void
   topic?: string | 'All'
   mcq?: 'detail' | 'gist'
+  onWrongCard?: (card: Card) => void
 }) {
   const [list, setList] = useState<StoryMeta[]>([])
   const [stories, setStories] = useState<Story[]>([])
@@ -59,6 +64,15 @@ export function ReaderPack(props: {
     return props.prefs.scriptMode === 'trad' ? story.body : (story.bodySimp || story.body)
   }, [story, props.prefs.scriptMode])
 
+  const segs: Segment[] = useMemo(() => {
+    if (!story) return []
+    const targets = (story.vocabRefs || [])
+      .map(id => props.cards.find(c => c.id === id))
+      .filter(Boolean)
+      .map(c => props.prefs.scriptMode === 'trad' ? (c as Card).trad : ((c as Card).simp || (c as Card).trad)) as string[]
+    return highlightText(text, targets)
+  }, [text, story, props.cards, props.prefs.scriptMode])
+
   function playOnce() {
     if (played || !story?.audioUrl) return
     const url = new URL(story.audioUrl, (import.meta as any).env.BASE_URL).toString()
@@ -95,6 +109,7 @@ export function ReaderPack(props: {
   function answer(opt: string) {
     const type = props.mcq || 'detail'
     let isCorrect = false
+    let correctCard: Card | null = null
     if (type === 'gist') {
       const correct = (list.find(m => m.id === story?.id)?.topic) || 'misc'
       isCorrect = opt === correct
@@ -103,13 +118,14 @@ export function ReaderPack(props: {
         if (!story) return ''
         const cardMap = new Map(props.cards.map(c => [c.id, c]))
         const refs = (story.vocabRefs || []).map(id => cardMap.get(id)).filter(Boolean) as Card[]
-        const correct = refs.length ? refs[0]! : null
-        return correct ? (props.prefs.scriptMode === 'trad' ? correct.trad : (correct.simp || correct.trad)) : ''
+        correctCard = refs.length ? refs[0]! : null
+        return correctCard ? (props.prefs.scriptMode === 'trad' ? correctCard.trad : (correctCard.simp || correctCard.trad)) : ''
       })()
       isCorrect = opt === correctWord
     }
     if (isCorrect) setScore(s => s + 1)
-    if (i + 1 >= stories.length) props.onDone(score + (opt === correctWord ? 1 : 0), stories.length)
+    else if (correctCard && props.onWrongCard) props.onWrongCard(correctCard)
+    if (i + 1 >= stories.length) props.onDone(score + (isCorrect ? 1 : 0), stories.length)
     else { setI(i + 1); setPlayed(false) }
   }
 
@@ -120,7 +136,19 @@ export function ReaderPack(props: {
       <div style={{ color: '#666' }}>Story {i + 1}/{stories.length} • Score: {score}</div>
       <div style={{ border: '1px solid #ddd', padding: 12, borderRadius: 8 }}>
         <div style={{ marginBottom: 8, fontWeight: 600 }}>{story?.title}</div>
-        <div style={{ whiteSpace: 'pre-wrap', fontSize: 18 }}>{text}</div>
+        <div style={{ whiteSpace: 'pre-wrap', fontSize: 18 }}>
+          {segs.map((s, idx) => s.highlight ? (
+            <span key={idx} style={{ background: '#fff3cd', cursor: 'pointer' }} onClick={async () => {
+              const card = (story?.vocabRefs || [])
+                .map(id => props.cards.find(c => c.id === id))
+                .find(c => (props.prefs.scriptMode === 'trad' ? c?.trad : (c?.simp || c?.trad)) === s.text)
+              const pron = card ? await getPronunciation(card, props.prefs) : ''
+              alert(`${s.text}  ${pron}\n${card?.gloss_en || ''}`)
+            }}>{s.text}</span>
+          ) : (
+            <span key={idx}>{s.text}</span>
+          ))}
+        </div>
         <div style={{ marginTop: 8 }}>
           <button onClick={playOnce} disabled={played || !story?.audioUrl}>{played ? 'Played' : 'Play once'}</button>
         </div>

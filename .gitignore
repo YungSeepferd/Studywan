@@ -1,47 +1,102 @@
 
-# Ignore GitHub instructions helpers
-.github/instructions/codacy.instructions.md
+# Dependencies
+node_modules/
+**/node_modules/
+/.pnp
+.pnp.js
+yarn.lock
+package-lock.json
+pnpm-lock.yaml
 
-# Go / general binaries
-*.exe
-*.exe~
-*.dll
-*.so
-*.dylib
-
-# Test binaries
-*.test
-
-# Coverage and test artifacts
-*.out
-coverage.*
-*.coverprofile
-profile.cov
-
-# Dependencies (uncomment to vendor)
-# vendor/
-
-# Go workspace files
-go.work
-go.work.sum
+# Build outputs
+/dist/
+/build/
+**/.next/
+**/out/
+**/build/
+**/.output/
+.nuxt/
+.turbo
 
 # Environment files
 .env
+.env*.local
+.env.development
+.env.test
+.env.production
 
-# Editor/IDE (uncomment if desired)
-# .idea/
-# .vscode/
+# Cache and logs
+.cache/
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+.pnpm-debug.log*
+.eslintcache
+.stylelintcache
 
-# Ingestion intermediates and generated content
-data/raw/
-data/staging/
-content/grammar/
+# Testing
+/coverage/
+**/.coverage/
+.nyc_output/
+*.lcov
 
-# macOS
+# Editor/IDE
+.idea/
+.vscode/
+*.swp
+*.swo
 .DS_Store
+*.sublime-project
+*.sublime-workspace
+.project
+.classpath
+.settings/
+*.iml
+*.ipr
+*.iws
 
-# Node projects
-node_modules/
-apps/web/node_modules/
-dist/
-apps/web/dist/
+# Debug and temp files
+*.tsbuildinfo
+.vercel
+.temp/
+.tmp/
+tmp/
+temp/
+
+# Platform specific
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Application specific
+/data/raw/
+/data/staging/
+/content/grammar/
+/apps/**/dist/
+/apps/**/build/
+
+# Local Netlify folder
+.netlify/
+
+# Cordova/Mobile
+platforms/
+plugins/
+www/
+
+# Cypress
+cypress/videos/
+cypress/screenshots/
+
+# Storybook
+storybook-static/
+
+# Production bundles
+*.bundle.js
+*.bundle.css
+*.chunk.js
+bundle.js
+bundle.css
+
+# GitHub specific
+.github/instructions/codacy.instructions.md

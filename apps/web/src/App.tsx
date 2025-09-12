@@ -1,16 +1,19 @@
 import { useEffect, useMemo, useState } from 'react'
 import type { Card, Prefs, SrsMap } from './lib/types'
-import { loadPrefs, savePrefs, loadSrsMap, saveSrsMap } from './lib/storage'
+import { loadSrsMap, saveSrsMap } from './lib/storage'
 import { DeckPicker } from './components/DeckPicker'
 import { StudyCard } from './components/StudyCard'
 import { QuickTest } from './components/QuickTest'
 import { ReaderPack } from './components/ReaderPack'
 import { ReaderPackPicker } from './components/ReaderPackPicker'
 import { StoryViewer } from './components/StoryViewer'
+import { About } from './components/About'
 import { initialState, isDue, schedule, type Grade } from './lib/srs'
 
+import { usePrefs } from './state/usePrefs'
+
 export default function App() {
-  const [prefs, setPrefs] = useState<Prefs>(() => loadPrefs())
+  const { prefs, setPrefs } = usePrefs()
   const [view, setView] = useState<'pick' | 'study' | 'quicktest' | 'story' | 'readerpack'>('pick')
   const [deckPath, setDeckPath] = useState<string>('')
   const [cards, setCards] = useState<Card[]>([])
@@ -19,8 +22,12 @@ export default function App() {
   const [srsMap, setSrsMap] = useState<SrsMap>({})
   const [qtCount, setQtCount] = useState(10)
   const [storyPath, setStoryPath] = useState<string>('')
+  const [sessionStats, setSessionStats] = useState({ correct: 0, wrong: 0 })
+  const [showSummary, setShowSummary] = useState(false)
+  const [errorBank, setErrorBank] = useState<Record<string, true>>(() => ({}))
+  const [showAbout, setShowAbout] = useState(false)
 
-  useEffect(() => { savePrefs(prefs) }, [prefs])
+  // persistence handled by PrefsProvider
 
   async function loadDeck(path: string) {
     const url = new URL(path, (import.meta as any).env.BASE_URL).toString()
@@ -74,15 +81,39 @@ export default function App() {
     const updated = { ...srsMap, [current.id]: next }
     setSrsMap(updated)
     saveSrsMap(key, updated)
+    // session stats
+    if (g < 3) setSessionStats(s => ({ ...s, wrong: s.wrong + 1 }))
+    else setSessionStats(s => ({ ...s, correct: s.correct + 1 }))
+    // leech handling
+    if (g < 3 && (next.lapses ?? 0) >= 3) {
+      setErrorBank(b => ({ ...b, [current.id]: true }))
+      try { localStorage.setItem(`errorBank:${key}`, JSON.stringify({ ...errorBank, [current.id]: true })) } catch {}
+    }
     // Move forward
     setIndex(i => Math.min(queue.length - 1, i + 1))
   }
 
   const dueCount = useMemo(() => {
     const now = Date.now()
-    return cards.reduce((n, c) => n + (srsMap[c.id] ? (isDue(srsMap[c.id], now) ? 1 : 0) : 0), 0)
+    return cards.reduce((n, c) => {
+      const s = srsMap[c.id]
+      return n + (s ? (isDue(s, now) ? 1 : 0) : 0)
+    }, 0)
   }, [cards, srsMap])
   const newCount = useMemo(() => cards.filter(c => !srsMap[c.id]).length, [cards, srsMap])
+
+  // Keyboard shortcuts for grading
+  useEffect(() => {
+    function onKey(e: KeyboardEvent) {
+      if (view !== 'study') return
+      if (e.key === '1') grade(0)
+      else if (e.key === '2') grade(3)
+      else if (e.key === '3') grade(4)
+      else if (e.key === '4') grade(5)
+    }
+    window.addEventListener('keydown', onKey)
+    return () => window.removeEventListener('keydown', onKey)
+  }, [view, current, srsMap])
 
   return (
     <div style={{ fontFamily: 'system-ui, -apple-system, Segoe UI, Roboto, Noto Sans TC, Arial', padding: 16 }}>
@@ -107,6 +138,16 @@ export default function App() {
             Deck: {deckPath} | Queue: {queue.length} | Due: {dueCount} | New: {newCount}
           </span>
         )}
+        <button onClick={() => setShowAbout(true)} aria-label="About and licences">About</button>
+        <button onClick={() => {
+          const ids = Object.keys(errorBank)
+          if (!ids.length) { alert('No leeches yet.'); return }
+          const eq = cards.filter(c => ids.includes(c.id))
+          if (!eq.length) { alert('No error-bank cards in this deck.'); return }
+          setQueue(eq)
+          setIndex(0)
+          setView('study')
+        }} aria-label="Open error bank">Error Bank</button>
       </header>
 
       {view === 'pick' && (
@@ -137,6 +178,32 @@ export default function App() {
             <button onClick={() => setIndex(i => Math.max(0, i - 1))}>Prev</button>
             <button onClick={() => setIndex(i => Math.min(queue.length - 1, i + 1))}>Next</button>
             <button onClick={() => setView('pick')}>Change Deck</button>
+            <button onClick={() => setShowSummary(true)}>End Session</button>
+            <button onClick={() => {
+              const dataStr = 'data:application/json;charset=utf-8,' + encodeURIComponent(JSON.stringify({ deck: deckPath, srs: srsMap, errorBank }))
+              const a = document.createElement('a')
+              a.href = dataStr
+              a.download = 'studywan-progress.json'
+              a.click()
+            }}>Export Progress</button>
+            <label style={{ display: 'inline-flex', gap: 4, alignItems: 'center' }}>
+              Import Progress
+              <input type="file" accept="application/json" onChange={async (e) => {
+                const f = e.target.files?.[0]
+                if (!f) return
+                const text = await f.text()
+                try {
+                  const obj = JSON.parse(text)
+                  if (obj.srs) {
+                    setSrsMap(obj.srs)
+                    saveSrsMap(deckPath, obj.srs)
+                  }
+                  if (obj.errorBank) setErrorBank(obj.errorBank)
+                } catch {
+                  alert('Invalid progress file')
+                }
+              }} />
+            </label>
           </div>
         </div>
       )}
@@ -168,7 +235,14 @@ export default function App() {
               const opts = JSON.parse(raw) as { level?: 1|2; topic?: string|'All'; mcq?: 'detail'|'gist' }
               const level = opts.level || 1
               return (
-                <ReaderPack level={level} topic={opts.topic || 'All'} mcq={opts.mcq || 'detail'} prefs={prefs} cards={cards} onDone={(score, total) => { alert(`Reader Pack Score: ${score}/${total}`); setView('pick') }} />
+                <ReaderPack level={level} topic={opts.topic || 'All'} mcq={opts.mcq || 'detail'} prefs={prefs} cards={cards} onWrongCard={(card) => {
+                  const key = deckPath
+                  const prev = srsMap[card.id] || initialState()
+                  const next = schedule(prev, 0)
+                  const updated = { ...srsMap, [card.id]: next }
+                  setSrsMap(updated)
+                  saveSrsMap(key, updated)
+                }} onDone={(score, total) => { alert(`Reader Pack Score: ${score}/${total}`); setView('pick') }} />
               )
             } catch {
               return <div>Error loading reader pack options</div>
@@ -183,6 +257,24 @@ export default function App() {
       {view === 'story' && storyPath && (
         <StoryViewer storyPath={storyPath} prefs={prefs} onClose={() => setView('study')} />
       )}
+
+      {showSummary && (
+        <div style={{ position: 'fixed', inset: 0, background: 'rgba(0,0,0,0.3)', display: 'grid', placeItems: 'center' }}>
+          <div style={{ background: '#fff', padding: 16, borderRadius: 8, minWidth: 320 }}>
+            <div style={{ fontWeight: 600, marginBottom: 8 }}>Session Summary</div>
+            <div>Correct: {sessionStats.correct}</div>
+            <div>Wrong: {sessionStats.wrong}</div>
+            <div>Due now: {dueCount}</div>
+            <div>New remaining: {newCount}</div>
+            <div style={{ marginTop: 12, display: 'flex', gap: 8 }}>
+              <button onClick={() => { setSessionStats({ correct: 0, wrong: 0 }); setShowSummary(false) }}>Close</button>
+              <button onClick={() => { setView('pick'); setShowSummary(false) }}>Return to menu</button>
+            </div>
+          </div>
+        </div>
+      )}
+
+      {showAbout && <About onClose={() => setShowAbout(false)} />}
     </div>
   )
 }
