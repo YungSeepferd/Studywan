@@ -145,3 +145,10 @@ web-copy-stories:
 web-copy-decks:
 	@mkdir -p apps/web/public/data/decks
 	@cp -f data/decks/manifest.json apps/web/public/data/decks/manifest.json
+	@mkdir -p apps/web/public/data/band-A
+	@cp -f data/seed/band-A/level1.json apps/web/public/data/band-A/level1.json || true
+	@cp -f data/seed/band-A/level2.json apps/web/public/data/band-A/level2.json || true
+	@mkdir -p apps/web/public/data/band-A/level1_topics
+	@cp -f data/seed/band-A/level1_topics/*.json apps/web/public/data/band-A/level1_topics/ 2>/dev/null || true
+	@mkdir -p apps/web/public/data/band-A/a1_program
+	@cp -f data/seed/band-A/a1_program/*.json apps/web/public/data/band-A/a1_program/ 2>/dev/null || true
