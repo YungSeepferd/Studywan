@@ -1,4 +1,33 @@
 
-
-#Ignore vscode AI rules
+# Ignore GitHub instructions helpers
 .github/instructions/codacy.instructions.md
+
+# Go / general binaries
+*.exe
+*.exe~
+*.dll
+*.so
+*.dylib
+
+# Test binaries
+*.test
+
+# Coverage and test artifacts
+*.out
+coverage.*
+*.coverprofile
+profile.cov
+
+# Dependencies (uncomment to vendor)
+# vendor/
+
+# Go workspace files
+go.work
+go.work.sum
+
+# Environment files
+.env
+
+# Editor/IDE (uncomment if desired)
+# .idea/
+# .vscode/

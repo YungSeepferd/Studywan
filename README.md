@@ -1,5 +1,7 @@
 # StudyWan (學灣)
 
+Language learning app for TOCFL 1–2 vocabulary.
+
 A comprehensive Traditional Mandarin learning platform designed specifically for German speakers, with a focus on TOCFL (Test of Chinese as a Foreign Language) preparation and Taiwanese dialect integration.
 
 ## Project Vision
@@ -45,4 +47,4 @@ We welcome contributions! See `CONTRIBUTING.md` for guidelines.
 [License details to be determined]
 
 ---
-*StudyWan (學灣) combines "study" with "wan" (灣) from Taiwan (台灣), representing our focus on Traditional Chinese and Taiwanese dialect learning.*
+StudyWan (學灣) combines "study" with "wan" (灣) from Taiwan (台灣), representing our focus on Traditional Chinese and Taiwanese dialect learning.
