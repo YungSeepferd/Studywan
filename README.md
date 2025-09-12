@@ -58,10 +58,13 @@ Detailed setup and contribution instructions will be provided as the project dev
 - QA plan: `docs/tocfl-coach/QA_TESTPLAN.md`
 - Competitor research: `docs/tocfl-coach/RESEARCH_COMPETITORS.md`
 - Ingestion guide: `docs/tocfl-coach/INGESTION.md`
+- Dictionary merge (optional): `docs/tocfl-coach/DICT_MERGE.md`
 - Official links (SC‑TOP/CCCC): `docs/tocfl-coach/OFFICIAL_LINKS.md`
 - Card schema (guide): `docs/tocfl-coach/CARDS_SCHEMA.md`
 - Card schema (JSON): `data/schema/cards.schema.json`
+- Story schema (JSON): `data/schema/story.schema.json`
 - Level splits (Novice/A1 topics): `docs/tocfl-coach/LEVEL_SPLITS.md`
+- Stories & culture: `docs/tocfl-coach/STORIES_AND_CULTURE.md`
 - Engineering references (official docs): `docs/ENGINEERING_REFERENCES.md`
 - Codex CLI setup: `docs/CODEX_SETUP.md`
 - Regional resources (Germany): `docs/REGIONAL_RESOURCES_DE.md`

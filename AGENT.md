@@ -1,7 +1,7 @@
 # Agent Operating Guide (StudyWan)
 
 ## Purpose
-This repository contains planning docs and ingestion tools for building a Traditional-first, TOCFL-aligned app (Bands A–B). This guide explains how an agent should operate on this repo to reach the MVP.
+This repository contains planning docs and ingestion tools for building a Traditional-first, TOCFL-aligned app (Bands A–B). This guide explains how an agent should operate on this repo to reach the MVP. Keep in mind that we will scale to C level traditional mandarin at some point.
 
 ## Ground Rules
 - Always read the documentation index before making changes:

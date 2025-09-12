@@ -98,6 +98,14 @@ pack-c1:
 a1-program:
 	@node tools/ingest/group_topics.js --in data/seed/band-A/level1.json --config data/programs/a1_topics_program.json --outdir data/seed/band-A/a1_program
 
+.PHONY: merge-a1-cedict
+merge-a1-cedict:
+	@node tools/ingest/merge_dicts.js --in data/seed/band-A/level1.json --cedict data/dicts/cedict_ts.u8 --out data/seed/band-A/level1_enriched.json
+
+.PHONY: merge-a1-cedict-moe
+merge-a1-cedict-moe:
+	@node tools/ingest/merge_dicts.js --in data/seed/band-A/level1.json --cedict data/dicts/cedict_ts.u8 --moe-tsv data/dicts/moe.tsv --moe-word word --moe-zhuyin zhuyin --moe-def def --out data/seed/band-A/level1_enriched.json
+
 # Minimal validation for decks (schema-lite)
 .PHONY: validate-seed
 validate-seed:
@@ -123,3 +131,12 @@ web-copy-a1-topics:
 web-copy-a1-program:
 	@mkdir -p apps/web/public/data/band-A/a1_program
 	@cp -f data/seed/band-A/a1_program/*.json apps/web/public/data/band-A/a1_program/
+
+.PHONY: story-precompute-sample
+story-precompute-sample:
+	@node tools/stories/build_story.js --in data/stories/story-a2-transport-001.json --out apps/web/public/stories/story-a2-transport-001.json || echo 'opencc-js not installed; wrote raw copy'
+	@mkdir -p apps/web/public/stories && cp -f data/stories/manifest.json apps/web/public/stories/manifest.json
+
+.PHONY: web-copy-stories
+web-copy-stories:
+	@node tools/stories/build_story.js --manifest data/stories/manifest.json --indir data/stories --outdir apps/web/public/stories || (echo 'opencc-js not installed; copying as-is'; mkdir -p apps/web/public/stories; cp -f data/stories/*.json apps/web/public/stories/; cp -f data/stories/manifest.json apps/web/public/stories/manifest.json)

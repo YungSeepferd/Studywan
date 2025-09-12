@@ -34,6 +34,19 @@
         "voice": { "type": "string" },
         "license": { "type": "string" }
       }
-    }
+    },
+    "components": { "type": "array", "items": { "type": "string" } },
+    "variants": { "type": "array", "items": { "type": "string" } },
+    "culturalNote": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "title": { "type": "string" },
+        "note": { "type": "string" },
+        "sourceUrls": { "type": "array", "items": { "type": "string" } }
+      }
+    },
+    "etymology": { "type": "string" },
+    "storyIds": { "type": "array", "items": { "type": "string" } }
   }
 }

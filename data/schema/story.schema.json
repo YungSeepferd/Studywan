@@ -1,0 +1,21 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "https://studywan.local/schemas/story.schema.json",
+  "title": "StudyWan Story",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["id", "band", "level", "title", "body", "vocabRefs"],
+  "properties": {
+    "id": { "type": "string" },
+    "band": { "type": "string", "enum": ["A", "B", "C"] },
+    "level": { "type": "integer", "minimum": 0, "maximum": 6 },
+    "bandLabel": { "type": "string" },
+    "title": { "type": "string" },
+    "body": { "type": "string" },
+    "bodySimp": { "type": "string" },
+    "vocabRefs": { "type": "array", "items": { "type": "string" } },
+    "audioUrl": { "type": "string" },
+    "cultureRefs": { "type": "array", "items": { "type": "string" } }
+  }
+}
+

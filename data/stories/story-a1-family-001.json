@@ -1,0 +1,12 @@
+{
+  "id": "story-a1-family-001",
+  "band": "A",
+  "level": 1,
+  "bandLabel": "A1",
+  "title": "看爺爺奶奶",
+  "body": "周末我去看爺爺、奶奶。他們問我在學校學什麼，我說學中文，常常寫字、看書。",
+  "vocabRefs": ["A1-0002", "A1-0003", "A1-0005"],
+  "cultureRefs": ["https://www.moc.gov.tw/en/"],
+  "audioUrl": "/audio/zh-TW/story-a1-family-001.mp3"
+}
+

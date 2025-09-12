@@ -1,0 +1,12 @@
+{
+  "id": "story-a2-family-002",
+  "band": "A",
+  "level": 2,
+  "bandLabel": "A2",
+  "title": "家庭聚餐",
+  "body": "週日晚上全家一起吃飯。爺爺喜歡喝湯，奶奶喜歡吃麵。大家聊聊工作和學校的事。",
+  "vocabRefs": ["A1-0002", "A1-0003", "A1-0007"],
+  "cultureRefs": ["https://www.moc.gov.tw/en/"],
+  "audioUrl": "/audio/zh-TW/story-a2-family-002.mp3"
+}
+

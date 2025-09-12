@@ -1,0 +1,16 @@
+{
+  "id": "story-a2-transport-001",
+  "band": "A",
+  "level": 2,
+  "bandLabel": "A2",
+  "title": "趕車",
+  "body": "我到捷運站時只剩一分鐘，還好計程車司機超給力！",
+  "bodySimp": "我到地铁站时只剩一分钟，还好出租车司机超给力！",
+  "vocabRefs": ["A1-0010"],
+  "cultureRefs": [
+    "https://dict.idioms.moe.edu.tw/",
+    "https://www.moc.gov.tw/en/"
+  ],
+  "audioUrl": "/audio/zh-TW/story-a2-transport-001.mp3"
+}
+

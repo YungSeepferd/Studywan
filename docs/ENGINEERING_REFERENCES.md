@@ -46,3 +46,28 @@ Curated links to official documentation for the tools and standards used in this
 
 ## Agentic Coding
 - Codex CLI (open-source agent interface): https://github.com/openai/codex
+
+## External Datasets & Tools
+
+| Resource | Why it matters | Links |
+|---|---|---|
+| SC‑TOP official vocab lists (8,000 words) | Canonical band/level‑tagged Traditional lists from the test creators; ensure alignment with Bands A–C | Downloads: https://tocfl.edu.tw/tocfl/index.php/exam/download |
+| TOCFL 14,425 vocab list (community) | Extended list merging SC‑TOP and NAER; useful for coverage checks beyond 8K | Repo: https://github.com/nutchanonj/TOCFL_14425_vocab_list |
+| CC‑CEDICT (MDBG) | Open Chinese‑English dictionary (Traditional/Simplified + Pinyin); fallback for glosses/definitions | Info/Downloads: https://www.mdbg.net/chinese/dictionary?page=cc-cedict |
+| MOE (Taiwan) dictionaries | Authoritative Traditional definitions and Zhuyin for Taiwan users; check licensing before bundling | Portal: https://dict.revised.moe.edu.tw/ |
+| Make Me a Hanzi | Character data: strokes (SVG), decomposition, radicals; great for component view and handwriting practice | Repo: https://github.com/skishore/makemeahanzi |
+| Hanzi Writer (JS) | Stroke order animations + quizzes leveraging Make Me a Hanzi data | Site: https://hanziwriter.org • Repo: https://github.com/chanind/hanzi-writer |
+| pinyin‑zhuyin (npm) | Convert Pinyin with tone marks ↔ Zhuyin for the pronunciation toggle | npm: https://www.npmjs.com/package/pinyin-zhuyin |
+| OpenCC | High‑quality Traditional/Simplified conversion (incl. HK/TW variants); JS/WebAssembly and native bindings | Project: https://github.com/BYVoid/OpenCC • JS: https://github.com/nk2028/opencc-js |
+
+### How to use them
+- Data ingestion: import SC‑TOP 8K lists first for A–C; optionally merge 14,425 list for advanced content.
+- Dictionary/definitions: prefer MOE for TW definitions/Zhuyin; fall back to CC‑CEDICT for EN glosses.
+- Script conversion: use OpenCC for Trad↔Simp; use pinyin‑zhuyin for Pinyin↔Zhuyin.
+- Character features: use Make Me a Hanzi data + Hanzi Writer to show strokes and run writing quizzes.
+
+### Licensing notes
+- CC‑CEDICT: CC‑BY‑SA — attribute appropriately if redistributed.
+- Make Me a Hanzi: mixed licences per file — check COPYING in the repo.
+- OpenCC: Apache‑2.0.
+- MOE dictionaries: verify current terms before bundling content; prefer on‑device fetching or metadata where uncertain.
