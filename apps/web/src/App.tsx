@@ -5,6 +5,7 @@ import { DeckPicker } from './components/DeckPicker'
 import { StudyCard } from './components/StudyCard'
 import { QuickTest } from './components/QuickTest'
 import { ReaderPack } from './components/ReaderPack'
+import { ReaderPackPicker } from './components/ReaderPackPicker'
 import { StoryViewer } from './components/StoryViewer'
 import { initialState, isDue, schedule, type Grade } from './lib/srs'
 
@@ -122,11 +123,11 @@ export default function App() {
             <button onClick={() => setView('quicktest')} disabled={!cards.length}>Start Quick Test</button>
             <span style={{ color: '#666' }}>Tip: pick a deck first to populate Quick Test.</span>
           </div>
-          <div style={{ display: 'flex', gap: 8, alignItems: 'center' }}>
-            <label>Reader Pack (A1/A2):</label>
-            <button onClick={() => setView('readerpack')} disabled={!cards.length}>Start A1 Pack</button>
-            <span style={{ color: '#666' }}>Picks a few A1/A2 micro-stories with MCQs.</span>
-          </div>
+          <ReaderPackPicker onStart={(opts) => {
+            // Store opts in URL/hash or state; here, store in local state via sessionStorage
+            sessionStorage.setItem('readerpack_opts', JSON.stringify(opts))
+            setView('readerpack')
+          }} />
         </div>
       )}
       {view === 'study' && current && (
@@ -161,8 +162,18 @@ export default function App() {
 
       {view === 'readerpack' && (
         <div style={{ display: 'grid', gap: 16 }}>
-          <ReaderPack level={1} prefs={prefs} cards={cards} onDone={(score, total) => { alert(`Reader Pack (A1) Score: ${score}/${total}`); setView('pick') }} />
-          <ReaderPack level={2} prefs={prefs} cards={cards} onDone={(score, total) => { alert(`Reader Pack (A2) Score: ${score}/${total}`); setView('pick') }} />
+          {(() => {
+            try {
+              const raw = sessionStorage.getItem('readerpack_opts') || '{}'
+              const opts = JSON.parse(raw) as { level?: 1|2; topic?: string|'All'; mcq?: 'detail'|'gist' }
+              const level = opts.level || 1
+              return (
+                <ReaderPack level={level} topic={opts.topic || 'All'} mcq={opts.mcq || 'detail'} prefs={prefs} cards={cards} onDone={(score, total) => { alert(`Reader Pack Score: ${score}/${total}`); setView('pick') }} />
+              )
+            } catch {
+              return <div>Error loading reader pack options</div>
+            }
+          })()}
           <div>
             <button onClick={() => setView('pick')}>Back</button>
           </div>

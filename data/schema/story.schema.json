@@ -15,7 +15,7 @@
     "bodySimp": { "type": "string" },
     "vocabRefs": { "type": "array", "items": { "type": "string" } },
     "audioUrl": { "type": "string" },
-    "cultureRefs": { "type": "array", "items": { "type": "string" } }
+    "cultureRefs": { "type": "array", "items": { "type": "string" } },
+    "topic": { "type": "string" }
   }
 }
-

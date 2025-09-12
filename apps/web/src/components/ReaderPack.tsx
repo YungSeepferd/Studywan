@@ -18,6 +18,8 @@ export function ReaderPack(props: {
   prefs: Prefs
   cards: Card[]
   onDone: (score: number, total: number) => void
+  topic?: string | 'All'
+  mcq?: 'detail' | 'gist'
 }) {
   const [list, setList] = useState<StoryMeta[]>([])
   const [stories, setStories] = useState<Story[]>([])
@@ -28,7 +30,8 @@ export function ReaderPack(props: {
   useEffect(() => {
     const url = new URL('stories/manifest.json', (import.meta as any).env.BASE_URL).toString()
     fetch(url).then(r => r.json()).then((items: StoryMeta[]) => {
-      const filtered = items.filter(it => it.band === 'A' && it.level === props.level)
+      let filtered = items.filter(it => it.band === 'A' && it.level === props.level)
+      if (props.topic && props.topic !== 'All') filtered = filtered.filter(it => (it.topic || 'misc') === props.topic)
       setList(filtered)
     }).catch(() => setList([]))
   }, [props.level])
@@ -64,31 +67,48 @@ export function ReaderPack(props: {
     a.play().catch(() => {/* ignore */})
   }
 
-  // Build 3-item MCQ: Which of these appears in the story?
+  // MCQ options
   const options = useMemo(() => {
     if (!story) return [] as string[]
+    const type = props.mcq || 'detail'
+    if (type === 'gist') {
+      // Pick topic gist MCQ
+      const correct = (list.find(m => m.id === story.id)?.topic) || 'misc'
+      const distractTopics = Array.from(new Set(list.map(m => m.topic || 'misc'))).filter(t => t !== correct)
+      const opts = pickN([correct, ...distractTopics], 3)
+      return opts
+    }
+    // detail: Which word appears in the story?
     const cardMap = new Map(props.cards.map(c => [c.id, c]))
     const refs = (story.vocabRefs || []).map(id => cardMap.get(id)).filter(Boolean) as Card[]
-    const correct = refs.length ? refs[0]! : null
+    const correctCard = refs.length ? refs[0]! : null
     const distractors = pickN(props.cards.filter(c => !story.vocabRefs?.includes(c.id)), 10)
     const words = [] as string[]
-    if (correct) words.push(props.prefs.scriptMode === 'trad' ? correct.trad : (correct.simp || correct.trad))
+    if (correctCard) words.push(props.prefs.scriptMode === 'trad' ? correctCard.trad : (correctCard.simp || correctCard.trad))
     for (const d of distractors) {
       if (words.length >= 3) break
       words.push(props.prefs.scriptMode === 'trad' ? d.trad : (d.simp || d.trad))
     }
     return pickN(words, Math.min(3, words.length))
-  }, [story, props.cards, props.prefs.scriptMode])
+  }, [story, props.cards, props.prefs.scriptMode, props.mcq, list])
 
   function answer(opt: string) {
-    const correctWord = (() => {
-      if (!story) return ''
-      const cardMap = new Map(props.cards.map(c => [c.id, c]))
-      const refs = (story.vocabRefs || []).map(id => cardMap.get(id)).filter(Boolean) as Card[]
-      const correct = refs.length ? refs[0]! : null
-      return correct ? (props.prefs.scriptMode === 'trad' ? correct.trad : (correct.simp || correct.trad)) : ''
-    })()
-    if (opt === correctWord) setScore(s => s + 1)
+    const type = props.mcq || 'detail'
+    let isCorrect = false
+    if (type === 'gist') {
+      const correct = (list.find(m => m.id === story?.id)?.topic) || 'misc'
+      isCorrect = opt === correct
+    } else {
+      const correctWord = (() => {
+        if (!story) return ''
+        const cardMap = new Map(props.cards.map(c => [c.id, c]))
+        const refs = (story.vocabRefs || []).map(id => cardMap.get(id)).filter(Boolean) as Card[]
+        const correct = refs.length ? refs[0]! : null
+        return correct ? (props.prefs.scriptMode === 'trad' ? correct.trad : (correct.simp || correct.trad)) : ''
+      })()
+      isCorrect = opt === correctWord
+    }
+    if (isCorrect) setScore(s => s + 1)
     if (i + 1 >= stories.length) props.onDone(score + (opt === correctWord ? 1 : 0), stories.length)
     else { setI(i + 1); setPlayed(false) }
   }
@@ -106,7 +126,9 @@ export function ReaderPack(props: {
         </div>
       </div>
       <div>
-        <div style={{ marginBottom: 6 }}>哪一個詞出現在這個故事裡？(Which appears in the story?)</div>
+        <div style={{ marginBottom: 6 }}>
+          { (props.mcq || 'detail') === 'detail' ? '哪一個詞出現在這個故事裡？(Which appears in the story?)' : '這個故事主要是關於哪個主題？(What is the main topic?)' }
+        </div>
         <div style={{ display: 'grid', gap: 8 }}>
           {options.map((opt, idx) => (
             <button key={idx} onClick={() => answer(opt)}>{opt}</button>
@@ -116,4 +138,3 @@ export function ReaderPack(props: {
     </div>
   )
 }
-
