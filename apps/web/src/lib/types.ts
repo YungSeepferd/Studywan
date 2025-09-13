@@ -14,6 +14,8 @@ export type Card = {
 export type Prefs = {
   scriptMode: 'trad' | 'simp'
   romanization: 'zhuyin' | 'pinyin'
+  toneColors?: boolean
+  highContrast?: boolean
 }
 
 export type SrsState = {

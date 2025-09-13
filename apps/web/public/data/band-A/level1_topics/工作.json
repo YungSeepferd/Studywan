@@ -1,0 +1,178 @@
+[
+  {
+    "id": "A1-0044",
+    "trad": "醫院",
+    "pinyin": "yīyuàn",
+    "pos": "N",
+    "gloss_en": "",
+    "band": "A",
+    "level": 1,
+    "topic": "工作",
+    "tags": []
+  },
+  {
+    "id": "A1-0045",
+    "trad": "公司",
+    "pinyin": "gōngsī",
+    "pos": "N",
+    "gloss_en": "",
+    "band": "A",
+    "level": 1,
+    "topic": "工作",
+    "tags": []
+  },
+  {
+    "id": "A1-0046",
+    "trad": "辦公室",
+    "pinyin": "bàngōngshì",
+    "pos": "N",
+    "gloss_en": "",
+    "band": "A",
+    "level": 1,
+    "topic": "工作",
+    "tags": []
+  },
+  {
+    "id": "A1-0047",
+    "trad": "工人",
+    "pinyin": "gōngrén",
+    "pos": "N",
+    "gloss_en": "",
+    "band": "A",
+    "level": 1,
+    "topic": "工作",
+    "tags": []
+  },
+  {
+    "id": "A1-0048",
+    "trad": "護士",
+    "pinyin": "hùshì",
+    "pos": "N",
+    "gloss_en": "",
+    "band": "A",
+    "level": 1,
+    "topic": "工作",
+    "tags": []
+  },
+  {
+    "id": "A1-0049",
+    "trad": "司機",
+    "pinyin": "sījī",
+    "pos": "N",
+    "gloss_en": "",
+    "band": "A",
+    "level": 1,
+    "topic": "工作",
+    "tags": []
+  },
+  {
+    "id": "A1-0050",
+    "trad": "老闆/老板",
+    "pinyin": "lăobăn",
+    "pos": "N",
+    "gloss_en": "",
+    "band": "A",
+    "level": 1,
+    "topic": "工作",
+    "tags": []
+  },
+  {
+    "id": "A1-0051",
+    "trad": "上班",
+    "pinyin": "shàngbān",
+    "pos": "V-sep",
+    "gloss_en": "",
+    "band": "A",
+    "level": 1,
+    "topic": "工作",
+    "tags": []
+  },
+  {
+    "id": "A1-0052",
+    "trad": "下班",
+    "pinyin": "xiàbān",
+    "pos": "V-sep",
+    "gloss_en": "",
+    "band": "A",
+    "level": 1,
+    "topic": "工作",
+    "tags": []
+  },
+  {
+    "id": "A1-0053",
+    "trad": "能力",
+    "pinyin": "nénglì",
+    "pos": "N",
+    "gloss_en": "",
+    "band": "A",
+    "level": 1,
+    "topic": "工作",
+    "tags": []
+  },
+  {
+    "id": "A1-0054",
+    "trad": "努力",
+    "pinyin": "nǔlì",
+    "pos": "Vs",
+    "gloss_en": "",
+    "band": "A",
+    "level": 1,
+    "topic": "工作",
+    "tags": []
+  },
+  {
+    "id": "A1-0055",
+    "trad": "準備",
+    "pinyin": "zhǔnbèi",
+    "pos": "V",
+    "gloss_en": "",
+    "band": "A",
+    "level": 1,
+    "topic": "工作",
+    "tags": []
+  },
+  {
+    "id": "A1-0056",
+    "trad": "打算",
+    "pinyin": "dăsuàn",
+    "pos": "Vaux",
+    "gloss_en": "",
+    "band": "A",
+    "level": 1,
+    "topic": "工作",
+    "tags": []
+  },
+  {
+    "id": "A1-0057",
+    "trad": "計畫/計劃",
+    "pinyin": "jìhuà",
+    "pos": "V / N",
+    "gloss_en": "",
+    "band": "A",
+    "level": 1,
+    "topic": "工作",
+    "tags": []
+  },
+  {
+    "id": "A1-0058",
+    "trad": "機會",
+    "pinyin": "jīhuì",
+    "pos": "N",
+    "gloss_en": "",
+    "band": "A",
+    "level": 1,
+    "topic": "工作",
+    "tags": []
+  },
+  {
+    "id": "A1-0059",
+    "trad": "如果",
+    "pinyin": "rúguŏ",
+    "pos": "Conj",
+    "gloss_en": "",
+    "band": "A",
+    "level": 1,
+    "topic": "工作",
+    "tags": []
+  }
+]

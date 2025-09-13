@@ -1,0 +1,20 @@
+{
+  "id": "story-a1-school-001",
+  "band": "A",
+  "level": 1,
+  "bandLabel": "A1",
+  "title": "老師點名",
+  "body": "老師早上點名，學生一個一個回答。下課後，我跟老師說再見，去買書和水。",
+  "vocabRefs": [
+    "A1-0004",
+    "A1-0005",
+    "A1-0008",
+    "A1-0006"
+  ],
+  "topic": "school",
+  "cultureRefs": [
+    "https://lmit.edu.tw/lc/tocfl"
+  ],
+  "audioUrl": "/audio/zh-TW/story-a1-school-001.mp3",
+  "bodySimp": "老師早上點名，學生一個一個回答。下課後，我跟老師說再見，去買書和水。"
+}

@@ -1,0 +1,90 @@
+[
+  {
+    "id": "A1-0145",
+    "trad": "洗",
+    "pinyin": "xĭ",
+    "pos": "V",
+    "gloss_en": "",
+    "band": "A",
+    "level": 1,
+    "topic": "日常生活",
+    "tags": []
+  },
+  {
+    "id": "A1-0146",
+    "trad": "洗澡",
+    "pinyin": "xĭzăo",
+    "pos": "V-sep",
+    "gloss_en": "",
+    "band": "A",
+    "level": 1,
+    "topic": "日常生活",
+    "tags": []
+  },
+  {
+    "id": "A1-0147",
+    "trad": "有空/有空兒",
+    "pinyin": "yŏukòng/yŏukòngr",
+    "pos": "Vs",
+    "gloss_en": "",
+    "band": "A",
+    "level": 1,
+    "topic": "日常生活",
+    "tags": []
+  },
+  {
+    "id": "A1-0148",
+    "trad": "發現",
+    "pinyin": "fāxiàn",
+    "pos": "Vp / N",
+    "gloss_en": "",
+    "band": "A",
+    "level": 1,
+    "topic": "日常生活",
+    "tags": []
+  },
+  {
+    "id": "A1-0149",
+    "trad": "餐",
+    "pinyin": "cān",
+    "pos": "N",
+    "gloss_en": "",
+    "band": "A",
+    "level": 1,
+    "topic": "日常生活",
+    "tags": []
+  },
+  {
+    "id": "A1-0150",
+    "trad": "搬",
+    "pinyin": "bān",
+    "pos": "V",
+    "gloss_en": "",
+    "band": "A",
+    "level": 1,
+    "topic": "日常生活",
+    "tags": []
+  },
+  {
+    "id": "A1-0151",
+    "trad": "掛",
+    "pinyin": "guà",
+    "pos": "V",
+    "gloss_en": "",
+    "band": "A",
+    "level": 1,
+    "topic": "日常生活",
+    "tags": []
+  },
+  {
+    "id": "A1-0152",
+    "trad": "脫",
+    "pinyin": "tuō",
+    "pos": "V",
+    "gloss_en": "",
+    "band": "A",
+    "level": 1,
+    "topic": "日常生活",
+    "tags": []
+  }
+]

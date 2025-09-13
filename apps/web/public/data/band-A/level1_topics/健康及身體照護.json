@@ -1,0 +1,112 @@
+[
+  {
+    "id": "A1-0251",
+    "trad": "病人",
+    "pinyin": "bìngrén",
+    "pos": "N",
+    "gloss_en": "",
+    "band": "A",
+    "level": 1,
+    "topic": "健康及身體照護",
+    "tags": []
+  },
+  {
+    "id": "A1-0252",
+    "trad": "頭髮/髮",
+    "pinyin": "tóufă/fă",
+    "pos": "N",
+    "gloss_en": "",
+    "band": "A",
+    "level": 1,
+    "topic": "健康及身體照護",
+    "tags": []
+  },
+  {
+    "id": "A1-0253",
+    "trad": "手指(頭)/指頭",
+    "pinyin": "shŏuzhĭ(tou)/zhĭtou",
+    "pos": "N",
+    "gloss_en": "",
+    "band": "A",
+    "level": 1,
+    "topic": "健康及身體照護",
+    "tags": []
+  },
+  {
+    "id": "A1-0254",
+    "trad": "肚(子)",
+    "pinyin": "dù(zi)",
+    "pos": "N",
+    "gloss_en": "",
+    "band": "A",
+    "level": 1,
+    "topic": "健康及身體照護",
+    "tags": []
+  },
+  {
+    "id": "A1-0255",
+    "trad": "臉",
+    "pinyin": "liăn",
+    "pos": "N",
+    "gloss_en": "",
+    "band": "A",
+    "level": 1,
+    "topic": "健康及身體照護",
+    "tags": []
+  },
+  {
+    "id": "A1-0256",
+    "trad": "心",
+    "pinyin": "xīn",
+    "pos": "N",
+    "gloss_en": "",
+    "band": "A",
+    "level": 1,
+    "topic": "健康及身體照護",
+    "tags": []
+  },
+  {
+    "id": "A1-0257",
+    "trad": "健康",
+    "pinyin": "jiànkāng",
+    "pos": "Vs / N",
+    "gloss_en": "",
+    "band": "A",
+    "level": 1,
+    "topic": "健康及身體照護",
+    "tags": []
+  },
+  {
+    "id": "A1-0258",
+    "trad": "渴",
+    "pinyin": "kě",
+    "pos": "Vs",
+    "gloss_en": "",
+    "band": "A",
+    "level": 1,
+    "topic": "健康及身體照護",
+    "tags": []
+  },
+  {
+    "id": "A1-0259",
+    "trad": "舒服(˙ㄈㄨ)",
+    "pinyin": "shūfu",
+    "pos": "Vs",
+    "gloss_en": "",
+    "band": "A",
+    "level": 1,
+    "topic": "健康及身體照護",
+    "tags": []
+  },
+  {
+    "id": "A1-0260",
+    "trad": "眼鏡",
+    "pinyin": "yănjìng",
+    "pos": "N",
+    "gloss_en": "",
+    "band": "A",
+    "level": 1,
+    "topic": "健康及身體照護",
+    "tags": []
+  }
+]

@@ -1,4 +1,5 @@
 import { useEffect, useState } from 'react'
+import { withBase } from '../lib/url'
 
 type StoryMeta = { id: string; title: string; band: 'A'|'B'|'C'; level: number; topic?: string; path: string }
 
@@ -11,7 +12,7 @@ export function ReaderPackPicker(props: {
   const [mcq, setMcq] = useState<'detail'|'gist'>('detail')
 
   useEffect(() => {
-    const url = new URL('stories/manifest.json', (import.meta as any).env.BASE_URL).toString()
+    const url = withBase('stories/manifest.json')
     fetch(url).then(r => r.json()).then(setManifest).catch(() => setManifest([]))
   }, [])
 
@@ -41,4 +42,3 @@ export function ReaderPackPicker(props: {
     </div>
   )
 }
-

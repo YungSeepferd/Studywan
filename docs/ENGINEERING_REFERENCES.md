@@ -47,6 +47,13 @@ Curated links to official documentation for the tools and standards used in this
 ## Agentic Coding
 - Codex CLI (open-source agent interface): https://github.com/openai/codex
 
+## UI Libraries & Interactions
+- Radix UI Primitives: https://www.radix-ui.com/primitives/docs/overview/getting-started
+- Floating UI (React): https://floating-ui.com/docs/react
+- Motion (Framer Motion successor): https://motion.dev/
+- @use-gesture/react: https://use-gesture.netlify.app/
+- cmdk (Command palette): https://github.com/pacocoursey/cmdk
+
 ## External Datasets & Tools
 
 | Resource | Why it matters | Links |

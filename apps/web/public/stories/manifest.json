@@ -1,0 +1,12 @@
+[
+  { "id": "story-a1-greetings-001", "title": "夜市問好",   "band": "A", "level": 1, "topic": "greetings",  "path": "stories/story-a1-greetings-001.json",  "vocabRefs": ["A1-0001", "A1-0006", "A1-0007"] },
+  { "id": "story-a1-school-001",    "title": "老師點名",   "band": "A", "level": 1, "topic": "school",    "path": "stories/story-a1-school-001.json",     "vocabRefs": ["A1-0004", "A1-0005", "A1-0008", "A1-0006"] },
+  { "id": "story-a1-shopping-001",  "title": "買水",       "band": "A", "level": 1, "topic": "shopping",  "path": "stories/story-a1-shopping-001.json",   "vocabRefs": ["A1-0001", "A1-0006", "A1-0008"] },
+  { "id": "story-a1-family-001",    "title": "看爺爺奶奶", "band": "A", "level": 1, "topic": "family",    "path": "stories/story-a1-family-001.json",     "vocabRefs": ["A1-0002", "A1-0003", "A1-0005"] },
+  { "id": "story-a1-transport-001", "title": "坐車去夜市", "band": "A", "level": 1, "topic": "transport", "path": "stories/story-a1-transport-001.json",  "vocabRefs": ["A1-0009", "A1-0007", "A1-0006"] },
+  { "id": "story-a2-transport-001", "title": "趕車",       "band": "A", "level": 2, "topic": "transport", "path": "stories/story-a2-transport-001.json",  "vocabRefs": ["A1-0010"] },
+  { "id": "story-a2-transport-002", "title": "趕上車",     "band": "A", "level": 2, "topic": "transport", "path": "stories/story-a2-transport-002.json",  "vocabRefs": ["A1-0010", "A1-0009"] },
+  { "id": "story-a2-school-002",    "title": "新同學",     "band": "A", "level": 2, "topic": "school",    "path": "stories/story-a2-school-002.json",     "vocabRefs": ["A1-0004", "A1-0005", "A1-0001"] },
+  { "id": "story-a2-shopping-002",  "title": "買便當",     "band": "A", "level": 2, "topic": "shopping",  "path": "stories/story-a2-shopping-002.json",   "vocabRefs": ["A1-0006", "A1-0008"] },
+  { "id": "story-a2-family-002",    "title": "家庭聚餐",   "band": "A", "level": 2, "topic": "family",    "path": "stories/story-a2-family-002.json",     "vocabRefs": ["A1-0002", "A1-0003", "A1-0007"] }
+]

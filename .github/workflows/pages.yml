@@ -1,8 +1,6 @@
-name: Deploy to GitHub Pages
+name: Deploy to GitHub Pages (Pages env, manual)
 
 on:
-  push:
-    branches: [ main, master ]
   workflow_dispatch:
 
 permissions:
@@ -32,6 +30,11 @@ jobs:
         working-directory: apps/web
         run: npm ci
 
+      - name: Prepare static content (decks, stories)
+        run: |
+          make web-copy-decks
+          make web-copy-stories
+
       - name: Build
         working-directory: apps/web
         env:
@@ -53,4 +56,3 @@ jobs:
       - name: Deploy to GitHub Pages
         id: deployment
         uses: actions/deploy-pages@v4
-

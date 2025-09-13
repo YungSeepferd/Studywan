@@ -1,0 +1,19 @@
+{
+  "id": "story-a1-shopping-001",
+  "band": "A",
+  "level": 1,
+  "bandLabel": "A1",
+  "title": "買水",
+  "body": "我走進便利商店，跟店員說你好，請給我一瓶水。我付了錢，就走到公園喝水。",
+  "vocabRefs": [
+    "A1-0001",
+    "A1-0006",
+    "A1-0008"
+  ],
+  "topic": "shopping",
+  "cultureRefs": [
+    "https://www.moc.gov.tw/en/"
+  ],
+  "audioUrl": "/audio/zh-TW/story-a1-shopping-001.mp3",
+  "bodySimp": "我走進便利商店，跟店員說你好，請給我一瓶水。我付了錢，就走到公園喝水。"
+}

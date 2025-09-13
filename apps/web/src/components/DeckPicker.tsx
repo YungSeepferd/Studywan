@@ -1,14 +1,14 @@
 import { useEffect, useState } from 'react'
+import { withBase } from '../lib/url'
 
 type DeckMeta = { id: string; title: string; band: 'A'|'B'|'C'; level: number; path: string; topic?: string }
 
 export function DeckPicker(props: { onPick: (deckPath: string) => void }) {
   const [custom, setCustom] = useState('')
   const [options, setOptions] = useState<DeckMeta[] | null>(null)
-  const [error, setError] = useState<string | null>(null)
 
   useEffect(() => {
-    const url = new URL('data/decks/manifest.json', (import.meta as any).env.BASE_URL).toString()
+    const url = withBase('data/decks/manifest.json')
     fetch(url)
       .then(r => {
         if (!r.ok) throw new Error(`HTTP ${r.status}`)
@@ -49,7 +49,7 @@ export function DeckPicker(props: { onPick: (deckPath: string) => void }) {
       <div style={{ color: '#666', fontSize: 12 }}>
         Note: Ensure the file exists under apps/web/public/… or adjust vite base.
       </div>
-      {error && <div style={{ color: '#c00' }}>{error}</div>}
+      
     </div>
   )
 }

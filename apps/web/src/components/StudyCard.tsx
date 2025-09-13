@@ -1,7 +1,8 @@
 import type { Card, Prefs } from '../lib/types'
 import { getPronunciation } from '../lib/romanization'
 import { toSimp } from '../lib/script'
-import { useEffect, useMemo, useState } from 'react'
+import { useEffect, useState } from 'react'
+import { colorPinyin, colorZhuyin } from '../lib/tones'
 import { HanziStroke } from './HanziStroke'
 
 export function StudyCard(props: {
@@ -29,10 +30,22 @@ export function StudyCard(props: {
     return () => { cancelled = true }
   }, [card, prefs])
 
+  const toneColoredPron = (() => {
+    if (!prefs.toneColors) return pron
+    if (prefs.romanization === 'pinyin') return colorPinyin(pron, !!prefs.highContrast)
+    return colorZhuyin(pron, !!prefs.highContrast)
+  })()
+
   return (
     <div style={{ border: '1px solid #ddd', borderRadius: 8, padding: 24, maxWidth: 640 }}>
       <div style={{ fontSize: 64, lineHeight: 1.2, marginBottom: 12 }}>{hanzi}</div>
-      <div style={{ fontSize: 20, color: '#555', marginBottom: 12 }}>{pron}</div>
+      <div style={{ fontSize: 20, color: '#555', marginBottom: 12 }}>
+        {Array.isArray(toneColoredPron)
+          ? toneColoredPron.map((seg, idx) => typeof seg === 'string' ? seg : (
+              <span key={idx} style={{ color: seg.color }}>{seg.text}</span>
+            ))
+          : toneColoredPron}
+      </div>
       <div style={{ fontSize: 14, color: '#777' }}>
         <span>POS: {card.pos || '—'}</span>
         <span style={{ marginLeft: 12 }}>Topic: {card.topic || '—'}</span>

@@ -2,6 +2,9 @@ import { useEffect, useMemo, useState } from 'react'
 import type { Card, Prefs } from '../lib/types'
 import { highlightText, type Segment } from '../lib/highlight'
 import { getPronunciation } from '../lib/romanization'
+import { PopoverFloating } from './ui/PopoverFloating'
+import * as Tooltip from '@radix-ui/react-tooltip'
+import { withBase } from '../lib/url'
 
 type Story = {
   id: string
@@ -21,11 +24,11 @@ export function StoryViewer(props: { storyPath: string; prefs: Prefs; onClose: (
   const [played, setPlayed] = useState(false)
   const [err, setErr] = useState<string | null>(null)
   const script = props.prefs.scriptMode
-  const [selected, setSelected] = useState<string | null>(null)
+  const [openIdx, setOpenIdx] = useState<number | null>(null)
   const [selectedInfo, setSelectedInfo] = useState<{ text: string; pron: string; gloss?: string | undefined } | null>(null)
 
   useEffect(() => {
-    const url = new URL(props.storyPath, (import.meta as any).env.BASE_URL).toString()
+    const url = withBase(props.storyPath)
     fetch(url).then(r => r.json()).then(setStory).catch(() => setErr('Failed to load story'))
   }, [props.storyPath])
 
@@ -45,8 +48,7 @@ export function StoryViewer(props: { storyPath: string; prefs: Prefs; onClose: (
 
   function playOnce() {
     if (played || !story?.audioUrl) return
-    const url = new URL(story.audioUrl, (import.meta as any).env.BASE_URL).toString()
-    const a = new Audio(url)
+    const a = new Audio(withBase(story.audioUrl))
     a.addEventListener('ended', () => setPlayed(true), { once: true })
     a.play().catch(() => setErr('Audio failed to play'))
   }
@@ -60,36 +62,51 @@ export function StoryViewer(props: { storyPath: string; prefs: Prefs; onClose: (
         <button onClick={props.onClose}>Close</button>
       </div>
       <div style={{ whiteSpace: 'pre-wrap', marginTop: 12, fontSize: 18 }}>
-        {segs.map((s, idx) => s.highlight ? (
-          <span key={idx} style={{ background: '#fff3cd', cursor: 'pointer' }} onClick={async () => {
-            setSelected(s.text)
-            // find card and build info
-            const card = (props.cards || []).find(c => (script === 'trad' ? c.trad : (c.simp || c.trad)) === s.text)
-            const pron = card ? await getPronunciation(card, props.prefs) : ''
-            setSelectedInfo({ text: s.text, pron, gloss: card?.gloss_en })
-          }}>{s.text}</span>
-        ) : (
-          <span key={idx}>{s.text}</span>
-        ))}
+        {segs.map((s, idx) => {
+          if (!s.highlight) return <span key={idx}>{s.text}</span>
+          return (
+            <PopoverFloating
+              key={idx}
+              open={openIdx === idx}
+              onOpenChange={(o) => setOpenIdx(o ? idx : null)}
+              trigger={
+                <button
+                  onClick={async () => {
+                    const card = (props.cards || []).find(c => (script === 'trad' ? c.trad : (c.simp || c.trad)) === s.text)
+                    const pron = card ? await getPronunciation(card, props.prefs) : ''
+                    setSelectedInfo({ text: s.text, pron, gloss: card?.gloss_en })
+                    setOpenIdx(idx)
+                  }}
+                  style={{ background: 'transparent', border: 'none', padding: 0, margin: 0, cursor: 'pointer', backgroundColor: '#fff3cd' }}
+                  aria-haspopup="dialog"
+                  aria-expanded={openIdx === idx}
+                >
+                  {s.text}
+                </button>
+              }
+            >
+              <div>
+                <div><strong>{selectedInfo?.text}</strong> <span style={{ color: '#555' }}>{selectedInfo?.pron}</span></div>
+                {selectedInfo?.gloss && <div style={{ color: '#666', maxWidth: 280 }}>{selectedInfo.gloss}</div>}
+              </div>
+            </PopoverFloating>
+          )
+        })}
       </div>
       <div style={{ marginTop: 12, display: 'flex', gap: 8, alignItems: 'center' }}>
-        <button onClick={playOnce} disabled={played || !story.audioUrl}>{played ? 'Played' : 'Play once'}</button>
+        <Tooltip.Provider>
+          <Tooltip.Root>
+            <Tooltip.Trigger asChild>
+              <button onClick={playOnce} disabled={played || !story.audioUrl}>{played ? 'Played' : 'Play once'}</button>
+            </Tooltip.Trigger>
+            <Tooltip.Content side="top" sideOffset={4}>
+              <div style={{ background: '#111', color: '#fff', padding: '4px 8px', borderRadius: 4, fontSize: 12 }}>One play only — exam style</div>
+            </Tooltip.Content>
+          </Tooltip.Root>
+        </Tooltip.Provider>
         {!story.audioUrl && <span style={{ color: '#666', fontSize: 12 }}>(No audio)</span>}
       </div>
-      {selectedInfo && (
-        <div style={{ marginTop: 8, border: '1px solid #eee', padding: 8, borderRadius: 6, background: '#fafafa' }}>
-          <div><strong>{selectedInfo.text}</strong> <span style={{ color: '#555' }}>{selectedInfo.pron}</span></div>
-          {selectedInfo.gloss && <div style={{ color: '#666' }}>{selectedInfo.gloss}</div>}
-          <div style={{ marginTop: 6, fontSize: 12 }}>
-            Links: 
-            <a href={`https://dict.revised.moe.edu.tw/`} target="_blank" rel="noreferrer">MOE</a>
-            {' | '}
-            <a href={`https://dict.idioms.moe.edu.tw/`} target="_blank" rel="noreferrer">成語典</a>
-            {' | '}
-            <a href={`https://www.moc.gov.tw/en/`} target="_blank" rel="noreferrer">MOC</a>
-          </div>
-        </div>
-      )}
+      {/* Inline panel removed in favor of popovers; keep external links below if desired */}
       {story.cultureRefs?.length ? (
         <div style={{ marginTop: 12, color: '#666' }}>See also: {story.cultureRefs.map((u, i) => (
           <a key={i} href={u} target="_blank" rel="noreferrer">[{i+1}]</a>

@@ -1,14 +1,19 @@
-import { useEffect, useMemo, useState } from 'react'
-import type { Card, Prefs, SrsMap } from './lib/types'
+import { useCallback, useEffect, useMemo, useState } from 'react'
+import { AnimatePresence, motion, useReducedMotion } from 'motion/react'
+import type { Card, SrsMap } from './lib/types'
 import { loadSrsMap, saveSrsMap } from './lib/storage'
 import { DeckPicker } from './components/DeckPicker'
 import { StudyCard } from './components/StudyCard'
+import { SwipeCard } from './components/SwipeCard'
 import { QuickTest } from './components/QuickTest'
 import { ReaderPack } from './components/ReaderPack'
 import { ReaderPackPicker } from './components/ReaderPackPicker'
 import { StoryViewer } from './components/StoryViewer'
 import { About } from './components/About'
+import { CommandPalette } from './components/CommandPalette'
+import { ErrorBoundary } from './components/ErrorBoundary'
 import { initialState, isDue, schedule, type Grade } from './lib/srs'
+import { withBase } from './lib/url'
 
 import { usePrefs } from './state/usePrefs'
 
@@ -26,11 +31,13 @@ export default function App() {
   const [showSummary, setShowSummary] = useState(false)
   const [errorBank, setErrorBank] = useState<Record<string, true>>(() => ({}))
   const [showAbout, setShowAbout] = useState(false)
+  const [showCmd, setShowCmd] = useState(false)
+  const prefersReduced = useReducedMotion()
 
   // persistence handled by PrefsProvider
 
   async function loadDeck(path: string) {
-    const url = new URL(path, (import.meta as any).env.BASE_URL).toString()
+    const url = withBase(path)
     const data: Card[] = await fetch(url).then(r => {
       if (!r.ok) throw new Error(`Failed to load deck: ${r.status}`)
       return r.json()
@@ -62,7 +69,7 @@ export default function App() {
 
   async function openStoryForCard(c: Card) {
     try {
-      const manifestUrl = new URL('stories/manifest.json', (import.meta as any).env.BASE_URL).toString()
+      const manifestUrl = withBase('stories/manifest.json')
       const list: { id: string; path: string; vocabRefs?: string[] }[] = await fetch(manifestUrl).then(r => r.json())
       const hit = list.find(item => (item.vocabRefs || []).includes(c.id))
       if (!hit) { alert('No linked story for this card yet.'); return }
@@ -73,7 +80,7 @@ export default function App() {
     }
   }
 
-  function grade(g: Grade) {
+  const grade = useCallback((g: Grade) => {
     if (!current) return
     const key = deckPath
     const prev = srsMap[current.id] || initialState()
@@ -91,7 +98,7 @@ export default function App() {
     }
     // Move forward
     setIndex(i => Math.min(queue.length - 1, i + 1))
-  }
+  }, [current, deckPath, srsMap, errorBank, queue.length])
 
   const dueCount = useMemo(() => {
     const now = Date.now()
@@ -105,6 +112,9 @@ export default function App() {
   // Keyboard shortcuts for grading
   useEffect(() => {
     function onKey(e: KeyboardEvent) {
+      if ((e.metaKey || e.ctrlKey) && e.key.toLowerCase() === 'k') {
+        e.preventDefault(); setShowCmd(s => !s); return
+      }
       if (view !== 'study') return
       if (e.key === '1') grade(0)
       else if (e.key === '2') grade(3)
@@ -113,7 +123,7 @@ export default function App() {
     }
     window.addEventListener('keydown', onKey)
     return () => window.removeEventListener('keydown', onKey)
-  }, [view, current, srsMap])
+  }, [view, grade])
 
   return (
     <div style={{ fontFamily: 'system-ui, -apple-system, Segoe UI, Roboto, Noto Sans TC, Arial', padding: 16 }}>
@@ -138,7 +148,7 @@ export default function App() {
             Deck: {deckPath} | Queue: {queue.length} | Due: {dueCount} | New: {newCount}
           </span>
         )}
-        <button onClick={() => setShowAbout(true)} aria-label="About and licences">About</button>
+        <button onClick={() => setShowAbout(true)} aria-label="About and licences" title="About / Licences">About</button>
         <button onClick={() => {
           const ids = Object.keys(errorBank)
           if (!ids.length) { alert('No leeches yet.'); return }
@@ -147,12 +157,26 @@ export default function App() {
           setQueue(eq)
           setIndex(0)
           setView('study')
-        }} aria-label="Open error bank">Error Bank</button>
+        }} aria-label="Open error bank" title="Error Bank (review leeches)">Error Bank</button>
+        <label title="Tone coloring for Zhuyin/Pinyin" style={{ display: 'inline-flex', alignItems: 'center', gap: 6 }}>
+          <input type="checkbox" checked={!!prefs.toneColors} onChange={e => setPrefs(p => ({ ...p, toneColors: e.target.checked }))} /> Tone colors
+        </label>
+        <label title="High contrast accents" style={{ display: 'inline-flex', alignItems: 'center', gap: 6 }}>
+          <input type="checkbox" checked={!!prefs.highContrast} onChange={e => setPrefs(p => ({ ...p, highContrast: e.target.checked }))} /> High contrast
+        </label>
+        <span style={{ marginLeft: 'auto', color: '#888', fontSize: 12 }}>Tip: Press ⌘K / Ctrl+K</span>
+        {(import.meta as any).env?.DEV && (
+          <span style={{ color: '#777', fontSize: 12, border: '1px solid #eee', padding: '2px 6px', borderRadius: 6 }}>
+            BASE: {String((import.meta as any).env?.BASE_URL ?? '/')}
+          </span>
+        )}
       </header>
 
       {view === 'pick' && (
         <div style={{ display: 'grid', gap: 16 }}>
-          <DeckPicker onPick={onPick} />
+          <ErrorBoundary>
+            <DeckPicker onPick={onPick} />
+          </ErrorBoundary>
           <div style={{ display: 'flex', gap: 8, alignItems: 'center' }}>
             <label>Quick Test size:
               <select value={qtCount} onChange={e => setQtCount(Number(e.target.value))}>
@@ -164,16 +188,30 @@ export default function App() {
             <button onClick={() => setView('quicktest')} disabled={!cards.length}>Start Quick Test</button>
             <span style={{ color: '#666' }}>Tip: pick a deck first to populate Quick Test.</span>
           </div>
-          <ReaderPackPicker onStart={(opts) => {
-            // Store opts in URL/hash or state; here, store in local state via sessionStorage
-            sessionStorage.setItem('readerpack_opts', JSON.stringify(opts))
-            setView('readerpack')
-          }} />
+          <ErrorBoundary>
+            <ReaderPackPicker onStart={(opts) => {
+              // Store opts in URL/hash or state; here, store in local state via sessionStorage
+              sessionStorage.setItem('readerpack_opts', JSON.stringify(opts))
+              setView('readerpack')
+            }} />
+          </ErrorBoundary>
         </div>
       )}
       {view === 'study' && current && (
         <div style={{ display: 'grid', gap: 16 }}>
-          <StudyCard card={current} prefs={prefs} onGrade={grade} onOpenStory={() => openStoryForCard(current)} />
+          <AnimatePresence mode="wait">
+            <motion.div
+              key={current.id}
+              initial={{ opacity: 0, y: prefersReduced ? 0 : 8 }}
+              animate={{ opacity: 1, y: 0 }}
+              exit={{ opacity: 0, y: prefersReduced ? 0 : -8 }}
+              transition={{ duration: prefersReduced ? 0 : 0.2 }}
+            >
+              <SwipeCard onGrade={grade}>
+                <StudyCard card={current} prefs={prefs} onGrade={grade} onOpenStory={() => openStoryForCard(current)} />
+              </SwipeCard>
+            </motion.div>
+          </AnimatePresence>
           <div style={{ display: 'flex', gap: 8 }}>
             <button onClick={() => setIndex(i => Math.max(0, i - 1))}>Prev</button>
             <button onClick={() => setIndex(i => Math.min(queue.length - 1, i + 1))}>Next</button>
@@ -255,12 +293,28 @@ export default function App() {
       )}
 
       {view === 'story' && storyPath && (
-        <StoryViewer storyPath={storyPath} prefs={prefs} onClose={() => setView('study')} />
+        <ErrorBoundary>
+          <StoryViewer storyPath={storyPath} prefs={prefs} onClose={() => setView('study')} />
+        </ErrorBoundary>
       )}
 
       {showSummary && (
-        <div style={{ position: 'fixed', inset: 0, background: 'rgba(0,0,0,0.3)', display: 'grid', placeItems: 'center' }}>
-          <div style={{ background: '#fff', padding: 16, borderRadius: 8, minWidth: 320 }}>
+        <div style={{ position: 'fixed', inset: 0, display: 'grid', placeItems: 'center' }}>
+          <motion.div
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            exit={{ opacity: 0 }}
+            transition={{ duration: prefersReduced ? 0 : 0.2 }}
+            style={{ position: 'absolute', inset: 0, background: 'rgba(0,0,0,0.3)' }}
+            onClick={() => setShowSummary(false)}
+          />
+          <motion.div
+            initial={{ opacity: 0, scale: prefersReduced ? 1 : 0.98 }}
+            animate={{ opacity: 1, scale: 1 }}
+            exit={{ opacity: 0, scale: prefersReduced ? 1 : 0.98 }}
+            transition={{ duration: prefersReduced ? 0 : 0.2 }}
+            style={{ background: '#fff', padding: 16, borderRadius: 8, minWidth: 320, position: 'relative' }}
+          >
             <div style={{ fontWeight: 600, marginBottom: 8 }}>Session Summary</div>
             <div>Correct: {sessionStats.correct}</div>
             <div>Wrong: {sessionStats.wrong}</div>
@@ -270,11 +324,28 @@ export default function App() {
               <button onClick={() => { setSessionStats({ correct: 0, wrong: 0 }); setShowSummary(false) }}>Close</button>
               <button onClick={() => { setView('pick'); setShowSummary(false) }}>Return to menu</button>
             </div>
-          </div>
+          </motion.div>
         </div>
       )}
 
       {showAbout && <About onClose={() => setShowAbout(false)} />}
+
+      <CommandPalette
+        open={showCmd}
+        onOpenChange={setShowCmd}
+        onPickDeck={onPick}
+        onStartQuickTest={(n) => { setQtCount(n); setView('quicktest') }}
+        onStartReaderPack={() => { setView('readerpack') }}
+        onToggleScript={() => setPrefs(p => ({ ...p, scriptMode: p.scriptMode === 'trad' ? 'simp' : 'trad' }))}
+        onToggleRomanization={() => setPrefs(p => ({ ...p, romanization: p.romanization === 'zhuyin' ? 'pinyin' : 'zhuyin' }))}
+        onOpenErrorBank={() => {
+          const ids = Object.keys(errorBank)
+          const eq = cards.filter(c => ids.includes(c.id))
+          if (!ids.length || !eq.length) { alert('No error bank items for this deck'); return }
+          setQueue(eq); setIndex(0); setView('study')
+        }}
+        onShowAbout={() => setShowAbout(true)}
+      />
     </div>
   )
 }

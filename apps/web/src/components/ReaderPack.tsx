@@ -2,6 +2,8 @@ import { useEffect, useMemo, useState } from 'react'
 import type { Card, Prefs } from '../lib/types'
 import { highlightText, type Segment } from '../lib/highlight'
 import { getPronunciation } from '../lib/romanization'
+import { PopoverFloating } from './ui/PopoverFloating'
+import { withBase } from '../lib/url'
 
 type StoryMeta = { id: string; title: string; band: 'A'|'B'|'C'; level: number; topic?: string; path: string; vocabRefs?: string[] }
 type Story = { id: string; title: string; band: 'A'|'B'|'C'; level: number; body: string; bodySimp?: string; vocabRefs: string[]; audioUrl?: string }
@@ -31,15 +33,17 @@ export function ReaderPack(props: {
   const [i, setI] = useState(0)
   const [score, setScore] = useState(0)
   const [played, setPlayed] = useState(false)
+  const [openIdx, setOpenIdx] = useState<number | null>(null)
+  const [info, setInfo] = useState<{ text: string; pron: string; gloss?: string | undefined } | null>(null)
 
   useEffect(() => {
-    const url = new URL('stories/manifest.json', (import.meta as any).env.BASE_URL).toString()
+    const url = withBase('stories/manifest.json')
     fetch(url).then(r => r.json()).then((items: StoryMeta[]) => {
       let filtered = items.filter(it => it.band === 'A' && it.level === props.level)
       if (props.topic && props.topic !== 'All') filtered = filtered.filter(it => (it.topic || 'misc') === props.topic)
       setList(filtered)
     }).catch(() => setList([]))
-  }, [props.level])
+  }, [props.level, props.topic])
 
   useEffect(() => {
     (async () => {
@@ -75,8 +79,7 @@ export function ReaderPack(props: {
 
   function playOnce() {
     if (played || !story?.audioUrl) return
-    const url = new URL(story.audioUrl, (import.meta as any).env.BASE_URL).toString()
-    const a = new Audio(url)
+    const a = new Audio(withBase(story.audioUrl))
     a.addEventListener('ended', () => setPlayed(true), { once: true })
     a.play().catch(() => {/* ignore */})
   }
@@ -137,17 +140,38 @@ export function ReaderPack(props: {
       <div style={{ border: '1px solid #ddd', padding: 12, borderRadius: 8 }}>
         <div style={{ marginBottom: 8, fontWeight: 600 }}>{story?.title}</div>
         <div style={{ whiteSpace: 'pre-wrap', fontSize: 18 }}>
-          {segs.map((s, idx) => s.highlight ? (
-            <span key={idx} style={{ background: '#fff3cd', cursor: 'pointer' }} onClick={async () => {
-              const card = (story?.vocabRefs || [])
-                .map(id => props.cards.find(c => c.id === id))
-                .find(c => (props.prefs.scriptMode === 'trad' ? c?.trad : (c?.simp || c?.trad)) === s.text)
-              const pron = card ? await getPronunciation(card, props.prefs) : ''
-              alert(`${s.text}  ${pron}\n${card?.gloss_en || ''}`)
-            }}>{s.text}</span>
-          ) : (
-            <span key={idx}>{s.text}</span>
-          ))}
+          {segs.map((s, idx) => {
+            if (!s.highlight) return <span key={idx}>{s.text}</span>
+            return (
+              <PopoverFloating
+                key={idx}
+                open={openIdx === idx}
+                onOpenChange={(o) => setOpenIdx(o ? idx : null)}
+                trigger={
+                  <button
+                    onClick={async () => {
+                      const card = (story?.vocabRefs || [])
+                        .map(id => props.cards.find(c => c.id === id))
+                        .find(c => (props.prefs.scriptMode === 'trad' ? c?.trad : (c?.simp || c?.trad)) === s.text)
+                      const pron = card ? await getPronunciation(card!, props.prefs) : ''
+                      setInfo({ text: s.text, pron, gloss: card?.gloss_en })
+                      setOpenIdx(idx)
+                    }}
+                    style={{ background: 'transparent', border: 'none', padding: 0, margin: 0, cursor: 'pointer', backgroundColor: '#fff3cd' }}
+                    aria-haspopup="dialog"
+                    aria-expanded={openIdx === idx}
+                  >
+                    {s.text}
+                  </button>
+                }
+              >
+                <div>
+                  <div><strong>{info?.text || s.text}</strong> <span style={{ color: '#555' }}>{info?.pron || ''}</span></div>
+                  {info?.gloss && <div style={{ color: '#666', maxWidth: 280 }}>{info.gloss}</div>}
+                </div>
+              </PopoverFloating>
+            )
+          })}
         </div>
         <div style={{ marginTop: 8 }}>
           <button onClick={playOnce} disabled={played || !story?.audioUrl}>{played ? 'Played' : 'Play once'}</button>
