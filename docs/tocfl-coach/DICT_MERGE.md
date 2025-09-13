@@ -18,8 +18,15 @@ make merge-a1-cedict-moe
 
 Outputs: `data/seed/band-A/level1_enriched.json`
 
+Alternatively, using the TypeScript tool (no Makefile needed):
+
+tsx scripts/fetch-dicts.ts \
+  --in data/seed/band-A/level1.json \
+  --out data/seed/band-A/level1_enriched.json \
+  --cedict data/dicts/cedict_ts.u8 \
+  --moe-tsv data/dicts/moe.tsv --moe-word word --moe-zhuyin zhuyin --moe-def def
+
 ## Notes
 - Only fills empty fields; existing `gloss_en`/`zhuyin` are preserved.
 - Adds `tags`: `src:cedict`, `src:moe` when enrichment occurs.
 - Do not redistribute dictionary contents if license disallows bundling; prefer on-device enrichment during build if needed.
-

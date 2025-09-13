@@ -1,0 +1,20 @@
+{
+  "settings": "Einstellungen",
+  "script": "Schrift",
+  "romanization": "Romanisierung",
+  "language": "Sprache",
+  "traditional": "Traditionell",
+  "simplified": "Vereinfacht",
+  "zhuyin": "Zhuyin",
+  "pinyin": "Pinyin",
+  "diagnostics": "Diagnostik",
+  "checkData": "Daten prüfen",
+  "deckManifest": "Deck-Manifest",
+  "storyManifest": "Story-Manifest",
+  "ok": "OK",
+  "fail": "Fehler",
+  "chooseDeck": "Deck auswählen",
+  "loadingDecks": "Deckliste wird geladen…",
+  "noDecks": "Kein Manifest gefunden; benutzerdefinierten Pfad eingeben."
+}
+

@@ -1,0 +1,5 @@
+[
+  { "id": "G-A1-001", "pattern": "A 跟 B 一樣 + adj", "example": { "zh": "他跟你一樣高。" }, "band": "A", "level": 1 },
+  { "id": "G-A1-002", "pattern": "有/沒有 + N", "example": { "zh": "我沒有錢。" }, "band": "A", "level": 1 }
+]
+

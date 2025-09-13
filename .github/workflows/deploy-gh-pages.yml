@@ -35,6 +35,7 @@ jobs:
         working-directory: apps/web
         env:
           VITE_BASE: /StudyWan/
+          VITE_ENABLE_PWA: 'true'
         run: npm run build
 
       - name: Deploy to gh-pages branch
@@ -44,4 +45,3 @@ jobs:
           publish_dir: apps/web/dist
           publish_branch: gh-pages
           force_orphan: true
-

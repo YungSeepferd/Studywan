@@ -1,5 +1,6 @@
 import { useEffect, useState } from 'react'
 import { withBase } from '../lib/url'
+import { t, setLanguage } from '../lib/i18n'
 
 type DeckMeta = { id: string; title: string; band: 'A'|'B'|'C'; level: number; path: string; topic?: string }
 
@@ -8,6 +9,11 @@ export function DeckPicker(props: { onPick: (deckPath: string) => void }) {
   const [options, setOptions] = useState<DeckMeta[] | null>(null)
 
   useEffect(() => {
+    // Initialize language once if prefs stored
+    const raw = localStorage.getItem('prefs')
+    if (raw) {
+      try { const p = JSON.parse(raw); if (p.language) setLanguage(p.language) } catch {}
+    }
     const url = withBase('data/decks/manifest.json')
     fetch(url)
       .then(r => {
@@ -29,10 +35,10 @@ export function DeckPicker(props: { onPick: (deckPath: string) => void }) {
 
   return (
     <div style={{ display: 'grid', gap: 8 }}>
-      <div style={{ fontWeight: 600 }}>Choose a deck</div>
-      {options === null && <div>Loading deck list…</div>}
+      <div style={{ fontWeight: 600 }}>{t('chooseDeck')}</div>
+      {options === null && <div>{t('loadingDecks')}</div>}
       {options && options.length === 0 && (
-        <div style={{ color: '#666' }}>No deck manifest found; enter a custom path.</div>
+        <div style={{ color: '#666' }}>{t('noDecks')}</div>
       )}
       {options && options.map((o) => (
         <button key={o.path} onClick={() => pick(o.path)}>{o.title}</button>

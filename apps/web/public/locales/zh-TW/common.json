@@ -1,0 +1,20 @@
+{
+  "settings": "設定",
+  "script": "字體",
+  "romanization": "注音/拼音",
+  "language": "語言",
+  "traditional": "繁體",
+  "simplified": "簡體",
+  "zhuyin": "注音",
+  "pinyin": "拼音",
+  "diagnostics": "診斷",
+  "checkData": "檢查資料清單",
+  "deckManifest": "牌組清單",
+  "storyManifest": "故事清單",
+  "ok": "OK",
+  "fail": "失敗",
+  "chooseDeck": "選擇牌組",
+  "loadingDecks": "載入牌組…",
+  "noDecks": "找不到清單；請輸入自訂路徑。"
+}
+

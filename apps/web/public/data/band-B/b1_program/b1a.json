@@ -1,0 +1,25 @@
+[
+  {
+    "id": "B1a-0001",
+    "trad": "旅行",
+    "pinyin": "lǚxíng",
+    "pos": "N",
+    "gloss_en": "",
+    "band": "B",
+    "level": 3,
+    "topic": "旅行",
+    "tags": []
+  },
+  {
+    "id": "B1a-0002",
+    "trad": "安排",
+    "pinyin": "ānpái",
+    "pos": "V",
+    "gloss_en": "",
+    "band": "B",
+    "level": 3,
+    "topic": "旅行",
+    "tags": []
+  }
+]
+

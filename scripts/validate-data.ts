@@ -58,6 +58,15 @@ async function main() {
             if (containsSimplified(t)) {
               issues.push({ file: f, index: i, message: 'Potential Simplified char in trad field' })
             }
+            // Optional stricter checks for A1 gloss completion
+            if (process.env.STRICT_A1_GLOSSES === '1') {
+              if (res.data.band === 'A' && res.data.level === 1) {
+                const gloss = (res.data.gloss_en ?? '').trim()
+                if (!gloss) {
+                  issues.push({ file: f, index: i, message: 'Missing gloss_en for A1 card' })
+                }
+              }
+            }
           }
         })
       } else {
@@ -98,4 +107,3 @@ main().catch(e => {
   console.error(e)
   process.exit(1)
 })
-

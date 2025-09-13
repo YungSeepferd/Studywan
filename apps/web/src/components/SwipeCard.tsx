@@ -1,6 +1,7 @@
 import { ReactNode, useEffect } from 'react'
 import { useDrag } from '@use-gesture/react'
 import { motion, useMotionValue, animate } from 'motion/react'
+import { gradeFromSwipe } from '../lib/gesture'
 
 type Props = {
   onGrade: (g: 0 | 3 | 4 | 5) => void
@@ -15,14 +16,9 @@ export function SwipeCard({ onGrade, children }: Props) {
       x.set(mx)
     } else {
       // Release
-      const threshold = 80
-      if (mx > threshold) {
-        // Easy
-        onGrade(5)
-        x.set(0)
-      } else if (mx < -threshold) {
-        // Again
-        onGrade(0)
+      const g = gradeFromSwipe(mx, 80)
+      if (g !== null) {
+        onGrade(g)
         x.set(0)
       } else {
         animate(x, 0, { type: 'spring', stiffness: 300, damping: 30 })

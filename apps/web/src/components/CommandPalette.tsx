@@ -10,6 +10,10 @@ type Props = {
   onPickDeck: (path: string) => void
   onStartQuickTest: (n: number) => void
   onStartReaderPack: () => void
+  onStartListening: () => void
+  onStartExam: () => void
+  onOpenDashboard: () => void
+  onStartGrammar: () => void
   onToggleScript: () => void
   onToggleRomanization: () => void
   onOpenErrorBank: () => void
@@ -48,6 +52,10 @@ export function CommandPalette(p: Props) {
                   <Command.Item onSelect={() => { p.onStartQuickTest(20); p.onOpenChange(false) }}>Quick Test — 20</Command.Item>
                   <Command.Item onSelect={() => { p.onStartQuickTest(50); p.onOpenChange(false) }}>Quick Test — 50</Command.Item>
                   <Command.Item onSelect={() => { p.onStartReaderPack(); p.onOpenChange(false) }}>Start Reader Pack</Command.Item>
+                  <Command.Item onSelect={() => { p.onStartListening(); p.onOpenChange(false) }}>Start Listening Drills</Command.Item>
+                  <Command.Item onSelect={() => { p.onStartExam(); p.onOpenChange(false) }}>Start Exam Simulation</Command.Item>
+                  <Command.Item onSelect={() => { p.onOpenDashboard(); p.onOpenChange(false) }}>Open Dashboard</Command.Item>
+                  <Command.Item onSelect={() => { p.onStartGrammar(); p.onOpenChange(false) }}>Start Grammar Drills</Command.Item>
                   <Command.Item onSelect={() => { p.onToggleScript(); p.onOpenChange(false) }}>Toggle Script (Trad/Simp)</Command.Item>
                   <Command.Item onSelect={() => { p.onToggleRomanization(); p.onOpenChange(false) }}>Toggle Pronunciation (Zhuyin/Pinyin)</Command.Item>
                   <Command.Item onSelect={() => { p.onOpenErrorBank(); p.onOpenChange(false) }}>Open Error Bank</Command.Item>

@@ -13,8 +13,12 @@ This document defines the JSON structure for vocabulary cards used by the app an
 - `pinyin` (string, required): Hanyu Pinyin with tone marks or numbers. Example: `"nǐ hǎo"`.
 - `zhuyin` (string, optional): Zhuyin/Bopomofo. Example: `"ㄋ一ˇ ㄏㄠˇ"`.
 - `pos` (string, optional): Part of speech tag. Example: `"interj"`.
+- `hint` (string, optional): Mnemonic/association for recall.
 - `gloss_en` (string, required): English gloss. Example: `"hello"`.
 - `gloss_de` (string, optional): German gloss. Example: `"hallo"`.
+- `variant_tw` (string, optional): Taiwan-preferred form when different.
+- `variant_cn` (string, optional): Mainland-preferred form when different.
+- `examples` (array<object>, optional): Example sentences to reinforce usage. Each item: `{ zh, en?, zhuyin?, pinyin?, audio? }`.
 - `band` (string, required): `"A"|"B"|"C"`.
 - `level` (integer, required): 1–6 (TOCFL levels).
 - `topic` (string, optional): Semantic category/topic when available.
@@ -29,4 +33,3 @@ Notes:
 
 ## Example
 See `data/seed/band-A/level1.json` for a small A1 sample.
-

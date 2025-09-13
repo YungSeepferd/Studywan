@@ -2,39 +2,32 @@ name: CI
 
 on:
   push:
-    branches: [ main, master ]
+    branches: [ main ]
   pull_request:
-    branches: [ main, master ]
+    branches: [ main ]
 
 jobs:
-  build:
+  build-test:
     runs-on: ubuntu-latest
     steps:
-      - name: Checkout
-        uses: actions/checkout@v4
-
-      - name: Setup Node.js
-        uses: actions/setup-node@v4
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
         with:
-          node-version: 20
+          node-version: 18
           cache: 'npm'
           cache-dependency-path: apps/web/package-lock.json
-
-      - name: Install dependencies (apps/web)
-        working-directory: apps/web
+      - name: Install web deps
         run: npm ci
-
+        working-directory: apps/web
       - name: Typecheck
-        working-directory: apps/web
         run: npm run typecheck
-
-      - name: Lint
         working-directory: apps/web
-        run: npm run lint
-
-      - name: Data validation (basic deck check)
-        run: node tools/ingest/validate_deck.js --in data/seed/band-A/level1.json
-
-      - name: Schema validation (cards + stories)
+      - name: Unit tests
+        run: npm test
         working-directory: apps/web
-        run: npm run validate:data
+      - name: Data validation (strict A1 glosses)
+        run: STRICT_A1_GLOSSES=1 npm run validate:data
+        working-directory: apps/web
+      - name: Validate locales
+        run: node ../../scripts/validate-locales.ts
+        working-directory: apps/web

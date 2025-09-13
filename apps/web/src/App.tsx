@@ -6,20 +6,27 @@ import { DeckPicker } from './components/DeckPicker'
 import { StudyCard } from './components/StudyCard'
 import { SwipeCard } from './components/SwipeCard'
 import { QuickTest } from './components/QuickTest'
+import { ListeningDrills } from './components/ListeningDrills'
 import { ReaderPack } from './components/ReaderPack'
+import { ExamSim } from './components/ExamSim'
+import { GrammarDrills } from './components/GrammarDrills'
 import { ReaderPackPicker } from './components/ReaderPackPicker'
 import { StoryViewer } from './components/StoryViewer'
 import { About } from './components/About'
 import { CommandPalette } from './components/CommandPalette'
 import { ErrorBoundary } from './components/ErrorBoundary'
+import { Dashboard } from './components/Dashboard'
+import { SettingsDialog } from './components/SettingsDialog'
+import { OfflineBadge } from './components/OfflineBadge'
 import { initialState, isDue, schedule, type Grade } from './lib/srs'
 import { withBase } from './lib/url'
+import { logSession } from './lib/store/history'
 
 import { usePrefs } from './state/usePrefs'
 
 export default function App() {
   const { prefs, setPrefs } = usePrefs()
-  const [view, setView] = useState<'pick' | 'study' | 'quicktest' | 'story' | 'readerpack'>('pick')
+  const [view, setView] = useState<'pick' | 'study' | 'quicktest' | 'story' | 'readerpack' | 'listening' | 'exam' | 'dashboard' | 'grammar'>('pick')
   const [deckPath, setDeckPath] = useState<string>('')
   const [cards, setCards] = useState<Card[]>([])
   const [queue, setQueue] = useState<Card[]>([])
@@ -33,6 +40,16 @@ export default function App() {
   const [showAbout, setShowAbout] = useState(false)
   const [showCmd, setShowCmd] = useState(false)
   const prefersReduced = useReducedMotion()
+  const [showSettings, setShowSettings] = useState(false)
+
+  function GrammarLoader(props: { onDone: () => void }) {
+    const [list, setList] = useState<any[] | null>(null)
+    useEffect(() => {
+      fetch(withBase('data/grammar/a1.json')).then(r => r.json()).then(setList).catch(() => setList([]))
+    }, [])
+    if (list === null) return <div>Loading…</div>
+    return <GrammarDrills items={list as any} onDone={props.onDone} />
+  }
 
   // persistence handled by PrefsProvider
 
@@ -148,6 +165,7 @@ export default function App() {
             Deck: {deckPath} | Queue: {queue.length} | Due: {dueCount} | New: {newCount}
           </span>
         )}
+        <button onClick={() => setShowSettings(true)} aria-label="Open settings" title="Settings">Settings</button>
         <button onClick={() => setShowAbout(true)} aria-label="About and licences" title="About / Licences">About</button>
         <button onClick={() => {
           const ids = Object.keys(errorBank)
@@ -158,12 +176,7 @@ export default function App() {
           setIndex(0)
           setView('study')
         }} aria-label="Open error bank" title="Error Bank (review leeches)">Error Bank</button>
-        <label title="Tone coloring for Zhuyin/Pinyin" style={{ display: 'inline-flex', alignItems: 'center', gap: 6 }}>
-          <input type="checkbox" checked={!!prefs.toneColors} onChange={e => setPrefs(p => ({ ...p, toneColors: e.target.checked }))} /> Tone colors
-        </label>
-        <label title="High contrast accents" style={{ display: 'inline-flex', alignItems: 'center', gap: 6 }}>
-          <input type="checkbox" checked={!!prefs.highContrast} onChange={e => setPrefs(p => ({ ...p, highContrast: e.target.checked }))} /> High contrast
-        </label>
+        
         <span style={{ marginLeft: 'auto', color: '#888', fontSize: 12 }}>Tip: Press ⌘K / Ctrl+K</span>
         {(import.meta as any).env?.DEV && (
           <span style={{ color: '#777', fontSize: 12, border: '1px solid #eee', padding: '2px 6px', borderRadius: 6 }}>
@@ -256,6 +269,7 @@ export default function App() {
       {view === 'quicktest' && (
         <div style={{ display: 'grid', gap: 16 }}>
           <QuickTest cards={cards.length ? cards : queue} prefs={prefs} count={qtCount} onDone={(score, total) => {
+            logSession({ id: `qt-${Date.now()}`, type: 'quicktest', deck: deckPath, startedAt: Date.now(), endedAt: Date.now(), score, total })
             alert(`Score: ${score}/${total}`)
             setView('pick')
           }} />
@@ -280,7 +294,7 @@ export default function App() {
                   const updated = { ...srsMap, [card.id]: next }
                   setSrsMap(updated)
                   saveSrsMap(key, updated)
-                }} onDone={(score, total) => { alert(`Reader Pack Score: ${score}/${total}`); setView('pick') }} />
+                }} onDone={(score, total) => { logSession({ id: `rp-${Date.now()}`, type: 'reader', deck: deckPath, startedAt: Date.now(), endedAt: Date.now(), score, total }); alert(`Reader Pack Score: ${score}/${total}`); setView('pick') }} />
               )
             } catch {
               return <div>Error loading reader pack options</div>
@@ -292,10 +306,54 @@ export default function App() {
         </div>
       )}
 
+      {view === 'listening' && (
+        <div style={{ display: 'grid', gap: 16 }}>
+          <ListeningDrills cards={cards.length ? cards : queue} prefs={prefs} count={10} onDone={(score, total) => {
+            logSession({ id: `ls-${Date.now()}`, type: 'listening', deck: deckPath, startedAt: Date.now(), endedAt: Date.now(), score, total })
+            alert(`Listening Score: ${score}/${total}`)
+            setView('pick')
+          }} />
+          <div>
+            <button onClick={() => setView('pick')}>Back</button>
+          </div>
+        </div>
+      )}
+
       {view === 'story' && storyPath && (
         <ErrorBoundary>
           <StoryViewer storyPath={storyPath} prefs={prefs} onClose={() => setView('study')} />
         </ErrorBoundary>
+      )}
+
+      {view === 'exam' && (
+        <div style={{ display: 'grid', gap: 16 }}>
+          <ExamSim cards={cards.length ? cards : queue} prefs={prefs} onDone={(score, total, pass) => {
+            logSession({ id: `ex-${Date.now()}`, type: 'exam', deck: deckPath, startedAt: Date.now(), endedAt: Date.now(), score, total })
+            alert(`Exam: ${score}/${total} • ${pass ? 'Pass' : 'Fail'}`)
+            setView('pick')
+          }} />
+          <div>
+            <button onClick={() => setView('pick')}>Exit</button>
+          </div>
+        </div>
+      )}
+
+      {view === 'dashboard' && (
+        <div style={{ display: 'grid', gap: 16 }}>
+          <Dashboard cards={cards.length ? cards : queue} srsMap={srsMap} />
+          <div>
+            <button onClick={() => setView('pick')}>Back</button>
+          </div>
+        </div>
+      )}
+
+      {view === 'grammar' && (
+        <div style={{ display: 'grid', gap: 16 }}>
+          <GrammarLoader onDone={() => setView('pick')} />
+          <div>
+            <button onClick={() => setView('pick')}>Back</button>
+          </div>
+        </div>
       )}
 
       {showSummary && (
@@ -329,6 +387,7 @@ export default function App() {
       )}
 
       {showAbout && <About onClose={() => setShowAbout(false)} />}
+      <SettingsDialog open={showSettings} onOpenChange={setShowSettings} />
 
       <CommandPalette
         open={showCmd}
@@ -336,6 +395,10 @@ export default function App() {
         onPickDeck={onPick}
         onStartQuickTest={(n) => { setQtCount(n); setView('quicktest') }}
         onStartReaderPack={() => { setView('readerpack') }}
+        onStartListening={() => { setView('listening') }}
+        onStartExam={() => { setView('exam') }}
+        onOpenDashboard={() => { setView('dashboard') }}
+        onStartGrammar={() => { setView('grammar') }}
         onToggleScript={() => setPrefs(p => ({ ...p, scriptMode: p.scriptMode === 'trad' ? 'simp' : 'trad' }))}
         onToggleRomanization={() => setPrefs(p => ({ ...p, romanization: p.romanization === 'zhuyin' ? 'pinyin' : 'zhuyin' }))}
         onOpenErrorBank={() => {
@@ -346,6 +409,7 @@ export default function App() {
         }}
         onShowAbout={() => setShowAbout(true)}
       />
+      <OfflineBadge />
     </div>
   )
 }

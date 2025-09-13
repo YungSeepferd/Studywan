@@ -1,0 +1,20 @@
+{
+  "settings": "Settings",
+  "script": "Script",
+  "romanization": "Romanization",
+  "language": "Language",
+  "traditional": "Traditional",
+  "simplified": "Simplified",
+  "zhuyin": "Zhuyin",
+  "pinyin": "Pinyin",
+  "diagnostics": "Diagnostics",
+  "checkData": "Check data manifests",
+  "deckManifest": "Deck manifest",
+  "storyManifest": "Story manifest",
+  "ok": "OK",
+  "fail": "Fail",
+  "chooseDeck": "Choose a deck",
+  "loadingDecks": "Loading deck list…",
+  "noDecks": "No deck manifest found; enter a custom path."
+}
+

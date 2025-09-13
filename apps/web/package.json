@@ -25,7 +25,8 @@
     "@floating-ui/react": "^0.26.25",
     "motion": "^11.11.17",
     "@use-gesture/react": "^10.2.27",
-    "cmdk": "^0.2.1"
+    "cmdk": "^0.2.1",
+    "@radix-ui/react-dialog": "^1.1.3"
   },
   "devDependencies": {
     "@vitejs/plugin-react": "^4.3.1",

@@ -7,6 +7,20 @@ export const CardSchema = z.object({
   pinyin: z.string().min(1),
   zhuyin: z.string().optional(),
   pos: z.string().optional(),
+  hint: z.string().optional(),
+  variant_tw: z.string().optional(),
+  variant_cn: z.string().optional(),
+  examples: z
+    .array(
+      z.object({
+        zh: z.string(),
+        en: z.string().optional(),
+        zhuyin: z.string().optional(),
+        pinyin: z.string().optional(),
+        audio: z.string().optional(),
+      })
+    )
+    .optional(),
   gloss_en: z.string().optional().default(''),
   gloss_de: z.string().optional(),
   band: z.enum(['A', 'B', 'C']),
@@ -53,7 +67,28 @@ export const StorySchema = z.object({
   audioUrl: z.string().optional(),
   cultureRefs: z.array(z.string()).optional(),
   topic: z.string().optional(),
+  exampleSentences: z
+    .array(
+      z.object({
+        zh: z.string(),
+        en: z.string().optional(),
+        zhuyin: z.string().optional(),
+        pinyin: z.string().optional(),
+      })
+    )
+    .optional(),
+  questions: z
+    .array(
+      z.object({
+        id: z.string().optional(),
+        type: z.enum(['detail', 'gist', 'vocabulary', 'inference']).optional(),
+        prompt: z.string(),
+        options: z.array(z.string()).optional(),
+        answer: z.union([z.string(), z.number()]).optional(),
+        explanation: z.string().optional(),
+      })
+    )
+    .optional(),
 })
 
 export type StoryData = z.infer<typeof StorySchema>
-

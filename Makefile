@@ -98,6 +98,18 @@ pack-c1:
 a1-program:
 	@node tools/ingest/group_topics.js --in data/seed/band-A/level1.json --config data/programs/a1_topics_program.json --outdir data/seed/band-A/a1_program
 
+.PHONY: a2-program
+a2-program:
+	@node tools/ingest/group_topics.js --in data/seed/band-A/level2.json --config data/programs/a2_topics_program.json --outdir data/seed/band-A/a2_program
+
+.PHONY: b1-program
+b1-program:
+	@node tools/ingest/group_topics.js --in data/seed/band-B/level3.json --config data/programs/b1_topics_program.json --outdir data/seed/band-B/b1_program
+
+.PHONY: b2-program
+b2-program:
+	@node tools/ingest/group_topics.js --in data/seed/band-B/level4.json --config data/programs/b2_topics_program.json --outdir data/seed/band-B/b2_program
+
 .PHONY: merge-a1-cedict
 merge-a1-cedict:
 	@node tools/ingest/merge_dicts.js --in data/seed/band-A/level1.json --cedict data/dicts/cedict_ts.u8 --out data/seed/band-A/level1_enriched.json
@@ -105,6 +117,12 @@ merge-a1-cedict:
 .PHONY: merge-a1-cedict-moe
 merge-a1-cedict-moe:
 	@node tools/ingest/merge_dicts.js --in data/seed/band-A/level1.json --cedict data/dicts/cedict_ts.u8 --moe-tsv data/dicts/moe.tsv --moe-word word --moe-zhuyin zhuyin --moe-def def --out data/seed/band-A/level1_enriched.json
+
+.PHONY: merge-dicts-ts
+merge-dicts-ts:
+	@echo "Merging with TypeScript tool..."
+	@node -e "try{require('tsx')}catch(e){console.error('Please install tsx in apps/web to use this target: npm --prefix apps/web i -D tsx'); process.exit(1)}"
+	@npm --prefix apps/web exec -- tsx ../../scripts/fetch-dicts.ts --in data/seed/band-A/level1.json --out data/seed/band-A/level1_enriched.json --cedict data/dicts/cedict_ts.u8 --moe-tsv data/dicts/moe.tsv --moe-word word --moe-zhuyin zhuyin --moe-def def
 
 # Minimal validation for decks (schema-lite)
 .PHONY: validate-seed
@@ -152,3 +170,9 @@ web-copy-decks:
 	@cp -f data/seed/band-A/level1_topics/*.json apps/web/public/data/band-A/level1_topics/ 2>/dev/null || true
 	@mkdir -p apps/web/public/data/band-A/a1_program
 	@cp -f data/seed/band-A/a1_program/*.json apps/web/public/data/band-A/a1_program/ 2>/dev/null || true
+	@mkdir -p apps/web/public/data/band-A/a2_program
+	@cp -f data/seed/band-A/a2_program/*.json apps/web/public/data/band-A/a2_program/ 2>/dev/null || true
+	@mkdir -p apps/web/public/data/band-B/b1_program
+	@cp -f data/seed/band-B/b1_program/*.json apps/web/public/data/band-B/b1_program/ 2>/dev/null || true
+	@mkdir -p apps/web/public/data/band-B/b2_program
+	@cp -f data/seed/band-B/b2_program/*.json apps/web/public/data/band-B/b2_program/ 2>/dev/null || true

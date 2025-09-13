@@ -39,6 +39,7 @@ jobs:
         working-directory: apps/web
         env:
           VITE_BASE: /StudyWan/
+          VITE_ENABLE_PWA: 'true'
         run: npm run build
 
       - name: Upload artifact

@@ -17,6 +17,8 @@ type Story = {
   vocabRefs: string[]
   audioUrl?: string
   cultureRefs?: string[]
+  exampleSentences?: { zh: string; en?: string; zhuyin?: string; pinyin?: string }[]
+  questions?: { id?: string; type?: 'detail'|'gist'|'vocabulary'|'inference'; prompt: string; options?: string[]; answer?: string|number; explanation?: string }[]
 }
 
 export function StoryViewer(props: { storyPath: string; prefs: Prefs; onClose: () => void; cards?: Card[] }) {
@@ -55,6 +57,9 @@ export function StoryViewer(props: { storyPath: string; prefs: Prefs; onClose: (
 
   if (err) return <div style={{ color: '#c00' }}>{err}</div>
   if (!story) return <div>Loading story…</div>
+  const [answers, setAnswers] = useState<Record<number, number>>({})
+  const [checked, setChecked] = useState(false)
+  function check() { setChecked(true) }
   return (
     <div style={{ border: '1px solid #ddd', padding: 16, borderRadius: 8, maxWidth: 720 }}>
       <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center' }}>
@@ -131,6 +136,38 @@ export function StoryViewer(props: { storyPath: string; prefs: Prefs; onClose: (
               })}
             </div>
           </details>
+        </div>
+      ) : null}
+
+      {story.questions?.length ? (
+        <div style={{ marginTop: 16 }}>
+          <div style={{ fontWeight: 600, marginBottom: 8 }}>Questions</div>
+          <div style={{ display: 'grid', gap: 10 }}>
+            {story.questions.map((q, qi) => (
+              <div key={qi}>
+                <div style={{ marginBottom: 6 }}>{qi + 1}. {q.prompt}</div>
+                <div style={{ display: 'grid', gap: 6 }}>
+                  {(q.options || []).map((opt, oi) => {
+                    const isCorrect = typeof q.answer === 'number' ? oi === q.answer : opt === q.answer
+                    const chosen = answers[qi] === oi
+                    const bg = checked && chosen ? (isCorrect ? '#daf5d7' : '#ffd6d6') : 'transparent'
+                    return (
+                      <label key={oi} style={{ display: 'flex', alignItems: 'center', gap: 6, background: bg }}>
+                        <input type="radio" name={`q${qi}`} checked={answers[qi] === oi} onChange={() => setAnswers(a => ({ ...a, [qi]: oi }))} />
+                        {opt}
+                      </label>
+                    )
+                  })}
+                </div>
+                {checked && q.explanation && (
+                  <div style={{ color: '#666', fontSize: 12, marginTop: 4 }}>Explanation: {q.explanation}</div>
+                )}
+              </div>
+            ))}
+          </div>
+          <div style={{ marginTop: 8 }}>
+            <button onClick={check}>Check answers</button>
+          </div>
         </div>
       ) : null}
     </div>
