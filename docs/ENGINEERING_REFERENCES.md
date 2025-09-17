@@ -54,6 +54,38 @@ Curated links to official documentation for the tools and standards used in this
 - @use-gesture/react: https://use-gesture.netlify.app/
 - cmdk (Command palette): https://github.com/pacocoursey/cmdk
 
+## Adoption Plan & Next Steps (Project‑specific)
+
+Status (what’s in use now)
+- Radix + Floating UI power popovers/tooltips in Reader/Story; cmdk for the command palette.
+- Motion + @use-gesture handle swipe‑to‑grade and animations.
+- Zod validates card/story data; validators wired via scripts/validate-data.ts.
+- vite-plugin-pwa configured; runtime caching for audio/images.
+- Minimal i18n loader with public locale JSON (en, de, zh‑TW).
+- Hanzi Writer used via a lightweight wrapper (HanziStroke); MultiCharStrokes renders multi‑character terms.
+
+Adopt/refine next
+- Segmentation (nodejieba):
+  - Install and integrate in tools/ingest/segment_stories.ts.
+  - Switch Reader/Story highlighter to segmented tokens; add unit tests to ensure longest‑match highlighting.
+- i18n (i18next/react‑i18next):
+  - Replace minimal loader; move top‑level strings (Settings, DeckPicker, CommandPalette) first.
+  - Add a locale key parity check to CI (scripts/validate-locales.ts exists).
+- Charts (Recharts):
+  - Add time‑series (reviews/day, accuracy trend) and unit completion charts to Dashboard.
+- E2E tests (Playwright):
+  - Cover study → grade, Reader popovers + quiz, Listening once‑through, Exam 35/50 skeleton, and new Curriculum Path runner.
+- Optional sync (Supabase):
+  - Keep offline‑first; add opt‑in sync for path progress, SRS state, error bank.
+- PWA polish:
+  - Verify offline reading/listening end‑to‑end; add an “Offline ready” badge (component exists); ensure manifest icons.
+- Accessibility:
+  - Ensure focus order and ARIA labels on interactive components; respect prefers‑reduced‑motion; verify high‑contrast in popovers/modals.
+
+Notes on recent refinements
+- Strokes: MultiCharStrokes now renders multiple characters (e.g., signage like 請勿飲食); consider adding per‑character zoom and handwriting quizzes later.
+- Signs path: Signs deck and sign‑aligned micro‑stories are seeded; integrate into a single Curriculum Path for a guided experience.
+
 ## External Datasets & Tools
 
 | Resource | Why it matters | Links |

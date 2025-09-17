@@ -1,0 +1,33 @@
+{
+  "start": "A1-signs",
+  "nodes": [
+    {
+      "id": "A1-signs",
+      "title": "A1 — Taiwan Signs",
+      "band": "A",
+      "level": 1,
+      "content": {
+        "deckId": "A1 Signs",
+        "storyIds": [
+          "story-a1-signs-mrt-001",
+          "story-a1-signs-mall-001"
+        ]
+      },
+      "gates": { "quickTestMin": 80, "listeningMin": 70, "srsCoverageMin": 0.6 },
+      "next": ["A1-core-1"]
+    },
+    {
+      "id": "A1-core-1",
+      "title": "A1 — Core Vocab 1",
+      "band": "A",
+      "level": 1,
+      "content": {
+        "deckId": "A1",
+        "storyIds": ["story-a1-greetings-001", "story-a1-transport-001"]
+      },
+      "gates": { "quickTestMin": 80, "listeningMin": 60, "srsCoverageMin": 0.5 },
+      "next": []
+    }
+  ]
+}
+

@@ -118,6 +118,17 @@ merge-a1-cedict:
 merge-a1-cedict-moe:
 	@node tools/ingest/merge_dicts.js --in data/seed/band-A/level1.json --cedict data/dicts/cedict_ts.u8 --moe-tsv data/dicts/moe.tsv --moe-word word --moe-zhuyin zhuyin --moe-def def --out data/seed/band-A/level1_enriched.json
 
+.PHONY: merge-a1-cedict-moe-inplace
+merge-a1-cedict-moe-inplace:
+	@echo "Merging A1 (in-place) using TS tool if dicts exist..."
+	@if [ -f data/dicts/cedict_ts.u8 ] && [ -f data/dicts/moe.tsv ]; then \
+		npm --prefix apps/web exec -- tsx ../../scripts/fetch-dicts.ts --in data/seed/band-A/level1.json --out data/seed/band-A/level1.json.tmp --cedict data/dicts/cedict_ts.u8 --moe-tsv data/dicts/moe.tsv --moe-word word --moe-zhuyin zhuyin --moe-def def ; \
+		mv -f data/seed/band-A/level1.json.tmp data/seed/band-A/level1.json ; \
+		echo "A1 seed updated in-place with merged glosses/zhuyin." ; \
+	else \
+		echo "Dictionary files not found (data/dicts/cedict_ts.u8, data/dicts/moe.tsv). Skipping merge." ; \
+	fi
+
 .PHONY: merge-dicts-ts
 merge-dicts-ts:
 	@echo "Merging with TypeScript tool..."

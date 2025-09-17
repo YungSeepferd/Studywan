@@ -15,5 +15,26 @@
     "https://www.moc.gov.tw/en/"
   ],
   "audioUrl": "/audio/zh-TW/story-a1-transport-001.mp3",
-  "bodySimp": "今天晚上我坐車去夜市，買了一點吃的，喝了水，看到很多人。大家都很開心。"
+  "bodySimp": "今天晚上我坐車去夜市，買了一點吃的，喝了水，看到很多人。大家都很開心。",
+  "questions": [
+    {
+      "type": "detail",
+      "prompt": "主角晚上去哪裡？",
+      "options": ["圖書館", "夜市", "超市"],
+      "answer": 1
+    },
+    {
+      "type": "vocabulary",
+      "prompt": "『坐車』最可能指的是什麼交通工具？",
+      "options": ["台北捷運/公車", "飛機", "高鐵"],
+      "answer": 0
+    },
+    {
+      "type": "inference",
+      "prompt": "『車廂內不得飲食』的標示多見於哪裡？",
+      "options": ["夜市攤位", "捷運/公車車廂", "便利商店裡"],
+      "answer": 1,
+      "explanation": "台北捷運等大眾運輸系統沿襲國際做法，為維持車廂清潔與安全，自營運以來即明訂禁止飲食，並設置『請勿飲食』等標示。"
+    }
+  ]
 }

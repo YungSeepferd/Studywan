@@ -4,6 +4,7 @@ import { toSimp } from '../lib/script'
 import { useEffect, useState } from 'react'
 import { colorPinyin, colorZhuyin } from '../lib/tones'
 import { HanziStroke } from './HanziStroke'
+import { MultiCharStrokes } from './MultiCharStrokes'
 
 export function StudyCard(props: {
   card: Card
@@ -46,6 +47,16 @@ export function StudyCard(props: {
             ))
           : toneColoredPron}
       </div>
+      {card.gloss_en && card.gloss_en.trim() && (
+        <div style={{ fontSize: 16, color: '#333', marginBottom: 8 }}>
+          {card.gloss_en}
+        </div>
+      )}
+      {(card.hint || card.etymology) && (
+        <div style={{ fontSize: 13, color: '#555', marginBottom: 8 }}>
+          {(card.etymology || card.hint) as string}
+        </div>
+      )}
       <div style={{ fontSize: 14, color: '#777' }}>
         <span>POS: {card.pos || '—'}</span>
         <span style={{ marginLeft: 12 }}>Topic: {card.topic || '—'}</span>
@@ -58,7 +69,7 @@ export function StudyCard(props: {
       </div>
       {showStroke && (
         <div style={{ marginTop: 8 }}>
-          <HanziStroke char={hanzi.charAt(0) || card.trad.charAt(0)} />
+          <MultiCharStrokes text={hanzi} max={4} size={120} />
         </div>
       )}
       <div style={{ marginTop: 16, display: 'flex', gap: 8, flexWrap: 'wrap' }}>

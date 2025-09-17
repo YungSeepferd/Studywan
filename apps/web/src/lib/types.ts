@@ -7,6 +7,8 @@ export type Card = {
   pos?: string
   // Optional mnemonic hint for learners
   hint?: string
+  // Short origin/etymology or mnemonic etymon
+  etymology?: string
   // Regional variants when different across Taiwan/Mainland
   variant_tw?: string
   variant_cn?: string

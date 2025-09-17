@@ -9,4 +9,6 @@
   { "id": "story-a2-school-002",    "title": "新同學",     "band": "A", "level": 2, "topic": "school",    "path": "stories/story-a2-school-002.json",     "vocabRefs": ["A1-0004", "A1-0005", "A1-0001"] },
   { "id": "story-a2-shopping-002",  "title": "買便當",     "band": "A", "level": 2, "topic": "shopping",  "path": "stories/story-a2-shopping-002.json",   "vocabRefs": ["A1-0006", "A1-0008"] },
   { "id": "story-a2-family-002",    "title": "家庭聚餐",   "band": "A", "level": 2, "topic": "family",    "path": "stories/story-a2-family-002.json",     "vocabRefs": ["A1-0002", "A1-0003", "A1-0007"] }
+  ,{ "id": "story-a1-signs-mrt-001", "title": "捷運禮儀標示", "band": "A", "level": 1, "topic": "signs", "path": "stories/story-a1-signs-mrt-001.json", "vocabRefs": ["SIGN-A1-0001", "SIGN-A1-0002"] }
+  ,{ "id": "story-a1-signs-mall-001", "title": "商場指示牌", "band": "A", "level": 1, "topic": "signs", "path": "stories/story-a1-signs-mall-001.json", "vocabRefs": ["SIGN-A1-0003", "SIGN-A1-0004", "SIGN-A1-0005"] }
 ]

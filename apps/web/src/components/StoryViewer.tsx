@@ -1,10 +1,12 @@
 import { useEffect, useMemo, useState } from 'react'
 import type { Card, Prefs } from '../lib/types'
-import { highlightText, type Segment } from '../lib/highlight'
+import { highlightText, highlightTokens, type Segment } from '../lib/highlight'
 import { getPronunciation } from '../lib/romanization'
 import { PopoverFloating } from './ui/PopoverFloating'
 import * as Tooltip from '@radix-ui/react-tooltip'
 import { withBase } from '../lib/url'
+import { playOnce } from '../lib/audio'
+import { segment as segmentText } from '../lib/segmentation'
 
 type Story = {
   id: string
@@ -28,6 +30,8 @@ export function StoryViewer(props: { storyPath: string; prefs: Prefs; onClose: (
   const script = props.prefs.scriptMode
   const [openIdx, setOpenIdx] = useState<number | null>(null)
   const [selectedInfo, setSelectedInfo] = useState<{ text: string; pron: string; gloss?: string | undefined } | null>(null)
+  const [answers, setAnswers] = useState<Record<number, number>>({})
+  const [checked, setChecked] = useState(false)
 
   useEffect(() => {
     const url = withBase(props.storyPath)
@@ -39,26 +43,47 @@ export function StoryViewer(props: { storyPath: string; prefs: Prefs; onClose: (
     return script === 'trad' ? (story.body || '') : (story.bodySimp || story.body)
   }, [story, script])
 
-  const segs: Segment[] = useMemo(() => {
-    if (!story) return []
-    const targets = (story.vocabRefs || [])
+  const highlightTargets = useMemo(() => {
+    if (!story) return [] as string[]
+    return (story.vocabRefs || [])
       .map(id => (props.cards || []).find(c => c.id === id))
       .filter(Boolean)
       .map(c => script === 'trad' ? (c as Card).trad : ((c as Card).simp || (c as Card).trad)) as string[]
-    return highlightText(text, targets)
-  }, [text, story, props.cards, script])
+  }, [story, props.cards, script])
 
-  function playOnce() {
+  const [segs, setSegs] = useState<Segment[]>([])
+
+  useEffect(() => {
+    if (!story) { setSegs([]); return }
+    const fallback = highlightText(text, highlightTargets)
+    setSegs(fallback)
+    let alive = true
+    ;(async () => {
+      try {
+        const tokens = await segmentText(text)
+        if (!alive) return
+        if (!tokens.length) { setSegs(fallback); return }
+        const tokenSegs = highlightTokens(tokens, highlightTargets)
+        setSegs(tokenSegs.length ? tokenSegs : fallback)
+      } catch {
+        if (alive) setSegs(fallback)
+      }
+    })()
+    return () => { alive = false }
+  }, [text, highlightTargets, story])
+
+  function playOnceHandler() {
     if (played || !story?.audioUrl) return
-    const a = new Audio(withBase(story.audioUrl))
-    a.addEventListener('ended', () => setPlayed(true), { once: true })
-    a.play().catch(() => setErr('Audio failed to play'))
+    const url = withBase(story.audioUrl)
+    try {
+      playOnce(url, () => setPlayed(true))
+    } catch {
+      setErr('Audio failed to play')
+    }
   }
 
   if (err) return <div style={{ color: '#c00' }}>{err}</div>
   if (!story) return <div>Loading story…</div>
-  const [answers, setAnswers] = useState<Record<number, number>>({})
-  const [checked, setChecked] = useState(false)
   function check() { setChecked(true) }
   return (
     <div style={{ border: '1px solid #ddd', padding: 16, borderRadius: 8, maxWidth: 720 }}>
@@ -102,7 +127,7 @@ export function StoryViewer(props: { storyPath: string; prefs: Prefs; onClose: (
         <Tooltip.Provider>
           <Tooltip.Root>
             <Tooltip.Trigger asChild>
-              <button onClick={playOnce} disabled={played || !story.audioUrl}>{played ? 'Played' : 'Play once'}</button>
+              <button onClick={playOnceHandler} disabled={played || !story.audioUrl}>{played ? 'Played' : 'Play once'}</button>
             </Tooltip.Trigger>
             <Tooltip.Content side="top" sideOffset={4}>
               <div style={{ background: '#111', color: '#fff', padding: '4px 8px', borderRadius: 4, fontSize: 12 }}>One play only — exam style</div>

@@ -92,3 +92,30 @@ export const StorySchema = z.object({
 })
 
 export type StoryData = z.infer<typeof StorySchema>
+
+// Curriculum Path schemas
+export const PathNodeSchema = z.object({
+  id: z.string(),
+  title: z.string(),
+  band: z.enum(['A','B','C']),
+  level: z.number().int().min(0).max(6),
+  content: z.object({
+    deckId: z.string(),
+    storyIds: z.array(z.string()).optional(),
+    grammarDeckId: z.string().optional(),
+  }),
+  gates: z.object({
+    quickTestMin: z.number().min(0).max(100).optional(),
+    listeningMin: z.number().min(0).max(100).optional(),
+    srsCoverageMin: z.number().min(0).max(1).optional(),
+  }).default({}),
+  next: z.array(z.string()).optional().default([]),
+})
+
+export const PathDocSchema = z.object({
+  start: z.string(),
+  nodes: z.array(PathNodeSchema),
+})
+
+export type PathNode = z.infer<typeof PathNodeSchema>
+export type PathDoc = z.infer<typeof PathDocSchema>

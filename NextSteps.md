@@ -1,26 +1,49 @@
-# Next Steps (Execution Queue)
+# Next Steps (Roadmap Execution)
 
-Immediate (Task 1)
-- Add CI workflow for typecheck/lint/tests and data validation
-- Add Pages deploy workflow; set Vite base to '/Studywan/'
-- Extend Card/Story schemas (examples, variants, hints, questions) — done
-- Add dict merge TS script and strict A1 gloss validator — done
+This plan focuses on elevating StudyWan from MVP to a guided, path‑based experience with robust practice and analytics.
 
-Short-term (Task 2–6)
-- Data validator (AJV/Zod) for cards/stories; add npm script — added (scripts/validate-data.ts)
-- Deck manifest and dynamic DeckPicker — wired; added A2/B1/B2 stubs
-- Central prefs store and global toggles — present
-- SRS session summary and leech handling — present
-- ReaderPack polish: wrong→SRS, gist/detail mix, return-to-menu — baseline
-- Listening Drills scaffold — added
-- Exam Simulation scaffold — added
-- Dashboard (basic counters) — added
+## Milestone M1 — Curriculum Path (2–3 weeks)
+- Data: create `data/curriculum/path.json` with ~6–10 A1 units (include Signs).
+- Schema: add Zod types + loader; store per‑unit progress in localStorage/IndexedDB.
+- UI: PathView and PathRunner exist; enforce gating (Quick/Listening/SRS), add resume and mastery checks UI.
+- Highlighting: integrate `nodejieba` in `tools/ingest/segment_stories.ts`; switch Reader/Story highlighting to token spans; add unit tests.
+- Analytics: expose basic unit stats (time spent, attempts, best score).
 
-MVP hardening (Task 7–9)
-- PWA install/offline cache
-- Offline audio/image caching via Workbox runtimeCaching — added
-- Accessibility: tone colours, high-contrast, ARIA labels, shortcuts
-- Licensing & attribution UI
+Acceptance
+- Path page lists units with status; clicking runs the sequencer.
+- Mastery gates enforced (Quick Test ≥80, Listening ≥70, SRS coverage ≥60%).
+- Token‑based highlighting passes unit tests.
 
-Optional/Future (Task 10)
-- Error bank, CSV import/export, tests, B-level readers, Supabase sync
+## Milestone M2 — Alternative Practice + Charts (3–4 weeks)
+- Spiral Review: mixed quick sessions across recently completed units.
+- Cloze: auto‑generate blanks from story sentences using GrammarCard patterns.
+- Typing Mode: typed Hanzi/Pinyin/Zhuyin targets for production practice.
+- Handwriting: per‑character zoom modal (HanziWriter) for all characters of a term.
+- Dashboard: add Recharts time‑series (reviews/day, accuracy trend) and unit completion charts.
+
+Acceptance
+- Each completed unit exposes 3+ practice modes.
+- Dashboard shows at least 2 charts and unit completion summaries.
+
+## Milestone M3 — i18n + E2E + Audio (2–3 weeks)
+- Migrate minimal i18n to i18next/react‑i18next; externalize core strings.
+- Add Playwright E2E for: path navigation, mastery, alternative practice, resume.
+- Seed a small set of Taiwan‑accent audio samples under `apps/web/public/audio/`; verify PWA caching and Listening Drills flow.
+
+Acceptance
+- Language picker switches core UI copy (en/de/zh‑TW) without missing keys.
+- E2E suite runs green locally and in CI.
+- Listening Drills play cached audio offline.
+
+## Milestone M4 — Data Growth + Sync (ongoing)
+- Ingest SC‑TOP A2/B1/B2 fully; create program splits; update manifests.
+- Optional Supabase opt‑in sync for path progress, SRS, error bank (privacy first).
+- Licensing & Attribution page: document dictionary, audio, and story sources.
+
+Acceptance
+- A2/B1/B2 units appear in the Path; decks/stories load dynamically.
+- Sync is off by default and safe to enable; Attribution page present.
+
+Notes
+- CI is in place (lint, typecheck, tests, data + locale validation) and Pages deploy is configured with `VITE_BASE=/StudyWan/`.
+- Keep Traditional‑first and Zhuyin default; maintain Signs deck + stories as on‑ramp content.

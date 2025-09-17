@@ -14,5 +14,20 @@
     "https://dict.idioms.moe.edu.tw/",
     "https://www.moc.gov.tw/en/"
   ],
-  "audioUrl": "/audio/zh-TW/story-a2-transport-001.mp3"
+  "audioUrl": "/audio/zh-TW/story-a2-transport-001.mp3",
+  "questions": [
+    {
+      "type": "detail",
+      "prompt": "主角為什麼緊張？",
+      "options": ["要趕上捷運", "肚子餓", "手機沒電"],
+      "answer": 0
+    },
+    {
+      "type": "vocabulary",
+      "prompt": "『計程車』在中國大陸常寫作？",
+      "options": ["的士", "出租車", "汽車"],
+      "answer": 1,
+      "explanation": "台灣常用『計程車』，中國大陸常用『出租車』；香港常用『的士』。"
+    }
+  ]
 }

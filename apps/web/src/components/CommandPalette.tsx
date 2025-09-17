@@ -14,6 +14,7 @@ type Props = {
   onStartExam: () => void
   onOpenDashboard: () => void
   onStartGrammar: () => void
+  onOpenPath: () => void
   onToggleScript: () => void
   onToggleRomanization: () => void
   onOpenErrorBank: () => void
@@ -55,6 +56,7 @@ export function CommandPalette(p: Props) {
                   <Command.Item onSelect={() => { p.onStartListening(); p.onOpenChange(false) }}>Start Listening Drills</Command.Item>
                   <Command.Item onSelect={() => { p.onStartExam(); p.onOpenChange(false) }}>Start Exam Simulation</Command.Item>
                   <Command.Item onSelect={() => { p.onOpenDashboard(); p.onOpenChange(false) }}>Open Dashboard</Command.Item>
+                  <Command.Item onSelect={() => { p.onOpenPath(); p.onOpenChange(false) }}>Open Curriculum Path</Command.Item>
                   <Command.Item onSelect={() => { p.onStartGrammar(); p.onOpenChange(false) }}>Start Grammar Drills</Command.Item>
                   <Command.Item onSelect={() => { p.onToggleScript(); p.onOpenChange(false) }}>Toggle Script (Trad/Simp)</Command.Item>
                   <Command.Item onSelect={() => { p.onToggleRomanization(); p.onOpenChange(false) }}>Toggle Pronunciation (Zhuyin/Pinyin)</Command.Item>

@@ -19,14 +19,20 @@ import { Dashboard } from './components/Dashboard'
 import { SettingsDialog } from './components/SettingsDialog'
 import { OfflineBadge } from './components/OfflineBadge'
 import { initialState, isDue, schedule, type Grade } from './lib/srs'
+import { PathView } from './features/path/PathView'
+import { PathRunner } from './features/path/PathRunner'
+import type { PathNode } from './lib/schema'
 import { withBase } from './lib/url'
 import { logSession } from './lib/store/history'
+import { markStarted, markStep } from './lib/store/pathProgress'
+import { computeNodeStatus, type NodeStatus } from './lib/pathStatus'
+import { getDeckPathById } from './lib/decks'
 
 import { usePrefs } from './state/usePrefs'
 
 export default function App() {
   const { prefs, setPrefs } = usePrefs()
-  const [view, setView] = useState<'pick' | 'study' | 'quicktest' | 'story' | 'readerpack' | 'listening' | 'exam' | 'dashboard' | 'grammar'>('pick')
+  const [view, setView] = useState<'pick' | 'study' | 'quicktest' | 'story' | 'readerpack' | 'listening' | 'exam' | 'dashboard' | 'grammar' | 'path' | 'pathRunner'>('pick')
   const [deckPath, setDeckPath] = useState<string>('')
   const [cards, setCards] = useState<Card[]>([])
   const [queue, setQueue] = useState<Card[]>([])
@@ -41,6 +47,15 @@ export default function App() {
   const [showCmd, setShowCmd] = useState(false)
   const prefersReduced = useReducedMotion()
   const [showSettings, setShowSettings] = useState(false)
+  const [pathNode, setPathNode] = useState<PathNode | null>(null)
+  const [inPathMode, setInPathMode] = useState(false)
+  const [reviewedCount, setReviewedCount] = useState(0)
+  const [pathStatus, setPathStatus] = useState<NodeStatus | null>(null)
+  const [pathStatusKey, setPathStatusKey] = useState(0)
+
+  const invalidatePathStatus = useCallback(() => {
+    setPathStatusKey(k => k + 1)
+  }, [])
 
   function GrammarLoader(props: { onDone: () => void }) {
     const [list, setList] = useState<any[] | null>(null)
@@ -53,7 +68,7 @@ export default function App() {
 
   // persistence handled by PrefsProvider
 
-  async function loadDeck(path: string) {
+  async function loadDeck(path: string, subsetLimit?: number) {
     const url = withBase(path)
     const data: Card[] = await fetch(url).then(r => {
       if (!r.ok) throw new Error(`Failed to load deck: ${r.status}`)
@@ -71,9 +86,24 @@ export default function App() {
     setDeckPath(path)
     setCards(data)
     setSrsMap(map)
-    setQueue(q.length ? q : data.slice(0, 20))
+    const base = q.length ? q : data.slice(0, 20)
+    setQueue(subsetLimit ? base.slice(0, subsetLimit) : base)
     setIndex(0)
     setView('study')
+  }
+
+  async function startPathStudy(n: PathNode) {
+    try {
+      const p = await getDeckPathById(n.content.deckId)
+      setInPathMode(true)
+      setPathNode(n)
+      markStarted(n.id)
+      invalidatePathStatus()
+      setReviewedCount(0)
+      await loadDeck(p, 15)
+    } catch {
+      alert('Failed to start unit study — check deck manifest and path.json')
+    }
   }
 
   function onPick(path: string) {
@@ -97,6 +127,20 @@ export default function App() {
     }
   }
 
+  useEffect(() => {
+    if (!pathNode) {
+      setPathStatus(null)
+      return
+    }
+    let active = true
+    computeNodeStatus(pathNode).then((status) => {
+      if (active) setPathStatus(status)
+    }).catch(() => {
+      if (active) setPathStatus(null)
+    })
+    return () => { active = false }
+  }, [pathNode, pathStatusKey])
+
   const grade = useCallback((g: Grade) => {
     if (!current) return
     const key = deckPath
@@ -105,6 +149,7 @@ export default function App() {
     const updated = { ...srsMap, [current.id]: next }
     setSrsMap(updated)
     saveSrsMap(key, updated)
+    setReviewedCount(c => c + 1)
     // session stats
     if (g < 3) setSessionStats(s => ({ ...s, wrong: s.wrong + 1 }))
     else setSessionStats(s => ({ ...s, correct: s.correct + 1 }))
@@ -225,11 +270,24 @@ export default function App() {
               </SwipeCard>
             </motion.div>
           </AnimatePresence>
-          <div style={{ display: 'flex', gap: 8 }}>
+          <div style={{ display: 'flex', gap: 8, alignItems: 'center' }}>
             <button onClick={() => setIndex(i => Math.max(0, i - 1))}>Prev</button>
             <button onClick={() => setIndex(i => Math.min(queue.length - 1, i + 1))}>Next</button>
             <button onClick={() => setView('pick')}>Change Deck</button>
-            <button onClick={() => setShowSummary(true)}>End Session</button>
+            <button onClick={() => {
+              if (pathNode) {
+                markStep(pathNode.id, 'study', reviewedCount, queue.length)
+                invalidatePathStatus()
+              }
+              setShowSummary(true)
+            }}>End Session</button>
+            {pathNode && (
+              <button onClick={() => {
+                markStep(pathNode.id, 'study', reviewedCount, queue.length)
+                invalidatePathStatus()
+                setView('pathRunner')
+              }}>Back to Path</button>
+            )}
             <button onClick={() => {
               const dataStr = 'data:application/json;charset=utf-8,' + encodeURIComponent(JSON.stringify({ deck: deckPath, srs: srsMap, errorBank }))
               const a = document.createElement('a')
@@ -270,8 +328,12 @@ export default function App() {
         <div style={{ display: 'grid', gap: 16 }}>
           <QuickTest cards={cards.length ? cards : queue} prefs={prefs} count={qtCount} onDone={(score, total) => {
             logSession({ id: `qt-${Date.now()}`, type: 'quicktest', deck: deckPath, startedAt: Date.now(), endedAt: Date.now(), score, total })
+            if (pathNode) {
+              markStep(pathNode.id, 'quick', score, total)
+              invalidatePathStatus()
+            }
             alert(`Score: ${score}/${total}`)
-            setView('pick')
+            setView(pathNode ? 'pathRunner' : 'pick')
           }} />
           <div>
             <button onClick={() => setView('pick')}>Back</button>
@@ -294,7 +356,15 @@ export default function App() {
                   const updated = { ...srsMap, [card.id]: next }
                   setSrsMap(updated)
                   saveSrsMap(key, updated)
-                }} onDone={(score, total) => { logSession({ id: `rp-${Date.now()}`, type: 'reader', deck: deckPath, startedAt: Date.now(), endedAt: Date.now(), score, total }); alert(`Reader Pack Score: ${score}/${total}`); setView('pick') }} />
+                }} onDone={(score, total) => {
+                  logSession({ id: `rp-${Date.now()}`, type: 'reader', deck: deckPath, startedAt: Date.now(), endedAt: Date.now(), score, total })
+                  if (pathNode) {
+                    markStep(pathNode.id, 'reader', score, total)
+                    invalidatePathStatus()
+                  }
+                  alert(`Reader Pack Score: ${score}/${total}`)
+                  setView(pathNode ? 'pathRunner' : 'pick')
+                }} />
               )
             } catch {
               return <div>Error loading reader pack options</div>
@@ -310,8 +380,12 @@ export default function App() {
         <div style={{ display: 'grid', gap: 16 }}>
           <ListeningDrills cards={cards.length ? cards : queue} prefs={prefs} count={10} onDone={(score, total) => {
             logSession({ id: `ls-${Date.now()}`, type: 'listening', deck: deckPath, startedAt: Date.now(), endedAt: Date.now(), score, total })
+            if (pathNode) {
+              markStep(pathNode.id, 'listen', score, total)
+              invalidatePathStatus()
+            }
             alert(`Listening Score: ${score}/${total}`)
-            setView('pick')
+            setView(pathNode ? 'pathRunner' : 'pick')
           }} />
           <div>
             <button onClick={() => setView('pick')}>Back</button>
@@ -321,7 +395,7 @@ export default function App() {
 
       {view === 'story' && storyPath && (
         <ErrorBoundary>
-          <StoryViewer storyPath={storyPath} prefs={prefs} onClose={() => setView('study')} />
+          <StoryViewer storyPath={storyPath} prefs={prefs} cards={cards} onClose={() => setView('study')} />
         </ErrorBoundary>
       )}
 
@@ -330,7 +404,7 @@ export default function App() {
           <ExamSim cards={cards.length ? cards : queue} prefs={prefs} onDone={(score, total, pass) => {
             logSession({ id: `ex-${Date.now()}`, type: 'exam', deck: deckPath, startedAt: Date.now(), endedAt: Date.now(), score, total })
             alert(`Exam: ${score}/${total} • ${pass ? 'Pass' : 'Fail'}`)
-            setView('pick')
+            setView(pathNode ? 'pathRunner' : 'pick')
           }} />
           <div>
             <button onClick={() => setView('pick')}>Exit</button>
@@ -347,9 +421,40 @@ export default function App() {
         </div>
       )}
 
+      {view === 'path' && (
+        <div style={{ display: 'grid', gap: 16 }}>
+          <PathView onOpenUnit={(n) => { setPathNode(n); setInPathMode(true); setView('pathRunner') }} />
+          <div>
+            <button onClick={() => setView('pick')}>Back</button>
+          </div>
+        </div>
+      )}
+
+      {view === 'pathRunner' && pathNode && (
+        <div style={{ display: 'grid', gap: 16 }}>
+          <PathRunner
+            node={pathNode}
+            status={pathStatus}
+            onRefreshStatus={invalidatePathStatus}
+            onBack={() => setView('path')}
+            onStartStudy={() => { startPathStudy(pathNode) }}
+            onStartQuickTest={() => { setQtCount(10); setView('quicktest') }}
+            onStartReader={() => { setView('readerpack') }}
+            onStartListening={() => { setView('listening') }}
+            onStartGrammar={() => { setView('grammar') }}
+          />
+        </div>
+      )}
+
       {view === 'grammar' && (
         <div style={{ display: 'grid', gap: 16 }}>
-          <GrammarLoader onDone={() => setView('pick')} />
+          <GrammarLoader onDone={() => {
+            if (pathNode) {
+              markStep(pathNode.id, 'grammar')
+              invalidatePathStatus()
+            }
+            setView(pathNode ? 'pathRunner' : 'pick')
+          }} />
           <div>
             <button onClick={() => setView('pick')}>Back</button>
           </div>
@@ -399,6 +504,7 @@ export default function App() {
         onStartExam={() => { setView('exam') }}
         onOpenDashboard={() => { setView('dashboard') }}
         onStartGrammar={() => { setView('grammar') }}
+        onOpenPath={() => { setView('path') }}
         onToggleScript={() => setPrefs(p => ({ ...p, scriptMode: p.scriptMode === 'trad' ? 'simp' : 'trad' }))}
         onToggleRomanization={() => setPrefs(p => ({ ...p, romanization: p.romanization === 'zhuyin' ? 'pinyin' : 'zhuyin' }))}
         onOpenErrorBank={() => {

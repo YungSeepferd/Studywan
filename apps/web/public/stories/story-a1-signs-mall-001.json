@@ -1,0 +1,17 @@
+{
+  "id": "story-a1-signs-mall-001",
+  "band": "A",
+  "level": 1,
+  "bandLabel": "A1",
+  "title": "商場指示牌",
+  "body": "百貨公司裡，到處都有指示牌：『出口』在左邊，『洗手間』在四樓，地上有『小心地滑』的黃色三角標誌。",
+  "vocabRefs": ["SIGN-A1-0003", "SIGN-A1-0004", "SIGN-A1-0005"],
+  "topic": "signs",
+  "cultureRefs": ["https://www.bsmi.gov.tw/"],
+  "audioUrl": "/audio/zh-TW/story-a1-signs-mall-001.mp3",
+  "questions": [
+    { "type": "detail", "prompt": "『洗手間』在哪裡？", "options": ["一樓", "四樓", "地下室"], "answer": 1 },
+    { "type": "vocabulary", "prompt": "黃色三角形標誌多提醒什麼？", "options": ["打折", "小心地滑", "禁止拍照"], "answer": 1 }
+  ]
+}
+

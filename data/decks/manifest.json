@@ -7,5 +7,6 @@
   { "id": "A1c", "title": "A1 Program: A1c", "band": "A", "level": 1, "path": "data/band-A/a1_program/a1c.json" },
   { "id": "A2a", "title": "A2 Program: A2a", "band": "A", "level": 2, "path": "data/band-A/a2_program/a2a.json" },
   { "id": "B1a", "title": "B1 Program: B1a", "band": "B", "level": 3, "path": "data/band-B/b1_program/b1a.json" },
-  { "id": "B2a", "title": "B2 Program: B2a", "band": "B", "level": 4, "path": "data/band-B/b2_program/b2a.json" }
+  { "id": "B2a", "title": "B2 Program: B2a", "band": "B", "level": 4, "path": "data/band-B/b2_program/b2a.json" },
+  { "id": "A1 Signs", "title": "A1 Signs (Taiwan Signage)", "band": "A", "level": 1, "topic": "標示", "path": "data/band-A/signs/signs-a1.json" }
 ]

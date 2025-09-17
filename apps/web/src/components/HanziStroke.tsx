@@ -1,8 +1,9 @@
 import { useEffect, useRef, useState } from 'react'
 
-export function HanziStroke(props: { char: string }) {
+export function HanziStroke(props: { char: string; size?: number }) {
   const ref = useRef<HTMLDivElement>(null)
   const [err, setErr] = useState<string | null>(null)
+  const size = props.size ?? 200
 
   useEffect(() => {
     let writer: any = null
@@ -12,8 +13,8 @@ export function HanziStroke(props: { char: string }) {
         const HanziWriter: any = (await import('hanzi-writer')).default as any
         if (!mounted || !ref.current) return
         writer = HanziWriter.create(ref.current, props.char, {
-          width: 200,
-          height: 200,
+          width: size,
+          height: size,
           showOutline: true,
           showCharacter: true,
           padding: 5,

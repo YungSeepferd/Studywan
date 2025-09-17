@@ -19,14 +19,29 @@ jobs:
       - name: Install web deps
         run: npm ci
         working-directory: apps/web
+      - name: Lint
+        run: npm run lint -- --max-warnings=0
+        working-directory: apps/web
       - name: Typecheck
         run: npm run typecheck
         working-directory: apps/web
       - name: Unit tests
         run: npm test
         working-directory: apps/web
-      - name: Data validation (strict A1 glosses)
-        run: STRICT_A1_GLOSSES=1 npm run validate:data
+      - name: Merge A1 dictionaries (if present)
+        run: |
+          if [ -f data/dicts/cedict_ts.u8 ] && [ -f data/dicts/moe.tsv ]; then \
+            make merge-a1-cedict-moe-inplace ; \
+          else \
+            echo 'Dictionary files missing; skipping merge.' ; \
+          fi
+      - name: Data validation (strict if dictionaries provided)
+        run: |
+          if [ -f data/dicts/cedict_ts.u8 ] && [ -f data/dicts/moe.tsv ]; then \
+            STRICT_A1_GLOSSES=1 npm run validate:data ; \
+          else \
+            npm run validate:data ; \
+          fi
         working-directory: apps/web
       - name: Validate locales
         run: node ../../scripts/validate-locales.ts

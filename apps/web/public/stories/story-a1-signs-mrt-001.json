@@ -1,0 +1,18 @@
+{
+  "id": "story-a1-signs-mrt-001",
+  "band": "A",
+  "level": 1,
+  "bandLabel": "A1",
+  "title": "捷運禮儀標示",
+  "body": "在台北捷運裡，常看到『請勿飲食』和『禁止吸煙』的標示。大家一起遵守，車廂更乾淨、空氣更好。",
+  "vocabRefs": ["SIGN-A1-0001", "SIGN-A1-0002"],
+  "topic": "signs",
+  "cultureRefs": ["https://www.metro.taipei/"],
+  "audioUrl": "/audio/zh-TW/story-a1-signs-mrt-001.mp3",
+  "questions": [
+    { "type": "gist", "prompt": "故事說的是哪裡的標示？", "options": ["夜市", "台北捷運", "公園"], "answer": 1 },
+    { "type": "inference", "prompt": "遵守這些標示有什麼好處？", "options": ["更快", "更乾淨、更健康", "更便宜"], "answer": 1,
+      "explanation": "『請勿飲食』『禁止吸煙』是公共運輸的衛生與安全規範，維持車廂清潔與空氣品質。" }
+  ]
+}
+

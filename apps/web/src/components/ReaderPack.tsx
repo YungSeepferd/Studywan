@@ -1,9 +1,10 @@
 import { useEffect, useMemo, useState } from 'react'
 import type { Card, Prefs } from '../lib/types'
-import { highlightText, type Segment } from '../lib/highlight'
+import { highlightText, highlightTokens, type Segment } from '../lib/highlight'
 import { getPronunciation } from '../lib/romanization'
 import { PopoverFloating } from './ui/PopoverFloating'
 import { withBase } from '../lib/url'
+import { segment as segmentText } from '../lib/segmentation'
 
 type StoryMeta = { id: string; title: string; band: 'A'|'B'|'C'; level: number; topic?: string; path: string; vocabRefs?: string[] }
 type Story = { id: string; title: string; band: 'A'|'B'|'C'; level: number; body: string; bodySimp?: string; vocabRefs: string[]; audioUrl?: string }
@@ -68,14 +69,34 @@ export function ReaderPack(props: {
     return props.prefs.scriptMode === 'trad' ? story.body : (story.bodySimp || story.body)
   }, [story, props.prefs.scriptMode])
 
-  const segs: Segment[] = useMemo(() => {
-    if (!story) return []
-    const targets = (story.vocabRefs || [])
+  const highlightTargets = useMemo(() => {
+    if (!story) return [] as string[]
+    return (story.vocabRefs || [])
       .map(id => props.cards.find(c => c.id === id))
       .filter(Boolean)
       .map(c => props.prefs.scriptMode === 'trad' ? (c as Card).trad : ((c as Card).simp || (c as Card).trad)) as string[]
-    return highlightText(text, targets)
-  }, [text, story, props.cards, props.prefs.scriptMode])
+  }, [story, props.cards, props.prefs.scriptMode])
+
+  const [segs, setSegs] = useState<Segment[]>([])
+
+  useEffect(() => {
+    if (!story) { setSegs([]); return }
+    const fallback = highlightText(text, highlightTargets)
+    setSegs(fallback)
+    let alive = true
+    ;(async () => {
+      try {
+        const tokens = await segmentText(text)
+        if (!alive) return
+        if (!tokens.length) { setSegs(fallback); return }
+        const tokenSegs = highlightTokens(tokens, highlightTargets)
+        setSegs(tokenSegs.length ? tokenSegs : fallback)
+      } catch {
+        if (alive) setSegs(fallback)
+      }
+    })()
+    return () => { alive = false }
+  }, [text, highlightTargets, story])
 
   function playOnce() {
     if (played || !story?.audioUrl) return

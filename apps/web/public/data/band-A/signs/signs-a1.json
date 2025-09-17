@@ -1,0 +1,64 @@
+[
+  {
+    "id": "SIGN-A1-0001",
+    "trad": "請勿飲食",
+    "pinyin": "qǐng wù yǐnshí",
+    "pos": "Sign",
+    "gloss_en": "No eating or drinking",
+    "hint": "請(please) + 勿(do not) + 飲食(eat/drink): polite prohibition used on MRT, buses, museums.",
+    "etymology": "勿 originally a pictograph indicating 'do not'; in signage, pairs with 請 for polite tone.",
+    "band": "A",
+    "level": 1,
+    "topic": "標示",
+    "tags": ["sign"]
+  },
+  {
+    "id": "SIGN-A1-0002",
+    "trad": "禁止吸煙",
+    "pinyin": "jìnzhǐ xīyān",
+    "pos": "Sign",
+    "gloss_en": "No smoking",
+    "hint": "禁止(forbid) + 吸煙(smoking). Ubiquitous in indoor spaces and public transport.",
+    "band": "A",
+    "level": 1,
+    "topic": "標示",
+    "tags": ["sign"]
+  },
+  {
+    "id": "SIGN-A1-0003",
+    "trad": "出口",
+    "pinyin": "chūkǒu",
+    "pos": "N",
+    "gloss_en": "Exit",
+    "hint": "常見於綠底白字跑步人圖示旁。",
+    "band": "A",
+    "level": 1,
+    "topic": "標示",
+    "tags": ["sign"]
+  },
+  {
+    "id": "SIGN-A1-0004",
+    "trad": "洗手間",
+    "pinyin": "xǐshǒujiān",
+    "pos": "N",
+    "gloss_en": "Restroom / toilet",
+    "hint": "公眾場所指示，常見男/女符號或無障礙圖示。",
+    "band": "A",
+    "level": 1,
+    "topic": "標示",
+    "tags": ["sign"]
+  },
+  {
+    "id": "SIGN-A1-0005",
+    "trad": "小心地滑",
+    "pinyin": "xiǎoxīn dì huá",
+    "pos": "Sign",
+    "gloss_en": "Caution: slippery floor",
+    "hint": "黃色三角警告標誌常見於清潔時段。",
+    "band": "A",
+    "level": 1,
+    "topic": "標示",
+    "tags": ["sign"]
+  }
+]
+

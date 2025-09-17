@@ -33,7 +33,7 @@ export function ExamSim(props: {
     return (
       <div style={{ display: 'grid', gap: 12 }}>
         <div style={{ color: '#666' }}>Exam: Listening • Time left: {Math.floor(remaining/60)}m {remaining%60}s</div>
-        <ListeningDrills cards={props.cards} prefs={props.prefs} count={10} onDone={(score, total) => {
+        <ListeningDrills cards={props.cards} prefs={props.prefs} count={35} onDone={(score, total) => {
           setListenScore(score)
           setListenTotal(total)
           setPhase('read')
@@ -45,7 +45,7 @@ export function ExamSim(props: {
   return (
     <div style={{ display: 'grid', gap: 12 }}>
       <div style={{ color: '#666' }}>Exam: Reading • Time left: {Math.floor(remaining/60)}m {remaining%60}s</div>
-      <QuickTest cards={props.cards} prefs={props.prefs} count={15} onDone={(score, total) => {
+      <QuickTest cards={props.cards} prefs={props.prefs} count={50} onDone={(score, total) => {
         setReadScore(score)
         setReadTotal(total)
         const all = listenTotal + total
@@ -56,4 +56,3 @@ export function ExamSim(props: {
     </div>
   )
 }
-

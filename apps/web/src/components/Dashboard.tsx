@@ -1,6 +1,7 @@
 import type { Card, SrsMap } from '../lib/types'
 import { isDue } from '../lib/srs'
-import { getHistory } from '../lib/store/history'
+import { getHistory, exportHistory, importHistory } from '../lib/store/history'
+import { useState } from 'react'
 
 export function Dashboard(props: { cards: Card[]; srsMap: SrsMap }) {
   const total = props.cards.length
@@ -15,6 +16,7 @@ export function Dashboard(props: { cards: Card[]; srsMap: SrsMap }) {
   const totalAnswered = history.reduce((n, h) => n + (h.total || 0), 0)
   const totalScore = history.reduce((n, h) => n + (h.score || 0), 0)
   const accuracy = totalAnswered ? Math.round((100 * totalScore) / totalAnswered) : 0
+  const [json, setJson] = useState('')
 
   return (
     <div style={{ display: 'grid', gap: 8 }}>
@@ -25,6 +27,19 @@ export function Dashboard(props: { cards: Card[]; srsMap: SrsMap }) {
       <div>Scheduled (upcoming): {upcoming}</div>
       <div>Sessions: {totalSessions} • Accuracy: {accuracy}%</div>
       <div style={{ color: '#666', fontSize: 12 }}>Tip: full analytics and charts coming soon.</div>
+      <div style={{ borderTop: '1px solid #eee', marginTop: 8, paddingTop: 8 }}>
+        <div style={{ fontWeight: 600, marginBottom: 6 }}>Export/Import Sessions</div>
+        <div style={{ display: 'flex', gap: 8, flexWrap: 'wrap', marginBottom: 6 }}>
+          <button onClick={() => setJson(exportHistory())}>Export</button>
+          <button onClick={() => { try { importHistory(json); alert('Imported'); } catch { alert('Invalid JSON') } }}>Import</button>
+        </div>
+        <textarea
+          style={{ width: '100%', minHeight: 120, fontFamily: 'ui-monospace, SFMono-Regular, Menlo, monospace' }}
+          placeholder="Session JSON will appear here on Export; paste to Import"
+          value={json}
+          onChange={e => setJson(e.target.value)}
+        />
+      </div>
     </div>
   )
 }
