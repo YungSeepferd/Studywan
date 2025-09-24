@@ -89,6 +89,9 @@ export const StorySchema = z.object({
       })
     )
     .optional(),
+  tokens: z.array(z.string()).optional(),
+  tokensTrad: z.array(z.string()).optional(),
+  tokensSimp: z.array(z.string()).optional(),
 })
 
 export type StoryData = z.infer<typeof StorySchema>

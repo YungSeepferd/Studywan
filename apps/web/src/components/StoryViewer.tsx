@@ -7,6 +7,7 @@ import * as Tooltip from '@radix-ui/react-tooltip'
 import { withBase } from '../lib/url'
 import { playOnce } from '../lib/audio'
 import { segment as segmentText } from '../lib/segmentation'
+import { selectStoryTokens, needsSegmentationFallback } from '../lib/storyTokens'
 
 type Story = {
   id: string
@@ -21,6 +22,9 @@ type Story = {
   cultureRefs?: string[]
   exampleSentences?: { zh: string; en?: string; zhuyin?: string; pinyin?: string }[]
   questions?: { id?: string; type?: 'detail'|'gist'|'vocabulary'|'inference'; prompt: string; options?: string[]; answer?: string|number; explanation?: string }[]
+  tokens?: string[]
+  tokensTrad?: string[]
+  tokensSimp?: string[]
 }
 
 export function StoryViewer(props: { storyPath: string; prefs: Prefs; onClose: () => void; cards?: Card[] }) {
@@ -56,6 +60,12 @@ export function StoryViewer(props: { storyPath: string; prefs: Prefs; onClose: (
   useEffect(() => {
     if (!story) { setSegs([]); return }
     const fallback = highlightText(text, highlightTargets)
+    const existingTokens = selectStoryTokens(story, props.prefs)
+    if (!needsSegmentationFallback(existingTokens)) {
+      const tokenSegs = highlightTokens(existingTokens, highlightTargets)
+      setSegs(tokenSegs.length ? tokenSegs : fallback)
+      return
+    }
     setSegs(fallback)
     let alive = true
     ;(async () => {
@@ -70,7 +80,7 @@ export function StoryViewer(props: { storyPath: string; prefs: Prefs; onClose: (
       }
     })()
     return () => { alive = false }
-  }, [text, highlightTargets, story])
+  }, [text, highlightTargets, story, script])
 
   function playOnceHandler() {
     if (played || !story?.audioUrl) return
@@ -91,7 +101,7 @@ export function StoryViewer(props: { storyPath: string; prefs: Prefs; onClose: (
         <strong>{story.title} ({story.bandLabel || `${story.band}${story.level}`})</strong>
         <button onClick={props.onClose}>Close</button>
       </div>
-      <div style={{ whiteSpace: 'pre-wrap', marginTop: 12, fontSize: 18 }}>
+      <div data-testid="story-viewer-text" style={{ whiteSpace: 'pre-wrap', marginTop: 12, fontSize: 18 }}>
         {segs.map((s, idx) => {
           if (!s.highlight) return <span key={idx}>{s.text}</span>
           return (

@@ -1,0 +1,16 @@
+[
+  {
+    "id": "G-A1-CORE2-001",
+    "pattern": "多少錢 / 幾 + 量詞",
+    "example": { "zh": "這個多少錢？" },
+    "band": "A",
+    "level": 1
+  },
+  {
+    "id": "G-A1-CORE2-002",
+    "pattern": "想 + 動詞",
+    "example": { "zh": "我想買那本書。" },
+    "band": "A",
+    "level": 1
+  }
+]

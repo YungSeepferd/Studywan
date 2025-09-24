@@ -1,6 +1,6 @@
 import { useCallback, useEffect, useMemo, useState } from 'react'
 import { AnimatePresence, motion, useReducedMotion } from 'motion/react'
-import type { Card, SrsMap } from './lib/types'
+import type { Card, Prefs, SrsMap } from './lib/types'
 import { loadSrsMap, saveSrsMap } from './lib/storage'
 import { DeckPicker } from './components/DeckPicker'
 import { StudyCard } from './components/StudyCard'
@@ -20,13 +20,16 @@ import { SettingsDialog } from './components/SettingsDialog'
 import { OfflineBadge } from './components/OfflineBadge'
 import { initialState, isDue, schedule, type Grade } from './lib/srs'
 import { PathView } from './features/path/PathView'
-import { PathRunner } from './features/path/PathRunner'
+import { PathRunner, type PathStoryLink } from './features/path/PathRunner'
 import type { PathNode } from './lib/schema'
 import { withBase } from './lib/url'
 import { logSession } from './lib/store/history'
 import { markStarted, markStep } from './lib/store/pathProgress'
+import { getNodeStoryProgress, markStoryCompleted } from './lib/store/storyProgress'
 import { computeNodeStatus, type NodeStatus } from './lib/pathStatus'
 import { getDeckPathById } from './lib/decks'
+import { loadGrammarDeck, loadGrammarDeckManifest } from './lib/grammar'
+import { loadStoryManifest, getStoryMetaById, type StoryMeta } from './lib/stories'
 
 import { usePrefs } from './state/usePrefs'
 
@@ -52,18 +55,85 @@ export default function App() {
   const [reviewedCount, setReviewedCount] = useState(0)
   const [pathStatus, setPathStatus] = useState<NodeStatus | null>(null)
   const [pathStatusKey, setPathStatusKey] = useState(0)
+  const [storyManifest, setStoryManifest] = useState<StoryMeta[] | null>(null)
+  const [storyContext, setStoryContext] = useState<{ nodeId?: string; storyId: string } | null>(null)
+  const [storyProgressKey, setStoryProgressKey] = useState(0)
+  const [activeGrammarDeckId, setActiveGrammarDeckId] = useState<string | undefined>(undefined)
+
+  useEffect(() => {
+    if (typeof window === 'undefined') return
+    const api = {
+      setView: (nextView: typeof view) => {
+        setView(nextView)
+      },
+      setCards: (data: Card[]) => {
+        setCards(data)
+        setQueue(data.slice(0, Math.min(20, data.length)))
+        setIndex(0)
+      },
+      setPrefs: (next: Partial<Prefs>) => setPrefs(p => ({ ...p, ...next })),
+      showStory: (story: { path: string }) => {
+        setStoryContext(null)
+        setStoryPath(story.path)
+        setView('story')
+      },
+    }
+    ;(window as any).__STUDYWAN_E2E__ = api
+    return () => {
+      if ((window as any).__STUDYWAN_E2E__ === api) delete (window as any).__STUDYWAN_E2E__
+    }
+  }, [setPrefs, setView])
 
   const invalidatePathStatus = useCallback(() => {
     setPathStatusKey(k => k + 1)
   }, [])
 
-  function GrammarLoader(props: { onDone: () => void }) {
+  useEffect(() => {
+    let active = true
+    loadStoryManifest().then((list) => {
+      if (active) setStoryManifest(list)
+    }).catch(() => {
+      if (active) setStoryManifest([])
+    })
+    return () => { active = false }
+  }, [])
+
+  function GrammarLoader(props: { onDone: () => void; deckId?: string }) {
     const [list, setList] = useState<any[] | null>(null)
+    const [title, setTitle] = useState<string>('')
     useEffect(() => {
-      fetch(withBase('data/grammar/a1.json')).then(r => r.json()).then(setList).catch(() => setList([]))
-    }, [])
+      let active = true
+      async function load() {
+        try {
+          const manifest = await loadGrammarDeckManifest()
+          if (!manifest.length) throw new Error('No grammar decks')
+          const fallback = props.deckId
+            ? manifest.find(entry => entry.id === props.deckId)
+            : manifest.find(entry => entry.id === 'grammar-a1-general') || manifest[0]
+          const target = fallback || manifest[0]
+          if (!target) throw new Error('No grammar deck available')
+          const deck = await loadGrammarDeck(target.id)
+          if (!active) return
+          setList(deck.items as any)
+          setTitle(deck.meta.title || deck.meta.id)
+        } catch {
+          if (active) {
+            setList([])
+            setTitle('')
+          }
+        }
+      }
+      load()
+      return () => { active = false }
+    }, [props.deckId])
     if (list === null) return <div>Loading…</div>
-    return <GrammarDrills items={list as any} onDone={props.onDone} />
+    if (!list.length) return <div>Grammar content unavailable.</div>
+    return (
+      <div style={{ display: 'grid', gap: 12 }}>
+        {title && <div style={{ fontWeight: 600 }}>{title}</div>}
+        <GrammarDrills items={list as any} onDone={props.onDone} />
+      </div>
+    )
   }
 
   // persistence handled by PrefsProvider
@@ -120,12 +190,48 @@ export default function App() {
       const list: { id: string; path: string; vocabRefs?: string[] }[] = await fetch(manifestUrl).then(r => r.json())
       const hit = list.find(item => (item.vocabRefs || []).includes(c.id))
       if (!hit) { alert('No linked story for this card yet.'); return }
+      setStoryContext(null)
       setStoryPath(hit.path)
       setView('story')
     } catch {
       alert('Failed to load stories manifest')
     }
   }
+
+  const pathStories = useMemo<PathStoryLink[]>(() => {
+    if (!pathNode || !(pathNode.content?.storyIds?.length)) return []
+    if (!storyManifest) return []
+    const progress = getNodeStoryProgress(pathNode.id)
+    return pathNode.content.storyIds
+      .map((id) => {
+        const meta = storyManifest.find(entry => entry.id === id)
+        if (!meta) return null
+        const state = progress[id]
+        return {
+          id,
+          title: meta.title || id,
+          path: meta.path,
+          topic: meta.topic,
+          completedAt: state?.completedAt,
+        } as PathStoryLink
+      })
+      .filter(Boolean) as PathStoryLink[]
+  }, [pathNode, storyManifest, storyProgressKey])
+
+  const pathStoriesLoading = Boolean(pathNode && storyManifest === null)
+
+  const openPathStory = useCallback(async (storyId: string) => {
+    try {
+      let meta = storyManifest?.find(entry => entry.id === storyId)
+      if (!meta) meta = await getStoryMetaById(storyId)
+      if (!meta) { alert('Story metadata missing.'); return }
+      setStoryContext(pathNode ? { nodeId: pathNode.id, storyId } : { storyId })
+      setStoryPath(meta.path)
+      setView('story')
+    } catch {
+      alert('Failed to load story metadata')
+    }
+  }, [pathNode, storyManifest])
 
   useEffect(() => {
     if (!pathNode) {
@@ -336,7 +442,7 @@ export default function App() {
             setView(pathNode ? 'pathRunner' : 'pick')
           }} />
           <div>
-            <button onClick={() => setView('pick')}>Back</button>
+            <button onClick={() => { setInPathMode(false); setPathNode(null); setView('pick') }}>Back</button>
           </div>
         </div>
       )}
@@ -395,7 +501,21 @@ export default function App() {
 
       {view === 'story' && storyPath && (
         <ErrorBoundary>
-          <StoryViewer storyPath={storyPath} prefs={prefs} cards={cards} onClose={() => setView('study')} />
+          <StoryViewer
+            storyPath={storyPath}
+            prefs={prefs}
+            cards={cards}
+            onClose={() => {
+              if (storyContext?.nodeId) {
+                markStoryCompleted(storyContext.nodeId, storyContext.storyId)
+                setStoryProgressKey(k => k + 1)
+              }
+              const nextView = storyContext?.nodeId && inPathMode ? 'pathRunner' : 'study'
+              setStoryContext(null)
+              setStoryPath('')
+              setView(nextView)
+            }}
+          />
         </ErrorBoundary>
       )}
 
@@ -425,7 +545,7 @@ export default function App() {
         <div style={{ display: 'grid', gap: 16 }}>
           <PathView onOpenUnit={(n) => { setPathNode(n); setInPathMode(true); setView('pathRunner') }} />
           <div>
-            <button onClick={() => setView('pick')}>Back</button>
+            <button onClick={() => { setInPathMode(false); setPathNode(null); setView('pick') }}>Back</button>
           </div>
         </div>
       )}
@@ -435,28 +555,35 @@ export default function App() {
           <PathRunner
             node={pathNode}
             status={pathStatus}
+            stories={pathStories}
+            storiesLoading={pathStoriesLoading}
+            onOpenStory={openPathStory}
             onRefreshStatus={invalidatePathStatus}
             onBack={() => setView('path')}
             onStartStudy={() => { startPathStudy(pathNode) }}
             onStartQuickTest={() => { setQtCount(10); setView('quicktest') }}
             onStartReader={() => { setView('readerpack') }}
             onStartListening={() => { setView('listening') }}
-            onStartGrammar={() => { setView('grammar') }}
+            onStartGrammar={() => { setActiveGrammarDeckId(pathNode?.content?.grammarDeckId); setView('grammar') }}
           />
         </div>
       )}
 
       {view === 'grammar' && (
         <div style={{ display: 'grid', gap: 16 }}>
-          <GrammarLoader onDone={() => {
-            if (pathNode) {
-              markStep(pathNode.id, 'grammar')
-              invalidatePathStatus()
-            }
-            setView(pathNode ? 'pathRunner' : 'pick')
-          }} />
+          <GrammarLoader
+            {...(activeGrammarDeckId ? { deckId: activeGrammarDeckId } : {})}
+            onDone={() => {
+              if (pathNode) {
+                markStep(pathNode.id, 'grammar')
+                invalidatePathStatus()
+              }
+              setActiveGrammarDeckId(undefined)
+              setView(pathNode ? 'pathRunner' : 'pick')
+            }}
+          />
           <div>
-            <button onClick={() => setView('pick')}>Back</button>
+            <button onClick={() => { setActiveGrammarDeckId(undefined); setView('pick') }}>Back</button>
           </div>
         </div>
       )}
@@ -503,7 +630,7 @@ export default function App() {
         onStartListening={() => { setView('listening') }}
         onStartExam={() => { setView('exam') }}
         onOpenDashboard={() => { setView('dashboard') }}
-        onStartGrammar={() => { setView('grammar') }}
+        onStartGrammar={() => { setActiveGrammarDeckId(undefined); setView('grammar') }}
         onOpenPath={() => { setView('path') }}
         onToggleScript={() => setPrefs(p => ({ ...p, scriptMode: p.scriptMode === 'trad' ? 'simp' : 'trad' }))}
         onToggleRomanization={() => setPrefs(p => ({ ...p, romanization: p.romanization === 'zhuyin' ? 'pinyin' : 'zhuyin' }))}

@@ -1,0 +1,16 @@
+[
+  {
+    "id": "G-A2-CORE1-001",
+    "pattern": "如果…就…",
+    "example": { "zh": "如果下雨，就坐捷運。" },
+    "band": "A",
+    "level": 2
+  },
+  {
+    "id": "G-A2-CORE1-002",
+    "pattern": "除了…以外，還…",
+    "example": { "zh": "除了騎車以外，還可以搭公車。" },
+    "band": "A",
+    "level": 2
+  }
+]

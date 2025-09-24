@@ -1,0 +1,9 @@
+[
+  { "id": "grammar-a1-signs", "title": "A1 Signs Patterns", "level": 1, "path": "data/grammar/grammar-a1-signs.json" },
+  { "id": "grammar-a1-core-1", "title": "A1 Greetings & Family", "level": 1, "path": "data/grammar/grammar-a1-core-1.json" },
+  { "id": "grammar-a1-core-2", "title": "A1 School & Shopping", "level": 1, "path": "data/grammar/grammar-a1-core-2.json" },
+  { "id": "grammar-a1-core-3", "title": "A1 Transport & Daily Life", "level": 1, "path": "data/grammar/grammar-a1-core-3.json" },
+  { "id": "grammar-a1-life-admin", "title": "A1 Personal Info & Community", "level": 1, "path": "data/grammar/grammar-a1-life-admin.json" },
+  { "id": "grammar-a2-core-1", "title": "A2 Moving Around Taiwan", "level": 2, "path": "data/grammar/grammar-a2-core-1.json" },
+  { "id": "grammar-a1-general", "title": "A1 Core Reference", "level": 1, "path": "data/grammar/a1.json" }
+]

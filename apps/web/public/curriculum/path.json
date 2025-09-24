@@ -11,23 +11,125 @@
         "storyIds": [
           "story-a1-signs-mrt-001",
           "story-a1-signs-mall-001"
-        ]
+        ],
+        "grammarDeckId": "grammar-a1-signs"
       },
-      "gates": { "quickTestMin": 80, "listeningMin": 70, "srsCoverageMin": 0.6 },
-      "next": ["A1-core-1"]
+      "gates": {
+        "quickTestMin": 70,
+        "listeningMin": 60,
+        "srsCoverageMin": 0.4
+      },
+      "next": [
+        "A1-core-1"
+      ]
     },
     {
       "id": "A1-core-1",
-      "title": "A1 — Core Vocab 1",
+      "title": "A1 — Greetings & Family",
       "band": "A",
       "level": 1,
       "content": {
-        "deckId": "A1",
-        "storyIds": ["story-a1-greetings-001", "story-a1-transport-001"]
+        "deckId": "A1a",
+        "storyIds": [
+          "story-a1-greetings-001",
+          "story-a1-family-001"
+        ],
+        "grammarDeckId": "grammar-a1-core-1"
       },
-      "gates": { "quickTestMin": 80, "listeningMin": 60, "srsCoverageMin": 0.5 },
+      "gates": {
+        "quickTestMin": 80,
+        "listeningMin": 60,
+        "srsCoverageMin": 0.5
+      },
+      "next": [
+        "A1-core-2"
+      ]
+    },
+    {
+      "id": "A1-core-2",
+      "title": "A1 — School & Shopping",
+      "band": "A",
+      "level": 1,
+      "content": {
+        "deckId": "A1b",
+        "storyIds": [
+          "story-a1-school-001",
+          "story-a1-shopping-001"
+        ],
+        "grammarDeckId": "grammar-a1-core-2"
+      },
+      "gates": {
+        "quickTestMin": 80,
+        "listeningMin": 65,
+        "srsCoverageMin": 0.55
+      },
+      "next": [
+        "A1-core-3"
+      ]
+    },
+    {
+      "id": "A1-core-3",
+      "title": "A1 — Transport & Daily Life",
+      "band": "A",
+      "level": 1,
+      "content": {
+        "deckId": "A1c",
+        "storyIds": [
+          "story-a1-transport-001",
+          "story-a2-transport-001"
+        ],
+        "grammarDeckId": "grammar-a1-core-3"
+      },
+      "gates": {
+        "quickTestMin": 85,
+        "listeningMin": 65,
+        "srsCoverageMin": 0.6
+      },
+      "next": [
+        "A1-life-admin"
+      ]
+    },
+    {
+      "id": "A1-life-admin",
+      "title": "A1 — Personal Info & Community",
+      "band": "A",
+      "level": 1,
+      "content": {
+        "deckId": "A1: 個人資料",
+        "storyIds": [
+          "story-a2-school-002",
+          "story-a2-shopping-002"
+        ],
+        "grammarDeckId": "grammar-a1-life-admin"
+      },
+      "gates": {
+        "quickTestMin": 85,
+        "listeningMin": 70,
+        "srsCoverageMin": 0.62
+      },
+      "next": [
+        "A2-core-1"
+      ]
+    },
+    {
+      "id": "A2-core-1",
+      "title": "A2 — Moving Around Taiwan",
+      "band": "A",
+      "level": 2,
+      "content": {
+        "deckId": "A2a",
+        "storyIds": [
+          "story-a2-transport-002",
+          "story-a2-family-002"
+        ],
+        "grammarDeckId": "grammar-a2-core-1"
+      },
+      "gates": {
+        "quickTestMin": 88,
+        "listeningMin": 75,
+        "srsCoverageMin": 0.65
+      },
       "next": []
     }
   ]
 }
-

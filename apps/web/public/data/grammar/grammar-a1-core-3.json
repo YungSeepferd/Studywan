@@ -1,0 +1,16 @@
+[
+  {
+    "id": "G-A1-CORE3-001",
+    "pattern": "先 A 再 B",
+    "example": { "zh": "我先洗手再吃飯。" },
+    "band": "A",
+    "level": 1
+  },
+  {
+    "id": "G-A1-CORE3-002",
+    "pattern": "正在 + 動詞",
+    "example": { "zh": "他正在等公車。" },
+    "band": "A",
+    "level": 1
+  }
+]

@@ -2,7 +2,7 @@ import type { PathNode } from './schema'
 import type { Card, SrsMap } from './types'
 import { loadDeckCardsById } from './decks'
 import { loadSrsMap } from './storage'
-import { getNodeProgress, type NodeProgress, type StepProgress } from './store/pathProgress'
+import { getNodeProgress, type NodeProgress, type StepProgress, type PathStep, type StepAttempt } from './store/pathProgress'
 
 type StepSummary = {
   attempts: number
@@ -10,6 +10,8 @@ type StepSummary = {
   lastTotal?: number
   percent?: number
   met?: boolean
+  updatedAt?: number
+  history?: StepAttempt[]
 }
 
 export type NodeStatus = {
@@ -25,15 +27,20 @@ export type NodeStatus = {
   reader: StepSummary
   listen: StepSummary & { requirement: number }
   grammar: StepSummary
+  nextRequiredStep: PathStep | null
 }
 
 function summarize(step: StepProgress | undefined): StepSummary {
   if (!step) return { attempts: 0 }
-  const { attempts, lastScore, lastTotal } = step
-  const summary: StepSummary = { attempts }
+  const { attempts, lastScore, lastTotal, updatedAt, history } = step
+  const summary: StepSummary = { attempts, history, updatedAt }
   if (typeof lastScore === 'number') summary.lastScore = lastScore
   if (typeof lastTotal === 'number') summary.lastTotal = lastTotal
-  if (typeof summary.lastScore === 'number' && typeof summary.lastTotal === 'number' && summary.lastTotal > 0) {
+  if (
+    typeof summary.lastScore === 'number' &&
+    typeof summary.lastTotal === 'number' &&
+    summary.lastTotal > 0
+  ) {
     summary.percent = (summary.lastScore / summary.lastTotal) * 100
   }
   return summary
@@ -49,6 +56,15 @@ function calculateCoverage(cards: Card[], map: SrsMap): { studied: number; cover
     return reps > 0 || interval > 0 ? count + 1 : count
   }, 0)
   return { studied, coverage: studied / cards.length }
+}
+
+export function getNextRequiredStep(status: NodeStatus): PathStep | null {
+  if (status.study.attempts === 0 || !status.srsMet) return 'study'
+  if (status.quick.attempts === 0 || !status.quick.met) return 'quick'
+  if (status.reader.attempts === 0) return 'reader'
+  if (status.listen.attempts === 0 || !status.listen.met) return 'listen'
+  if (status.grammar.attempts === 0) return 'grammar'
+  return null
 }
 
 export async function computeNodeStatus(node: PathNode): Promise<NodeStatus> {
@@ -86,12 +102,14 @@ export async function computeNodeStatus(node: PathNode): Promise<NodeStatus> {
     reader,
     listen: { ...listen, requirement: listenRequirement },
     grammar,
+    nextRequiredStep: null,
   }
 
   if (progress) status.progress = progress
+  status.nextRequiredStep = getNextRequiredStep(status)
 
   return status
 }
 
 // Exported for tests.
-export const __test = { calculateCoverage }
+export const __test = { calculateCoverage, getNextRequiredStep }

@@ -5,9 +5,22 @@ import { getPronunciation } from '../lib/romanization'
 import { PopoverFloating } from './ui/PopoverFloating'
 import { withBase } from '../lib/url'
 import { segment as segmentText } from '../lib/segmentation'
+import { selectStoryTokens, needsSegmentationFallback } from '../lib/storyTokens'
 
 type StoryMeta = { id: string; title: string; band: 'A'|'B'|'C'; level: number; topic?: string; path: string; vocabRefs?: string[] }
-type Story = { id: string; title: string; band: 'A'|'B'|'C'; level: number; body: string; bodySimp?: string; vocabRefs: string[]; audioUrl?: string }
+type Story = {
+  id: string
+  title: string
+  band: 'A'|'B'|'C'
+  level: number
+  body: string
+  bodySimp?: string
+  vocabRefs: string[]
+  audioUrl?: string
+  tokens?: string[]
+  tokensTrad?: string[]
+  tokensSimp?: string[]
+}
 
 function pickN<T>(arr: T[], n: number): T[] {
   const a = [...arr]
@@ -51,7 +64,7 @@ export function ReaderPack(props: {
       const chosen = pickN(list, Math.min(5, list.length))
       const loaded: Story[] = []
       for (const m of chosen) {
-        const url = new URL(m.path, (import.meta as any).env.BASE_URL).toString()
+        const url = withBase(m.path)
         // eslint-disable-next-line no-await-in-loop
         const s = await fetch(url).then(r => r.json()).catch(() => null)
         if (s) loaded.push(s)
@@ -82,6 +95,12 @@ export function ReaderPack(props: {
   useEffect(() => {
     if (!story) { setSegs([]); return }
     const fallback = highlightText(text, highlightTargets)
+    const existingTokens = selectStoryTokens(story, props.prefs)
+    if (!needsSegmentationFallback(existingTokens)) {
+      const tokenSegs = highlightTokens(existingTokens, highlightTargets)
+      setSegs(tokenSegs.length ? tokenSegs : fallback)
+      return
+    }
     setSegs(fallback)
     let alive = true
     ;(async () => {
@@ -96,7 +115,7 @@ export function ReaderPack(props: {
       }
     })()
     return () => { alive = false }
-  }, [text, highlightTargets, story])
+  }, [text, highlightTargets, story, props.prefs.scriptMode])
 
   function playOnce() {
     if (played || !story?.audioUrl) return
@@ -160,7 +179,7 @@ export function ReaderPack(props: {
       <div style={{ color: '#666' }}>Story {i + 1}/{stories.length} • Score: {score}</div>
       <div style={{ border: '1px solid #ddd', padding: 12, borderRadius: 8 }}>
         <div style={{ marginBottom: 8, fontWeight: 600 }}>{story?.title}</div>
-        <div style={{ whiteSpace: 'pre-wrap', fontSize: 18 }}>
+        <div data-testid="reader-text" style={{ whiteSpace: 'pre-wrap', fontSize: 18 }}>
           {segs.map((s, idx) => {
             if (!s.highlight) return <span key={idx}>{s.text}</span>
             return (
